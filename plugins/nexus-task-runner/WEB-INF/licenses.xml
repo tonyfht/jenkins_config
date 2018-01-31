@@ -1,0 +1,31 @@
+<l:dependencies xmlns:l='licenses'>
+  <l:dependency name='Nexus Task Runner Plugin' groupId='org.jenkins-ci.plugins' artifactId='nexus-task-runner' version='0.9.2' url='http://wiki.jenkins-ci.org/display/JENKINS/Nexus+Task+Runner+Plugin'>
+    <l:description />
+  </l:dependency>
+  <l:dependency name='jersey-core' groupId='com.sun.jersey' artifactId='jersey-core' version='1.9' url='https://jersey.java.net/jersey-core/'>
+    <l:description>Jersey is the open source (under dual CDDL+GPL license) JAX-RS (JSR 311)
+        production quality Reference Implementation for building
+        RESTful Web services.</l:description>
+    <l:license name='CDDL 1.1' url='http://glassfish.java.net/public/CDDL+GPL_1_1.html' />
+    <l:license name='GPL2 w/ CPE' url='http://glassfish.java.net/public/CDDL+GPL_1_1.html' />
+  </l:dependency>
+  <l:dependency name='Maven Model' groupId='org.apache.maven' artifactId='maven-model' version='3.0.1' url='http://maven.apache.org/maven-model/'>
+    <l:description>Maven Model</l:description>
+    <l:license name='The Apache Software License, Version 2.0' url='http://www.apache.org/licenses/LICENSE-2.0.txt' />
+  </l:dependency>
+  <l:dependency name='jersey-client' groupId='com.sun.jersey' artifactId='jersey-client' version='1.9' url='https://jersey.java.net/jersey-client/'>
+    <l:description>Jersey is the open source (under dual CDDL+GPL license) JAX-RS (JSR 311)
+        production quality Reference Implementation for building
+        RESTful Web services.</l:description>
+    <l:license name='CDDL 1.1' url='http://glassfish.java.net/public/CDDL+GPL_1_1.html' />
+    <l:license name='GPL2 w/ CPE' url='http://glassfish.java.net/public/CDDL+GPL_1_1.html' />
+  </l:dependency>
+  <l:dependency name='Plexus Common Utilities' groupId='org.codehaus.plexus' artifactId='plexus-utils' version='2.0.4' url='http://plexus.codehaus.org/plexus-utils'>
+    <l:description>A collection of various utility classes to ease working with strings, files, command lines, XML and more.</l:description>
+    <l:license name='The Apache Software License, Version 2.0' url='http://www.apache.org/licenses/LICENSE-2.0.txt' />
+  </l:dependency>
+  <l:dependency name='Nexus : Core Rest API Model' groupId='org.sonatype.nexus' artifactId='nexus-rest-api-model' version='2.0.1' url='https://repository.sonatype.org/content/sites/maven-sites/nexus-oss/nexus/nexus-rest-api-model'>
+    <l:description>Sonatype Nexus Repository Manager</l:description>
+    <l:license name='Eclipse Public License' url='http://www.eclipse.org/legal/epl-v10.html' />
+  </l:dependency>
+</l:dependencies>

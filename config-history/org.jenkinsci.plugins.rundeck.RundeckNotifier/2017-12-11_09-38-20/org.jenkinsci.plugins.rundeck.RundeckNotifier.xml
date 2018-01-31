@@ -1,0 +1,10 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<org.jenkinsci.plugins.rundeck.RundeckNotifier_-RundeckDescriptor plugin="rundeck@3.6.2">
+  <rundeckInstances class="linked-hash-map"/>
+  <rundeckJobCacheConfig>
+    <enabled>false</enabled>
+    <afterAccessExpirationInMinutes>1080</afterAccessExpirationInMinutes>
+    <maximumSize>500</maximumSize>
+    <cacheStatsDisplayHitThreshold>200</cacheStatsDisplayHitThreshold>
+  </rundeckJobCacheConfig>
+</org.jenkinsci.plugins.rundeck.RundeckNotifier_-RundeckDescriptor>

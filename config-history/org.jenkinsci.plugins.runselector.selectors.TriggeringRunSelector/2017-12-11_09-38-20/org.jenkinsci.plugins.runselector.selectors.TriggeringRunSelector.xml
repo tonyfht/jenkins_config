@@ -1,0 +1,4 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<org.jenkinsci.plugins.runselector.selectors.TriggeringRunSelector_-DescriptorImpl plugin="run-selector@1.0.0">
+  <globalUpstreamFilterStrategy>UseOldest</globalUpstreamFilterStrategy>
+</org.jenkinsci.plugins.runselector.selectors.TriggeringRunSelector_-DescriptorImpl>

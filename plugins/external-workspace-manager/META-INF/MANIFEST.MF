@@ -1,0 +1,22 @@
+Manifest-Version: 1.0
+Archiver-Version: Plexus Archiver
+Created-By: Apache Maven
+Built-By: alexsomai
+Build-Jdk: 1.8.0_65
+Extension-Name: external-workspace-manager
+Specification-Title: Provides workspace share and reuse across multipl
+ e Jenkins jobs
+Implementation-Title: external-workspace-manager
+Implementation-Version: 1.1.2
+Group-Id: org.jenkins-ci.plugins
+Short-Name: external-workspace-manager
+Long-Name: External Workspace Manager Plugin
+Url: https://wiki.jenkins-ci.org/display/JENKINS/External+Workspace+Ma
+ nager+Plugin
+Plugin-Version: 1.1.2
+Hudson-Version: 1.642.3
+Jenkins-Version: 1.642.3
+Plugin-Dependencies: workflow-support:2.2;resolution:=optional,job-res
+ trictions:0.5,workflow-step-api:2.3
+Plugin-Developers: Alexandru Somai:alexsomai:somai.alexandru@gmail.com
+

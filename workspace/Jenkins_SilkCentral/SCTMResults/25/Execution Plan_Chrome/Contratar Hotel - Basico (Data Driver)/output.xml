@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestSuite TestItem="Execution Plan_Chrome">
+  <RunCount>1</RunCount>
+  <Timer>44092</Timer>
+  <WasSuccess>true</WasSuccess>
+  <Test TestItem="Contratar Hotel - Basico (Data Driver)">
+    <RunCount>1</RunCount>
+    <Timer>44092</Timer>
+    <WasSuccess>true</WasSuccess>
+  </Test>
+</TestSuite>
+

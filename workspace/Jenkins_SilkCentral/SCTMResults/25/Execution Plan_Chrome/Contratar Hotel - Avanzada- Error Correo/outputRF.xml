@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generated="20171220 08:49:50.496" generator="Robot 3.0.2 (Python 2.7.13 on win32)">
+<suite source="C:\Users\ANTONI~1.HER\AppData\Local\Temp\SCC_ExecServer_19124_19125\TempExecutionResults\SC_38_1513756189695\Test.robot" id="s1" name="Test">
+<test id="s1-t1" name="Contratar Hotel - Avanzada- Error Correo">
+<kw name="Abrir Aplicacion" library="RicohWeb">
+<arguments>
+<arg>https://www.nh-hoteles.es/</arg>
+</arguments>
+<msg timestamp="20171220 08:49:50.970" level="INFO">Abrir aplicacion https://www.nh-hoteles.es/</msg>
+<msg timestamp="20171220 08:49:50.971" level="INFO">Opening browser 'chrome' to base url 'https://www.nh-hoteles.es/'</msg>
+<status status="PASS" endtime="20171220 08:50:15.921" starttime="20171220 08:49:50.970"></status>
+</kw>
+<kw name="Pulsar Enlace" library="RicohWeb">
+<arguments>
+<arg>Inicio</arg>
+<arg>Busqueda Avanzada</arg>
+</arguments>
+<msg timestamp="20171220 08:50:15.922" level="INFO">Pusar enlace</msg>
+<msg timestamp="20171220 08:50:16.003" level="INFO">Clicking element '//a[contains(.,'Búsqueda Avanzada')]'.</msg>
+<status status="PASS" endtime="20171220 08:50:18.342" starttime="20171220 08:50:15.921"></status>
+</kw>
+<kw name="Introducir Texto" library="RicohWeb">
+<arguments>
+<arg>Busqueda Avanzada</arg>
+<arg>Destino</arg>
+<arg>Madrid</arg>
+</arguments>
+<msg timestamp="20171220 08:50:18.369" level="INFO">Introducir texto en //*[@id='fieldSearch']</msg>
+<msg timestamp="20171220 08:50:18.369" level="INFO">Typing text 'Madrid' into text field '//*[@id='fieldSearch']'</msg>
+<status status="PASS" endtime="20171220 08:50:18.512" starttime="20171220 08:50:18.342"></status>
+</kw>
+<kw name="Pulsar Enlace" library="RicohWeb">
+<arguments>
+<arg>Busqueda Avanzada</arg>
+<arg>Buscar</arg>
+</arguments>
+<msg timestamp="20171220 08:50:18.513" level="INFO">Pusar enlace</msg>
+<msg timestamp="20171220 08:50:18.541" level="INFO">Clicking element '//*[@id='locationForm']/footer/div[2]/a'.</msg>
+<status status="PASS" endtime="20171220 08:50:20.196" starttime="20171220 08:50:18.512"></status>
+</kw>
+<kw name="Pulsar Enlace" library="RicohWeb">
+<arguments>
+<arg>Resultados Busqueda</arg>
+<arg>Primer Hotel</arg>
+</arguments>
+<msg timestamp="20171220 08:50:20.196" level="INFO">Pusar enlace</msg>
+<msg timestamp="20171220 08:50:20.225" level="INFO">Clicking element '//*[@id='hotels']/ul/li[1]/a'.</msg>
+<status status="PASS" endtime="20171220 08:50:22.955" starttime="20171220 08:50:20.196"></status>
+</kw>
+<kw name="Pulsar Boton" library="RicohWeb">
+<arguments>
+<arg>Hotel</arg>
+<arg>Reservar</arg>
+</arguments>
+<msg timestamp="20171220 08:50:22.955" level="INFO">Pulsar boton Reservar</msg>
+<msg timestamp="20171220 08:50:24.978" level="INFO">Clicking element 'linkFH'.</msg>
+<status status="PASS" endtime="20171220 08:50:25.866" starttime="20171220 08:50:22.955"></status>
+</kw>
+<kw name="Pulsar Boton Modal" library="RicohWeb">
+<arguments>
+<arg>Hotel</arg>
+<arg>Seleccionar Precios</arg>
+<arg>Ver Precios</arg>
+</arguments>
+<msg timestamp="20171220 08:50:25.866" level="INFO">Pulsar boton modal Seleccionar Precios Ver Precios</msg>
+<msg timestamp="20171220 08:50:27.868" level="INFO">Pulsar boton modal2 //*[@class="fancybox-iframe"]</msg>
+<msg timestamp="20171220 08:50:27.934" level="INFO">Clicking element '//*[@id="guides"]'.</msg>
+<status status="PASS" endtime="20171220 08:50:30.827" starttime="20171220 08:50:25.866"></status>
+</kw>
+<kw name="Pulsar Boton" library="RicohWeb">
+<arguments>
+<arg>Hotel</arg>
+<arg>Solo Alojamiento</arg>
+</arguments>
+<msg timestamp="20171220 08:50:30.828" level="INFO">Pulsar boton Solo Alojamiento</msg>
+<msg timestamp="20171220 08:50:35.086" level="INFO">Clicking element '//*[@id="grid-REWARDS"]/section[1]/div[2]/div/div[1]/div[2]/div/div[5]/div/form/button'.</msg>
+<status status="PASS" endtime="20171220 08:50:42.423" starttime="20171220 08:50:30.828"></status>
+</kw>
+<kw name="Introducir Texto" library="RicohWeb">
+<arguments>
+<arg>Reserva</arg>
+<arg>Nombre</arg>
+<arg>Antonio</arg>
+</arguments>
+<msg timestamp="20171220 08:50:42.493" level="INFO">Introducir texto en //*[@id='name-checkout']</msg>
+<msg timestamp="20171220 08:50:42.493" level="INFO">Typing text 'Antonio' into text field '//*[@id='name-checkout']'</msg>
+<status status="PASS" endtime="20171220 08:50:42.742" starttime="20171220 08:50:42.423"></status>
+</kw>
+<kw name="Introducir Texto" library="RicohWeb">
+<arguments>
+<arg>Reserva</arg>
+<arg>Apellidos</arg>
+<arg>Perez Fernandez</arg>
+</arguments>
+<msg timestamp="20171220 08:50:42.789" level="INFO">Introducir texto en //*[@id='last-name-checkout']</msg>
+<msg timestamp="20171220 08:50:42.789" level="INFO">Typing text 'Perez Fernandez' into text field '//*[@id='last-name-checkout']'</msg>
+<status status="PASS" endtime="20171220 08:50:43.259" starttime="20171220 08:50:42.742"></status>
+</kw>
+<kw name="Introducir Texto" library="RicohWeb">
+<arguments>
+<arg>Reserva</arg>
+<arg>Correo Electronico</arg>
+<arg>antonio@google.es</arg>
+</arguments>
+<msg timestamp="20171220 08:50:43.288" level="INFO">Introducir texto en //*[@id='email-checkout']</msg>
+<msg timestamp="20171220 08:50:43.288" level="INFO">Typing text 'antonio@google.es' into text field '//*[@id='email-checkout']'</msg>
+<status status="PASS" endtime="20171220 08:50:43.638" starttime="20171220 08:50:43.259"></status>
+</kw>
+<kw name="Introducir Texto" library="RicohWeb">
+<arguments>
+<arg>Reserva</arg>
+<arg>Confirmar Correo Electronico</arg>
+<arg>antonio1@google.es</arg>
+</arguments>
+<msg timestamp="20171220 08:50:43.664" level="INFO">Introducir texto en //*[@id='confirm-email-checkout']</msg>
+<msg timestamp="20171220 08:50:43.664" level="INFO">Typing text 'antonio1@google.es' into text field '//*[@id='confirm-email-checkout']'</msg>
+<status status="PASS" endtime="20171220 08:50:44.003" starttime="20171220 08:50:43.638"></status>
+</kw>
+<kw name="Introducir Texto" library="RicohWeb">
+<arguments>
+<arg>Reserva</arg>
+<arg>Telefono</arg>
+<arg>0034914422533</arg>
+</arguments>
+<msg timestamp="20171220 08:50:44.027" level="INFO">Introducir texto en //*[@id='phone-checkout']</msg>
+<msg timestamp="20171220 08:50:44.027" level="INFO">Typing text '0034914422533' into text field '//*[@id='phone-checkout']'</msg>
+<status status="PASS" endtime="20171220 08:50:44.285" starttime="20171220 08:50:44.003"></status>
+</kw>
+<kw name="Validar Error" library="RicohWeb">
+<arguments>
+<arg>Reserva</arg>
+<arg>El email debe coincidir</arg>
+</arguments>
+<msg timestamp="20171220 08:50:44.285" level="INFO">Validar error El email debe coincidir</msg>
+<msg timestamp="20171220 08:50:44.316" level="INFO">Existe el error El email debe coincidir</msg>
+<status status="PASS" endtime="20171220 08:50:44.316" starttime="20171220 08:50:44.285"></status>
+</kw>
+<kw type="teardown" name="Cerrar Aplicacion" library="RicohWeb">
+<msg timestamp="20171220 08:50:44.316" level="INFO">Cerrar aplicacion</msg>
+<status status="PASS" endtime="20171220 08:50:47.358" starttime="20171220 08:50:44.316"></status>
+</kw>
+<status status="PASS" endtime="20171220 08:50:47.358" critical="yes" starttime="20171220 08:49:50.970"></status>
+</test>
+<status status="PASS" endtime="20171220 08:50:47.359" starttime="20171220 08:49:50.500"></status>
+</suite>
+<statistics>
+<total>
+<stat fail="0" pass="1">Critical Tests</stat>
+<stat fail="0" pass="1">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat fail="0" id="s1" name="Test" pass="1">Test</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

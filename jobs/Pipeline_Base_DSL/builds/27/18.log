@@ -1,0 +1,103 @@
+[C:\Program Files (x86)\Jenkins\workspace\Pipeline] Running shell script
++ C://Software//apache-maven-3.5.0//bin/mvn sonar:sonar -f C://Users//antonio.f.herrera//Desktop//maven-plugins-master//pom.xml -U -Psonar -Dmaven.test.skip=true -Dsonar.login=admin -Dsonar.password=admin
+[INFO] Scanning for projects...
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Build Order:
+[INFO] 
+[INFO] GitHub Maven Plugins
+[INFO] GitHub Core Maven Library
+[INFO] GitHub Site Maven Plugin
+[INFO] 
+[INFO] ------------------------------------------------------------------------
+[INFO] Building GitHub Maven Plugins 0.13-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+Downloading: https://oss.sonatype.org/content/repositories/snapshots/com/github/github/github-maven-core/0.13-SNAPSHOT/maven-metadata.xml
+Downloading: https://repo.eclipse.org/content/repositories/egit-releases/com/github/github/github-maven-core/0.13-SNAPSHOT/maven-metadata.xml
+Downloading: http://192.168.35.136:8081/repository/maven-central/com/github/github/github-maven-core/0.13-SNAPSHOT/maven-metadata.xml
+[WARNING] Could not transfer metadata com.github.github:github-maven-core:0.13-SNAPSHOT/maven-metadata.xml from/to maven-central (http://192.168.35.136:8081/repository/maven-central/): Failed to transfer file: http://192.168.35.136:8081/repository/maven-central/com/github/github/github-maven-core/0.13-SNAPSHOT/maven-metadata.xml. Return code is: 400 , ReasonPhrase:Repository version policy: RELEASE does not allow metadata in path: com/github/github/github-maven-core/0.13-SNAPSHOT/maven-metadata.xml.
+[WARNING] Failure to transfer com.github.github:github-maven-core:0.13-SNAPSHOT/maven-metadata.xml from http://192.168.35.136:8081/repository/maven-central/ was cached in the local repository, resolution will not be reattempted until the update interval of maven-central has elapsed or updates are forced. Original error: Could not transfer metadata com.github.github:github-maven-core:0.13-SNAPSHOT/maven-metadata.xml from/to maven-central (http://192.168.35.136:8081/repository/maven-central/): Failed to transfer file: http://192.168.35.136:8081/repository/maven-central/com/github/github/github-maven-core/0.13-SNAPSHOT/maven-metadata.xml. Return code is: 400 , ReasonPhrase:Repository version policy: RELEASE does not allow metadata in path: com/github/github/github-maven-core/0.13-SNAPSHOT/maven-metadata.xml.
+[INFO] 
+[INFO] --- sonar-maven-plugin:3.3.0.603:sonar (default-cli) @ github-maven-plugins-parent ---
+[INFO] User cache: C:\Windows\system32\config\systemprofile\.sonar\cache
+[INFO] Load global settings
+[INFO] Load global settings (done) | time=146ms
+[INFO] User cache: C:\Windows\system32\config\systemprofile\.sonar\cache
+[INFO] Load plugins index
+[INFO] Load plugins index (done) | time=4ms
+[INFO] SonarQube version: 6.5.0
+[INFO] Default locale: "es_ES", source code encoding: "UTF-8"
+[INFO] Process project properties
+[INFO] Load project repositories
+[INFO] Load project repositories (done) | time=21ms
+[INFO] Load quality profiles
+[INFO] Load quality profiles (done) | time=33ms
+[INFO] Load active rules
+[INFO] Load active rules (done) | time=1280ms
+[INFO] Load metrics repository
+[INFO] Load metrics repository (done) | time=125ms
+[INFO] Publish mode
+[INFO] Project key: com.github.github:github-maven-plugins-parent
+[INFO] -------------  Scan GitHub Core Maven Library
+[INFO] Load server rules
+[INFO] Load server rules (done) | time=55ms
+[INFO] Base dir: C:\Users\antonio.f.herrera\Desktop\maven-plugins-master\github-core
+[INFO] Working dir: C:\Users\antonio.f.herrera\Desktop\maven-plugins-master\github-core\target\sonar
+[INFO] Source paths: pom.xml, src/main/java
+[INFO] Test paths: src/test/java
+[INFO] Source encoding: UTF-8, default locale: es_ES
+[INFO] Index files
+[INFO] 13 files indexed
+[INFO] Quality profile for java: Sonar way
+[INFO] Quality profile for xml: Sonar way
+[INFO] Sensor JavaSquidSensor [java]
+[INFO] Configured Java source version (sonar.java.source): 5
+[INFO] JavaClasspath initialization
+[INFO] JavaClasspath initialization (done) | time=22ms
+[INFO] JavaTestClasspath initialization
+[INFO] JavaTestClasspath initialization (done) | time=17ms
+[INFO] Java Main Files AST scan
+[INFO] 6 source files to be analyzed
+[INFO] Java Main Files AST scan (done) | time=4437ms
+[INFO] Java Test Files AST scan
+[INFO] 6/6 source files have been analyzed
+[INFO] 6 source files to be analyzed
+[INFO] 6/6 source files have been analyzed
+[INFO] Java Test Files AST scan (done) | time=991ms
+[INFO] Sensor JavaSquidSensor [java] (done) | time=6314ms
+[INFO] Sensor SurefireSensor [java]
+[INFO] Property 'sonar.junit.reportsPath' is deprecated. Use property 'sonar.junit.reportPaths' instead.
+[INFO] parsing [C:\Users\antonio.f.herrera\Desktop\maven-plugins-master\github-core\target\surefire-reports]
+[INFO] Sensor SurefireSensor [java] (done) | time=268ms
+[INFO] Sensor JaCoCoSensor [java]
+[INFO] Sensor JaCoCoSensor [java] (done) | time=2ms
+[INFO] Sensor SonarJavaXmlFileSensor [java]
+[INFO] 1 source files to be analyzed
+[INFO] Sensor SonarJavaXmlFileSensor [java] (done) | time=781ms
+[INFO] 1/1 source files have been analyzed
+[INFO] Sensor XML Sensor [xml]
+[INFO] Sensor XML Sensor [xml] (done) | time=310ms
+[INFO] Sensor Analyzer for "php.ini" files [php]
+[INFO] Sensor Analyzer for "php.ini" files [php] (done) | time=4ms
+[INFO] SCM provider for this project is: git
+[INFO] 13 files to be analyzed
+[INFO] 0/13 files analyzed
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Summary:
+[INFO] 
+[INFO] GitHub Maven Plugins ............................... FAILURE [ 17.482 s]
+[INFO] GitHub Core Maven Library .......................... SKIPPED
+[INFO] GitHub Site Maven Plugin ........................... SKIPPED
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 18.170 s
+[INFO] Finished at: 2017-09-21T15:22:40+02:00
+[INFO] Final Memory: 61M/508M
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.sonarsource.scanner.maven:sonar-maven-plugin:3.3.0.603:sonar (default-cli) on project github-maven-plugins-parent: C:\Users\antonio.f.herrera\Desktop\maven-plugins-master\github-core doesn't seem to be contained in a Git repository -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoExecutionException

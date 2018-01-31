@@ -1,0 +1,5 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<org.jenkinsci.plugins.ewm.steps.ExwsAllocateStep_-DescriptorImpl plugin="external-workspace-manager@1.1.2">
+  <executionType>org.jenkinsci.plugins.ewm.steps.ExwsAllocateExecution</executionType>
+  <diskPools/>
+</org.jenkinsci.plugins.ewm.steps.ExwsAllocateStep_-DescriptorImpl>

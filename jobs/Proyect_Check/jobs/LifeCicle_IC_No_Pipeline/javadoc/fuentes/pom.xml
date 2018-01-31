@@ -1,0 +1,208 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0
+                      http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  
+  
+  <groupId>es.iam.calidad.check</groupId>
+  <version>${check.version}</version>
+  <artifactId>check</artifactId>
+  <packaging>pom</packaging>
+ 
+  <description>Carpeta que contiene el POM padre</description>
+  <name>CHECK</name>
+  
+  <properties>
+		<!-- Generic properties -->
+		<check.version>2.1.1</check.version>
+		<distribution.version>2.1</distribution.version>
+		<!-- Artifactory -->
+		<nexus.repository>calidadprod</nexus.repository>
+		<artifactory.port>8080</artifactory.port>
+		
+  </properties>
+
+  <modules>
+    <module>NEG_CHECK</module>
+    <module>BATCH_CHECK</module> 
+	<module>config</module> 
+  </modules>
+  
+    <repositories>
+	        <repository>
+            <id>maven-central</id>
+            <name>maven-central</name>
+            <url>https://repo.maven.apache.org/maven2/</url>
+        </repository>		
+</repositories>
+
+	<pluginRepositories>
+		<pluginRepository>
+			<id>maven-central</id>
+			<url>https://repo.maven.apache.org/maven2/</url>
+			<releases>
+				<enabled>true</enabled>
+				<updatePolicy>always</updatePolicy>
+			</releases>
+			<snapshots>
+				<enabled>true</enabled>
+				<updatePolicy>always</updatePolicy>
+			</snapshots>
+		</pluginRepository>
+	</pluginRepositories>
+  
+  <build>    
+    <plugins>   
+	
+        
+        <plugin>
+          <groupId>org.apache.maven.plugins</groupId> 
+          <artifactId>maven-compiler-plugin</artifactId>    
+          <version>2.3.2</version>
+          <configuration>
+            <fork>true</fork> 
+            <source>1.5</source> 
+            <target>1.5</target>      
+          </configuration>    
+        </plugin>
+		        
+        <plugin>
+          <groupId>org.apache.maven.plugins</groupId>
+          <artifactId>maven-jar-plugin</artifactId>
+          <version>2.4</version>
+          <configuration>
+             <archive>
+               <addMavenDescriptor>false</addMavenDescriptor>
+              </archive>
+          </configuration>
+        </plugin>
+            
+    	<plugin>
+  		  <groupId>org.apache.maven.plugins</groupId>
+  		  <artifactId>maven-checkstyle-plugin</artifactId>
+  		  <version>2.6</version> 
+  
+  		  <configuration>
+				<excludes>**/model/**</excludes>
+  		 	   <configLocation>checkstyle-iam.xml</configLocation>   
+  				 	<failsOnError>false</failsOnError>
+  		  </configuration> 
+  	    </plugin>   
+        			 
+                 
+        	<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-site-plugin</artifactId>
+				<version>3.3</version>
+				<configuration>
+					<reportPlugins>
+						<plugin>
+							<groupId>org.apache.maven.plugins</groupId>
+							<artifactId>maven-project-info-reports-plugin</artifactId>
+							<version>2.2</version>
+							<reportSets>
+								<reportSet>
+									<reports>
+										<report>index</report>
+									</reports>
+								</reportSet>
+							</reportSets>
+						</plugin>
+
+		 <plugin>
+			<groupId>org.codehaus.mojo</groupId>
+			<artifactId>cobertura-maven-plugin</artifactId>
+			<version>2.6</version>
+							<configuration>
+									<formats>
+										<format>xml</format>
+									</formats>
+							</configuration>
+			            <executions>  
+							<execution>  
+								<phase>package</phase>  
+								<goals>  
+									<goal>cobertura</goal>  
+								</goals>  
+							</execution>  
+						</executions>  
+		</plugin>
+						<plugin>
+							<groupId>org.apache.maven.plugins</groupId>
+							<artifactId>maven-pmd-plugin</artifactId>
+							<version>2.5</version>
+							<configuration>
+								<linkXref>true</linkXref>
+								<minimumTokens>100</minimumTokens>
+								<targetJdk>1.6</targetJdk>
+								<rulesets>
+									<ruleset>../reglas/pmd-iam.xml</ruleset>
+								</rulesets>
+							</configuration>
+						</plugin>
+
+						<plugin>
+							<groupId>org.apache.maven.plugins</groupId>
+							<artifactId>maven-javadoc-plugin</artifactId>
+							<version>2.7</version>
+							<configuration>
+								<detecJavaApiLink>false</detecJavaApiLink>
+								<detectLinks>false</detectLinks>
+								<linksource>false</linksource>
+							</configuration>
+						</plugin>
+						<plugin>
+							<groupId>org.apache.maven.plugins</groupId>
+							<artifactId>maven-javadoc-plugin</artifactId>
+							<version>2.7</version>
+							<configuration>
+								<detecJavaApiLink>false</detecJavaApiLink>
+								<detectLinks>false</detectLinks>
+								<linksource>false</linksource>
+							</configuration>
+						</plugin>
+
+						<plugin>
+							<groupId>org.apache.maven.plugins</groupId>
+							<artifactId>maven-checkstyle-plugin</artifactId>
+							<version>2.6</version>
+							<configuration>
+								<configLocation>../reglas/checkstyle-iam.xml</configLocation>
+								<failsOnError>false</failsOnError>
+								<sourceDirectory>${project.basedir}/src/main</sourceDirectory>
+								<includes>**\/*.java,**\/*.jsp</includes>
+							</configuration>
+						</plugin>
+
+						<plugin>
+							<groupId>org.apache.maven.plugins</groupId>
+							<artifactId>maven-jxr-plugin</artifactId>
+							<version>2.2</version>
+						</plugin>
+					</reportPlugins>
+				</configuration>
+			</plugin>	
+    </plugins>    
+  </build>
+
+
+  <reporting>
+  	<plugins>
+  	    <plugin>
+			<groupId>org.apache.maven.plugins</groupId>
+			<artifactId>maven-jxr-plugin</artifactId>
+			<version>2.2</version>			
+		</plugin>	
+	</plugins>
+   </reporting>  
+
+  <distributionManagement>
+		<site>
+	    	<id>CURSO</id>
+	       <url>file:///${user.dir}/Documentacion</url>  
+		</site>
+   </distributionManagement>
+
+  
+</project>

@@ -1,0 +1,24 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<org.jenkinsci.plugins.jqsmonitoring.jqscore.LocalConfig plugin="jqs-monitoring@1.4">
+  <updateFailedDaily>8</updateFailedDaily>
+  <histogramWith>31</histogramWith>
+  <histogramHeight>290</histogramHeight>
+  <allQS>true</allQS>
+  <queueJobTable>true</queueJobTable>
+  <buildTable>true</buildTable>
+  <slaveTable>true</slaveTable>
+  <allFailed>true</allFailed>
+  <failedHistogram>true</failedHistogram>
+  <allColor>#0099FF</allColor>
+  <okColor>#66CC00</okColor>
+  <blockedColor>#FF9900</blockedColor>
+  <stuckColor>#FF0033</stuckColor>
+  <histBackground>#FFFFFF</histBackground>
+  <histColumn>#000000</histColumn>
+  <histHourText>#000000</histHourText>
+  <histNumberText>#000000</histNumberText>
+  <histCurrentColumn>#2E9AFE</histCurrentColumn>
+  <histSorting>3</histSorting>
+  <timeFilter__1>30</timeFilter__1>
+  <timeFilter__2>60</timeFilter__2>
+</org.jenkinsci.plugins.jqsmonitoring.jqscore.LocalConfig>

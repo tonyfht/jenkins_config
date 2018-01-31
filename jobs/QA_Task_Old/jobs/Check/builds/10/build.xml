@@ -1,0 +1,93 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<flow-build plugin="workflow-job@2.12.2">
+  <actions>
+    <hudson.model.CauseAction>
+      <causeBag class="linked-hash-map">
+        <entry>
+          <hudson.model.Cause_-UserIdCause>
+            <userId>antonio.f.herrera</userId>
+          </hudson.model.Cause_-UserIdCause>
+          <int>1</int>
+        </entry>
+      </causeBag>
+    </hudson.model.CauseAction>
+    <jenkins.metrics.impl.TimeInQueueAction plugin="metrics@3.1.2.10">
+      <queuingDurationMillis>39</queuingDurationMillis>
+    </jenkins.metrics.impl.TimeInQueueAction>
+    <io.jenkins.blueocean.service.embedded.BlueOceanUrlAction plugin="blueocean-rest-impl@1.1.7">
+      <blueOceanUrlObject class="io.jenkins.blueocean.service.embedded.BlueOceanUrlObjectImpl">
+        <mappedUrl>blue/organizations/jenkins/Check/detail/Check/10</mappedUrl>
+      </blueOceanUrlObject>
+    </io.jenkins.blueocean.service.embedded.BlueOceanUrlAction>
+    <org.jenkinsci.plugins.workflow.libs.LibrariesAction plugin="workflow-cps-global-lib@2.8">
+      <libraries/>
+    </org.jenkinsci.plugins.workflow.libs.LibrariesAction>
+    <com.sonyericsson.rebuild.RebuildAction plugin="rebuild@1.25"/>
+  </actions>
+  <queueId>27</queueId>
+  <timestamp>1509356103918</timestamp>
+  <startTime>1509356103921</startTime>
+  <result>SUCCESS</result>
+  <description>Pipeline de prueba de TutorialTest</description>
+  <displayName>TutorialTest</displayName>
+  <duration>32811</duration>
+  <keepLog>false</keepLog>
+  <execution class="org.jenkinsci.plugins.workflow.cps.CpsFlowExecution">
+    <result>SUCCESS</result>
+    <script>node {
+
+    currentBuild.displayName=&quot;TutorialTest&quot;
+    currentBuild.description=&quot;Pipeline de prueba de TutorialTest&quot;
+
+    def m2=&quot;C://Software//apache-maven-3.5.0//bin&quot;
+
+        stage(&apos;Build&apos;) {
+            /* 
+            Se realiza la contrucción del proyecto y test unitarios. Los parámetros
+            de uso general se han declarado en environment for the run
+           
+             */
+         
+             sh &quot;${m2}/mvn clean install -f C://Users//antonio.f.herrera//Desktop//TutorialTest//pom.xml -U&quot;
+              
+            echo &apos;Pipeline Build finalizado correctamente&apos;
+        }
+        stage(&apos;Quality&apos;) {
+            /* 
+            Se realiza la revisión de código en el proyecto. Los parámetros de uso
+            general se han declarado en environment for the run
+            */
+            sh &quot;${m2}/mvn sonar:sonar -f C://Users//antonio.f.herrera//Desktop//TutorialTest//pom.xml -U&quot;
+            
+            echo &apos;Pipeline Quality finalizado correctamente&apos;
+        }
+}</script>
+    <loadedScripts class="map"/>
+    <timings class="map">
+      <entry>
+        <string>flowNode</string>
+        <long>293021223</long>
+      </entry>
+      <entry>
+        <string>classLoad</string>
+        <long>28221268</long>
+      </entry>
+      <entry>
+        <string>run</string>
+        <long>1367995330</long>
+      </entry>
+      <entry>
+        <string>parse</string>
+        <long>83604437</long>
+      </entry>
+      <entry>
+        <string>saveProgram</string>
+        <long>605063769</long>
+      </entry>
+    </timings>
+    <sandbox>true</sandbox>
+    <iota>19</iota>
+    <head>1:19</head>
+  </execution>
+  <checkouts class="hudson.util.PersistedList"/>
+</flow-build>

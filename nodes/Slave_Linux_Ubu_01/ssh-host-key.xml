@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<hudson.plugins.sshslaves.verifiers.HostKey plugin="ssh-slaves@1.22">
+  <algorithm>ssh-rsa</algorithm>
+  <key>AAAAB3NzaC1yc2EAAAADAQABAAABAQCnZQbJyCfrs5u3rSfivqkDnXDu1uiENGmWZvnnzw5QfonM
+vGaKu04w6ArzE4EydbdAm6arh3pHEalOb5/Jz7si0DSgzo9HBXbpLkpSw4lSrNh1J4a84UJThXlP
+B7Hs+JZpAZHU5+Tl77mQ/rnXje2zb4uxduSLlQHTMWSA8R3uBT3mIDKNmURfzvAIw8k1JIFOtXoh
+r6nSbeHVc1BMgCyLKYF9mDP3qoUfx8W3UdV2yShiCw8ZQrD1NX4RsiTsISECMnQ0LlR8zamZrGVC
+lSmoL1qcIoaaahvmOe1nqAwHQVd1wjkY//KooFFAV1a9YnEOKPITnZnLt88hfmiJYNFp</key>
+</hudson.plugins.sshslaves.verifiers.HostKey>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Keyword name="Contratar Hotel - Basico- Error detectado mensaje" id="489" xmlns="http://www.borland.com/silk/Keyword">
+    <InvokeKeyword name="Abrir Aplicacion">
+        <Argument value="https://www.nh-hoteles.es/"/>
+    </InvokeKeyword>
+    <InvokeKeyword name="Introducir Texto">
+        <Argument value="Inicio"/>
+        <Argument value="A donde viajas"/>
+        <Argument value="Lanzarote"/>
+    </InvokeKeyword>
+    <InvokeKeyword name="Pulsar Enlace">
+        <Argument value="Inicio"/>
+        <Argument value="Playa Dorada"/>
+    </InvokeKeyword>
+    <InvokeKeyword name="Pulsar Boton">
+        <Argument value="Inicio"/>
+        <Argument value="Buscar hotel"/>
+    </InvokeKeyword>
+    <InvokeKeyword name="Pulsar Boton">
+        <Argument value="Hotel"/>
+        <Argument value="Media Pension Standard"/>
+    </InvokeKeyword>
+    <InvokeKeyword name="Introducir Texto">
+        <Argument value="Reserva"/>
+        <Argument value="Nombre"/>
+        <Argument value="Javier"/>
+    </InvokeKeyword>
+    <InvokeKeyword name="Introducir Texto">
+        <Argument value="Reserva"/>
+        <Argument value="Apellidos"/>
+        <Argument value="Castro Perez"/>
+    </InvokeKeyword>
+    <InvokeKeyword name="Introducir Texto">
+        <Argument value="Reserva"/>
+        <Argument value="Correo Electronico"/>
+        <Argument value="javier"/>
+    </InvokeKeyword>
+    <InvokeKeyword name="Introducir Texto">
+        <Argument value="Reserva"/>
+        <Argument value="Confirmar Correo Electronico"/>
+        <Argument value="javier"/>
+    </InvokeKeyword>
+    <InvokeKeyword name="Introducir Texto">
+        <Argument value="Reserva"/>
+        <Argument value="Telefono"/>
+        <Argument value="0034914416831"/>
+    </InvokeKeyword>
+    <InvokeKeyword name="Validar Mensaje Error">
+        <Argument value="Reserva"/>
+        <Argument value="Mensaje correo electronico"/>
+        <Argument value="dirección de mail no válida"/>
+    </InvokeKeyword>
+    <InvokeKeyword name="Validar Mensaje Error">
+        <Argument value="Reserva"/>
+        <Argument value="Mensaje confirmacion correo electronico"/>
+        <Argument value="dirección de mail no válida"/>
+    </InvokeKeyword>
+</Keyword>

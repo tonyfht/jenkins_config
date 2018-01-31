@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<org.jenkinsci.plugins.sharedworkspace.SharedWorkspace_-DescriptorImpl plugin="shared-workspace@1.0.2">
+  <workspaces>
+    <org.jenkinsci.plugins.sharedworkspace.SharedWorkspace>
+      <name></name>
+      <url></url>
+    </org.jenkinsci.plugins.sharedworkspace.SharedWorkspace>
+  </workspaces>
+</org.jenkinsci.plugins.sharedworkspace.SharedWorkspace_-DescriptorImpl>

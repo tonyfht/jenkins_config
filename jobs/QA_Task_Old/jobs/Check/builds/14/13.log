@@ -1,0 +1,60 @@
+[C:\Program Files (x86)\Jenkins\workspace\Check] Running shell script
++ C://Software//apache-maven-3.5.0//bin/mvn clean install
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] ------------------------------------------------------------------------
+[INFO] Building TutorialTest 0.0.1-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-clean-plugin:2.5:clean (default-clean) @ TutorialTest ---
+[INFO] Deleting C:\Program Files (x86)\Jenkins\workspace\Check\target
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ TutorialTest ---
+[WARNING] Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+[INFO] skip non existing resourceDirectory C:\Program Files (x86)\Jenkins\workspace\Check\src\main\resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:2.3.2:compile (default-compile) @ TutorialTest ---
+[WARNING] File encoding has not been set, using platform encoding Cp1252, i.e. build is platform dependent!
+[INFO] Compiling 2 source files to C:\Program Files (x86)\Jenkins\workspace\Check\target\classes
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ TutorialTest ---
+[WARNING] Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+[INFO] skip non existing resourceDirectory C:\Program Files (x86)\Jenkins\workspace\Check\src\test\resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:2.3.2:testCompile (default-testCompile) @ TutorialTest ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.12:test (default-test) @ TutorialTest ---
+[INFO] No tests to run.
+[INFO] Surefire report directory: C:\Program Files (x86)\Jenkins\workspace\Check\target\surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running TestSuite
+Hola Jenkins. Te estoy probando en una ejecucion.
+Hola Jenkins. Te estoy probando en una ejecucion x2
+Hola Jenkins. Te estoy probando en una ejecucion x3
+Hola Jenkins. Te estoy probando en una ejecucion x4
+Hola Jenkins. Te estoy probando en una ejecucion x5
+Hola Jenkins. Te estoy probando en una ejecucion x6
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.691 sec
+
+Results :
+
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0
+
+[INFO] 
+[INFO] --- maven-jar-plugin:2.4:jar (default-jar) @ TutorialTest ---
+[INFO] Building jar: C:\Program Files (x86)\Jenkins\workspace\Check\target\TutorialTest-0.0.1-SNAPSHOT.jar
+[INFO] 
+[INFO] --- maven-install-plugin:2.4:install (default-install) @ TutorialTest ---
+[INFO] Installing C:\Program Files (x86)\Jenkins\workspace\Check\target\TutorialTest-0.0.1-SNAPSHOT.jar to C:\Windows\system32\config\systemprofile\.m2\repository\TutorialTest\TutorialTest\0.0.1-SNAPSHOT\TutorialTest-0.0.1-SNAPSHOT.jar
+[INFO] Installing C:\Program Files (x86)\Jenkins\workspace\Check\pom.xml to C:\Windows\system32\config\systemprofile\.m2\repository\TutorialTest\TutorialTest\0.0.1-SNAPSHOT\TutorialTest-0.0.1-SNAPSHOT.pom
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 6.189 s
+[INFO] Finished at: 2017-11-02T10:18:20+01:00
+[INFO] Final Memory: 17M/225M
+[INFO] ------------------------------------------------------------------------

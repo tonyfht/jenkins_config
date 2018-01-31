@@ -1,0 +1,55 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<org.jenkinsci.plugins.workflow.support.storage.SimpleXStreamFlowNodeStorage_-Tag plugin="workflow-support@2.16">
+  <node class="org.jenkinsci.plugins.workflow.cps.nodes.StepAtomNode" plugin="workflow-cps@2.41">
+    <parentIds>
+      <string>38</string>
+    </parentIds>
+    <id>39</id>
+    <descriptorId>org.jenkinsci.plugins.workflow.steps.CoreStep</descriptorId>
+  </node>
+  <actions>
+    <org.jenkinsci.plugins.workflow.support.actions.LogActionImpl>
+      <charset>windows-1252</charset>
+    </org.jenkinsci.plugins.workflow.support.actions.LogActionImpl>
+    <org.jenkinsci.plugins.workflow.cps.actions.ArgumentsActionImpl plugin="workflow-cps@2.41">
+      <arguments class="linked-hash-map">
+        <entry>
+          <string>delegate</string>
+          <org.jenkinsci.plugins.structs.describable.UninstantiatedDescribable plugin="structs@1.10">
+            <symbol>pmd</symbol>
+            <arguments class="tree-map">
+              <entry>
+                <string>canRunOnFailed</string>
+                <boolean>true</boolean>
+              </entry>
+              <entry>
+                <string>defaultEncoding</string>
+                <string></string>
+              </entry>
+              <entry>
+                <string>healthy</string>
+                <string></string>
+              </entry>
+              <entry>
+                <string>pattern</string>
+                <string>**/pmd.xml</string>
+              </entry>
+              <entry>
+                <string>shouldDetectModules</string>
+                <boolean>true</boolean>
+              </entry>
+              <entry>
+                <string>unHealthy</string>
+                <string></string>
+              </entry>
+            </arguments>
+          </org.jenkinsci.plugins.structs.describable.UninstantiatedDescribable>
+        </entry>
+      </arguments>
+      <isUnmodifiedBySanitization>true</isUnmodifiedBySanitization>
+    </org.jenkinsci.plugins.workflow.cps.actions.ArgumentsActionImpl>
+    <org.jenkinsci.plugins.workflow.actions.TimingAction plugin="workflow-api@2.23.1">
+      <startTime>1515747681302</startTime>
+    </org.jenkinsci.plugins.workflow.actions.TimingAction>
+  </actions>
+</org.jenkinsci.plugins.workflow.support.storage.SimpleXStreamFlowNodeStorage_-Tag>

@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<com.borland.jenkins.SilkPerformerJenkins.SilkPerformerBuilder_-DescriptorImpl plugin="silk-performer-plugin@1.0.14">
+  <installationDir></installationDir>
+  <splb>
+    <userTypeList/>
+    <transactionList/>
+  </splb>
+  <bIsInstallationDirValid>false</bIsInstallationDirValid>
+</com.borland.jenkins.SilkPerformerJenkins.SilkPerformerBuilder_-DescriptorImpl>

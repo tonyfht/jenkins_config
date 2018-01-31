@@ -1,0 +1,77 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<suite plugin="SCTMExecutor@2.2">
+  <name>root</name>
+  <childResults class="list">
+    <suite>
+      <parent class="suite" reference="../../.."/>
+      <name>Contratar Hotel - Avanzada</name>
+      <childResults class="list">
+        <suite>
+          <parent class="suite" reference="../../.."/>
+          <name></name>
+          <childResults class="list"/>
+          <configurationResults/>
+        </suite>
+      </childResults>
+      <configurationResults/>
+    </suite>
+    <suite>
+      <parent class="suite" reference="../../.."/>
+      <name>Contratar Hotel - Avanzada- Error Correo</name>
+      <childResults class="list">
+        <suite>
+          <parent class="suite" reference="../../.."/>
+          <name></name>
+          <childResults class="list"/>
+          <configurationResults/>
+        </suite>
+      </childResults>
+      <configurationResults/>
+    </suite>
+    <case>
+      <parent class="suite" reference="../../.."/>
+      <name>Contratar Hotel - Basico (Data Driver)</name>
+      <configurationResults>
+        <entry>
+          <string>Execution Plan_Chrome</string>
+          <configuration>
+            <parent class="case" reference="../../../.."/>
+            <state>PASSED</state>
+            <failCount>0</failCount>
+            <skipCount>0</skipCount>
+            <passCount>1</passCount>
+            <duration>44092.0</duration>
+            <errorMessage></errorMessage>
+          </configuration>
+        </entry>
+      </configurationResults>
+    </case>
+    <suite>
+      <parent class="suite" reference="../../.."/>
+      <name>Contratar Hotel - Basico- Error detectado mensaje</name>
+      <childResults class="list">
+        <suite>
+          <parent class="suite" reference="../../.."/>
+          <name>ERROR en step [12]</name>
+          <childResults class="list"/>
+          <configurationResults/>
+        </suite>
+      </childResults>
+      <configurationResults/>
+    </suite>
+  </childResults>
+  <configurationResults>
+    <entry>
+      <string>Execution Plan_Chrome</string>
+      <configuration>
+        <parent class="suite" reference="../../../.."/>
+        <state>PASSED</state>
+        <failCount>0</failCount>
+        <skipCount>0</skipCount>
+        <passCount>1</passCount>
+        <duration>44092.0</duration>
+        <errorMessage></errorMessage>
+      </configuration>
+    </entry>
+  </configurationResults>
+</suite>

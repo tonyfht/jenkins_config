@@ -1,0 +1,6 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<hudson.plugins.sctmexecutor.SCTMExecutorDescriptor plugin="SCTMExecutor@2.2">
+  <serviceURL>http://esbcn01lgl0f3g2:19120/services</serviceURL>
+  <user>admin</user>
+  <password>{AQAAABAAAAAQ45N3KH7xWOELAo3gc0KcYKcU/b6zUF/ZE9d1tPsJV1U=}</password>
+</hudson.plugins.sctmexecutor.SCTMExecutorDescriptor>

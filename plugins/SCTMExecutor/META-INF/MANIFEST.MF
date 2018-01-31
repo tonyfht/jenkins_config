@@ -1,0 +1,22 @@
+Manifest-Version: 1.0
+Archiver-Version: Plexus Archiver
+Created-By: Apache Maven
+Built-By: SebastianK
+Build-Jdk: 1.8.0_152
+Extension-Name: SCTMExecutor
+Specification-Title: This plug-in allows triggering executions on Micr
+ o Focus Silk Central 17.0 or later.
+Implementation-Title: SCTMExecutor
+Implementation-Version: 2.2
+Group-Id: hudson.plugins.sctmexecutor
+Short-Name: SCTMExecutor
+Long-Name: SCTMExecutor
+Url: http://wiki.jenkins-ci.org/display/JENKINS/SCTMExecutor
+Plugin-Version: 2.2
+Hudson-Version: 2.6
+Jenkins-Version: 2.6
+PluginFirstClassLoader: true
+Plugin-Dependencies: junit:1.8,xunit:1.102
+Plugin-Developers: Thomas Fuerer:tofuAtjava:tfuerer.javanet@googlemail
+ .com
+

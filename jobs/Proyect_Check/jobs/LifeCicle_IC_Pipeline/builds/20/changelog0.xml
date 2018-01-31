@@ -1,0 +1,11 @@
+commit a907629be6aeb9093e6ef1fe31ec740fabcbc56c
+tree 5e74aca9d2114288b18c43ef804e699c8e8e7869
+parent 2bf105c150b2ddb975ec44cd8515d2eb35ad3262
+author Antonio.F.Herrera <antoniofrancisco.herrera@gmail.com> 2018-01-09 10:27:24 +0100
+committer Antonio.F.Herrera <antoniofrancisco.herrera@gmail.com> 2018-01-09 10:27:24 +0100
+
+    Repo-Modificado
+
+
+
+:100644 100644 fedbe4290964315ce7133fd0f7c3a2ce22ec9e9f 132c948119ffd5405aad0cfe3d0d29c946d0e447 M	fuentes/pom.xml

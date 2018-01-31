@@ -1,0 +1,17 @@
+Manifest-Version: 1.0
+Archiver-Version: Plexus Archiver
+Created-By: Apache Maven
+Built-By: yosuke
+Build-Jdk: 1.6.0_37
+Extension-Name: nexus-task-runner
+Implementation-Title: nexus-task-runner
+Implementation-Version: 0.9.2
+Group-Id: org.jenkins-ci.plugins
+Short-Name: nexus-task-runner
+Long-Name: Nexus Task Runner Plugin
+Url: http://wiki.jenkins-ci.org/display/JENKINS/Nexus+Task+Runner+Plugin
+Plugin-Version: 0.9.2
+Hudson-Version: 1.431
+Jenkins-Version: 1.431
+Plugin-Developers: Yosuke Kurami:quramy:yosuke.kurami@gmail.com
+

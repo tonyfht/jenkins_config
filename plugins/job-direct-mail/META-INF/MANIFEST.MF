@@ -1,0 +1,20 @@
+Manifest-Version: 1.0
+Archiver-Version: Plexus Archiver
+Created-By: Apache Maven
+Built-By: yboev
+Build-Jdk: 1.6.0_23
+Extension-Name: job-direct-mail
+Implementation-Title: job-direct-mail
+Implementation-Version: 1.5
+Group-Id: org.jenkins-ci.plugins
+Short-Name: job-direct-mail
+Long-Name: Job Direct Mail Plugin
+Url: http://jenkins-ci.org/plugin/job-direct-mail/
+Plugin-Version: 1.5
+Hudson-Version: 1.494
+Jenkins-Version: 1.494
+Plugin-Dependencies: email-ext:2.25,mailer:1.4,javadoc:1.0,maven-plugi
+ n:1.494
+Plugin-Developers: Stefan Brausch:stefanbrausch:stefan.brausch@1und1.d
+ e,Yordan Boev:boev:iordan.boev@gmail.com
+

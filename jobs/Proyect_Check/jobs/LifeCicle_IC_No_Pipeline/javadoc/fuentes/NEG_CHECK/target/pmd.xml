@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pmd version="5.6.1" timestamp="2017-12-05T11:19:51.109">
+<file name="C:\Program Files (x86)\Jenkins\workspace\Check_Maven\fuentes\NEG_CHECK\src\main\java\es\iam\check\analisisDespliegues\business\chequeos\incidencias\IncidenciaChequeo.java">
+<violation beginline="14" endline="17" begincolumn="23" endcolumn="9" rule="UnnecessaryModifier" ruleset="Unnecessary" package="es.iam.check.analisisDespliegues.business.chequeos.incidencias" class="IncidenciaChequeo" externalInfoUrl="https://pmd.github.io/pmd-5.6.1/pmd-java/rules/java/unnecessary.html#UnnecessaryModifier" priority="3">
+Avoid modifiers which are implied by the context
+</violation>
+</file>
+<file name="C:\Program Files (x86)\Jenkins\workspace\Check_Maven\fuentes\NEG_CHECK\src\main\java\es\iam\check\analisisDespliegues\business\ficheros\FicheroComprimidoAnalizable.java">
+<violation beginline="61" endline="61" begincolumn="30" endcolumn="93" rule="UselessParentheses" ruleset="Unnecessary" package="es.iam.check.analisisDespliegues.business.ficheros" class="FicheroComprimidoAnalizable" method="listarRecursivo" externalInfoUrl="https://pmd.github.io/pmd-5.6.1/pmd-java/rules/java/unnecessary.html#UselessParentheses" priority="4">
+Useless parentheses.
+</violation>
+<violation beginline="92" endline="92" begincolumn="25" endcolumn="96" rule="UselessParentheses" ruleset="Unnecessary" package="es.iam.check.analisisDespliegues.business.ficheros" class="FicheroComprimidoAnalizable" method="esArchivoComprimido" externalInfoUrl="https://pmd.github.io/pmd-5.6.1/pmd-java/rules/java/unnecessary.html#UselessParentheses" priority="4">
+Useless parentheses.
+</violation>
+</file>
+</pmd>

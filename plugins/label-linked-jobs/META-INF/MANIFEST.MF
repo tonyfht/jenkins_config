@@ -1,0 +1,21 @@
+Manifest-Version: 1.0
+Archiver-Version: Plexus Archiver
+Created-By: Apache Maven
+Built-By: domi
+Build-Jdk: 1.7.0_79
+Extension-Name: label-linked-jobs
+Specification-Title: Gives the list of jobs associated to a given atom
+ ic label.
+Implementation-Title: label-linked-jobs
+Implementation-Version: 5.1.2
+Group-Id: org.jenkins-ci.plugins
+Short-Name: label-linked-jobs
+Long-Name: Label Linked Jobs Plugin
+Url: http://wiki.jenkins-ci.org/display/JENKINS/Label+Linked+Jobs+Plugin
+Plugin-Version: 5.1.2
+Hudson-Version: 1.554
+Jenkins-Version: 1.554
+Plugin-Dependencies: nodelabelparameter:1.5.0;resolution:=optional,par
+ ameterized-trigger:2.12;resolution:=optional
+Plugin-Developers: Dominique Brice:dominiquebrice:
+

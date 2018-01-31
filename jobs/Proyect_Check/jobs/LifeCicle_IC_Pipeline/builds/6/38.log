@@ -1,0 +1,80 @@
+[C:\Program Files (x86)\Jenkins\workspace\Check_Maven_Pipeline] Running shell script
++ C://Software//apache-maven-3.5.0//bin/mvn pmd:pmd -f fuentes/pom.xml -U
+[INFO] Scanning for projects...
+[WARNING] 
+[WARNING] Some problems were encountered while building the effective model for es.iam.calidad.check:check-neg:jar:2.1.1
+[WARNING] 'version' contains an expression but should be a constant. @ es.iam.calidad.check:check:${check.version}, C:\Program Files (x86)\Jenkins\workspace\Check_Maven_Pipeline\fuentes\pom.xml, line 9, column 12
+[WARNING] Reporting configuration should be done in <reporting> section, not in maven-site-plugin <configuration> as reportPlugins parameter.
+[WARNING] 
+[WARNING] Some problems were encountered while building the effective model for es.iam.calidad.check:check-main:jar:2.1.1
+[WARNING] Reporting configuration should be done in <reporting> section, not in maven-site-plugin <configuration> as reportPlugins parameter.
+[WARNING] 
+[WARNING] Some problems were encountered while building the effective model for es.iam.calidad.check:check-config:pom:2.1.1
+[WARNING] Reporting configuration should be done in <reporting> section, not in maven-site-plugin <configuration> as reportPlugins parameter.
+[WARNING] 
+[WARNING] Some problems were encountered while building the effective model for es.iam.calidad.check:check:pom:2.1.1
+[WARNING] 'version' contains an expression but should be a constant. @ es.iam.calidad.check:check:${check.version}, C:\Program Files (x86)\Jenkins\workspace\Check_Maven_Pipeline\fuentes\pom.xml, line 9, column 12
+[WARNING] Reporting configuration should be done in <reporting> section, not in maven-site-plugin <configuration> as reportPlugins parameter. @ es.iam.calidad.check:check:${check.version}, C:\Program Files (x86)\Jenkins\workspace\Check_Maven_Pipeline\fuentes\pom.xml, line 98, column 20
+[WARNING] 
+[WARNING] It is highly recommended to fix these problems because they threaten the stability of your build.
+[WARNING] 
+[WARNING] For this reason, future Maven versions might no longer support building such malformed projects.
+[WARNING] 
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Build Order:
+[INFO] 
+[INFO] CHECK
+[INFO] CHECK-NEG
+[INFO] CHECK-Main
+[INFO] CHECK-config
+Downloading: https://repo.maven.apache.org/maven2/org/codehaus/mojo/maven-metadata.xml
+Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-metadata.xml
+Downloading: https://repo.maven.apache.org/maven2/org/codehaus/mojo/maven-metadata.xml
+Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-metadata.xml
+Progress (1): 2.1/20 kBProgress (2): 2.1/20 kB | 2.1/20 kBProgress (3): 2.1/20 kB | 2.1/20 kB | 2.2/14 kBProgress (4): 2.1/20 kB | 2.1/20 kB | 2.2/14 kB | 2.2/14 kBProgress (4): 2.1/20 kB | 4.9/20 kB | 2.2/14 kB | 2.2/14 kBProgress (4): 2.1/20 kB | 4.9/20 kB | 2.2/14 kB | 4.9/14 kBProgress (4): 2.1/20 kB | 4.9/20 kB | 2.2/14 kB | 7.7/14 kBProgress (4): 2.1/20 kB | 7.7/20 kB | 2.2/14 kB | 7.7/14 kBProgress (4): 2.1/20 kB | 7.7/20 kB | 2.2/14 kB | 10/14 kB Progress (4): 2.1/20 kB | 7.7/20 kB | 2.2/14 kB | 13/14 kBProgress (4): 2.1/20 kB | 7.7/20 kB | 2.2/14 kB | 14 kB   Progress (4): 2.1/20 kB | 7.7/20 kB | 4.9/14 kB | 14 kBProgress (4): 2.1/20 kB | 7.7/20 kB | 7.7/14 kB | 14 kBProgress (4): 2.1/20 kB | 7.7/20 kB | 10/14 kB | 14 kB Progress (4): 2.1/20 kB | 7.7/20 kB | 13/14 kB | 14 kBProgress (4): 2.1/20 kB | 7.7/20 kB | 14 kB | 14 kB   Progress (4): 2.1/20 kB | 10/20 kB | 14 kB | 14 kB Progress (4): 2.1/20 kB | 13/20 kB | 14 kB | 14 kBProgress (4): 2.1/20 kB | 16/20 kB | 14 kB | 14 kBProgress (4): 2.1/20 kB | 19/20 kB | 14 kB | 14 kBProgress (4): 2.1/20 kB | 20 kB | 14 kB | 14 kB   Progress (4): 4.9/20 kB | 20 kB | 14 kB | 14 kBProgress (4): 7.7/20 kB | 20 kB | 14 kB | 14 kB                                               Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-metadata.xml (14 kB at 23 kB/s)
+Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-metadata.xml (14 kB at 23 kB/s)
+Progress (2): 10/20 kB | 20 kBProgress (2): 13/20 kB | 20 kBProgress (2): 16/20 kB | 20 kBProgress (2): 19/20 kB | 20 kBProgress (2): 20 kB | 20 kB                              Downloaded: https://repo.maven.apache.org/maven2/org/codehaus/mojo/maven-metadata.xml (20 kB at 32 kB/s)
+Downloaded: https://repo.maven.apache.org/maven2/org/codehaus/mojo/maven-metadata.xml (20 kB at 31 kB/s)
+Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-pmd-plugin/maven-metadata.xml
+Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-pmd-plugin/maven-metadata.xml
+Progress (1): 940 BProgress (2): 940 B | 940 B                           Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-pmd-plugin/maven-metadata.xml (940 B at 19 kB/s)
+Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-pmd-plugin/maven-metadata.xml (940 B at 10 kB/s)
+[INFO] 
+[INFO] ------------------------------------------------------------------------
+[INFO] Building CHECK 2.1.1
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-pmd-plugin:3.8:pmd (default-cli) @ check ---
+[INFO] 
+[INFO] ------------------------------------------------------------------------
+[INFO] Building CHECK-NEG 2.1.1
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-pmd-plugin:3.8:pmd (default-cli) @ check-neg ---
+[INFO] 
+[INFO] ------------------------------------------------------------------------
+[INFO] Building CHECK-Main 2.1.1
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-pmd-plugin:3.8:pmd (default-cli) @ check-main ---
+[WARNING] File encoding has not been set, using platform encoding Cp1252, i.e. build is platform dependent!
+[INFO] 
+[INFO] ------------------------------------------------------------------------
+[INFO] Building CHECK-config 2.1.1
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-pmd-plugin:3.8:pmd (default-cli) @ check-config ---
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Summary:
+[INFO] 
+[INFO] CHECK .............................................. SUCCESS [  3.434 s]
+[INFO] CHECK-NEG .......................................... SUCCESS [  2.695 s]
+[INFO] CHECK-Main ......................................... SUCCESS [  0.327 s]
+[INFO] CHECK-config ....................................... SUCCESS [  0.023 s]
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 9.000 s
+[INFO] Finished at: 2017-12-07T09:27:34+01:00
+[INFO] Final Memory: 23M/260M
+[INFO] ------------------------------------------------------------------------

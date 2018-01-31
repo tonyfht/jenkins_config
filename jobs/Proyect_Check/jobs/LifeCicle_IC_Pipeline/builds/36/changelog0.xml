@@ -1,0 +1,11 @@
+commit 9170246cd2ade44d4a56d76fd0d0a1640b857386
+tree effa45ed85b37ee15630e168ddeaaa8a96ab17e9
+parent a907629be6aeb9093e6ef1fe31ec740fabcbc56c
+author Antonio.F.Herrera <antoniofrancisco.herrera@gmail.com> 2018-01-19 09:39:21 +0100
+committer Antonio.F.Herrera <antoniofrancisco.herrera@gmail.com> 2018-01-19 09:39:21 +0100
+
+    Añadido Gatling como pluging
+
+
+
+:100644 100644 132c948119ffd5405aad0cfe3d0d29c946d0e447 3c297e258c975c19bad0628ecd03c5962c462e4a M	fuentes/pom.xml

@@ -1,0 +1,7 @@
+[PMD] Collecting PMD analysis files...
+[PMD] Searching for all files in C:\Program Files (x86)\Jenkins\workspace\Proyect_Check\LifeCicle_IC_Pipeline that match the pattern **/pmd.xml
+[PMD] Parsing 2 files in C:\Program Files (x86)\Jenkins\workspace\Proyect_Check\LifeCicle_IC_Pipeline
+[PMD] Successfully parsed file C:\Program Files (x86)\Jenkins\workspace\Proyect_Check\LifeCicle_IC_Pipeline\fuentes\BATCH_CHECK\target\pmd.xml of module CHECK-Main with 0 unique warnings and 0 duplicates.
+[PMD] Successfully parsed file C:\Program Files (x86)\Jenkins\workspace\Proyect_Check\LifeCicle_IC_Pipeline\fuentes\NEG_CHECK\target\pmd.xml of module CHECK-NEG with 3 unique warnings and 0 duplicates.
+Skipping warnings blame since pipelines do not have an SCM link.%n
+[PMD] Computing warning deltas based on reference build master

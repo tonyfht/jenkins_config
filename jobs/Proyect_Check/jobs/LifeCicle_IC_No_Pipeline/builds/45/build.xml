@@ -1,0 +1,319 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<build>
+  <actions>
+    <hudson.model.CauseAction>
+      <causeBag class="linked-hash-map">
+        <entry>
+          <hudson.model.Cause_-UserIdCause>
+            <userId>admin</userId>
+          </hudson.model.Cause_-UserIdCause>
+          <int>1</int>
+        </entry>
+      </causeBag>
+    </hudson.model.CauseAction>
+    <io.jenkins.blueocean.service.embedded.BlueOceanUrlAction plugin="blueocean-rest-impl@1.3.3">
+      <blueOceanUrlObject class="io.jenkins.blueocean.service.embedded.BlueOceanUrlObjectImpl">
+        <mappedUrl>blue/organizations/jenkins/Check_Maven/detail/Check_Maven/45</mappedUrl>
+        <modelObject class="build" reference="../../../.."/>
+      </blueOceanUrlObject>
+    </io.jenkins.blueocean.service.embedded.BlueOceanUrlAction>
+    <hudson.plugins.jobConfigHistory.JobConfigBadgeAction plugin="jobConfigHistory@2.18">
+      <configDates>
+        <string>2017-12-05_11-19-01</string>
+        <string>2017-12-05_11-12-04</string>
+      </configDates>
+    </hudson.plugins.jobConfigHistory.JobConfigBadgeAction>
+    <jenkins.metrics.impl.TimeInQueueAction plugin="metrics@3.1.2.10">
+      <queuingDurationMillis>12</queuingDurationMillis>
+    </jenkins.metrics.impl.TimeInQueueAction>
+    <org.jenkinsci.plugins.envinject.EnvInjectPluginAction plugin="envinject@2.1.5"/>
+    <hudson.plugins.git.util.BuildData plugin="git@3.6.4">
+      <buildsByBranchName>
+        <entry>
+          <string>refs/remotes/origin/master</string>
+          <hudson.plugins.git.util.Build>
+            <marked plugin="git-client@2.6.0">
+              <sha1>b06f2e29f6bb36ceef0669093c29c5a0213316ee</sha1>
+              <branches class="list">
+                <hudson.plugins.git.Branch>
+                  <sha1 reference="../../../sha1"/>
+                  <name>refs/remotes/origin/master</name>
+                </hudson.plugins.git.Branch>
+              </branches>
+            </marked>
+            <revision reference="../marked"/>
+            <hudsonBuildNumber>45</hudsonBuildNumber>
+          </hudson.plugins.git.util.Build>
+        </entry>
+      </buildsByBranchName>
+      <lastBuild reference="../buildsByBranchName/entry/hudson.plugins.git.util.Build"/>
+      <remoteUrls>
+        <string>https://gitlab.com/antoniofrancisco.herrera/Check.git</string>
+      </remoteUrls>
+    </hudson.plugins.git.util.BuildData>
+    <hudson.plugins.git.GitTagAction plugin="git@3.6.4">
+      <tags class="hudson.util.CopyOnWriteMap$Tree">
+        <entry>
+          <string>refs/remotes/origin/master</string>
+          <list/>
+        </entry>
+      </tags>
+      <ws>C:\Program Files (x86)\Jenkins\workspace\Check_Maven</ws>
+    </hudson.plugins.git.GitTagAction>
+    <hudson.scm.SCMRevisionState_-None/>
+    <org.jenkinsci.plugins.EnvironmentVarSetter plugin="build-name-setter@1.6.7">
+      <log>
+        <autoFlush>false</autoFlush>
+        <trouble>false</trouble>
+        <formatter>
+          <a class="java.io.PrintStream" reference="../.."/>
+          <l>es_ES</l>
+          <zero>0</zero>
+        </formatter>
+        <closing>true</closing>
+      </log>
+      <envVars class="concurrent-hash-map">
+        <entry>
+          <string>BUILD_DISPLAY_NAME</string>
+          <string>origin/master</string>
+        </entry>
+      </envVars>
+    </org.jenkinsci.plugins.EnvironmentVarSetter>
+    <hudson.plugins.checkstyle.CheckStyleResultAction plugin="checkstyle@3.49">
+      <owner class="build" reference="../../.."/>
+      <healthDescriptor class="hudson.plugins.checkstyle.CheckStyleHealthDescriptor">
+        <priority>LOW</priority>
+        <healthy></healthy>
+        <unHealthy></unHealthy>
+        <thresholds plugin="analysis-core@1.92">
+          <unstableTotalAll></unstableTotalAll>
+          <unstableTotalHigh></unstableTotalHigh>
+          <unstableTotalNormal></unstableTotalNormal>
+          <unstableTotalLow></unstableTotalLow>
+          <unstableNewAll></unstableNewAll>
+          <unstableNewHigh></unstableNewHigh>
+          <unstableNewNormal></unstableNewNormal>
+          <unstableNewLow></unstableNewLow>
+          <failedTotalAll></failedTotalAll>
+          <failedTotalHigh></failedTotalHigh>
+          <failedTotalNormal></failedTotalNormal>
+          <failedTotalLow></failedTotalLow>
+          <failedNewAll></failedNewAll>
+          <failedNewHigh></failedNewHigh>
+          <failedNewNormal></failedNewNormal>
+          <failedNewLow></failedNewLow>
+        </thresholds>
+      </healthDescriptor>
+      <result class="hudson.plugins.checkstyle.CheckStyleResult">
+        <owner class="build" reference="../../../.."/>
+        <modules>
+          <string>CHECK-Main</string>
+          <string>CHECK-NEG</string>
+        </modules>
+        <numberOfModules>2</numberOfModules>
+        <defaultEncoding></defaultEncoding>
+        <numberOfWarnings>2</numberOfWarnings>
+        <numberOfNewWarnings>0</numberOfNewWarnings>
+        <numberOfFixedWarnings>0</numberOfFixedWarnings>
+        <delta>0</delta>
+        <lowDelta>0</lowDelta>
+        <normalDelta>0</normalDelta>
+        <highDelta>0</highDelta>
+        <lowWarnings>0</lowWarnings>
+        <normalWarnings>0</normalWarnings>
+        <highWarnings>2</highWarnings>
+        <zeroWarningsSinceBuild>0</zeroWarningsSinceBuild>
+        <zeroWarningsSinceDate>0</zeroWarningsSinceDate>
+        <zeroWarningsHighScore>0</zeroWarningsHighScore>
+        <isZeroWarningsHighscore>false</isZeroWarningsHighscore>
+        <highScoreGap>0</highScoreGap>
+        <errors/>
+        <pluginResult>SUCCESS</pluginResult>
+        <successfulSinceBuild>0</successfulSinceBuild>
+        <successfulSinceDate>0</successfulSinceDate>
+        <successfulHighscore>0</successfulHighscore>
+        <isSuccessfulHighscore>false</isSuccessfulHighscore>
+        <successfulHighScoreGap>0</successfulHighScoreGap>
+        <isSuccessfulStateTouched>false</isSuccessfulStateTouched>
+        <referenceBuild>44</referenceBuild>
+      </result>
+    </hudson.plugins.checkstyle.CheckStyleResultAction>
+    <hudson.plugins.pmd.PmdResultAction plugin="pmd@3.49">
+      <owner class="build" reference="../../.."/>
+      <healthDescriptor class="hudson.plugins.pmd.PmdHealthDescriptor">
+        <priority>LOW</priority>
+        <healthy></healthy>
+        <unHealthy></unHealthy>
+        <thresholds plugin="analysis-core@1.92">
+          <unstableTotalAll></unstableTotalAll>
+          <unstableTotalHigh></unstableTotalHigh>
+          <unstableTotalNormal></unstableTotalNormal>
+          <unstableTotalLow></unstableTotalLow>
+          <unstableNewAll></unstableNewAll>
+          <unstableNewHigh></unstableNewHigh>
+          <unstableNewNormal></unstableNewNormal>
+          <unstableNewLow></unstableNewLow>
+          <failedTotalAll></failedTotalAll>
+          <failedTotalHigh></failedTotalHigh>
+          <failedTotalNormal></failedTotalNormal>
+          <failedTotalLow></failedTotalLow>
+          <failedNewAll></failedNewAll>
+          <failedNewHigh></failedNewHigh>
+          <failedNewNormal></failedNewNormal>
+          <failedNewLow></failedNewLow>
+        </thresholds>
+      </healthDescriptor>
+      <result class="hudson.plugins.pmd.PmdResult">
+        <owner class="build" reference="../../../.."/>
+        <modules>
+          <string>CHECK-Main</string>
+          <string>CHECK-NEG</string>
+        </modules>
+        <numberOfModules>2</numberOfModules>
+        <defaultEncoding></defaultEncoding>
+        <numberOfWarnings>3</numberOfWarnings>
+        <numberOfNewWarnings>0</numberOfNewWarnings>
+        <numberOfFixedWarnings>0</numberOfFixedWarnings>
+        <delta>0</delta>
+        <lowDelta>0</lowDelta>
+        <normalDelta>0</normalDelta>
+        <highDelta>0</highDelta>
+        <lowWarnings>0</lowWarnings>
+        <normalWarnings>3</normalWarnings>
+        <highWarnings>0</highWarnings>
+        <zeroWarningsSinceBuild>0</zeroWarningsSinceBuild>
+        <zeroWarningsSinceDate>0</zeroWarningsSinceDate>
+        <zeroWarningsHighScore>0</zeroWarningsHighScore>
+        <isZeroWarningsHighscore>false</isZeroWarningsHighscore>
+        <highScoreGap>0</highScoreGap>
+        <errors/>
+        <pluginResult>SUCCESS</pluginResult>
+        <successfulSinceBuild>0</successfulSinceBuild>
+        <successfulSinceDate>0</successfulSinceDate>
+        <successfulHighscore>0</successfulHighscore>
+        <isSuccessfulHighscore>false</isSuccessfulHighscore>
+        <successfulHighScoreGap>0</successfulHighScoreGap>
+        <isSuccessfulStateTouched>false</isSuccessfulStateTouched>
+        <referenceBuild>44</referenceBuild>
+      </result>
+    </hudson.plugins.pmd.PmdResultAction>
+    <hudson.tasks.JavadocArchiver_-JavadocBuildAction plugin="javadoc@1.4"/>
+    <hudson.plugins.cobertura.CoberturaBuildAction plugin="cobertura@1.12">
+      <healthyTarget>
+        <targets class="enum-map" enum-type="hudson.plugins.cobertura.targets.CoverageMetric">
+          <entry>
+            <hudson.plugins.cobertura.targets.CoverageMetric>METHOD</hudson.plugins.cobertura.targets.CoverageMetric>
+            <int>8000000</int>
+          </entry>
+          <entry>
+            <hudson.plugins.cobertura.targets.CoverageMetric>LINE</hudson.plugins.cobertura.targets.CoverageMetric>
+            <int>8000000</int>
+          </entry>
+          <entry>
+            <hudson.plugins.cobertura.targets.CoverageMetric>CONDITIONAL</hudson.plugins.cobertura.targets.CoverageMetric>
+            <int>7000000</int>
+          </entry>
+        </targets>
+      </healthyTarget>
+      <unhealthyTarget>
+        <targets class="enum-map" enum-type="hudson.plugins.cobertura.targets.CoverageMetric">
+          <entry>
+            <hudson.plugins.cobertura.targets.CoverageMetric>METHOD</hudson.plugins.cobertura.targets.CoverageMetric>
+            <int>0</int>
+          </entry>
+          <entry>
+            <hudson.plugins.cobertura.targets.CoverageMetric>LINE</hudson.plugins.cobertura.targets.CoverageMetric>
+            <int>0</int>
+          </entry>
+          <entry>
+            <hudson.plugins.cobertura.targets.CoverageMetric>CONDITIONAL</hudson.plugins.cobertura.targets.CoverageMetric>
+            <int>0</int>
+          </entry>
+        </targets>
+      </unhealthyTarget>
+      <failUnhealthy>false</failUnhealthy>
+      <failUnstable>false</failUnstable>
+      <autoUpdateHealth>false</autoUpdateHealth>
+      <autoUpdateStability>false</autoUpdateStability>
+      <zoomCoverageChart>false</zoomCoverageChart>
+      <maxNumberOfBuilds>0</maxNumberOfBuilds>
+      <result class="enum-map" enum-type="hudson.plugins.cobertura.targets.CoverageMetric">
+        <entry>
+          <hudson.plugins.cobertura.targets.CoverageMetric>PACKAGES</hudson.plugins.cobertura.targets.CoverageMetric>
+          <hudson.plugins.cobertura.Ratio>
+            <numerator>9.0</numerator>
+            <denominator>13.0</denominator>
+          </hudson.plugins.cobertura.Ratio>
+        </entry>
+        <entry>
+          <hudson.plugins.cobertura.targets.CoverageMetric>FILES</hudson.plugins.cobertura.targets.CoverageMetric>
+          <hudson.plugins.cobertura.Ratio>
+            <numerator>43.0</numerator>
+            <denominator>50.0</denominator>
+          </hudson.plugins.cobertura.Ratio>
+        </entry>
+        <entry>
+          <hudson.plugins.cobertura.targets.CoverageMetric>CLASSES</hudson.plugins.cobertura.targets.CoverageMetric>
+          <hudson.plugins.cobertura.Ratio>
+            <numerator>46.0</numerator>
+            <denominator>55.0</denominator>
+          </hudson.plugins.cobertura.Ratio>
+        </entry>
+        <entry>
+          <hudson.plugins.cobertura.targets.CoverageMetric>METHOD</hudson.plugins.cobertura.targets.CoverageMetric>
+          <hudson.plugins.cobertura.Ratio>
+            <numerator>179.0</numerator>
+            <denominator>273.0</denominator>
+          </hudson.plugins.cobertura.Ratio>
+        </entry>
+        <entry>
+          <hudson.plugins.cobertura.targets.CoverageMetric>LINE</hudson.plugins.cobertura.targets.CoverageMetric>
+          <hudson.plugins.cobertura.Ratio>
+            <numerator>723.0</numerator>
+            <denominator>1024.0</denominator>
+          </hudson.plugins.cobertura.Ratio>
+        </entry>
+        <entry>
+          <hudson.plugins.cobertura.targets.CoverageMetric>CONDITIONAL</hudson.plugins.cobertura.targets.CoverageMetric>
+          <hudson.plugins.cobertura.Ratio>
+            <numerator>187.0</numerator>
+            <denominator>268.0</denominator>
+          </hudson.plugins.cobertura.Ratio>
+        </entry>
+      </result>
+      <health>
+        <score>82</score>
+        <iconClassName>icon-health-80plus</iconClassName>
+        <iconUrl>health-80plus.png</iconUrl>
+        <localizibleDescription>
+          <holder>
+            <owner>hudson.plugins.cobertura.Messages</owner>
+          </holder>
+          <key>CoberturaBuildAction.description</key>
+          <args>
+            <int>66</int>
+            <string>179/273</string>
+            <string>MÃ©todos</string>
+          </args>
+        </localizibleDescription>
+      </health>
+      <onlyStable>false</onlyStable>
+    </hudson.plugins.cobertura.CoberturaBuildAction>
+    <com.sonyericsson.rebuild.RebuildAction plugin="rebuild@1.27"/>
+  </actions>
+  <queueId>29</queueId>
+  <timestamp>1512469150955</timestamp>
+  <startTime>1512469150960</startTime>
+  <result>SUCCESS</result>
+  <displayName>origin/master</displayName>
+  <duration>129199</duration>
+  <charset>windows-1252</charset>
+  <keepLog>false</keepLog>
+  <builtOn></builtOn>
+  <workspace>C:\Program Files (x86)\Jenkins\workspace\Check_Maven</workspace>
+  <hudsonVersion>2.73.3</hudsonVersion>
+  <scm class="hudson.plugins.git.GitChangeLogParser" plugin="git@3.6.4">
+    <authorOrCommitter>false</authorOrCommitter>
+  </scm>
+  <culprits class="com.google.common.collect.EmptyImmutableSortedSet"/>
+</build>

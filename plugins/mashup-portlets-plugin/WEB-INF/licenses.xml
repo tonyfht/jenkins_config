@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<l:dependencies xmlns:l='licenses' groupId='javagh.jenkins' artifactId='mashup-portlets-plugin' version='1.0.8'><l:dependency name='Mashup Portlets' groupId='javagh.jenkins' artifactId='mashup-portlets-plugin' version='1.0.8' url='https://wiki.jenkins-ci.org/display/JENKINS/Mashup+Portlets'><l:description>Additional Dashboard Portlets: 
+		Generic JS Portlet (lets you pull in arbitrary content via JS), 
+		Recent Changes Portlet (shows the SCM changes for a given job), 
+		SonarQube Portlets (show SonarQube statistics directly in Jenkins) 
+		and Test Results Portlet (shows the test results for a given job).</l:description></l:dependency><l:dependency name='Jenkins Mailer Plugin' groupId='org.jenkins-ci.plugins' artifactId='mailer' version='1.10' url='http://wiki.jenkins-ci.org/display/JENKINS/Mailer'><l:description/><l:license name='The MIT license' url='http://www.opensource.org/licenses/mit-license.php'/></l:dependency></l:dependencies>

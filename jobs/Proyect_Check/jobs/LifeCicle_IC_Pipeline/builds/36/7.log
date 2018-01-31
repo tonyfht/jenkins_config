@@ -1,0 +1,13 @@
+ > git.exe rev-parse --is-inside-work-tree # timeout=10
+Fetching changes from the remote Git repository
+ > git.exe config remote.origin.url https://gitlab.com/antoniofrancisco.herrera/Check.git # timeout=10
+Fetching upstream changes from https://gitlab.com/antoniofrancisco.herrera/Check.git
+ > git.exe --version # timeout=10
+ > git.exe fetch --tags --progress https://gitlab.com/antoniofrancisco.herrera/Check.git +refs/heads/*:refs/remotes/origin/*
+ > git.exe rev-parse "refs/remotes/origin/master^{commit}" # timeout=10
+ > git.exe rev-parse "refs/remotes/origin/origin/master^{commit}" # timeout=10
+Checking out Revision 9170246cd2ade44d4a56d76fd0d0a1640b857386 (refs/remotes/origin/master)
+ > git.exe config core.sparsecheckout # timeout=10
+ > git.exe checkout -f 9170246cd2ade44d4a56d76fd0d0a1640b857386
+Commit message: "Añadido Gatling como pluging"
+ > git.exe rev-list a907629be6aeb9093e6ef1fe31ec740fabcbc56c # timeout=10

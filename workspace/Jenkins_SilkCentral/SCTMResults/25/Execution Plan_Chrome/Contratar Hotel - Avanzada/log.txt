@@ -1,0 +1,40 @@
+12/20/2017 +0100 08:50:48.593 Contratar Hotel - Avanzada 
+12/20/2017 +0100 08:50:48.595 [1][Abrir Aplicacion] <--[https://www.nh-hoteles.es/] 
+12/20/2017 +0100 08:50:48.595 [2][Pulsar Enlace] <--[Inicio, Busqueda Avanzada] 
+12/20/2017 +0100 08:50:48.596 [3][Introducir Texto] <--[Busqueda Avanzada, Destino, Madrid] 
+12/20/2017 +0100 08:50:48.596 [4][Pulsar Enlace] <--[Busqueda Avanzada, Buscar] 
+12/20/2017 +0100 08:50:48.596 [5][Pulsar Enlace] <--[Resultados Busqueda, Primer Hotel] 
+12/20/2017 +0100 08:50:48.597 [6][Pulsar Boton] <--[Hotel, Reservar] 
+12/20/2017 +0100 08:50:48.597 [7][Pulsar Boton Modal] <--[Hotel, Seleccionar Precios, Ver Precios] 
+12/20/2017 +0100 08:50:48.597 [8][Pulsar Boton] <--[Hotel, Solo Alojamiento] 
+12/20/2017 +0100 08:50:48.597 [9][Introducir Texto] <--[Reserva, Nombre, Javier] 
+12/20/2017 +0100 08:50:48.598 [10][Introducir Texto] <--[Reserva, Apellidos, Castro Perez] 
+12/20/2017 +0100 08:50:48.598 [11][Introducir Texto] <--[Reserva, Correo Electronico, javier@google.es] 
+12/20/2017 +0100 08:50:48.598 [12][Introducir Texto] <--[Reserva, Confirmar Correo Electronico, javier@google.es] 
+12/20/2017 +0100 08:50:48.598 [13][Introducir Texto] <--[Reserva, Telefono, 0034914422533] 
+12/20/2017 +0100 08:50:48.625 
+12/20/2017 +0100 08:50:48.625 C:\Users\ANTONI~1.HER\AppData\Local\Temp\SCC_ExecServer_19124_19125\TempExecutionResults\SC_39_1513756247994>REM @echo off 
+12/20/2017 +0100 08:50:48.625 
+12/20/2017 +0100 08:50:48.625 C:\Users\ANTONI~1.HER\AppData\Local\Temp\SCC_ExecServer_19124_19125\TempExecutionResults\SC_39_1513756247994>rem --- Argumentos: --report NONE --output outputRF.xml Test.robot  
+12/20/2017 +0100 08:50:48.625 
+12/20/2017 +0100 08:50:48.625 C:\Users\ANTONI~1.HER\AppData\Local\Temp\SCC_ExecServer_19124_19125\TempExecutionResults\SC_39_1513756247994>if "WEB" == "WINFORM" goto WINFORM 
+12/20/2017 +0100 08:50:48.625 
+12/20/2017 +0100 08:50:48.625 C:\Users\ANTONI~1.HER\AppData\Local\Temp\SCC_ExecServer_19124_19125\TempExecutionResults\SC_39_1513756247994>goto WEB 
+12/20/2017 +0100 08:50:48.626 
+12/20/2017 +0100 08:50:48.626 C:\Users\ANTONI~1.HER\AppData\Local\Temp\SCC_ExecServer_19124_19125\TempExecutionResults\SC_39_1513756247994>set PYTHONPATH=C:\Python27\Lib;C:\Software\FrameworkAPR\PYTHON\LibraryAPR\Keywords;C:\Software\FrameworkAPR\PYTHON\LibraryAPR; 
+12/20/2017 +0100 08:50:48.626 
+12/20/2017 +0100 08:50:48.626 C:\Users\ANTONI~1.HER\AppData\Local\Temp\SCC_ExecServer_19124_19125\TempExecutionResults\SC_39_1513756247994>set Path=C:\Software\FrameworkAPR\PYTHON\LibraryAPR\..\drivers;C:\Python27\;C:\Python27\Scripts;C:\oraclexe\app\oracle\product\11.2.0\server\bin;C:\ProgramData\Oracle\Java\javapath;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Software\apache-maven-3.5.0\bin;C:\Program Files\Git\cmd;C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\bin;C:\Program Files\Java\jdk1.8.0_144\bin;C:\Program Files\Java\jre1.8.0_144\bin;C:\Program Files (x86)\Silk\Silk Central 18.5 Execution Server\bin;C:\Users\antonio.f.herrera\AppData\Local\Microsoft\WindowsApps; 
+12/20/2017 +0100 08:50:48.626 
+12/20/2017 +0100 08:50:48.626 C:\Users\ANTONI~1.HER\AppData\Local\Temp\SCC_ExecServer_19124_19125\TempExecutionResults\SC_39_1513756247994>"C:\Python27\python.exe" -m robot.run --report NONE --output outputRF.xml Test.robot  
+12/20/2017 +0100 08:50:49.459 ==============================================================================
+12/20/2017 +0100 08:50:49.459 Test                                                                          
+12/20/2017 +0100 08:50:49.459 ==============================================================================
+12/20/2017 +0100 08:51:44.697 Contratar Hotel - Avanzada                                            | PASS |
+12/20/2017 +0100 08:51:44.697 ------------------------------------------------------------------------------
+12/20/2017 +0100 08:51:44.698 Test                                                                  | PASS |
+12/20/2017 +0100 08:51:44.698 1 critical test, 1 passed, 0 failed
+12/20/2017 +0100 08:51:44.698 1 test total, 1 passed, 0 failed
+12/20/2017 +0100 08:51:44.698 ==============================================================================
+12/20/2017 +0100 08:51:44.704 Output:  C:\Users\ANTONI~1.HER\AppData\Local\Temp\SCC_ExecServer_19124_19125\TempExecutionResults\SC_39_1513756247994\outputRF.xml
+12/20/2017 +0100 08:51:44.735 Log:     C:\Users\ANTONI~1.HER\AppData\Local\Temp\SCC_ExecServer_19124_19125\TempExecutionResults\SC_39_1513756247994\log.html
+12/20/2017 +0100 08:51:44.809 RF plugin (version:1.5.2)

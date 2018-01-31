@@ -1,0 +1,182 @@
+<list>
+  <jbr plugin="global-build-stats@1.5">
+    <r>FAILURE</r>
+    <n>prueba_ssh</n>
+    <nb>12</nb>
+    <d>
+      <time>1516196852718</time>
+      <timezone>Europe/Paris</timezone>
+    </d>
+    <du>405</du>
+    <nn>master</nn>
+    <un>admin</un>
+  </jbr>
+  <jbr plugin="global-build-stats@1.5">
+    <r>FAILURE</r>
+    <n>prueba_ssh</n>
+    <nb>11</nb>
+    <d>
+      <time>1516196376856</time>
+      <timezone>Europe/Paris</timezone>
+    </d>
+    <du>428</du>
+    <nn>master</nn>
+    <un>admin</un>
+  </jbr>
+  <jbr plugin="global-build-stats@1.5">
+    <r>FAILURE</r>
+    <n>prueba_ssh</n>
+    <nb>10</nb>
+    <d>
+      <time>1516196306165</time>
+      <timezone>Europe/Paris</timezone>
+    </d>
+    <du>504</du>
+    <nn>master</nn>
+    <un>admin</un>
+  </jbr>
+  <jbr plugin="global-build-stats@1.5">
+    <r>FAILURE</r>
+    <n>prueba_ssh</n>
+    <nb>9</nb>
+    <d>
+      <time>1516196285023</time>
+      <timezone>Europe/Paris</timezone>
+    </d>
+    <du>473</du>
+    <nn>master</nn>
+    <un>admin</un>
+  </jbr>
+  <jbr plugin="global-build-stats@1.5">
+    <r>FAILURE</r>
+    <n>prueba_ssh</n>
+    <nb>8</nb>
+    <d>
+      <time>1516186001616</time>
+      <timezone>Europe/Paris</timezone>
+    </d>
+    <du>437</du>
+    <nn>master</nn>
+    <un>admin</un>
+  </jbr>
+  <jbr plugin="global-build-stats@1.5">
+    <r>FAILURE</r>
+    <n>prueba_ssh</n>
+    <nb>7</nb>
+    <d>
+      <time>1516185862398</time>
+      <timezone>Europe/Paris</timezone>
+    </d>
+    <du>426</du>
+    <nn>master</nn>
+    <un>admin</un>
+  </jbr>
+  <jbr plugin="global-build-stats@1.5">
+    <r>FAILURE</r>
+    <n>prueba_ssh</n>
+    <nb>6</nb>
+    <d>
+      <time>1516185835340</time>
+      <timezone>Europe/Paris</timezone>
+    </d>
+    <du>475</du>
+    <nn>master</nn>
+    <un>admin</un>
+  </jbr>
+  <jbr plugin="global-build-stats@1.5">
+    <r>FAILURE</r>
+    <n>prueba_ssh</n>
+    <nb>5</nb>
+    <d>
+      <time>1516182678798</time>
+      <timezone>Europe/Paris</timezone>
+    </d>
+    <du>525</du>
+    <nn>master</nn>
+    <un>admin</un>
+  </jbr>
+  <jbr plugin="global-build-stats@1.5">
+    <r>FAILURE</r>
+    <n>prueba_ssh</n>
+    <nb>4</nb>
+    <d>
+      <time>1516182132653</time>
+      <timezone>Europe/Paris</timezone>
+    </d>
+    <du>617</du>
+    <nn>master</nn>
+    <un>admin</un>
+  </jbr>
+  <jbr plugin="global-build-stats@1.5">
+    <r>FAILURE</r>
+    <n>prueba_ssh</n>
+    <nb>3</nb>
+    <d>
+      <time>1516181846362</time>
+      <timezone>Europe/Paris</timezone>
+    </d>
+    <du>366</du>
+    <nn>master</nn>
+    <un>admin</un>
+  </jbr>
+  <jbr plugin="global-build-stats@1.5">
+    <r>FAILURE</r>
+    <n>prueba_ssh</n>
+    <nb>2</nb>
+    <d>
+      <time>1516181166338</time>
+      <timezone>Europe/Paris</timezone>
+    </d>
+    <du>1333</du>
+    <nn>master</nn>
+    <un>admin</un>
+  </jbr>
+  <jbr plugin="global-build-stats@1.5">
+    <r>FAILURE</r>
+    <n>prueba_ssh</n>
+    <nb>1</nb>
+    <d>
+      <time>1516181141623</time>
+      <timezone>Europe/Paris</timezone>
+    </d>
+    <du>390</du>
+    <nn>master</nn>
+    <un>admin</un>
+  </jbr>
+  <jbr plugin="global-build-stats@1.5">
+    <r>SUCCESS</r>
+    <n>Pruebas_Pipeline/example_maven_test_dockerfile</n>
+    <nb>1</nb>
+    <d>
+      <time>1516016675318</time>
+      <timezone>Europe/Paris</timezone>
+    </d>
+    <du>7731</du>
+    <nn>master</nn>
+    <un>admin</un>
+  </jbr>
+  <jbr plugin="global-build-stats@1.5">
+    <r>SUCCESS</r>
+    <n>Proyect_Check/LifeCicle_IC_No_Pipeline</n>
+    <nb>48</nb>
+    <d>
+      <time>1515575724646</time>
+      <timezone>Europe/Paris</timezone>
+    </d>
+    <du>140607</du>
+    <nn>master</nn>
+    <un>admin</un>
+  </jbr>
+  <jbr plugin="global-build-stats@1.5">
+    <r>FAILURE</r>
+    <n>prueba_ssh</n>
+    <nb>13</nb>
+    <d>
+      <time>1516350777740</time>
+      <timezone>Europe/Paris</timezone>
+    </d>
+    <du>21846</du>
+    <nn>master</nn>
+    <un>admin</un>
+  </jbr>
+</list>

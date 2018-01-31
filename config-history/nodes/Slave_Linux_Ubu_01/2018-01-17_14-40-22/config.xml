@@ -1,0 +1,18 @@
+<slave>
+  <name>Slave_Linux_Ubu_01</name>
+  <description></description>
+  <remoteFS>c:\jenkins</remoteFS>
+  <numExecutors>5</numExecutors>
+  <mode>NORMAL</mode>
+  <retentionStrategy class="hudson.slaves.RetentionStrategy$Always"/>
+  <launcher class="hudson.plugins.sshslaves.SSHLauncher" plugin="ssh-slaves@1.22">
+    <host>192.168.35.135</host>
+    <port>22</port>
+    <credentialsId>49d60e0c-0199-4429-baca-3c19c6aa2152</credentialsId>
+    <maxNumRetries>0</maxNumRetries>
+    <retryWaitTime>0</retryWaitTime>
+    <sshHostKeyVerificationStrategy class="hudson.plugins.sshslaves.verifiers.NonVerifyingKeyVerificationStrategy"/>
+  </launcher>
+  <label></label>
+  <nodeProperties/>
+</slave>

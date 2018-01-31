@@ -1,0 +1,11 @@
+commit ad50563b49822c17c9176ac856c4354ce1149cc4
+tree 20947c1550968cc9813da23212b5139938d70640
+parent dd7e84c85d9bc4b9aae170e0d61c8f3568cf3bee
+author Antonio.F.Herrera <antoniofrancisco.herrera@gmail.com> 2017-12-11 13:01:47 +0100
+committer Antonio.F.Herrera <antoniofrancisco.herrera@gmail.com> 2017-12-11 13:01:47 +0100
+
+    Cambio ip nexus
+
+
+
+:100644 100644 0f68c1c9186cef4d96aaf35bfcd97432a9cb8a8e 4bbb6ae155257180ae36059b759f7020c70c99b4 M	fuentes/pom.xml

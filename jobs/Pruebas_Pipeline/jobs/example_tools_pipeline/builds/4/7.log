@@ -1,0 +1,3 @@
+[C:\Program Files (x86)\Jenkins\workspace\example_tools_pipeline] Running shell script
++ make publish
+C:/Program Files (x86)/Jenkins/workspace/example_tools_pipeline@tmp/durable-7910924c/script.sh: line 2: make: command not found

@@ -1,0 +1,793 @@
+[C:\Program Files (x86)\Jenkins\workspace\Pipeline] Running shell script
++ C://Software//apache-maven-3.5.0//bin/mvn clean install -f C://Users//antonio.f.herrera//Desktop//maven-plugins-master//pom.xml -U
+[INFO] Scanning for projects...
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Build Order:
+[INFO] 
+[INFO] GitHub Maven Plugins
+[INFO] GitHub Core Maven Library
+[INFO] GitHub Site Maven Plugin
+[INFO] 
+[INFO] ------------------------------------------------------------------------
+[INFO] Building GitHub Maven Plugins 0.13-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-clean-plugin:2.5:clean (default-clean) @ github-maven-plugins-parent ---
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.0:enforce (enforce-maven) @ github-maven-plugins-parent ---
+[INFO] 
+[INFO] --- maven-javadoc-plugin:2.8:jar (default) @ github-maven-plugins-parent ---
+[INFO] Not executing Javadoc as the project is not a Java classpath-capable package
+[INFO] 
+[INFO] >>> maven-source-plugin:2.1.2:jar (default) > generate-sources @ github-maven-plugins-parent >>>
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.0:enforce (enforce-maven) @ github-maven-plugins-parent ---
+[INFO] 
+[INFO] <<< maven-source-plugin:2.1.2:jar (default) < generate-sources @ github-maven-plugins-parent <<<
+[INFO] 
+[INFO] 
+[INFO] --- maven-source-plugin:2.1.2:jar (default) @ github-maven-plugins-parent ---
+[INFO] 
+[INFO] --- maven-install-plugin:2.4:install (default-install) @ github-maven-plugins-parent ---
+[INFO] Installing C:\Users\antonio.f.herrera\Desktop\maven-plugins-master\pom.xml to C:\Windows\system32\config\systemprofile\.m2\repository\com\github\github\github-maven-plugins-parent\0.13-SNAPSHOT\github-maven-plugins-parent-0.13-SNAPSHOT.pom
+[INFO] 
+[INFO] ------------------------------------------------------------------------
+[INFO] Building GitHub Core Maven Library 0.13-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-clean-plugin:2.5:clean (default-clean) @ github-maven-core ---
+[INFO] Deleting C:\Users\antonio.f.herrera\Desktop\maven-plugins-master\github-core\target
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.0:enforce (enforce-maven) @ github-maven-core ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ github-maven-core ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory C:\Users\antonio.f.herrera\Desktop\maven-plugins-master\github-core\src\main\resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:2.3.2:compile (default-compile) @ github-maven-core ---
+[INFO] Compiling 6 source files to C:\Users\antonio.f.herrera\Desktop\maven-plugins-master\github-core\target\classes
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ github-maven-core ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 5 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:2.3.2:testCompile (default-testCompile) @ github-maven-core ---
+[INFO] Compiling 6 source files to C:\Users\antonio.f.herrera\Desktop\maven-plugins-master\github-core\target\test-classes
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.12.4:test (default-test) @ github-maven-core ---
+[INFO] Surefire report directory: C:\Users\antonio.f.herrera\Desktop\maven-plugins-master\github-core\target\surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running com.github.maven.plugins.core.ClientCredentialsTest
+Tests run: 14, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.266 sec
+Running com.github.maven.plugins.core.CustomHostnameTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.006 sec
+Running com.github.maven.plugins.core.MatchNonProxyTest
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.059 sec
+Running com.github.maven.plugins.core.PathUtilsTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.129 sec
+Running com.github.maven.plugins.core.RepositoryUtilsTest
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.233 sec
+Running com.github.maven.plugins.core.StringUtilsTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec
+
+Results :
+
+Tests run: 34, Failures: 0, Errors: 0, Skipped: 0
+
+[INFO] 
+[INFO] --- maven-jar-plugin:2.3.2:jar (default-jar) @ github-maven-core ---
+[INFO] Building jar: C:\Users\antonio.f.herrera\Desktop\maven-plugins-master\github-core\target\github-maven-core-0.13-SNAPSHOT.jar
+[INFO] 
+[INFO] --- maven-javadoc-plugin:2.8:jar (default) @ github-maven-core ---
+[INFO] 
+Loading source files for package com.github.maven.plugins.core.egit...
+Loading source files for package com.github.maven.plugins.core...
+Constructing Javadoc information...
+Registered Taglet org.apache.maven.tools.plugin.javadoc.MojoAggregatorTypeTaglet ...
+Registered Taglet org.apache.maven.tools.plugin.javadoc.MojoComponentFieldTaglet ...
+Registered Taglet org.apache.maven.tools.plugin.javadoc.MojoConfiguratorTypeTaglet ...
+Registered Taglet org.apache.maven.tools.plugin.javadoc.MojoExecuteTypeTaglet ...
+Registered Taglet org.apache.maven.tools.plugin.javadoc.MojoExecutionStrategyTypeTaglet ...
+Registered Taglet org.apache.maven.tools.plugin.javadoc.MojoGoalTypeTaglet ...
+Registered Taglet org.apache.maven.tools.plugin.javadoc.MojoInheritByDefaultTypeTaglet ...
+Registered Taglet org.apache.maven.tools.plugin.javadoc.MojoInstantiationStrategyTypeTaglet ...
+Registered Taglet org.apache.maven.tools.plugin.javadoc.MojoParameterFieldTaglet ...
+Registered Taglet org.apache.maven.tools.plugin.javadoc.MojoPhaseTypeTaglet ...
+Registered Taglet org.apache.maven.tools.plugin.javadoc.MojoReadOnlyFieldTaglet ...
+Registered Taglet org.apache.maven.tools.plugin.javadoc.MojoRequiredFieldTaglet ...
+Registered Taglet org.apache.maven.tools.plugin.javadoc.MojoRequiresDependencyCollectionTypeTaglet ...
+Registered Taglet org.apache.maven.tools.plugin.javadoc.MojoRequiresDependencyResolutionTypeTaglet ...
+Registered Taglet org.apache.maven.tools.plugin.javadoc.MojoRequiresDirectInvocationTypeTaglet ...
+Registered Taglet org.apache.maven.tools.plugin.javadoc.MojoRequiresOnLineTypeTaglet ...
+Registered Taglet org.apache.maven.tools.plugin.javadoc.MojoRequiresProjectTypeTaglet ...
+Registered Taglet org.apache.maven.tools.plugin.javadoc.MojoRequiresReportsTypeTaglet ...
+Registered Taglet org.apache.maven.tools.plugin.javadoc.MojoThreadSafeTypeTaglet ...
+Standard Doclet version 1.8.0_144
+Building tree for all the packages and classes...
+Generating C:\Users\antonio.f.herrera\Desktop\maven-plugins-master\github-core\target\apidocs\com\github\maven\plugins\core\egit\GitHubClientEgit.html...
+Generating C:\Users\antonio.f.herrera\Desktop\maven-plugins-master\github-core\target\apidocs\com\github\maven\plugins\core\GitHubProjectMojo.html...
+Generating C:\Users\antonio.f.herrera\Desktop\maven-plugins-master\github-core\target\apidocs\com\github\maven\plugins\core\PathUtils.html...
+Generating C:\Users\antonio.f.herrera\Desktop\maven-plugins-master\github-core\target\apidocs\com\github\maven\plugins\core\RateLimitedGitHubClient.html...
+Generating C:\Users\antonio.f.herrera\Desktop\maven-plugins-master\github-core\target\apidocs\com\github\maven\plugins\core\RepositoryUtils.html...
+Generating C:\Users\antonio.f.herrera\Desktop\maven-plugins-master\github-core\target\apidocs\com\github\maven\plugins\core\StringUtils.html...
+Generating C:\Users\antonio.f.herrera\Desktop\maven-plugins-master\github-core\target\apidocs\overview-frame.html...
+Generating C:\Users\antonio.f.herrera\Desktop\maven-plugins-master\github-core\target\apidocs\com\github\maven\plugins\core\package-frame.html...
+Generating C:\Users\antonio.f.herrera\Desktop\maven-plugins-master\github-core\target\apidocs\com\github\maven\plugins\core\package-summary.html...
+Generating C:\Users\antonio.f.herrera\Desktop\maven-plugins-master\github-core\target\apidocs\com\github\maven\plugins\core\package-tree.html...
+Generating C:\Users\antonio.f.herrera\Desktop\maven-plugins-master\github-core\target\apidocs\com\github\maven\plugins\core\egit\package-frame.html...
+Generating C:\Users\antonio.f.herrera\Desktop\maven-plugins-master\github-core\target\apidocs\com\github\maven\plugins\core\egit\package-summary.html...
+Generating C:\Users\antonio.f.herrera\Desktop\maven-plugins-master\github-core\target\apidocs\com\github\maven\plugins\core\egit\package-tree.html...
+Generating C:\Users\antonio.f.herrera\Desktop\maven-plugins-master\github-core\target\apidocs\constant-values.html...
+Generating C:\Users\antonio.f.herrera\Desktop\maven-plugins-master\github-core\target\apidocs\com\github\maven\plugins\core\egit\class-use\GitHubClientEgit.html...
+Generating C:\Users\antonio.f.herrera\Desktop\maven-plugins-master\github-core\target\apidocs\com\github\maven\plugins\core\class-use\StringUtils.html...
+Generating C:\Users\antonio.f.herrera\Desktop\maven-plugins-master\github-core\target\apidocs\com\github\maven\plugins\core\class-use\RepositoryUtils.html...
+Generating C:\Users\antonio.f.herrera\Desktop\maven-plugins-master\github-core\target\apidocs\com\github\maven\plugins\core\class-use\RateLimitedGitHubClient.html...
+Generating C:\Users\antonio.f.herrera\Desktop\maven-plugins-master\github-core\target\apidocs\com\github\maven\plugins\core\class-use\PathUtils.html...
+Generating C:\Users\antonio.f.herrera\Desktop\maven-plugins-master\github-core\target\apidocs\com\github\maven\plugins\core\class-use\GitHubProjectMojo.html...
+Generating C:\Users\antonio.f.herrera\Desktop\maven-plugins-master\github-core\target\apidocs\com\github\maven\plugins\core\package-use.html...
+Generating C:\Users\antonio.f.herrera\Desktop\maven-plugins-master\github-core\target\apidocs\com\github\maven\plugins\core\egit\package-use.html...
+Building index for all the packages and classes...
+Generating C:\Users\antonio.f.herrera\Desktop\maven-plugins-master\github-core\target\apidocs\overview-tree.html...
+Generating C:\Users\antonio.f.herrera\Desktop\maven-plugins-master\github-core\target\apidocs\index-all.html...
+Generating C:\Users\antonio.f.herrera\Desktop\maven-plugins-master\github-core\target\apidocs\deprecated-list.html...
+Building index for all classes...
+Generating C:\Users\antonio.f.herrera\Desktop\maven-plugins-master\github-core\target\apidocs\allclasses-frame.html...
+Generating C:\Users\antonio.f.herrera\Desktop\maven-plugins-master\github-core\target\apidocs\allclasses-noframe.html...
+Generating C:\Users\antonio.f.herrera\Desktop\maven-plugins-master\github-core\target\apidocs\index.html...
+Generating C:\Users\antonio.f.herrera\Desktop\maven-plugins-master\github-core\target\apidocs\overview-summary.html...
+Generating C:\Users\antonio.f.herrera\Desktop\maven-plugins-master\github-core\target\apidocs\help-doc.html...
+Note: Custom tags that could override future standard tags:  @phase, @goal, @requiresDependencyCollection, @requiresDependencyResolution, @requiresProject, @aggregator, @threadSafe, @requiresReports, @requiresDirectInvocation, @execute, @required, @requiresOnline, @component, @configurator, @instantiationStrategy, @readonly, @parameter, @executionStrategy, @inheritByDefault. To avoid potential overrides, use at least one period character (.) in custom tag names.
+43 warnings
+[WARNING] Javadoc Warnings
+[WARNING] C:\Users\antonio.f.herrera\Desktop\maven-plugins-master\github-core\src\main\java\com\github\maven\plugins\core\GitHubProjectMojo.java:64: warning: no description for @param
+[WARNING] * @param e
+[WARNING] ^
+[WARNING] C:\Users\antonio.f.herrera\Desktop\maven-plugins-master\github-core\src\main\java\com\github\maven\plugins\core\GitHubProjectMojo.java:94: warning: no description for @param
+[WARNING] * @param message
+[WARNING] ^
+[WARNING] C:\Users\antonio.f.herrera\Desktop\maven-plugins-master\github-core\src\main\java\com\github\maven\plugins\core\GitHubProjectMojo.java:105: warning: no description for @param
+[WARNING] * @param message
+[WARNING] ^
+[WARNING] C:\Users\antonio.f.herrera\Desktop\maven-plugins-master\github-core\src\main\java\com\github\maven\plugins\core\GitHubProjectMojo.java:106: warning: no description for @param
+[WARNING] * @param throwable
+[WARNING] ^
+[WARNING] C:\Users\antonio.f.herrera\Desktop\maven-plugins-master\github-core\src\main\java\com\github\maven\plugins\core\GitHubProjectMojo.java:117: warning: no description for @param
+[WARNING] * @param message
+[WARNING] ^
+[WARNING] C:\Users\antonio.f.herrera\Desktop\maven-plugins-master\github-core\src\main\java\com\github\maven\plugins\core\GitHubProjectMojo.java:128: warning: no description for @param
+[WARNING] * @param message
+[WARNING] ^
+[WARNING] C:\Users\antonio.f.herrera\Desktop\maven-plugins-master\github-core\src\main\java\com\github\maven\plugins\core\GitHubProjectMojo.java:129: warning: no description for @param
+[WARNING] * @param throwable
+[WARNING] ^
+[WARNING] C:\Users\antonio.f.herrera\Desktop\maven-plugins-master\github-core\src\main\java\com\github\maven\plugins\core\GitHubProjectMojo.java:140: warning: no description for @param
+[WARNING] * @param host
+[WARNING] ^
+[WARNING] C:\Users\antonio.f.herrera\Desktop\maven-plugins-master\github-core\src\main\java\com\github\maven\plugins\core\GitHubProjectMojo.java:141: warning: no description for @param
+[WARNING] * @param userName
+[WARNING] ^
+[WARNING] C:\Users\antonio.f.herrera\Desktop\maven-plugins-master\github-core\src\main\java\com\github\maven\plugins\core\GitHubProjectMojo.java:142: warning: no description for @param
+[WARNING] * @param password
+[WARNING] ^
+[WARNING] C:\Users\antonio.f.herrera\Desktop\maven-plugins-master\github-core\src\main\java\com\github\maven\plugins\core\GitHubProjectMojo.java:143: warning: no description for @param
+[WARNING] * @param oauth2Token
+[WARNING] ^
+[WARNING] C:\Users\antonio.f.herrera\Desktop\maven-plugins-master\github-core\src\main\java\com\github\maven\plugins\core\GitHubProjectMojo.java:144: warning: no description for @param
+[WARNING] * @param serverId
+[WARNING] ^
+[WARNING] C:\Users\antonio.f.herrera\Desktop\maven-plugins-master\github-core\src\main\java\com\github\maven\plugins\core\GitHubProjectMojo.java:145: warning: no description for @param
+[WARNING] * @param settings
+[WARNING] ^
+[WARNING] C:\Users\antonio.f.herrera\Desktop\maven-plugins-master\github-core\src\main\java\com\github\maven\plugins\core\GitHubProjectMojo.java:146: warning: no description for @param
+[WARNING] * @param session
+[WARNING] ^
+[WARNING] C:\Users\antonio.f.herrera\Desktop\maven-plugins-master\github-core\src\main\java\com\github\maven\plugins\core\GitHubProjectMojo.java:148: warning: no description for @throws
+[WARNING] * @throws MojoExecutionException
+[WARNING] ^
+[WARNING] C:\Users\antonio.f.herrera\Desktop\maven-plugins-master\github-core\src\main\java\com\github\maven\plugins\core\GitHubProjectMojo.java:211: warning: no description for @param
+[WARNING] * @param hostname
+[WARNING] ^
+[WARNING] C:\Users\antonio.f.herrera\Desktop\maven-plugins-master\github-core\src\main\java\com\github\maven\plugins\core\GitHubProjectMojo.java:213: warning: no description for @throws
+[WARNING] * @throws MojoExecutionException
+[WARNING] ^
+[WARNING] C:\Users\antonio.f.herrera\Desktop\maven-plugins-master\github-core\src\main\java\com\github\maven\plugins\core\GitHubProjectMojo.java:243: warning: no description for @param
+[WARNING] * @param client
+[WARNING] ^
+[WARNING] C:\Users\antonio.f.herrera\Desktop\maven-plugins-master\github-core\src\main\java\com\github\maven\plugins\core\GitHubProjectMojo.java:244: warning: no description for @param
+[WARNING] * @param userName
+[WARNING] ^
+[WARNING] C:\Users\antonio.f.herrera\Desktop\maven-plugins-master\github-core\src\main\java\com\github\maven\plugins\core\GitHubProjectMojo.java:245: warning: no description for @param
+[WARNING] * @param password
+[WARNING] ^
+[WARNING] C:\Users\antonio.f.herrera\Desktop\maven-plugins-master\github-core\src\main\java\com\github\maven\plugins\core\GitHubProjectMojo.java:262: warning: no description for @param
+[WARNING] * @param client
+[WARNING] ^
+[WARNING] C:\Users\antonio.f.herrera\Desktop\maven-plugins-master\github-core\src\main\java\com\github\maven\plugins\core\GitHubProjectMojo.java:263: warning: no description for @param
+[WARNING] * @param oauth2Token
+[WARNING] ^
+[WARNING] C:\Users\antonio.f.herrera\Desktop\maven-plugins-master\github-core\src\main\java\com\github\maven\plugins\core\GitHubProjectMojo.java:280: warning: no description for @param
+[WARNING] * @param client
+[WARNING] ^
+[WARNING] C:\Users\antonio.f.herrera\Desktop\maven-plugins-master\github-core\src\main\java\com\github\maven\plugins\core\GitHubProjectMojo.java:281: warning: no description for @param
+[WARNING] * @param serverId
+[WARNING] ^
+[WARNING] C:\Users\antonio.f.herrera\Desktop\maven-plugins-master\github-core\src\main\java\com\github\maven\plugins\core\GitHubProjectMojo.java:282: warning: no description for @param
+[WARNING] * @param settings
+[WARNING] ^
+[WARNING] C:\Users\antonio.f.herrera\Desktop\maven-plugins-master\github-core\src\main\java\com\github\maven\plugins\core\GitHubProjectMojo.java:283: warning: no description for @param
+[WARNING] * @param session
+[WARNING] ^
+[WARNING] C:\Users\antonio.f.herrera\Desktop\maven-plugins-master\github-core\src\main\java\com\github\maven\plugins\core\GitHubProjectMojo.java:285: warning: no description for @throws
+[WARNING] * @throws MojoExecutionException
+[WARNING] ^
+[WARNING] C:\Users\antonio.f.herrera\Desktop\maven-plugins-master\github-core\src\main\java\com\github\maven\plugins\core\GitHubProjectMojo.java:367: warning: no description for @param
+[WARNING] * @param project
+[WARNING] ^
+[WARNING] C:\Users\antonio.f.herrera\Desktop\maven-plugins-master\github-core\src\main\java\com\github\maven\plugins\core\GitHubProjectMojo.java:368: warning: no description for @param
+[WARNING] * @param owner
+[WARNING] ^
+[WARNING] C:\Users\antonio.f.herrera\Desktop\maven-plugins-master\github-core\src\main\java\com\github\maven\plugins\core\GitHubProjectMojo.java:369: warning: no description for @param
+[WARNING] * @param name
+[WARNING] ^
+[WARNING] C:\Users\antonio.f.herrera\Desktop\maven-plugins-master\github-core\src\main\java\com\github\maven\plugins\core\GitHubProjectMojo.java:371: warning: no description for @throws
+[WARNING] * @throws MojoExecutionException
+[WARNING] ^
+[WARNING] C:\Users\antonio.f.herrera\Desktop\maven-plugins-master\github-core\src\main\java\com\github\maven\plugins\core\GitHubProjectMojo.java:390: warning: no description for @param
+[WARNING] * @param settings
+[WARNING] ^
+[WARNING] C:\Users\antonio.f.herrera\Desktop\maven-plugins-master\github-core\src\main\java\com\github\maven\plugins\core\GitHubProjectMojo.java:412: warning: no description for @param
+[WARNING] * @param hostname
+[WARNING] ^
+[WARNING] C:\Users\antonio.f.herrera\Desktop\maven-plugins-master\github-core\src\main\java\com\github\maven\plugins\core\GitHubProjectMojo.java:471: warning: no description for @param
+[WARNING] * @param settings
+[WARNING] ^
+[WARNING] C:\Users\antonio.f.herrera\Desktop\maven-plugins-master\github-core\src\main\java\com\github\maven\plugins\core\PathUtils.java:36: warning: no description for @param
+[WARNING] * @param includes
+[WARNING] ^
+[WARNING] C:\Users\antonio.f.herrera\Desktop\maven-plugins-master\github-core\src\main\java\com\github\maven\plugins\core\PathUtils.java:37: warning: no description for @param
+[WARNING] * @param excludes
+[WARNING] ^
+[WARNING] C:\Users\antonio.f.herrera\Desktop\maven-plugins-master\github-core\src\main\java\com\github\maven\plugins\core\PathUtils.java:38: warning: no description for @param
+[WARNING] * @param baseDir
+[WARNING] ^
+[WARNING] C:\Users\antonio.f.herrera\Desktop\maven-plugins-master\github-core\src\main\java\com\github\maven\plugins\core\RepositoryUtils.java:41: warning: no description for @param
+[WARNING] * @param url
+[WARNING] ^
+[WARNING] C:\Users\antonio.f.herrera\Desktop\maven-plugins-master\github-core\src\main\java\com\github\maven\plugins\core\RepositoryUtils.java:60: warning: no description for @param
+[WARNING] * @param project
+[WARNING] ^
+[WARNING] C:\Users\antonio.f.herrera\Desktop\maven-plugins-master\github-core\src\main\java\com\github\maven\plugins\core\RepositoryUtils.java:61: warning: no description for @param
+[WARNING] * @param owner
+[WARNING] ^
+[WARNING] C:\Users\antonio.f.herrera\Desktop\maven-plugins-master\github-core\src\main\java\com\github\maven\plugins\core\RepositoryUtils.java:62: warning: no description for @param
+[WARNING] * @param name
+[WARNING] ^
+[WARNING] C:\Users\antonio.f.herrera\Desktop\maven-plugins-master\github-core\src\main\java\com\github\maven\plugins\core\StringUtils.java:37: warning: no description for @param
+[WARNING] * @param values
+[WARNING] ^
+[WARNING] C:\Users\antonio.f.herrera\Desktop\maven-plugins-master\github-core\src\main\java\com\github\maven\plugins\core\StringUtils.java:52: warning: no description for @param
+[WARNING] * @param values
+[WARNING] ^
+[INFO] Building jar: C:\Users\antonio.f.herrera\Desktop\maven-plugins-master\github-core\target\github-maven-core-0.13-SNAPSHOT-javadoc.jar
+[INFO] 
+[INFO] >>> maven-source-plugin:2.1.2:jar (default) > generate-sources @ github-maven-core >>>
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.0:enforce (enforce-maven) @ github-maven-core ---
+[INFO] 
+[INFO] <<< maven-source-plugin:2.1.2:jar (default) < generate-sources @ github-maven-core <<<
+[INFO] 
+[INFO] 
+[INFO] --- maven-source-plugin:2.1.2:jar (default) @ github-maven-core ---
+[INFO] Building jar: C:\Users\antonio.f.herrera\Desktop\maven-plugins-master\github-core\target\github-maven-core-0.13-SNAPSHOT-sources.jar
+[INFO] 
+[INFO] --- maven-install-plugin:2.4:install (default-install) @ github-maven-core ---
+[INFO] Installing C:\Users\antonio.f.herrera\Desktop\maven-plugins-master\github-core\target\github-maven-core-0.13-SNAPSHOT.jar to C:\Windows\system32\config\systemprofile\.m2\repository\com\github\github\github-maven-core\0.13-SNAPSHOT\github-maven-core-0.13-SNAPSHOT.jar
+[INFO] Installing C:\Users\antonio.f.herrera\Desktop\maven-plugins-master\github-core\pom.xml to C:\Windows\system32\config\systemprofile\.m2\repository\com\github\github\github-maven-core\0.13-SNAPSHOT\github-maven-core-0.13-SNAPSHOT.pom
+[INFO] Installing C:\Users\antonio.f.herrera\Desktop\maven-plugins-master\github-core\target\github-maven-core-0.13-SNAPSHOT-javadoc.jar to C:\Windows\system32\config\systemprofile\.m2\repository\com\github\github\github-maven-core\0.13-SNAPSHOT\github-maven-core-0.13-SNAPSHOT-javadoc.jar
+[INFO] Installing C:\Users\antonio.f.herrera\Desktop\maven-plugins-master\github-core\target\github-maven-core-0.13-SNAPSHOT-sources.jar to C:\Windows\system32\config\systemprofile\.m2\repository\com\github\github\github-maven-core\0.13-SNAPSHOT\github-maven-core-0.13-SNAPSHOT-sources.jar
+[INFO] 
+[INFO] ------------------------------------------------------------------------
+[INFO] Building GitHub Site Maven Plugin 0.13-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-clean-plugin:2.5:clean (default-clean) @ site-maven-plugin ---
+[INFO] Deleting C:\Users\antonio.f.herrera\Desktop\maven-plugins-master\github-site-plugin\target
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.0:enforce (enforce-maven) @ site-maven-plugin ---
+[INFO] 
+[INFO] --- maven-plugin-plugin:3.0:helpmojo (generated-helpmojo) @ site-maven-plugin ---
+[WARNING] 
+
+Goal prefix is specified as: 'ghSite'. Maven currently expects it to be 'site'.
+
+[INFO] Using 'UTF-8' encoding to read mojo metadata.
+[INFO] Applying mojo extractor for language: java
+[WARNING] com.github.maven.plugins.site.SiteMojo#dryRun:
+[WARNING]   The syntax
+[WARNING]     @parameter expression="${property}"
+[WARNING]   is deprecated, please use
+[WARNING]     @parameter property="property"
+[WARNING]   instead.
+[WARNING] com.github.maven.plugins.site.SiteMojo#force:
+[WARNING]   The syntax
+[WARNING]     @parameter expression="${property}"
+[WARNING]   is deprecated, please use
+[WARNING]     @parameter property="property"
+[WARNING]   instead.
+[WARNING] com.github.maven.plugins.site.SiteMojo#host:
+[WARNING]   The syntax
+[WARNING]     @parameter expression="${property}"
+[WARNING]   is deprecated, please use
+[WARNING]     @parameter property="property"
+[WARNING]   instead.
+[WARNING] com.github.maven.plugins.site.SiteMojo#merge:
+[WARNING]   The syntax
+[WARNING]     @parameter expression="${property}"
+[WARNING]   is deprecated, please use
+[WARNING]     @parameter property="property"
+[WARNING]   instead.
+[WARNING] com.github.maven.plugins.site.SiteMojo#noJekyll:
+[WARNING]   The syntax
+[WARNING]     @parameter expression="${property}"
+[WARNING]   is deprecated, please use
+[WARNING]     @parameter property="property"
+[WARNING]   instead.
+[WARNING] com.github.maven.plugins.site.SiteMojo#oauth2Token:
+[WARNING]   The syntax
+[WARNING]     @parameter expression="${property}"
+[WARNING]   is deprecated, please use
+[WARNING]     @parameter property="property"
+[WARNING]   instead.
+[WARNING] com.github.maven.plugins.site.SiteMojo#outputDirectory:
+[WARNING]   The syntax
+[WARNING]     @parameter expression="${property}"
+[WARNING]   is deprecated, please use
+[WARNING]     @parameter property="property"
+[WARNING]   instead.
+[WARNING] com.github.maven.plugins.site.SiteMojo#password:
+[WARNING]   The syntax
+[WARNING]     @parameter expression="${property}"
+[WARNING]   is deprecated, please use
+[WARNING]     @parameter property="property"
+[WARNING]   instead.
+[WARNING] com.github.maven.plugins.site.SiteMojo#project:
+[WARNING]   The syntax
+[WARNING]     @parameter expression="${property}"
+[WARNING]   is deprecated, please use
+[WARNING]     @parameter property="property"
+[WARNING]   instead.
+[WARNING] com.github.maven.plugins.site.SiteMojo#repositoryName:
+[WARNING]   The syntax
+[WARNING]     @parameter expression="${property}"
+[WARNING]   is deprecated, please use
+[WARNING]     @parameter property="property"
+[WARNING]   instead.
+[WARNING] com.github.maven.plugins.site.SiteMojo#repositoryOwner:
+[WARNING]   The syntax
+[WARNING]     @parameter expression="${property}"
+[WARNING]   is deprecated, please use
+[WARNING]     @parameter property="property"
+[WARNING]   instead.
+[WARNING] com.github.maven.plugins.site.SiteMojo#server:
+[WARNING]   The syntax
+[WARNING]     @parameter expression="${property}"
+[WARNING]   is deprecated, please use
+[WARNING]     @parameter property="property"
+[WARNING]   instead.
+[WARNING] com.github.maven.plugins.site.SiteMojo#session:
+[WARNING]   The syntax
+[WARNING]     @parameter expression="${property}"
+[WARNING]   is deprecated, please use
+[WARNING]     @parameter property="property"
+[WARNING]   instead.
+[WARNING] com.github.maven.plugins.site.SiteMojo#settings:
+[WARNING]   The syntax
+[WARNING]     @parameter expression="${property}"
+[WARNING]   is deprecated, please use
+[WARNING]     @parameter property="property"
+[WARNING]   instead.
+[WARNING] com.github.maven.plugins.site.SiteMojo#skip:
+[WARNING]   The syntax
+[WARNING]     @parameter expression="${property}"
+[WARNING]   is deprecated, please use
+[WARNING]     @parameter property="property"
+[WARNING]   instead.
+[WARNING] com.github.maven.plugins.site.SiteMojo#userName:
+[WARNING]   The syntax
+[WARNING]     @parameter expression="${property}"
+[WARNING]   is deprecated, please use
+[WARNING]     @parameter property="property"
+[WARNING]   instead.
+[INFO] Mojo extractor for language: java found 1 mojo descriptors.
+[INFO] Applying mojo extractor for language: bsh
+[INFO] Mojo extractor for language: bsh found 0 mojo descriptors.
+[INFO] Applying mojo extractor for language: java-annotations
+[INFO] Mojo extractor for language: java-annotations found 0 mojo descriptors.
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ site-maven-plugin ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory C:\Users\antonio.f.herrera\Desktop\maven-plugins-master\github-site-plugin\src\main\resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:2.3.2:compile (default-compile) @ site-maven-plugin ---
+[INFO] Compiling 2 source files to C:\Users\antonio.f.herrera\Desktop\maven-plugins-master\github-site-plugin\target\classes
+[INFO] 
+[INFO] --- maven-plugin-plugin:3.0:descriptor (default-descriptor) @ site-maven-plugin ---
+[INFO] Using 'UTF-8' encoding to read mojo metadata.
+[INFO] Applying mojo extractor for language: java
+[WARNING] com.github.maven.plugins.site.SiteMojo#dryRun:
+[WARNING]   The syntax
+[WARNING]     @parameter expression="${property}"
+[WARNING]   is deprecated, please use
+[WARNING]     @parameter property="property"
+[WARNING]   instead.
+[WARNING] com.github.maven.plugins.site.SiteMojo#force:
+[WARNING]   The syntax
+[WARNING]     @parameter expression="${property}"
+[WARNING]   is deprecated, please use
+[WARNING]     @parameter property="property"
+[WARNING]   instead.
+[WARNING] com.github.maven.plugins.site.SiteMojo#host:
+[WARNING]   The syntax
+[WARNING]     @parameter expression="${property}"
+[WARNING]   is deprecated, please use
+[WARNING]     @parameter property="property"
+[WARNING]   instead.
+[WARNING] com.github.maven.plugins.site.SiteMojo#merge:
+[WARNING]   The syntax
+[WARNING]     @parameter expression="${property}"
+[WARNING]   is deprecated, please use
+[WARNING]     @parameter property="property"
+[WARNING]   instead.
+[WARNING] com.github.maven.plugins.site.SiteMojo#noJekyll:
+[WARNING]   The syntax
+[WARNING]     @parameter expression="${property}"
+[WARNING]   is deprecated, please use
+[WARNING]     @parameter property="property"
+[WARNING]   instead.
+[WARNING] com.github.maven.plugins.site.SiteMojo#oauth2Token:
+[WARNING]   The syntax
+[WARNING]     @parameter expression="${property}"
+[WARNING]   is deprecated, please use
+[WARNING]     @parameter property="property"
+[WARNING]   instead.
+[WARNING] com.github.maven.plugins.site.SiteMojo#outputDirectory:
+[WARNING]   The syntax
+[WARNING]     @parameter expression="${property}"
+[WARNING]   is deprecated, please use
+[WARNING]     @parameter property="property"
+[WARNING]   instead.
+[WARNING] com.github.maven.plugins.site.SiteMojo#password:
+[WARNING]   The syntax
+[WARNING]     @parameter expression="${property}"
+[WARNING]   is deprecated, please use
+[WARNING]     @parameter property="property"
+[WARNING]   instead.
+[WARNING] com.github.maven.plugins.site.SiteMojo#project:
+[WARNING]   The syntax
+[WARNING]     @parameter expression="${property}"
+[WARNING]   is deprecated, please use
+[WARNING]     @parameter property="property"
+[WARNING]   instead.
+[WARNING] com.github.maven.plugins.site.SiteMojo#repositoryName:
+[WARNING]   The syntax
+[WARNING]     @parameter expression="${property}"
+[WARNING]   is deprecated, please use
+[WARNING]     @parameter property="property"
+[WARNING]   instead.
+[WARNING] com.github.maven.plugins.site.SiteMojo#repositoryOwner:
+[WARNING]   The syntax
+[WARNING]     @parameter expression="${property}"
+[WARNING]   is deprecated, please use
+[WARNING]     @parameter property="property"
+[WARNING]   instead.
+[WARNING] com.github.maven.plugins.site.SiteMojo#server:
+[WARNING]   The syntax
+[WARNING]     @parameter expression="${property}"
+[WARNING]   is deprecated, please use
+[WARNING]     @parameter property="property"
+[WARNING]   instead.
+[WARNING] com.github.maven.plugins.site.SiteMojo#session:
+[WARNING]   The syntax
+[WARNING]     @parameter expression="${property}"
+[WARNING]   is deprecated, please use
+[WARNING]     @parameter property="property"
+[WARNING]   instead.
+[WARNING] com.github.maven.plugins.site.SiteMojo#settings:
+[WARNING]   The syntax
+[WARNING]     @parameter expression="${property}"
+[WARNING]   is deprecated, please use
+[WARNING]     @parameter property="property"
+[WARNING]   instead.
+[WARNING] com.github.maven.plugins.site.SiteMojo#skip:
+[WARNING]   The syntax
+[WARNING]     @parameter expression="${property}"
+[WARNING]   is deprecated, please use
+[WARNING]     @parameter property="property"
+[WARNING]   instead.
+[WARNING] com.github.maven.plugins.site.SiteMojo#userName:
+[WARNING]   The syntax
+[WARNING]     @parameter expression="${property}"
+[WARNING]   is deprecated, please use
+[WARNING]     @parameter property="property"
+[WARNING]   instead.
+[WARNING] HelpMojo#detail:
+[WARNING]   The syntax
+[WARNING]     @parameter expression="${property}"
+[WARNING]   is deprecated, please use
+[WARNING]     @parameter property="property"
+[WARNING]   instead.
+[WARNING] HelpMojo#goal:
+[WARNING]   The syntax
+[WARNING]     @parameter expression="${property}"
+[WARNING]   is deprecated, please use
+[WARNING]     @parameter property="property"
+[WARNING]   instead.
+[WARNING] HelpMojo#indentSize:
+[WARNING]   The syntax
+[WARNING]     @parameter expression="${property}"
+[WARNING]   is deprecated, please use
+[WARNING]     @parameter property="property"
+[WARNING]   instead.
+[WARNING] HelpMojo#lineLength:
+[WARNING]   The syntax
+[WARNING]     @parameter expression="${property}"
+[WARNING]   is deprecated, please use
+[WARNING]     @parameter property="property"
+[WARNING]   instead.
+[INFO] Mojo extractor for language: java found 2 mojo descriptors.
+[INFO] Applying mojo extractor for language: bsh
+[INFO] Mojo extractor for language: bsh found 0 mojo descriptors.
+[INFO] Applying mojo extractor for language: java-annotations
+[INFO] Mojo extractor for language: java-annotations found 0 mojo descriptors.
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ site-maven-plugin ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory C:\Users\antonio.f.herrera\Desktop\maven-plugins-master\github-site-plugin\src\test\resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:2.3.2:testCompile (default-testCompile) @ site-maven-plugin ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.12.4:test (default-test) @ site-maven-plugin ---
+[INFO] No tests to run.
+[INFO] 
+[INFO] --- maven-jar-plugin:2.3.2:jar (default-jar) @ site-maven-plugin ---
+[INFO] Building jar: C:\Users\antonio.f.herrera\Desktop\maven-plugins-master\github-site-plugin\target\site-maven-plugin-0.13-SNAPSHOT.jar
+[INFO] 
+[INFO] --- maven-plugin-plugin:3.0:addPluginArtifactMetadata (default-addPluginArtifactMetadata) @ site-maven-plugin ---
+[INFO] 
+[INFO] --- maven-javadoc-plugin:2.8:jar (default) @ site-maven-plugin ---
+[INFO] 
+Loading source files for package com.github.maven.plugins.site...
+Constructing Javadoc information...
+Registered Taglet org.apache.maven.tools.plugin.javadoc.MojoAggregatorTypeTaglet ...
+Registered Taglet org.apache.maven.tools.plugin.javadoc.MojoComponentFieldTaglet ...
+Registered Taglet org.apache.maven.tools.plugin.javadoc.MojoConfiguratorTypeTaglet ...
+Registered Taglet org.apache.maven.tools.plugin.javadoc.MojoExecuteTypeTaglet ...
+Registered Taglet org.apache.maven.tools.plugin.javadoc.MojoExecutionStrategyTypeTaglet ...
+Registered Taglet org.apache.maven.tools.plugin.javadoc.MojoGoalTypeTaglet ...
+Registered Taglet org.apache.maven.tools.plugin.javadoc.MojoInheritByDefaultTypeTaglet ...
+Registered Taglet org.apache.maven.tools.plugin.javadoc.MojoInstantiationStrategyTypeTaglet ...
+Registered Taglet org.apache.maven.tools.plugin.javadoc.MojoParameterFieldTaglet ...
+Registered Taglet org.apache.maven.tools.plugin.javadoc.MojoPhaseTypeTaglet ...
+Registered Taglet org.apache.maven.tools.plugin.javadoc.MojoReadOnlyFieldTaglet ...
+Registered Taglet org.apache.maven.tools.plugin.javadoc.MojoRequiredFieldTaglet ...
+Registered Taglet org.apache.maven.tools.plugin.javadoc.MojoRequiresDependencyCollectionTypeTaglet ...
+Registered Taglet org.apache.maven.tools.plugin.javadoc.MojoRequiresDependencyResolutionTypeTaglet ...
+Registered Taglet org.apache.maven.tools.plugin.javadoc.MojoRequiresDirectInvocationTypeTaglet ...
+Registered Taglet org.apache.maven.tools.plugin.javadoc.MojoRequiresOnLineTypeTaglet ...
+Registered Taglet org.apache.maven.tools.plugin.javadoc.MojoRequiresProjectTypeTaglet ...
+Registered Taglet org.apache.maven.tools.plugin.javadoc.MojoRequiresReportsTypeTaglet ...
+Registered Taglet org.apache.maven.tools.plugin.javadoc.MojoThreadSafeTypeTaglet ...
+Standard Doclet version 1.8.0_144
+Building tree for all the packages and classes...
+Generating C:\Users\antonio.f.herrera\Desktop\maven-plugins-master\github-site-plugin\target\apidocs\com\github\maven\plugins\site\SiteMojo.html...
+Generating C:\Users\antonio.f.herrera\Desktop\maven-plugins-master\github-site-plugin\target\apidocs\com\github\maven\plugins\site\package-frame.html...
+Generating C:\Users\antonio.f.herrera\Desktop\maven-plugins-master\github-site-plugin\target\apidocs\com\github\maven\plugins\site\package-summary.html...
+Generating C:\Users\antonio.f.herrera\Desktop\maven-plugins-master\github-site-plugin\target\apidocs\com\github\maven\plugins\site\package-tree.html...
+Generating C:\Users\antonio.f.herrera\Desktop\maven-plugins-master\github-site-plugin\target\apidocs\constant-values.html...
+Generating C:\Users\antonio.f.herrera\Desktop\maven-plugins-master\github-site-plugin\target\apidocs\com\github\maven\plugins\site\class-use\SiteMojo.html...
+Generating C:\Users\antonio.f.herrera\Desktop\maven-plugins-master\github-site-plugin\target\apidocs\com\github\maven\plugins\site\package-use.html...
+Building index for all the packages and classes...
+Generating C:\Users\antonio.f.herrera\Desktop\maven-plugins-master\github-site-plugin\target\apidocs\overview-tree.html...
+Generating C:\Users\antonio.f.herrera\Desktop\maven-plugins-master\github-site-plugin\target\apidocs\index-all.html...
+Generating C:\Users\antonio.f.herrera\Desktop\maven-plugins-master\github-site-plugin\target\apidocs\deprecated-list.html...
+Building index for all classes...
+Generating C:\Users\antonio.f.herrera\Desktop\maven-plugins-master\github-site-plugin\target\apidocs\allclasses-frame.html...
+Generating C:\Users\antonio.f.herrera\Desktop\maven-plugins-master\github-site-plugin\target\apidocs\allclasses-noframe.html...
+Generating C:\Users\antonio.f.herrera\Desktop\maven-plugins-master\github-site-plugin\target\apidocs\index.html...
+Generating C:\Users\antonio.f.herrera\Desktop\maven-plugins-master\github-site-plugin\target\apidocs\help-doc.html...
+Note: Custom tags that could override future standard tags:  @phase, @goal, @requiresDependencyCollection, @requiresDependencyResolution, @requiresProject, @aggregator, @threadSafe, @requiresReports, @requiresDirectInvocation, @execute, @required, @requiresOnline, @component, @configurator, @instantiationStrategy, @readonly, @parameter, @executionStrategy, @inheritByDefault. To avoid potential overrides, use at least one period character (.) in custom tag names.
+4 warnings
+[WARNING] Javadoc Warnings
+[WARNING] C:\Users\antonio.f.herrera\Desktop\maven-plugins-master\github-site-plugin\src\main\java\com\github\maven\plugins\site\SiteMojo.java:249: warning: no description for @param
+[WARNING] * @param service
+[WARNING] ^
+[WARNING] C:\Users\antonio.f.herrera\Desktop\maven-plugins-master\github-site-plugin\src\main\java\com\github\maven\plugins\site\SiteMojo.java:250: warning: no description for @param
+[WARNING] * @param repository
+[WARNING] ^
+[WARNING] C:\Users\antonio.f.herrera\Desktop\maven-plugins-master\github-site-plugin\src\main\java\com\github\maven\plugins\site\SiteMojo.java:251: warning: no description for @param
+[WARNING] * @param path
+[WARNING] ^
+[WARNING] C:\Users\antonio.f.herrera\Desktop\maven-plugins-master\github-site-plugin\src\main\java\com\github\maven\plugins\site\SiteMojo.java:253: warning: no description for @throws
+[WARNING] * @throws MojoExecutionException
+[WARNING] ^
+[INFO] Building jar: C:\Users\antonio.f.herrera\Desktop\maven-plugins-master\github-site-plugin\target\site-maven-plugin-0.13-SNAPSHOT-javadoc.jar
+[INFO] 
+[INFO] >>> maven-source-plugin:2.1.2:jar (default) > generate-sources @ site-maven-plugin >>>
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.0:enforce (enforce-maven) @ site-maven-plugin ---
+[INFO] 
+[INFO] --- maven-plugin-plugin:3.0:helpmojo (generated-helpmojo) @ site-maven-plugin ---
+[WARNING] 
+
+Goal prefix is specified as: 'ghSite'. Maven currently expects it to be 'site'.
+
+[INFO] Using 'UTF-8' encoding to read mojo metadata.
+[INFO] Applying mojo extractor for language: java
+[WARNING] com.github.maven.plugins.site.SiteMojo#dryRun:
+[WARNING]   The syntax
+[WARNING]     @parameter expression="${property}"
+[WARNING]   is deprecated, please use
+[WARNING]     @parameter property="property"
+[WARNING]   instead.
+[WARNING] com.github.maven.plugins.site.SiteMojo#force:
+[WARNING]   The syntax
+[WARNING]     @parameter expression="${property}"
+[WARNING]   is deprecated, please use
+[WARNING]     @parameter property="property"
+[WARNING]   instead.
+[WARNING] com.github.maven.plugins.site.SiteMojo#host:
+[WARNING]   The syntax
+[WARNING]     @parameter expression="${property}"
+[WARNING]   is deprecated, please use
+[WARNING]     @parameter property="property"
+[WARNING]   instead.
+[WARNING] com.github.maven.plugins.site.SiteMojo#merge:
+[WARNING]   The syntax
+[WARNING]     @parameter expression="${property}"
+[WARNING]   is deprecated, please use
+[WARNING]     @parameter property="property"
+[WARNING]   instead.
+[WARNING] com.github.maven.plugins.site.SiteMojo#noJekyll:
+[WARNING]   The syntax
+[WARNING]     @parameter expression="${property}"
+[WARNING]   is deprecated, please use
+[WARNING]     @parameter property="property"
+[WARNING]   instead.
+[WARNING] com.github.maven.plugins.site.SiteMojo#oauth2Token:
+[WARNING]   The syntax
+[WARNING]     @parameter expression="${property}"
+[WARNING]   is deprecated, please use
+[WARNING]     @parameter property="property"
+[WARNING]   instead.
+[WARNING] com.github.maven.plugins.site.SiteMojo#outputDirectory:
+[WARNING]   The syntax
+[WARNING]     @parameter expression="${property}"
+[WARNING]   is deprecated, please use
+[WARNING]     @parameter property="property"
+[WARNING]   instead.
+[WARNING] com.github.maven.plugins.site.SiteMojo#password:
+[WARNING]   The syntax
+[WARNING]     @parameter expression="${property}"
+[WARNING]   is deprecated, please use
+[WARNING]     @parameter property="property"
+[WARNING]   instead.
+[WARNING] com.github.maven.plugins.site.SiteMojo#project:
+[WARNING]   The syntax
+[WARNING]     @parameter expression="${property}"
+[WARNING]   is deprecated, please use
+[WARNING]     @parameter property="property"
+[WARNING]   instead.
+[WARNING] com.github.maven.plugins.site.SiteMojo#repositoryName:
+[WARNING]   The syntax
+[WARNING]     @parameter expression="${property}"
+[WARNING]   is deprecated, please use
+[WARNING]     @parameter property="property"
+[WARNING]   instead.
+[WARNING] com.github.maven.plugins.site.SiteMojo#repositoryOwner:
+[WARNING]   The syntax
+[WARNING]     @parameter expression="${property}"
+[WARNING]   is deprecated, please use
+[WARNING]     @parameter property="property"
+[WARNING]   instead.
+[WARNING] com.github.maven.plugins.site.SiteMojo#server:
+[WARNING]   The syntax
+[WARNING]     @parameter expression="${property}"
+[WARNING]   is deprecated, please use
+[WARNING]     @parameter property="property"
+[WARNING]   instead.
+[WARNING] com.github.maven.plugins.site.SiteMojo#session:
+[WARNING]   The syntax
+[WARNING]     @parameter expression="${property}"
+[WARNING]   is deprecated, please use
+[WARNING]     @parameter property="property"
+[WARNING]   instead.
+[WARNING] com.github.maven.plugins.site.SiteMojo#settings:
+[WARNING]   The syntax
+[WARNING]     @parameter expression="${property}"
+[WARNING]   is deprecated, please use
+[WARNING]     @parameter property="property"
+[WARNING]   instead.
+[WARNING] com.github.maven.plugins.site.SiteMojo#skip:
+[WARNING]   The syntax
+[WARNING]     @parameter expression="${property}"
+[WARNING]   is deprecated, please use
+[WARNING]     @parameter property="property"
+[WARNING]   instead.
+[WARNING] com.github.maven.plugins.site.SiteMojo#userName:
+[WARNING]   The syntax
+[WARNING]     @parameter expression="${property}"
+[WARNING]   is deprecated, please use
+[WARNING]     @parameter property="property"
+[WARNING]   instead.
+[WARNING] HelpMojo#detail:
+[WARNING]   The syntax
+[WARNING]     @parameter expression="${property}"
+[WARNING]   is deprecated, please use
+[WARNING]     @parameter property="property"
+[WARNING]   instead.
+[WARNING] HelpMojo#goal:
+[WARNING]   The syntax
+[WARNING]     @parameter expression="${property}"
+[WARNING]   is deprecated, please use
+[WARNING]     @parameter property="property"
+[WARNING]   instead.
+[WARNING] HelpMojo#indentSize:
+[WARNING]   The syntax
+[WARNING]     @parameter expression="${property}"
+[WARNING]   is deprecated, please use
+[WARNING]     @parameter property="property"
+[WARNING]   instead.
+[WARNING] HelpMojo#lineLength:
+[WARNING]   The syntax
+[WARNING]     @parameter expression="${property}"
+[WARNING]   is deprecated, please use
+[WARNING]     @parameter property="property"
+[WARNING]   instead.
+[INFO] Mojo extractor for language: java found 2 mojo descriptors.
+[INFO] Applying mojo extractor for language: bsh
+[INFO] Mojo extractor for language: bsh found 0 mojo descriptors.
+[INFO] Applying mojo extractor for language: java-annotations
+[INFO] Mojo extractor for language: java-annotations found 0 mojo descriptors.
+[WARNING] 
+
+A help goal (HelpMojo) already exists in this plugin. SKIPPED THE com.github.maven.plugins.site.HelpMojo GENERATION.
+
+[INFO] 
+[INFO] <<< maven-source-plugin:2.1.2:jar (default) < generate-sources @ site-maven-plugin <<<
+[INFO] 
+[INFO] 
+[INFO] --- maven-source-plugin:2.1.2:jar (default) @ site-maven-plugin ---
+[INFO] com already added, skipping
+[INFO] com\github already added, skipping
+[INFO] com\github\maven already added, skipping
+[INFO] com\github\maven\plugins already added, skipping
+[INFO] com\github\maven\plugins\site already added, skipping
+[INFO] Building jar: C:\Users\antonio.f.herrera\Desktop\maven-plugins-master\github-site-plugin\target\site-maven-plugin-0.13-SNAPSHOT-sources.jar
+[INFO] com already added, skipping
+[INFO] com\github already added, skipping
+[INFO] com\github\maven already added, skipping
+[INFO] com\github\maven\plugins already added, skipping
+[INFO] com\github\maven\plugins\site already added, skipping
+[INFO] 
+[INFO] --- maven-install-plugin:2.4:install (default-install) @ site-maven-plugin ---
+[INFO] Installing C:\Users\antonio.f.herrera\Desktop\maven-plugins-master\github-site-plugin\target\site-maven-plugin-0.13-SNAPSHOT.jar to C:\Windows\system32\config\systemprofile\.m2\repository\com\github\github\site-maven-plugin\0.13-SNAPSHOT\site-maven-plugin-0.13-SNAPSHOT.jar
+[INFO] Installing C:\Users\antonio.f.herrera\Desktop\maven-plugins-master\github-site-plugin\pom.xml to C:\Windows\system32\config\systemprofile\.m2\repository\com\github\github\site-maven-plugin\0.13-SNAPSHOT\site-maven-plugin-0.13-SNAPSHOT.pom
+[INFO] Installing C:\Users\antonio.f.herrera\Desktop\maven-plugins-master\github-site-plugin\target\site-maven-plugin-0.13-SNAPSHOT-javadoc.jar to C:\Windows\system32\config\systemprofile\.m2\repository\com\github\github\site-maven-plugin\0.13-SNAPSHOT\site-maven-plugin-0.13-SNAPSHOT-javadoc.jar
+[INFO] Installing C:\Users\antonio.f.herrera\Desktop\maven-plugins-master\github-site-plugin\target\site-maven-plugin-0.13-SNAPSHOT-sources.jar to C:\Windows\system32\config\systemprofile\.m2\repository\com\github\github\site-maven-plugin\0.13-SNAPSHOT\site-maven-plugin-0.13-SNAPSHOT-sources.jar
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Summary:
+[INFO] 
+[INFO] GitHub Maven Plugins ............................... SUCCESS [  1.860 s]
+[INFO] GitHub Core Maven Library .......................... SUCCESS [  7.993 s]
+[INFO] GitHub Site Maven Plugin ........................... SUCCESS [  4.620 s]
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 14.664 s
+[INFO] Finished at: 2017-09-21T14:59:47+02:00
+[INFO] Final Memory: 42M/450M
+[INFO] ------------------------------------------------------------------------

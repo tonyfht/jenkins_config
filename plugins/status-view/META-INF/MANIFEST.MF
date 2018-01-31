@@ -1,0 +1,15 @@
+Manifest-Version: 1.0
+Archiver-Version: Plexus Archiver
+Created-By: Apache Maven
+Built-By: aruna
+Build-Jdk: 1.6.0_17
+Extension-Name: status-view
+Implementation-Title: status-view
+Implementation-Version: 1.0
+Short-Name: status-view
+Long-Name: Status View Plugin
+Url: http://wiki.hudson-ci.org/display/HUDSON/Status+View+Plugin
+Plugin-Version: 1.0
+Hudson-Version: 1.342
+Plugin-Developers: Alan Harder:mindless:mindless@dev.java.net
+

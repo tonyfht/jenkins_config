@@ -1,0 +1,157 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<flow-definition plugin="workflow-job@2.15">
+  <actions>
+    <io.jenkins.blueocean.service.embedded.BlueOceanUrlAction plugin="blueocean-rest-impl@1.3.3">
+      <blueOceanUrlObject class="io.jenkins.blueocean.service.embedded.BlueOceanUrlObjectImpl">
+        <mappedUrl>blue/organizations/jenkins/Check_Maven_Pipeline</mappedUrl>
+        <modelObject class="flow-definition" reference="../../../.."/>
+      </blueOceanUrlObject>
+    </io.jenkins.blueocean.service.embedded.BlueOceanUrlAction>
+  </actions>
+  <description></description>
+  <keepDependencies>false</keepDependencies>
+  <properties>
+    <hudson.model.ParametersDefinitionProperty>
+      <parameterDefinitions>
+        <hudson.model.ChoiceParameterDefinition>
+          <name>Rama</name>
+          <description>Se debe seleccionar la rama que se desea ejecutar</description>
+          <choices class="java.util.Arrays$ArrayList">
+            <a class="string-array">
+              <string>master</string>
+              <string>branches</string>
+              <string>branches2</string>
+              <string>branchesdemo</string>
+            </a>
+          </choices>
+        </hudson.model.ChoiceParameterDefinition>
+      </parameterDefinitions>
+    </hudson.model.ParametersDefinitionProperty>
+    <com.dabsquared.gitlabjenkins.connection.GitLabConnectionProperty plugin="gitlab-plugin@1.5.2">
+      <gitLabConnection></gitLabConnection>
+    </com.dabsquared.gitlabjenkins.connection.GitLabConnectionProperty>
+    <com.sonyericsson.rebuild.RebuildSettings plugin="rebuild@1.27">
+      <autoRebuild>false</autoRebuild>
+      <rebuildDisabled>false</rebuildDisabled>
+    </com.sonyericsson.rebuild.RebuildSettings>
+    <com.synopsys.arc.jenkinsci.plugins.jobrestrictions.jobs.JobRestrictionProperty plugin="job-restrictions@0.6"/>
+    <hudson.plugins.throttleconcurrents.ThrottleJobProperty plugin="throttle-concurrents@2.0.1">
+      <maxConcurrentPerNode>0</maxConcurrentPerNode>
+      <maxConcurrentTotal>0</maxConcurrentTotal>
+      <categories class="java.util.concurrent.CopyOnWriteArrayList"/>
+      <throttleEnabled>false</throttleEnabled>
+      <throttleOption>project</throttleOption>
+      <limitOneJobWithMatchingParams>false</limitOneJobWithMatchingParams>
+      <paramsToUseForLimit></paramsToUseForLimit>
+    </hudson.plugins.throttleconcurrents.ThrottleJobProperty>
+    <EnvInjectJobProperty plugin="envinject@2.1.5">
+      <info>
+        <propertiesContent>usuario=admin
+password=admin123</propertiesContent>
+        <secureGroovyScript plugin="script-security@1.35">
+          <script></script>
+          <sandbox>false</sandbox>
+        </secureGroovyScript>
+        <loadFilesFromMaster>false</loadFilesFromMaster>
+      </info>
+      <on>true</on>
+      <keepJenkinsSystemVariables>true</keepJenkinsSystemVariables>
+      <keepBuildVariables>true</keepBuildVariables>
+      <overrideBuildParameters>false</overrideBuildParameters>
+    </EnvInjectJobProperty>
+    <org.jenkinsci.plugins.workflow.job.properties.PipelineTriggersJobProperty>
+      <triggers/>
+    </org.jenkinsci.plugins.workflow.job.properties.PipelineTriggersJobProperty>
+  </properties>
+  <definition class="org.jenkinsci.plugins.workflow.cps.CpsFlowDefinition" plugin="workflow-cps@2.41">
+    <script>node {
+
+    currentBuild.displayName=&quot;${Rama}&quot;
+    currentBuild.description=&quot;Check maven pipeline prueba de concepto&quot;
+
+    def m2=&quot;C://Software//apache-maven-3.5.0//bin&quot;
+
+        stage(&apos;Checkout&apos;) {
+            /* 
+            Se realiza el checkout del repositorio de GIT. Se proporciona un parámetro
+            de entrada que será una etiqueta o rama para ejecutar. 
+          */
+            checkout([$class: &apos;GitSCM&apos;, branches: [[name: &apos;*/master&apos;]], doGenerateSubmoduleConfigurations: false, extensions: [], submoduleCfg: [], userRemoteConfigs: [[url: &apos;https://gitlab.com/antoniofrancisco.herrera/Check.git&apos;]]])
+            
+            echo &apos;Stage Checkout realizado correctamente.&apos;
+        }
+        stage(&apos;Build&apos;) {
+            /* 
+            Se realiza la contrucción del proyecto y test unitarios. Los parámetros
+            de uso general se han declarado en environment for the run
+            */ 
+            
+             sh &quot;${m2}/mvn install -Dmaven.test.failure.ignore=true -f fuentes/pom.xml -U&quot;
+             
+            echo &apos;Stage Build realizado correctamente.&apos;
+        }
+        stage(&apos;Quality&apos;) {
+            /* 
+            Se realiza la revisión de código en el proyecto con SonarQube.
+            */
+            
+            sh &quot;${m2}/mvn install sonar:sonar -Dmaven.test.failure.ignore=true -f fuentes/pom.xml -U&quot;
+
+            echo &apos;Stage Quality realizado correctamente.&apos;
+        }
+
+        stage(&apos;Tests&apos;) {
+             /* 
+            En este ejemplo solo incluye la parte de test unitarios integrados en la compilación.
+            Se podrían integrar todos los test que se quieran incorporar (funcionales, rendimiento, regresión...)
+            */
+            sh &quot;${m2}/mvn test -Dmaven.test.failure.ignore=true -f fuentes/pom.xml -U&quot;
+            
+            echo &apos;Stage Test realizado correctamente.&apos;
+        }
+        stage(&apos;InformeCheckstyle&apos;) {
+            /* 
+            Se integra el plugin de CheckStyle en el pipeline con las reglas configuradas en el fichero xml que es el mismo
+            que se integra en SonarQube.
+            */
+            sh &quot;${m2}/mvn checkstyle:checkstyle -f fuentes/pom.xml -U&quot;
+            checkstyle canComputeNew: false, defaultEncoding: &apos;&apos;, healthy: &apos;&apos;, pattern: &apos;**/checkstyle-result.xml&apos;, unHealthy: &apos;&apos;
+            echo &apos;Stage InformeCheckstyle realizado correctamente.&apos;
+        }
+        stage(&apos;InformePMD&apos;) {
+            /* 
+            Se integra el plugin de PMD en el pipeline con las reglas configuradas en el fichero xml que es el mismo
+            que se integra en SonarQube.
+            */
+            sh &quot;${m2}/mvn pmd:pmd -f fuentes/pom.xml -U&quot;
+            pmd canComputeNew: false, defaultEncoding: &apos;&apos;, healthy: &apos;&apos;, pattern: &apos;**/pmd.xml&apos;, unHealthy: &apos;&apos;
+            echo &apos;Stage InformePMD realizado correctamente.&apos;
+        }
+        stage(&apos;InformeCobertura&apos;) {
+            /* 
+            Se integra el plugin de Cobertura en el pipeline con las reglas configuradas en el fichero xml que es el mismo
+            que se integra en SonarQube.
+            */
+            sh &quot;${m2}/mvn cobertura:cobertura -Dcobertura.report.format=xml -f fuentes/pom.xml -U&quot;
+            cobertura autoUpdateHealth: false, autoUpdateStability: false, coberturaReportFile: &apos;**/coverage.xml &apos;, conditionalCoverageTargets: &apos;70, 0, 0&apos;, failUnhealthy: false, failUnstable: false, lineCoverageTargets: &apos;80, 0, 0&apos;, maxNumberOfBuilds: 0, methodCoverageTargets: &apos;80, 0, 0&apos;, onlyStable: false, sourceEncoding: &apos;ASCII&apos;, zoomCoverageChart: false
+            echo &apos;Stage InformeCobertura realizado correctamente.&apos;
+        }
+        stage(&apos;DeployNexus&apos;) {
+            /*
+            Se realiza la subida de los Artefactos a Nexus. Los parámetros de uso 
+            general se han declarado en environment for the run de usuario y password de Nexus
+            Se tiene que configurar en el pom.xml el distributionManagement y el plugin maven-deploy.
+            */
+                sh &quot;${m2}/mvn deploy:deploy-file -Dmaven.test.skip=true -Durl=http://192.168.35.129:8081/repository/Ricoh-snapshot/ -Dfile=despliegues/componentes/check_2.1-distribution.zip&quot;
+            echo &apos;Pipeline Deploy_Nexus finalizado correctamente&apos;   
+        }
+        stage(&apos;DeployApp&apos;) {
+            
+            echo &apos;Pipeline DeployApp finalizado correctamente&apos;  
+        }
+}</script>
+    <sandbox>true</sandbox>
+  </definition>
+  <triggers/>
+  <disabled>false</disabled>
+</flow-definition>

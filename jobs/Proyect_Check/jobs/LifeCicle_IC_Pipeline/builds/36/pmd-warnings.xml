@@ -1,0 +1,75 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<annotation-array>
+  <bug plugin="pmd@3.49">
+    <message>Useless parentheses.</message>
+    <priority>NORMAL</priority>
+    <key>8266788212013537266</key>
+    <lineRanges>
+      <range plugin="analysis-core@1.92">
+        <start>92</start>
+        <end>92</end>
+      </range>
+    </lineRanges>
+    <primaryLineNumber>92</primaryLineNumber>
+    <fileName>C:/Program Files (x86)/Jenkins/workspace/Proyect_Check/LifeCicle_IC_Pipeline/fuentes/NEG_CHECK/src/main/java/es/iam/check/analisisDespliegues/business/ficheros/FicheroComprimidoAnalizable.java</fileName>
+    <moduleName>CHECK-NEG</moduleName>
+    <packageName>es.iam.check.analisisDespliegues.business.ficheros</packageName>
+    <category>Unnecessary</category>
+    <type>UselessParentheses</type>
+    <contextHashCode>1148739818</contextHashCode>
+    <origin>pmd</origin>
+    <pathName>fuentes/NEG_CHECK/src/main/java/es/iam/check/analisisDespliegues/business/ficheros</pathName>
+    <primaryColumnStart>25</primaryColumnStart>
+    <primaryColumnEnd>96</primaryColumnEnd>
+    <build>6</build>
+    <tooltip></tooltip>
+  </bug>
+  <bug plugin="pmd@3.49">
+    <message>Avoid modifiers which are implied by the context.</message>
+    <priority>NORMAL</priority>
+    <key>8266788212013537264</key>
+    <lineRanges>
+      <range plugin="analysis-core@1.92">
+        <start>14</start>
+        <end>17</end>
+      </range>
+    </lineRanges>
+    <primaryLineNumber>14</primaryLineNumber>
+    <fileName>C:/Program Files (x86)/Jenkins/workspace/Proyect_Check/LifeCicle_IC_Pipeline/fuentes/NEG_CHECK/src/main/java/es/iam/check/analisisDespliegues/business/chequeos/incidencias/IncidenciaChequeo.java</fileName>
+    <moduleName reference="../../bug/moduleName"/>
+    <packageName>es.iam.check.analisisDespliegues.business.chequeos.incidencias</packageName>
+    <category>Unnecessary</category>
+    <type>UnnecessaryModifier</type>
+    <contextHashCode>-223506770</contextHashCode>
+    <origin>pmd</origin>
+    <pathName>fuentes/NEG_CHECK/src/main/java/es/iam/check/analisisDespliegues/business/chequeos/incidencias</pathName>
+    <primaryColumnStart>23</primaryColumnStart>
+    <primaryColumnEnd>9</primaryColumnEnd>
+    <build>6</build>
+    <tooltip></tooltip>
+  </bug>
+  <bug plugin="pmd@3.49">
+    <message reference="../../bug/message"/>
+    <priority>NORMAL</priority>
+    <key>8266788212013537265</key>
+    <lineRanges>
+      <range plugin="analysis-core@1.92">
+        <start>61</start>
+        <end>61</end>
+      </range>
+    </lineRanges>
+    <primaryLineNumber>61</primaryLineNumber>
+    <fileName reference="../../bug/fileName"/>
+    <moduleName reference="../../bug/moduleName"/>
+    <packageName reference="../../bug/packageName"/>
+    <category>Unnecessary</category>
+    <type>UselessParentheses</type>
+    <contextHashCode>-1254168468</contextHashCode>
+    <origin>pmd</origin>
+    <pathName>fuentes/NEG_CHECK/src/main/java/es/iam/check/analisisDespliegues/business/ficheros</pathName>
+    <primaryColumnStart>30</primaryColumnStart>
+    <primaryColumnEnd>93</primaryColumnEnd>
+    <build>6</build>
+    <tooltip></tooltip>
+  </bug>
+</annotation-array>

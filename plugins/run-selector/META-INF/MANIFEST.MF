@@ -1,0 +1,20 @@
+Manifest-Version: 1.0
+Archiver-Version: Plexus Archiver
+Created-By: Apache Maven
+Built-By: alexsomai
+Build-Jdk: 1.8.0_65
+Extension-Name: run-selector
+Specification-Title: The Jenkins Plugins Parent POM Project
+Implementation-Title: run-selector
+Implementation-Version: 1.0.0
+Group-Id: org.jenkins-ci.plugins
+Short-Name: run-selector
+Long-Name: Run Selector Plugin
+Url: http://wiki.jenkins-ci.org/display/JENKINS/Run+Selector+Plugin
+Plugin-Version: 1.0.0
+Hudson-Version: 1.580.1
+Jenkins-Version: 1.580.1
+Plugin-Dependencies: workflow-support:1.4.2;resolution:=optional,workf
+ low-step-api:1.4.2
+Plugin-Developers: Alexandru Somai:alexsomai:somai.alexandru@gmail.com
+

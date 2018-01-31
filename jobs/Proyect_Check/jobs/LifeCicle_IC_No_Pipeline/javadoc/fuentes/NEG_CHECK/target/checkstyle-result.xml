@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<checkstyle version="5.0">
+<file name="C:\Program Files (x86)\Jenkins\workspace\Check_Maven\fuentes\NEG_CHECK\src\main\java\es\iam\check\analisisDespliegues\business\analizadores\AbstractAnalizador.java">
+</file>
+<file name="C:\Program Files (x86)\Jenkins\workspace\Check_Maven\fuentes\NEG_CHECK\src\main\java\es\iam\check\analisisDespliegues\business\analizadores\AnalizadorArtefacto.java">
+</file>
+<file name="C:\Program Files (x86)\Jenkins\workspace\Check_Maven\fuentes\NEG_CHECK\src\main\java\es\iam\check\analisisDespliegues\business\analizadores\AnalizadorEstaticos.java">
+</file>
+<file name="C:\Program Files (x86)\Jenkins\workspace\Check_Maven\fuentes\NEG_CHECK\src\main\java\es\iam\check\analisisDespliegues\business\analizadores\AnalizadorRecursos.java">
+</file>
+<file name="C:\Program Files (x86)\Jenkins\workspace\Check_Maven\fuentes\NEG_CHECK\src\main\java\es\iam\check\analisisDespliegues\business\analizadores\exception\AnalisisIndeterminadoException.java">
+</file>
+<file name="C:\Program Files (x86)\Jenkins\workspace\Check_Maven\fuentes\NEG_CHECK\src\main\java\es\iam\check\analisisDespliegues\business\analizadores\exception\package-info.java">
+</file>
+<file name="C:\Program Files (x86)\Jenkins\workspace\Check_Maven\fuentes\NEG_CHECK\src\main\java\es\iam\check\analisisDespliegues\business\analizadores\IAnalizador.java">
+</file>
+<file name="C:\Program Files (x86)\Jenkins\workspace\Check_Maven\fuentes\NEG_CHECK\src\main\java\es\iam\check\analisisDespliegues\business\analizadores\package-info.java">
+</file>
+<file name="C:\Program Files (x86)\Jenkins\workspace\Check_Maven\fuentes\NEG_CHECK\src\main\java\es\iam\check\analisisDespliegues\business\chequeos\AbstractChequeo.java">
+</file>
+<file name="C:\Program Files (x86)\Jenkins\workspace\Check_Maven\fuentes\NEG_CHECK\src\main\java\es\iam\check\analisisDespliegues\business\chequeos\ChequeoContenidoDescriptoresDespliegue.java">
+</file>
+<file name="C:\Program Files (x86)\Jenkins\workspace\Check_Maven\fuentes\NEG_CHECK\src\main\java\es\iam\check\analisisDespliegues\business\chequeos\ChequeoExistenciaFicheros.java">
+</file>
+<file name="C:\Program Files (x86)\Jenkins\workspace\Check_Maven\fuentes\NEG_CHECK\src\main\java\es\iam\check\analisisDespliegues\business\chequeos\ChequeoLibreriasDuplicadas.java">
+</file>
+<file name="C:\Program Files (x86)\Jenkins\workspace\Check_Maven\fuentes\NEG_CHECK\src\main\java\es\iam\check\analisisDespliegues\business\chequeos\ChequeosFactory.java">
+</file>
+<file name="C:\Program Files (x86)\Jenkins\workspace\Check_Maven\fuentes\NEG_CHECK\src\main\java\es\iam\check\analisisDespliegues\business\chequeos\exception\InstalacionException.java">
+</file>
+<file name="C:\Program Files (x86)\Jenkins\workspace\Check_Maven\fuentes\NEG_CHECK\src\main\java\es\iam\check\analisisDespliegues\business\chequeos\exception\package-info.java">
+</file>
+<file name="C:\Program Files (x86)\Jenkins\workspace\Check_Maven\fuentes\NEG_CHECK\src\main\java\es\iam\check\analisisDespliegues\business\chequeos\IChequeo.java">
+</file>
+<file name="C:\Program Files (x86)\Jenkins\workspace\Check_Maven\fuentes\NEG_CHECK\src\main\java\es\iam\check\analisisDespliegues\business\chequeos\incidencias\IncidenciaChequeo.java">
+</file>
+<file name="C:\Program Files (x86)\Jenkins\workspace\Check_Maven\fuentes\NEG_CHECK\src\main\java\es\iam\check\analisisDespliegues\business\chequeos\incidencias\package-info.java">
+</file>
+<file name="C:\Program Files (x86)\Jenkins\workspace\Check_Maven\fuentes\NEG_CHECK\src\main\java\es\iam\check\analisisDespliegues\business\chequeos\package-info.java">
+</file>
+<file name="C:\Program Files (x86)\Jenkins\workspace\Check_Maven\fuentes\NEG_CHECK\src\main\java\es\iam\check\analisisDespliegues\business\chequeos\reglas\IRegla.java">
+</file>
+<file name="C:\Program Files (x86)\Jenkins\workspace\Check_Maven\fuentes\NEG_CHECK\src\main\java\es\iam\check\analisisDespliegues\business\chequeos\reglas\package-info.java">
+</file>
+<file name="C:\Program Files (x86)\Jenkins\workspace\Check_Maven\fuentes\NEG_CHECK\src\main\java\es\iam\check\analisisDespliegues\business\chequeos\reglas\ReglaArchivo.java">
+</file>
+<file name="C:\Program Files (x86)\Jenkins\workspace\Check_Maven\fuentes\NEG_CHECK\src\main\java\es\iam\check\analisisDespliegues\business\chequeos\reglas\ReglaContenido.java">
+</file>
+<file name="C:\Program Files (x86)\Jenkins\workspace\Check_Maven\fuentes\NEG_CHECK\src\main\java\es\iam\check\analisisDespliegues\business\chequeos\reglas\ReglaContenidoXML.java">
+</file>
+<file name="C:\Program Files (x86)\Jenkins\workspace\Check_Maven\fuentes\NEG_CHECK\src\main\java\es\iam\check\analisisDespliegues\business\chequeos\reglas\TipoComprobacion.java">
+</file>
+<file name="C:\Program Files (x86)\Jenkins\workspace\Check_Maven\fuentes\NEG_CHECK\src\main\java\es\iam\check\analisisDespliegues\business\chequeos\reglas\TratamientoMayusculas.java">
+</file>
+<file name="C:\Program Files (x86)\Jenkins\workspace\Check_Maven\fuentes\NEG_CHECK\src\main\java\es\iam\check\analisisDespliegues\business\chequeos\RepositorioChequeos.java">
+</file>
+<file name="C:\Program Files (x86)\Jenkins\workspace\Check_Maven\fuentes\NEG_CHECK\src\main\java\es\iam\check\analisisDespliegues\business\chequeos\Valoracion.java">
+</file>
+<file name="C:\Program Files (x86)\Jenkins\workspace\Check_Maven\fuentes\NEG_CHECK\src\main\java\es\iam\check\analisisDespliegues\business\configuracion\Argumentos.java">
+</file>
+<file name="C:\Program Files (x86)\Jenkins\workspace\Check_Maven\fuentes\NEG_CHECK\src\main\java\es\iam\check\analisisDespliegues\business\configuracion\Configuracion.java">
+</file>
+<file name="C:\Program Files (x86)\Jenkins\workspace\Check_Maven\fuentes\NEG_CHECK\src\main\java\es\iam\check\analisisDespliegues\business\configuracion\excepcion\NumeroArgumentosIncorrectoException.java">
+</file>
+<file name="C:\Program Files (x86)\Jenkins\workspace\Check_Maven\fuentes\NEG_CHECK\src\main\java\es\iam\check\analisisDespliegues\business\configuracion\excepcion\package-info.java">
+</file>
+<file name="C:\Program Files (x86)\Jenkins\workspace\Check_Maven\fuentes\NEG_CHECK\src\main\java\es\iam\check\analisisDespliegues\business\configuracion\excepcion\UsoException.java">
+</file>
+<file name="C:\Program Files (x86)\Jenkins\workspace\Check_Maven\fuentes\NEG_CHECK\src\main\java\es\iam\check\analisisDespliegues\business\configuracion\package-info.java">
+</file>
+<file name="C:\Program Files (x86)\Jenkins\workspace\Check_Maven\fuentes\NEG_CHECK\src\main\java\es\iam\check\analisisDespliegues\business\configuracion\TipoServidor.java">
+</file>
+<file name="C:\Program Files (x86)\Jenkins\workspace\Check_Maven\fuentes\NEG_CHECK\src\main\java\es\iam\check\analisisDespliegues\business\ficheros\Fichero.java">
+</file>
+<file name="C:\Program Files (x86)\Jenkins\workspace\Check_Maven\fuentes\NEG_CHECK\src\main\java\es\iam\check\analisisDespliegues\business\ficheros\FicheroAnalizable.java">
+</file>
+<file name="C:\Program Files (x86)\Jenkins\workspace\Check_Maven\fuentes\NEG_CHECK\src\main\java\es\iam\check\analisisDespliegues\business\ficheros\FicheroComprimidoAnalizable.java">
+</file>
+<file name="C:\Program Files (x86)\Jenkins\workspace\Check_Maven\fuentes\NEG_CHECK\src\main\java\es\iam\check\analisisDespliegues\business\ficheros\package-info.java">
+</file>
+<file name="C:\Program Files (x86)\Jenkins\workspace\Check_Maven\fuentes\NEG_CHECK\src\main\java\es\iam\check\analisisDespliegues\business\ficheros\TipoExtension.java">
+</file>
+<file name="C:\Program Files (x86)\Jenkins\workspace\Check_Maven\fuentes\NEG_CHECK\src\main\java\es\iam\check\analisisDespliegues\business\ficheros\TipoFichero.java">
+</file>
+<file name="C:\Program Files (x86)\Jenkins\workspace\Check_Maven\fuentes\NEG_CHECK\src\main\java\es\iam\check\analisisDespliegues\business\ficheros\Unzipper.java">
+</file>
+<file name="C:\Program Files (x86)\Jenkins\workspace\Check_Maven\fuentes\NEG_CHECK\src\main\java\es\iam\check\analisisDespliegues\business\main\Launcher.java">
+</file>
+<file name="C:\Program Files (x86)\Jenkins\workspace\Check_Maven\fuentes\NEG_CHECK\src\main\java\es\iam\check\analisisDespliegues\business\main\package-info.java">
+</file>
+<file name="C:\Program Files (x86)\Jenkins\workspace\Check_Maven\fuentes\NEG_CHECK\src\main\java\es\iam\check\analisisDespliegues\business\main\Uso.java">
+<error line="44" severity="error" message="La línea coincide con el patrón ilegal &apos;System\.out&apos;." source="com.puppycrawl.tools.checkstyle.checks.RegexpCheck"/>
+<error line="57" severity="error" message="La línea coincide con el patrón ilegal &apos;System\.out&apos;." source="com.puppycrawl.tools.checkstyle.checks.RegexpCheck"/>
+</file>
+<file name="C:\Program Files (x86)\Jenkins\workspace\Check_Maven\fuentes\NEG_CHECK\src\main\java\es\iam\check\analisisDespliegues\business\view\informes\AbstractHtmlInforme.java">
+</file>
+<file name="C:\Program Files (x86)\Jenkins\workspace\Check_Maven\fuentes\NEG_CHECK\src\main\java\es\iam\check\analisisDespliegues\business\view\informes\Informe.java">
+</file>
+<file name="C:\Program Files (x86)\Jenkins\workspace\Check_Maven\fuentes\NEG_CHECK\src\main\java\es\iam\check\analisisDespliegues\business\view\informes\InformeArtefacto.java">
+</file>
+<file name="C:\Program Files (x86)\Jenkins\workspace\Check_Maven\fuentes\NEG_CHECK\src\main\java\es\iam\check\analisisDespliegues\business\view\informes\InformeEstaticos.java">
+</file>
+<file name="C:\Program Files (x86)\Jenkins\workspace\Check_Maven\fuentes\NEG_CHECK\src\main\java\es\iam\check\analisisDespliegues\business\view\informes\InformeRecursos.java">
+</file>
+<file name="C:\Program Files (x86)\Jenkins\workspace\Check_Maven\fuentes\NEG_CHECK\src\main\java\es\iam\check\analisisDespliegues\business\view\informes\package-info.java">
+</file>
+</checkstyle>

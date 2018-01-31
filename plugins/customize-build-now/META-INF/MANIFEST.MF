@@ -1,0 +1,20 @@
+Manifest-Version: 1.0
+Archiver-Version: Plexus Archiver
+Created-By: Apache Maven
+Built-By: jglick
+Build-Jdk: 1.7.0_80
+Extension-Name: customize-build-now
+Specification-Title: Provide an alternate label to 'Build Now' to run 
+ a job
+Implementation-Title: customize-build-now
+Implementation-Version: 1.1
+Group-Id: org.jenkins-ci.plugins
+Short-Name: customize-build-now
+Long-Name: Customize Build Now Label
+Url: https://wiki.jenkins-ci.org/display/JENKINS/Customize+Build+Now+P
+ lugin
+Plugin-Version: 1.1
+Hudson-Version: 1.625
+Jenkins-Version: 1.625
+Plugin-Developers: Udaypal Aarkoti:uday:uaarkoti@gmail.com
+

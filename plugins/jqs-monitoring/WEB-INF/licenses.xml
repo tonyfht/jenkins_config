@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<l:dependencies xmlns:l='licenses' groupId='org.jenkins-ci.plugins' artifactId='jqs-monitoring' version='1.4'><l:dependency name='Job/Queue/Slaves Monitoring Plugin' groupId='org.jenkins-ci.plugins' artifactId='jqs-monitoring' version='1.4' url='https://wiki.jenkins-ci.org/display/JENKINS/JQS+Monitoring+Plugin'><l:description/></l:dependency></l:dependencies>

@@ -1,0 +1,71 @@
+[C:\Program Files (x86)\Jenkins\workspace\Check_Maven_Pipeline] Running shell script
++ C://Software//apache-maven-3.5.0//bin/mvn checkstyle:checkstyle -f fuentes/pom.xml -U
+[INFO] Scanning for projects...
+[WARNING] 
+[WARNING] Some problems were encountered while building the effective model for es.iam.calidad.check:check-neg:jar:2.1.1
+[WARNING] 'version' contains an expression but should be a constant. @ es.iam.calidad.check:check:${check.version}, C:\Program Files (x86)\Jenkins\workspace\Check_Maven_Pipeline\fuentes\pom.xml, line 9, column 12
+[WARNING] Reporting configuration should be done in <reporting> section, not in maven-site-plugin <configuration> as reportPlugins parameter.
+[WARNING] 
+[WARNING] Some problems were encountered while building the effective model for es.iam.calidad.check:check-main:jar:2.1.1
+[WARNING] Reporting configuration should be done in <reporting> section, not in maven-site-plugin <configuration> as reportPlugins parameter.
+[WARNING] 
+[WARNING] Some problems were encountered while building the effective model for es.iam.calidad.check:check-config:pom:2.1.1
+[WARNING] Reporting configuration should be done in <reporting> section, not in maven-site-plugin <configuration> as reportPlugins parameter.
+[WARNING] 
+[WARNING] Some problems were encountered while building the effective model for es.iam.calidad.check:check:pom:2.1.1
+[WARNING] 'version' contains an expression but should be a constant. @ es.iam.calidad.check:check:${check.version}, C:\Program Files (x86)\Jenkins\workspace\Check_Maven_Pipeline\fuentes\pom.xml, line 9, column 12
+[WARNING] Reporting configuration should be done in <reporting> section, not in maven-site-plugin <configuration> as reportPlugins parameter. @ es.iam.calidad.check:check:${check.version}, C:\Program Files (x86)\Jenkins\workspace\Check_Maven_Pipeline\fuentes\pom.xml, line 101, column 20
+[WARNING] 
+[WARNING] It is highly recommended to fix these problems because they threaten the stability of your build.
+[WARNING] 
+[WARNING] For this reason, future Maven versions might no longer support building such malformed projects.
+[WARNING] 
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Build Order:
+[INFO] 
+[INFO] CHECK
+[INFO] CHECK-NEG
+[INFO] CHECK-Main
+[INFO] CHECK-config
+[INFO] 
+[INFO] ------------------------------------------------------------------------
+[INFO] Building CHECK 2.1.1
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-checkstyle-plugin:2.6:checkstyle (default-cli) @ check ---
+[INFO] 
+[INFO] ------------------------------------------------------------------------
+[INFO] Building CHECK-NEG 2.1.1
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-checkstyle-plugin:2.6:checkstyle (default-cli) @ check-neg ---
+[INFO] 
+[INFO] There are 2 checkstyle errors.
+[INFO] 
+[INFO] ------------------------------------------------------------------------
+[INFO] Building CHECK-Main 2.1.1
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-checkstyle-plugin:2.6:checkstyle (default-cli) @ check-main ---
+[WARNING] File encoding has not been set, using platform encoding Cp1252, i.e. build is platform dependent!
+[INFO] 
+[INFO] 
+[INFO] ------------------------------------------------------------------------
+[INFO] Building CHECK-config 2.1.1
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-checkstyle-plugin:2.6:checkstyle (default-cli) @ check-config ---
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Summary:
+[INFO] 
+[INFO] CHECK .............................................. SUCCESS [  1.434 s]
+[INFO] CHECK-NEG .......................................... SUCCESS [  1.857 s]
+[INFO] CHECK-Main ......................................... SUCCESS [  0.609 s]
+[INFO] CHECK-config ....................................... SUCCESS [  0.011 s]
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 4.559 s
+[INFO] Finished at: 2018-01-09T10:35:06+01:00
+[INFO] Final Memory: 15M/188M
+[INFO] ------------------------------------------------------------------------

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ResultElement TestItem="Execution Plan_Chrome">
+  <RunCount />
+  <Timer />
+  <WasSuccess />
+  <TestSuite TestItem="Contratar Hotel - Basico- Error detectado mensaje">
+    <RunCount />
+    <Timer />
+    <WasSuccess />
+    <ResultElement TestItem="ERROR en step [12]">
+      <ErrorCount>1</ErrorCount>
+      <WarningCount>0</WarningCount>
+      <Incident>
+        <Message>Keyword [Validar Mensaje Error]</Message>
+        <Severity>Fail</Severity>
+        <Detail>
+          <TestName>Validar Mensaje Error</TestName>
+          <Info>La validacion no es correcta. Se esperaba dirección de mail no válida pero se muestra Not a valid email address</Info>
+        </Detail>
+      </Incident>
+    </ResultElement>
+  </TestSuite>
+</ResultElement>
+

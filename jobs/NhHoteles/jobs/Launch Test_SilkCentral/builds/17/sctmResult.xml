@@ -1,0 +1,158 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<suite plugin="SCTMExecutor@2.2">
+  <name>root</name>
+  <childResults class="list">
+    <case>
+      <parent class="suite" reference="../../.."/>
+      <name>JUnitTestPackage</name>
+      <configurationResults>
+        <entry>
+          <string>CI Testing</string>
+          <configuration>
+            <parent class="case" reference="../../../.."/>
+            <state>FAILED</state>
+            <failCount>1</failCount>
+            <skipCount>0</skipCount>
+            <passCount>0</passCount>
+            <duration>-1.0</duration>
+            <errorMessage></errorMessage>
+          </configuration>
+        </entry>
+      </configurationResults>
+    </case>
+    <case>
+      <parent class="suite" reference="../../.."/>
+      <name>First Time Shopper (Manual to Automated)</name>
+      <configurationResults>
+        <entry>
+          <string>Firefox</string>
+          <configuration>
+            <parent class="case" reference="../../../.."/>
+            <state>FAILED</state>
+            <failCount>1</failCount>
+            <skipCount>0</skipCount>
+            <passCount>0</passCount>
+            <duration>-1.0</duration>
+            <errorMessage></errorMessage>
+          </configuration>
+        </entry>
+      </configurationResults>
+    </case>
+    <case>
+      <parent class="suite" reference="../../.."/>
+      <name>Browse the web site</name>
+      <configurationResults>
+        <entry>
+          <string>Load Test</string>
+          <configuration>
+            <parent class="case" reference="../../../.."/>
+            <state>FAILED</state>
+            <failCount>1</failCount>
+            <skipCount>0</skipCount>
+            <passCount>0</passCount>
+            <duration>-1.0</duration>
+            <errorMessage></errorMessage>
+          </configuration>
+        </entry>
+      </configurationResults>
+    </case>
+    <case>
+      <parent class="suite" reference="../../.."/>
+      <name>First Time Shopper (Manual to Automated)</name>
+      <configurationResults>
+        <entry>
+          <string>Internet Explorer</string>
+          <configuration>
+            <parent class="case" reference="../../../.."/>
+            <state>FAILED</state>
+            <failCount>1</failCount>
+            <skipCount>0</skipCount>
+            <passCount>0</passCount>
+            <duration>-1.0</duration>
+            <errorMessage></errorMessage>
+          </configuration>
+        </entry>
+      </configurationResults>
+    </case>
+    <case>
+      <parent class="suite" reference="../../.."/>
+      <name>Volatile Tests</name>
+      <configurationResults>
+        <entry>
+          <string>Volatile Test</string>
+          <configuration>
+            <parent class="case" reference="../../../.."/>
+            <state>FAILED</state>
+            <failCount>1</failCount>
+            <skipCount>0</skipCount>
+            <passCount>0</passCount>
+            <duration>-1.0</duration>
+            <errorMessage></errorMessage>
+          </configuration>
+        </entry>
+      </configurationResults>
+    </case>
+  </childResults>
+  <configurationResults>
+    <entry>
+      <string>Load Test</string>
+      <configuration>
+        <parent class="suite" reference="../../../.."/>
+        <state>FAILED</state>
+        <failCount>1</failCount>
+        <skipCount>0</skipCount>
+        <passCount>0</passCount>
+        <duration>-1.0</duration>
+        <errorMessage></errorMessage>
+      </configuration>
+    </entry>
+    <entry>
+      <string>CI Testing</string>
+      <configuration>
+        <parent class="suite" reference="../../../.."/>
+        <state>FAILED</state>
+        <failCount>1</failCount>
+        <skipCount>0</skipCount>
+        <passCount>0</passCount>
+        <duration>-1.0</duration>
+        <errorMessage></errorMessage>
+      </configuration>
+    </entry>
+    <entry>
+      <string>Internet Explorer</string>
+      <configuration>
+        <parent class="suite" reference="../../../.."/>
+        <state>FAILED</state>
+        <failCount>1</failCount>
+        <skipCount>0</skipCount>
+        <passCount>0</passCount>
+        <duration>-1.0</duration>
+        <errorMessage></errorMessage>
+      </configuration>
+    </entry>
+    <entry>
+      <string>Volatile Test</string>
+      <configuration>
+        <parent class="suite" reference="../../../.."/>
+        <state>FAILED</state>
+        <failCount>1</failCount>
+        <skipCount>0</skipCount>
+        <passCount>0</passCount>
+        <duration>-1.0</duration>
+        <errorMessage></errorMessage>
+      </configuration>
+    </entry>
+    <entry>
+      <string>Firefox</string>
+      <configuration>
+        <parent class="suite" reference="../../../.."/>
+        <state>FAILED</state>
+        <failCount>1</failCount>
+        <skipCount>0</skipCount>
+        <passCount>0</passCount>
+        <duration>-1.0</duration>
+        <errorMessage></errorMessage>
+      </configuration>
+    </entry>
+  </configurationResults>
+</suite>

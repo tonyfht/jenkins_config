@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<hudson.plugins.jobConfigHistory.HistoryDescr plugin="jobConfigHistory@2.18">
+  <user>admin</user>
+  <userId>admin</userId>
+  <operation>Renamed</operation>
+  <timestamp>2018-01-16_09-03-33</timestamp>
+  <currentName>Slave_Linux_Ubu_01</currentName>
+  <oldName>Slave</oldName>
+</hudson.plugins.jobConfigHistory.HistoryDescr>

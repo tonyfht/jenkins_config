@@ -1,0 +1,499 @@
+Running from: C:\Program Files (x86)\Jenkins\jenkins.war
+Jenkins home directory: C:\Program Files (x86)\Jenkins found at: EnvVars.masterEnvVars.get("JENKINS_HOME")
+Running from: C:\Program Files (x86)\Jenkins\jenkins.war
+Jenkins home directory: C:\Program Files (x86)\Jenkins found at: EnvVars.masterEnvVars.get("JENKINS_HOME")
+Running from: C:\Program Files (x86)\Jenkins\jenkins.war
+Jenkins home directory: C:\Program Files (x86)\Jenkins found at: EnvVars.masterEnvVars.get("JENKINS_HOME")
+Running from: C:\Program Files (x86)\Jenkins\jenkins.war
+Jenkins home directory: C:\Program Files (x86)\Jenkins found at: EnvVars.masterEnvVars.get("JENKINS_HOME")
+Running from: C:\Program Files (x86)\Jenkins\jenkins.war
+Jenkins home directory: C:\Program Files (x86)\Jenkins found at: EnvVars.masterEnvVars.get("JENKINS_HOME")
+Running from: C:\Program Files (x86)\Jenkins\jenkins.war
+Jenkins home directory: C:\Program Files (x86)\Jenkins found at: EnvVars.masterEnvVars.get("JENKINS_HOME")
+Running from: C:\Program Files (x86)\Jenkins\jenkins.war
+Jenkins home directory: C:\Program Files (x86)\Jenkins found at: EnvVars.masterEnvVars.get("JENKINS_HOME")
+Running from: C:\Program Files (x86)\Jenkins\jenkins.war
+Jenkins home directory: C:\Program Files (x86)\Jenkins found at: EnvVars.masterEnvVars.get("JENKINS_HOME")
+Running from: C:\Program Files (x86)\Jenkins\jenkins.war
+Jenkins home directory: C:\Program Files (x86)\Jenkins found at: EnvVars.masterEnvVars.get("JENKINS_HOME")
+Running from: C:\Program Files (x86)\Jenkins\jenkins.war
+Jenkins home directory: C:\Program Files (x86)\Jenkins found at: EnvVars.masterEnvVars.get("JENKINS_HOME")
+Running from: C:\Program Files (x86)\Jenkins\jenkins.war
+Jenkins home directory: C:\Program Files (x86)\Jenkins found at: EnvVars.masterEnvVars.get("JENKINS_HOME")
+Running from: C:\Program Files (x86)\Jenkins\jenkins.war
+Jenkins home directory: C:\Program Files (x86)\Jenkins found at: EnvVars.masterEnvVars.get("JENKINS_HOME")
+Running from: C:\Program Files (x86)\Jenkins\jenkins.war
+Jenkins home directory: C:\Program Files (x86)\Jenkins found at: EnvVars.masterEnvVars.get("JENKINS_HOME")
+Running from: C:\Program Files (x86)\Jenkins\jenkins.war
+Jenkins home directory: C:\Program Files (x86)\Jenkins found at: EnvVars.masterEnvVars.get("JENKINS_HOME")
+[10/26/17 11:53:36] SSH Launch of Slave on  failed in 1.025 ms
+Running from: C:\Program Files (x86)\Jenkins\jenkins.war
+Jenkins home directory: C:\Program Files (x86)\Jenkins found at: EnvVars.masterEnvVars.get("JENKINS_HOME")
+Running from: C:\Program Files (x86)\Jenkins\jenkins.war
+Jenkins home directory: C:\Program Files (x86)\Jenkins found at: EnvVars.masterEnvVars.get("JENKINS_HOME")
+Running from: C:\Program Files (x86)\Jenkins\jenkins.war
+Jenkins home directory: C:\Program Files (x86)\Jenkins found at: EnvVars.masterEnvVars.get("JENKINS_HOME")
+Running from: C:\Program Files (x86)\Jenkins\jenkins.war
+Jenkins home directory: C:\Program Files (x86)\Jenkins found at: EnvVars.masterEnvVars.get("JENKINS_HOME")
+Running from: C:\Program Files (x86)\Jenkins\jenkins.war
+Jenkins home directory: C:\Program Files (x86)\Jenkins found at: EnvVars.masterEnvVars.get("JENKINS_HOME")
+Running from: C:\Program Files (x86)\Jenkins\jenkins.war
+Jenkins home directory: C:\Program Files (x86)\Jenkins found at: EnvVars.masterEnvVars.get("JENKINS_HOME")
+Running from: C:\Program Files (x86)\Jenkins\jenkins.war
+Jenkins home directory: C:\Program Files (x86)\Jenkins found at: EnvVars.masterEnvVars.get("JENKINS_HOME")
+Running from: C:\Program Files (x86)\Jenkins\jenkins.war
+Jenkins home directory: C:\Program Files (x86)\Jenkins found at: EnvVars.masterEnvVars.get("JENKINS_HOME")
+Running from: C:\Program Files (x86)\Jenkins\jenkins.war
+Jenkins home directory: C:\Program Files (x86)\Jenkins found at: EnvVars.masterEnvVars.get("JENKINS_HOME")
+Running from: C:\Program Files (x86)\Jenkins\jenkins.war
+Jenkins home directory: C:\Program Files (x86)\Jenkins found at: EnvVars.masterEnvVars.get("JENKINS_HOME")
+Running from: C:\Program Files (x86)\Jenkins\jenkins.war
+Jenkins home directory: C:\Program Files (x86)\Jenkins found at: EnvVars.masterEnvVars.get("JENKINS_HOME")
+Running from: C:\Program Files (x86)\Jenkins\jenkins.war
+Jenkins home directory: C:\Program Files (x86)\Jenkins found at: EnvVars.masterEnvVars.get("JENKINS_HOME")
+Running from: C:\Program Files (x86)\Jenkins\jenkins.war
+Jenkins home directory: C:\Program Files (x86)\Jenkins found at: EnvVars.masterEnvVars.get("JENKINS_HOME")
+Running from: C:\Program Files (x86)\Jenkins\jenkins.war
+Jenkins home directory: C:\Program Files (x86)\Jenkins found at: EnvVars.masterEnvVars.get("JENKINS_HOME")
+Running from: C:\Program Files (x86)\Jenkins\jenkins.war
+Jenkins home directory: C:\Program Files (x86)\Jenkins found at: EnvVars.masterEnvVars.get("JENKINS_HOME")
+Running from: C:\Program Files (x86)\Jenkins\jenkins.war
+Jenkins home directory: C:\Program Files (x86)\Jenkins found at: EnvVars.masterEnvVars.get("JENKINS_HOME")
+Running from: C:\Program Files (x86)\Jenkins\jenkins.war
+Jenkins home directory: C:\Program Files (x86)\Jenkins found at: EnvVars.masterEnvVars.get("JENKINS_HOME")
+Running from: C:\Program Files (x86)\Jenkins\jenkins.war
+Jenkins home directory: C:\Program Files (x86)\Jenkins found at: EnvVars.masterEnvVars.get("JENKINS_HOME")
+E14: Could not alter table to add package column to table env_dashboard.
+Tabla "ENV_DASHBOARD" no encontrada
+Table "ENV_DASHBOARD" not found; SQL statement:
+ALTER TABLE env_dashboard ADD IF NOT EXISTS packageName VARCHAR(255); [42102-188]
+E4Tabla "ENV_DASHBOARD" no encontrada
+Table "ENV_DASHBOARD" not found; SQL statement:
+select distinct envname from env_dashboard order by envname; [42102-188]
+E4Tabla "ENV_DASHBOARD" no encontrada
+Table "ENV_DASHBOARD" not found; SQL statement:
+select distinct envname from env_dashboard order by envname; [42102-188]
+E4Tabla "ENV_DASHBOARD" no encontrada
+Table "ENV_DASHBOARD" not found; SQL statement:
+select distinct envname from env_dashboard order by envname; [42102-188]
+E4Tabla "ENV_DASHBOARD" no encontrada
+Table "ENV_DASHBOARD" not found; SQL statement:
+select distinct envname from env_dashboard order by envname; [42102-188]
+Running from: C:\Program Files (x86)\Jenkins\jenkins.war
+Jenkins home directory: C:\Program Files (x86)\Jenkins found at: EnvVars.masterEnvVars.get("JENKINS_HOME")
+Running from: C:\Program Files (x86)\Jenkins\jenkins.war
+Jenkins home directory: C:\Program Files (x86)\Jenkins found at: EnvVars.masterEnvVars.get("JENKINS_HOME")
+Running from: C:\Program Files (x86)\Jenkins\jenkins.war
+Running from: C:\Program Files (x86)\Jenkins\jenkins.war
+Jenkins home directory: C:\Program Files (x86)\Jenkins found at: EnvVars.masterEnvVars.get("JENKINS_HOME")
+Error on class org.jenkinsci.plugins.workflow.cps.steps.ParallelStep: org.kohsuke.stapler.NoStaplerConstructorException: There's no @DataBoundConstructor on any constructor of class org.jenkinsci.plugins.workflow.cps.steps.ParallelStep
+	at org.kohsuke.stapler.ClassDescriptor.loadConstructorParamNames(ClassDescriptor.java:265)
+	at org.jenkinsci.plugins.structs.describable.DescribableModel.<init>(DescribableModel.java:122)
+	at sun.reflect.GeneratedConstructorAccessor241.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.codehaus.groovy.reflection.CachedConstructor.invoke(CachedConstructor.java:83)
+	at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrapNoCoerce.callConstructor(ConstructorSite.java:105)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:247)
+	at org.jenkinsci.plugins.workflow.cps.Snippetizer.gdsl$_run_closure1$_closure4.doCall(gdsl.groovy:30)
+	at sun.reflect.GeneratedMethodAccessor990.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:93)
+	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:325)
+	at org.codehaus.groovy.runtime.metaclass.ClosureMetaClass.invokeMethod(ClosureMetaClass.java:294)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1022)
+	at groovy.lang.Closure.call(Closure.java:414)
+	at groovy.lang.Closure.call(Closure.java:430)
+	at org.codehaus.groovy.runtime.DefaultGroovyMethods.each(DefaultGroovyMethods.java:2040)
+	at org.codehaus.groovy.runtime.DefaultGroovyMethods.each(DefaultGroovyMethods.java:2025)
+	at org.codehaus.groovy.runtime.DefaultGroovyMethods.each(DefaultGroovyMethods.java:2090)
+	at org.codehaus.groovy.runtime.dgm$165.invoke(Unknown Source)
+	at org.codehaus.groovy.runtime.callsite.PojoMetaMethodSite$PojoMetaMethodSiteNoUnwrapNoCoerce.invoke(PojoMetaMethodSite.java:274)
+	at org.codehaus.groovy.runtime.callsite.PojoMetaMethodSite.call(PojoMetaMethodSite.java:56)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:48)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:113)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:125)
+	at org.jenkinsci.plugins.workflow.cps.Snippetizer.gdsl$_run_closure1.doCall(gdsl.groovy:23)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:93)
+	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:325)
+	at org.codehaus.groovy.runtime.metaclass.ClosureMetaClass.invokeMethod(ClosureMetaClass.java:294)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1022)
+	at groovy.lang.Closure.call(Closure.java:414)
+	at groovy.lang.Closure.call(Closure.java:430)
+	at org.codehaus.groovy.runtime.DefaultGroovyMethods.each(DefaultGroovyMethods.java:2040)
+	at org.codehaus.groovy.runtime.DefaultGroovyMethods.each(DefaultGroovyMethods.java:2025)
+	at org.codehaus.groovy.runtime.DefaultGroovyMethods.each(DefaultGroovyMethods.java:2066)
+	at org.codehaus.groovy.runtime.dgm$162.invoke(Unknown Source)
+	at org.codehaus.groovy.runtime.callsite.PojoMetaMethodSite$PojoMetaMethodSiteNoUnwrapNoCoerce.invoke(PojoMetaMethodSite.java:274)
+	at org.codehaus.groovy.runtime.callsite.PojoMetaMethodSite.call(PojoMetaMethodSite.java:56)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:48)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:113)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:125)
+	at org.jenkinsci.plugins.workflow.cps.Snippetizer.gdsl.run(gdsl.groovy:22)
+	at org.kohsuke.stapler.jelly.groovy.GroovierJellyScript.run(GroovierJellyScript.java:74)
+	at org.kohsuke.stapler.jelly.groovy.GroovierJellyScript.run(GroovierJellyScript.java:62)
+	at org.kohsuke.stapler.jelly.DefaultScriptInvoker.invokeScript(DefaultScriptInvoker.java:63)
+	at org.kohsuke.stapler.jelly.DefaultScriptInvoker.invokeScript(DefaultScriptInvoker.java:53)
+	at org.kohsuke.stapler.jelly.groovy.GroovyFacet$1.dispatch(GroovyFacet.java:83)
+	at org.kohsuke.stapler.Stapler.tryInvoke(Stapler.java:715)
+	at org.kohsuke.stapler.Stapler.invoke(Stapler.java:845)
+	at org.kohsuke.stapler.MetaClass$10.dispatch(MetaClass.java:374)
+	at org.kohsuke.stapler.Stapler.tryInvoke(Stapler.java:715)
+	at org.kohsuke.stapler.Stapler.invoke(Stapler.java:845)
+	at org.kohsuke.stapler.MetaClass$5.doDispatch(MetaClass.java:248)
+	at org.kohsuke.stapler.NameBasedDispatcher.dispatch(NameBasedDispatcher.java:58)
+	at org.kohsuke.stapler.Stapler.tryInvoke(Stapler.java:715)
+	at org.kohsuke.stapler.Stapler.invoke(Stapler.java:845)
+	at org.kohsuke.stapler.Stapler.invoke(Stapler.java:649)
+	at org.kohsuke.stapler.Stapler.service(Stapler.java:238)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:790)
+	at org.eclipse.jetty.servlet.ServletHolder.handle(ServletHolder.java:841)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1650)
+	at hudson.util.PluginServletFilter$1.doFilter(PluginServletFilter.java:135)
+	at org.jenkinsci.plugins.ssegateway.Endpoint$SSEListenChannelFilter.doFilter(Endpoint.java:225)
+	at hudson.util.PluginServletFilter$1.doFilter(PluginServletFilter.java:132)
+	at io.jenkins.blueocean.auth.jwt.impl.JwtAuthenticationFilter.doFilter(JwtAuthenticationFilter.java:61)
+	at hudson.util.PluginServletFilter$1.doFilter(PluginServletFilter.java:132)
+	at io.jenkins.blueocean.ResourceCacheControl.doFilter(ResourceCacheControl.java:134)
+	at hudson.util.PluginServletFilter$1.doFilter(PluginServletFilter.java:132)
+	at org.jenkinsci.plugins.modernstatus.ModernStatusFilter.doFilter(ModernStatusFilter.java:52)
+	at hudson.util.PluginServletFilter$1.doFilter(PluginServletFilter.java:132)
+	at jenkins.metrics.impl.MetricsFilter.doFilter(MetricsFilter.java:125)
+	at hudson.util.PluginServletFilter$1.doFilter(PluginServletFilter.java:132)
+	at hudson.util.PluginServletFilter.doFilter(PluginServletFilter.java:138)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1637)
+	at hudson.security.csrf.CrumbFilter.doFilter(CrumbFilter.java:91)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1637)
+	at hudson.security.ChainedServletFilter$1.doFilter(ChainedServletFilter.java:84)
+	at hudson.security.UnwrapSecurityExceptionFilter.doFilter(UnwrapSecurityExceptionFilter.java:51)
+	at hudson.security.ChainedServletFilter$1.doFilter(ChainedServletFilter.java:87)
+	at jenkins.security.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:117)
+	at hudson.security.ChainedServletFilter$1.doFilter(ChainedServletFilter.java:87)
+	at org.acegisecurity.providers.anonymous.AnonymousProcessingFilter.doFilter(AnonymousProcessingFilter.java:125)
+	at hudson.security.ChainedServletFilter$1.doFilter(ChainedServletFilter.java:87)
+	at org.acegisecurity.ui.rememberme.RememberMeProcessingFilter.doFilter(RememberMeProcessingFilter.java:142)
+	at hudson.security.ChainedServletFilter$1.doFilter(ChainedServletFilter.java:87)
+	at org.acegisecurity.ui.AbstractProcessingFilter.doFilter(AbstractProcessingFilter.java:271)
+	at hudson.security.ChainedServletFilter$1.doFilter(ChainedServletFilter.java:87)
+	at jenkins.security.BasicHeaderProcessor.doFilter(BasicHeaderProcessor.java:93)
+	at hudson.security.ChainedServletFilter$1.doFilter(ChainedServletFilter.java:87)
+	at org.acegisecurity.context.HttpSessionContextIntegrationFilter.doFilter(HttpSessionContextIntegrationFilter.java:249)
+	at hudson.security.HttpSessionContextIntegrationFilter2.doFilter(HttpSessionContextIntegrationFilter2.java:67)
+	at hudson.security.ChainedServletFilter$1.doFilter(ChainedServletFilter.java:87)
+	at hudson.security.ChainedServletFilter.doFilter(ChainedServletFilter.java:90)
+	at hudson.security.HudsonFilter.doFilter(HudsonFilter.java:171)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1637)
+	at org.kohsuke.stapler.compression.CompressionFilter.doFilter(CompressionFilter.java:49)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1637)
+	at hudson.util.CharacterEncodingFilter.doFilter(CharacterEncodingFilter.java:82)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1637)
+	at org.kohsuke.stapler.DiagnosticThreadNameFilter.doFilter(DiagnosticThreadNameFilter.java:30)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1637)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:533)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:143)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:524)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:190)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:1595)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:188)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1253)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:168)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:473)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:1564)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:166)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1155)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
+	at org.eclipse.jetty.server.Server.handle(Server.java:564)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:317)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:251)
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:279)
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:110)
+	at org.eclipse.jetty.io.ChannelEndPoint$2.run(ChannelEndPoint.java:124)
+	at org.eclipse.jetty.util.thread.Invocable.invokePreferred(Invocable.java:128)
+	at org.eclipse.jetty.util.thread.Invocable$InvocableExecutor.invoke(Invocable.java:222)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.doProduce(EatWhatYouKill.java:294)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.run(EatWhatYouKill.java:199)
+	at winstone.BoundedExecutorService$1.run(BoundedExecutorService.java:77)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+
+Running from: C:\Program Files (x86)\Jenkins\jenkins.war
+Jenkins home directory: C:\Program Files (x86)\Jenkins found at: EnvVars.masterEnvVars.get("JENKINS_HOME")
+Running from: C:\Program Files (x86)\Jenkins\jenkins.war
+Jenkins home directory: C:\Program Files (x86)\Jenkins found at: EnvVars.masterEnvVars.get("JENKINS_HOME")
+Running from: C:\Program Files (x86)\Jenkins\jenkins.war
+Jenkins home directory: C:\Program Files (x86)\Jenkins found at: EnvVars.masterEnvVars.get("JENKINS_HOME")
+Running from: C:\Program Files (x86)\Jenkins\jenkins.war
+Jenkins home directory: C:\Program Files (x86)\Jenkins found at: EnvVars.masterEnvVars.get("JENKINS_HOME")
+Running from: C:\Program Files (x86)\Jenkins\jenkins.war
+Jenkins home directory: C:\Program Files (x86)\Jenkins found at: EnvVars.masterEnvVars.get("JENKINS_HOME")
+[01/16/18 09:03:34] SSH Launch of Slave_Linux_Ubu_01 on 192.168.35.135 failed in 1.025 ms
+[01/16/18 09:03:37] SSH Launch of Slave_Linux_Ubu_01 on 192.168.35.135 failed in 1.005 ms
+[01/16/18 09:04:00] SSH Launch of Slave_Linux_Ubu_01 on 192.168.35.135 failed in 1.005 ms
+[01/16/18 09:06:00] SSH Launch of Slave_Linux_Ubu_01 on 192.168.35.135 failed in 1.006 ms
+[01/16/18 09:07:29] SSH Launch of Slave_Linux_Ubu_01 on 192.168.35.135 failed in 1.021 ms
+[01/16/18 09:08:00] SSH Launch of Slave_Linux_Ubu_01 on 192.168.35.135 failed in 1.008 ms
+[01/16/18 09:10:00] SSH Launch of Slave_Linux_Ubu_01 on 192.168.35.135 failed in 1.006 ms
+[01/16/18 09:13:47] SSH Launch of Slave_Linux_Ubu_01 on 192.168.35.135 failed in 1.007 ms
+[01/16/18 09:16:32] SSH Launch of Slave_Linux_Ubu_01 on 192.168.35.135 failed in 1.007 ms
+[01/16/18 09:20:00] SSH Launch of Slave_Linux_Ubu_01 on 192.168.35.135 failed in 1.015 ms
+[01/17/18 10:53:20] SSH Launch of Slave_Linux_Ubu_01 on 192.168.35.135 failed in 187 ms
+[01/17/18 10:53:39] SSH Launch of Slave_Linux_Ubu_01 on 192.168.35.135 failed in 451 ms
+[01/17/18 10:54:03] SSH Launch of Slave_Linux_Ubu_01 on 192.168.35.135 failed in 168 ms
+[01/17/18 10:54:54] SSH Launch of Slave_Linux_Ubu_01 on 192.168.35.135 failed in 150 ms
+[01/17/18 10:55:25] SSH Launch of Slave_Linux_Ubu_01 on 192.168.35.135 failed in 158 ms
+[01/17/18 10:55:48] SSH Launch of Slave_Linux_Ubu_01 on 192.168.35.134 failed in 186 ms
+[01/17/18 10:56:58] SSH Launch of Slave_Linux_Ubu_01 on 192.168.35.135 failed in 160 ms
+[01/17/18 10:57:53] SSH Launch of Slave_Linux_Ubu_01 on 192.168.35.135 failed in 169 ms
+[01/17/18 10:57:59] SSH Launch of Slave_Linux_Ubu_01 on 192.168.35.135 failed in 123 ms
+[01/17/18 11:00:13] SSH Launch of Slave_Linux_Ubu_01 on 192.168.35.135 failed in 158 ms
+[01/17/18 11:19:59] SSH Launch of Slave_Linux_Ubu_01 on 192.168.35.135 failed in 133 ms
+[01/17/18 11:41:59] SSH Launch of Slave_Linux_Ubu_01 on 192.168.35.135 failed in 135 ms
+[01/17/18 11:49:24] SSH Launch of Slave_Linux_Ubu_01 on 192.168.35.135 failed in 169 ms
+[01/17/18 11:49:35] SSH Launch of Slave_Linux_Ubu_01 on 192.168.35.135 failed in 170 ms
+[01/17/18 11:53:59] SSH Launch of Slave_Linux_Ubu_01 on 192.168.35.135 failed in 129 ms
+[01/17/18 12:15:59] SSH Launch of Slave_Linux_Ubu_01 on 192.168.35.135 failed in 139 ms
+[01/17/18 12:38:59] SSH Launch of Slave_Linux_Ubu_01 on 192.168.35.135 failed in 132 ms
+[01/17/18 13:00:59] SSH Launch of Slave_Linux_Ubu_01 on 192.168.35.135 failed in 172 ms
+[01/17/18 13:23:59] SSH Launch of Slave_Linux_Ubu_01 on 192.168.35.135 failed in 125 ms
+[01/17/18 13:47:59] SSH Launch of Slave_Linux_Ubu_01 on 192.168.35.135 failed in 132 ms
+[01/17/18 14:08:59] SSH Launch of Slave_Linux_Ubu_01 on 192.168.35.135 failed in 123 ms
+[01/17/18 14:31:59] SSH Launch of Slave_Linux_Ubu_01 on 192.168.35.135 failed in 134 ms
+[01/17/18 14:40:07] SSH Launch of Slave_Linux_Ubu_01 on 192.168.35.135 failed in 195 ms
+[01/17/18 14:40:23] SSH Launch of Slave_Linux_Ubu_01 on 192.168.35.135 failed in 378 ms
+[01/17/18 14:42:15] SSH Launch of Slave_Linux_Ubu_01 on 192.168.35.135 failed in 435 ms
+[01/17/18 14:42:49] SSH Launch of Slave_Linux_Ubu_01 on 192.168.35.135 failed in 185 ms
+[01/17/18 14:45:57] SSH Launch of Slave_Linux_Ubu_01 on 192.168.35.135 failed in 158 ms
+[01/17/18 14:45:59] SSH Launch of Slave_Linux_Ubu_01 on 192.168.35.135 failed in 129 ms
+[01/17/18 15:09:59] SSH Launch of Slave_Linux_Ubu_01 on 192.168.35.135 failed in 148 ms
+[01/17/18 15:11:44] SSH Launch of Slave_Linux_Ubu_01 on 192.168.35.135 failed in 172 ms
+[01/17/18 15:30:59] SSH Launch of Slave_Linux_Ubu_01 on 192.168.35.135 failed in 138 ms
+[01/17/18 15:42:06] SSH Launch of Slave_Linux_Ubu_01 on 192.168.35.135 failed in 193 ms
+[01/17/18 15:42:20] SSH Launch of Slave_Linux_Ubu_01 on 192.168.35.135 failed in 407 ms
+[01/17/18 15:42:34] SSH Launch of Slave_Linux_Ubu_01 on 192.168.35.135 failed in 371 ms
+[01/17/18 15:50:00] SSH Launch of Slave_Linux_Ubu_01 on 192.168.35.135 failed in 351 ms
+[01/18/18 07:21:59] SSH Launch of Slave_Linux_Ubu_01 on 192.168.35.135 failed in 405 ms
+[01/18/18 07:42:00] SSH Launch of Slave_Linux_Ubu_01 on 192.168.35.135 failed in 440 ms
+[01/18/18 08:04:59] SSH Launch of Slave_Linux_Ubu_01 on 192.168.35.135 failed in 366 ms
+[01/18/18 08:26:59] SSH Launch of Slave_Linux_Ubu_01 on 192.168.35.135 failed in 312 ms
+[01/18/18 08:48:59] SSH Launch of Slave_Linux_Ubu_01 on 192.168.35.135 failed in 410 ms
+[01/18/18 09:13:00] SSH Launch of Slave_Linux_Ubu_01 on 192.168.35.135 failed in 551 ms
+[01/18/18 09:35:59] SSH Launch of Slave_Linux_Ubu_01 on 192.168.35.135 failed in 368 ms
+[01/18/18 09:57:59] SSH Launch of Slave_Linux_Ubu_01 on 192.168.35.135 failed in 400 ms
+[01/18/18 10:19:59] SSH Launch of Slave_Linux_Ubu_01 on 192.168.35.135 failed in 389 ms
+[01/18/18 10:41:59] SSH Launch of Slave_Linux_Ubu_01 on 192.168.35.135 failed in 335 ms
+[01/18/18 11:04:59] SSH Launch of Slave_Linux_Ubu_01 on 192.168.35.135 failed in 406 ms
+[01/18/18 11:24:59] SSH Launch of Slave_Linux_Ubu_01 on 192.168.35.135 failed in 339 ms
+[01/18/18 11:45:59] SSH Launch of Slave_Linux_Ubu_01 on 192.168.35.135 failed in 395 ms
+[01/18/18 12:09:00] SSH Launch of Slave_Linux_Ubu_01 on 192.168.35.135 failed in 420 ms
+[01/18/18 12:30:59] SSH Launch of Slave_Linux_Ubu_01 on 192.168.35.135 failed in 347 ms
+[01/18/18 12:51:59] SSH Launch of Slave_Linux_Ubu_01 on 192.168.35.135 failed in 373 ms
+[01/18/18 13:12:59] SSH Launch of Slave_Linux_Ubu_01 on 192.168.35.135 failed in 356 ms
+[01/18/18 13:32:59] SSH Launch of Slave_Linux_Ubu_01 on 192.168.35.135 failed in 343 ms
+[01/18/18 13:53:59] SSH Launch of Slave_Linux_Ubu_01 on 192.168.35.135 failed in 351 ms
+[01/18/18 14:16:59] SSH Launch of Slave_Linux_Ubu_01 on 192.168.35.135 failed in 347 ms
+[01/18/18 14:38:59] SSH Launch of Slave_Linux_Ubu_01 on 192.168.35.135 failed in 377 ms
+[01/18/18 15:01:59] SSH Launch of Slave_Linux_Ubu_01 on 192.168.35.135 failed in 405 ms
+[01/18/18 15:24:59] SSH Launch of Slave_Linux_Ubu_01 on 192.168.35.135 failed in 363 ms
+[01/18/18 15:45:59] SSH Launch of Slave_Linux_Ubu_01 on 192.168.35.135 failed in 340 ms
+[01/18/18 16:08:00] SSH Launch of Slave_Linux_Ubu_01 on 192.168.35.135 failed in 459 ms
+Running from: C:\Program Files (x86)\Jenkins\jenkins.war
+Jenkins home directory: C:\Program Files (x86)\Jenkins found at: EnvVars.masterEnvVars.get("JENKINS_HOME")
+[01/19/18 07:28:04] SSH Launch of Slave_Linux_Ubu_01 on 192.168.35.135 failed in 21.434 ms
+[01/19/18 07:28:37] SSH Launch of Slave_Linux_Ubu_01 on 192.168.35.135 failed in 21.034 ms
+[01/19/18 07:29:37] SSH Launch of Slave_Linux_Ubu_01 on 192.168.35.135 failed in 21.033 ms
+[01/19/18 07:30:37] SSH Launch of Slave_Linux_Ubu_01 on 192.168.35.135 failed in 21.027 ms
+[01/19/18 07:32:37] SSH Launch of Slave_Linux_Ubu_01 on 192.168.35.135 failed in 21.034 ms
+[01/19/18 07:45:37] SSH Launch of Slave_Linux_Ubu_01 on 192.168.35.135 failed in 21.008 ms
+[01/19/18 08:08:37] SSH Launch of Slave_Linux_Ubu_01 on 192.168.35.135 failed in 21.008 ms
+[01/19/18 08:31:37] SSH Launch of Slave_Linux_Ubu_01 on 192.168.35.135 failed in 21.011 ms
+[01/19/18 08:52:37] SSH Launch of Slave_Linux_Ubu_01 on 192.168.35.135 failed in 21.012 ms
+[01/19/18 09:15:37] SSH Launch of Slave_Linux_Ubu_01 on 192.168.35.135 failed in 21.010 ms
+[01/19/18 09:38:37] SSH Launch of Slave_Linux_Ubu_01 on 192.168.35.135 failed in 21.007 ms
+[01/19/18 10:02:37] SSH Launch of Slave_Linux_Ubu_01 on 192.168.35.135 failed in 21.054 ms
+[01/19/18 10:23:37] SSH Launch of Slave_Linux_Ubu_01 on 192.168.35.135 failed in 21.008 ms
+[01/19/18 10:46:37] SSH Launch of Slave_Linux_Ubu_01 on 192.168.35.135 failed in 21.011 ms
+[01/19/18 11:10:31] SSH Launch of Slave_Linux_Ubu_01 on 192.168.35.135 failed in 20.417 ms
+[01/19/18 11:28:29] SSH Launch of Slave_Linux_Ubu_01 on 192.168.35.135 failed in 21.006 ms
+[01/19/18 11:43:29] SSH Launch of Slave_Linux_Ubu_01 on 192.168.35.135 failed in 21.006 ms
+[01/19/18 12:01:29] SSH Launch of Slave_Linux_Ubu_01 on 192.168.35.135 failed in 21.006 ms
+[01/19/18 12:18:29] SSH Launch of Slave_Linux_Ubu_01 on 192.168.35.135 failed in 21.007 ms
+[01/19/18 12:35:29] SSH Launch of Slave_Linux_Ubu_01 on 192.168.35.135 failed in 21.008 ms
+[01/19/18 12:53:29] SSH Launch of Slave_Linux_Ubu_01 on 192.168.35.135 failed in 21.008 ms
+[01/19/18 13:14:29] SSH Launch of Slave_Linux_Ubu_01 on 192.168.35.135 failed in 21.009 ms
+[01/19/18 13:32:29] SSH Launch of Slave_Linux_Ubu_01 on 192.168.35.135 failed in 21.006 ms
+[01/19/18 13:55:29] SSH Launch of Slave_Linux_Ubu_01 on 192.168.35.135 failed in 21.009 ms
+[01/22/18 07:21:29] SSH Launch of Slave_Linux_Ubu_01 on 192.168.35.135 failed in 21.009 ms
+[01/22/18 07:42:29] SSH Launch of Slave_Linux_Ubu_01 on 192.168.35.135 failed in 21.009 ms
+[01/22/18 08:02:29] SSH Launch of Slave_Linux_Ubu_01 on 192.168.35.135 failed in 21.010 ms
+[01/22/18 08:25:29] SSH Launch of Slave_Linux_Ubu_01 on 192.168.35.135 failed in 21.008 ms
+[01/22/18 08:47:29] SSH Launch of Slave_Linux_Ubu_01 on 192.168.35.135 failed in 21.010 ms
+[01/22/18 09:06:29] SSH Launch of Slave_Linux_Ubu_01 on 192.168.35.135 failed in 21.012 ms
+[01/22/18 09:28:29] SSH Launch of Slave_Linux_Ubu_01 on 192.168.35.135 failed in 21.009 ms
+[01/22/18 09:48:29] SSH Launch of Slave_Linux_Ubu_01 on 192.168.35.135 failed in 21.011 ms
+[01/22/18 10:10:29] SSH Launch of Slave_Linux_Ubu_01 on 192.168.35.135 failed in 21.016 ms
+[01/22/18 10:32:29] SSH Launch of Slave_Linux_Ubu_01 on 192.168.35.135 failed in 21.009 ms
+[01/22/18 10:53:29] SSH Launch of Slave_Linux_Ubu_01 on 192.168.35.135 failed in 21.009 ms
+[01/22/18 11:15:29] SSH Launch of Slave_Linux_Ubu_01 on 192.168.35.135 failed in 21.015 ms
+[01/23/18 07:17:29] SSH Launch of Slave_Linux_Ubu_01 on 192.168.35.135 failed in 21.010 ms
+[01/23/18 07:39:29] SSH Launch of Slave_Linux_Ubu_01 on 192.168.35.135 failed in 21.008 ms
+[01/23/18 08:00:29] SSH Launch of Slave_Linux_Ubu_01 on 192.168.35.135 failed in 21.008 ms
+[01/23/18 08:24:29] SSH Launch of Slave_Linux_Ubu_01 on 192.168.35.135 failed in 21.011 ms
+[01/23/18 08:44:29] SSH Launch of Slave_Linux_Ubu_01 on 192.168.35.135 failed in 21.008 ms
+[01/23/18 09:06:29] SSH Launch of Slave_Linux_Ubu_01 on 192.168.35.135 failed in 21.009 ms
+[01/23/18 09:26:29] SSH Launch of Slave_Linux_Ubu_01 on 192.168.35.135 failed in 21.010 ms
+[01/23/18 09:48:08] SSH Launch of Slave_Linux_Ubu_01 on 192.168.35.135 failed in 416 ms
+[01/23/18 10:09:08] SSH Launch of Slave_Linux_Ubu_01 on 192.168.35.135 failed in 306 ms
+[01/23/18 10:29:08] SSH Launch of Slave_Linux_Ubu_01 on 192.168.35.135 failed in 299 ms
+[01/23/18 10:51:08] SSH Launch of Slave_Linux_Ubu_01 on 192.168.35.135 failed in 309 ms
+[01/23/18 11:14:08] SSH Launch of Slave_Linux_Ubu_01 on 192.168.35.135 failed in 449 ms
+[01/23/18 11:36:08] SSH Launch of Slave_Linux_Ubu_01 on 192.168.35.135 failed in 305 ms
+[01/23/18 11:58:08] SSH Launch of Slave_Linux_Ubu_01 on 192.168.35.135 failed in 339 ms
+[01/23/18 12:20:08] SSH Launch of Slave_Linux_Ubu_01 on 192.168.35.135 failed in 335 ms
+[01/23/18 12:41:08] SSH Launch of Slave_Linux_Ubu_01 on 192.168.35.135 failed in 482 ms
+[01/23/18 13:03:08] SSH Launch of Slave_Linux_Ubu_01 on 192.168.35.135 failed in 288 ms
+[01/23/18 13:24:08] SSH Launch of Slave_Linux_Ubu_01 on 192.168.35.135 failed in 300 ms
+[01/23/18 13:45:08] SSH Launch of Slave_Linux_Ubu_01 on 192.168.35.135 failed in 346 ms
+[01/23/18 14:06:08] SSH Launch of Slave_Linux_Ubu_01 on 192.168.35.135 failed in 328 ms
+[01/23/18 14:29:08] SSH Launch of Slave_Linux_Ubu_01 on 192.168.35.135 failed in 353 ms
+[01/23/18 14:51:08] SSH Launch of Slave_Linux_Ubu_01 on 192.168.35.135 failed in 300 ms
+[01/23/18 15:13:08] SSH Launch of Slave_Linux_Ubu_01 on 192.168.35.135 failed in 366 ms
+[01/23/18 15:34:08] SSH Launch of Slave_Linux_Ubu_01 on 192.168.35.135 failed in 348 ms
+[01/24/18 07:03:08] SSH Launch of Slave_Linux_Ubu_01 on 192.168.35.135 failed in 335 ms
+[01/24/18 07:27:08] SSH Launch of Slave_Linux_Ubu_01 on 192.168.35.135 failed in 367 ms
+[01/24/18 07:49:08] SSH Launch of Slave_Linux_Ubu_01 on 192.168.35.135 failed in 292 ms
+[01/24/18 08:10:08] SSH Launch of Slave_Linux_Ubu_01 on 192.168.35.135 failed in 283 ms
+[01/24/18 08:32:08] SSH Launch of Slave_Linux_Ubu_01 on 192.168.35.135 failed in 318 ms
+[01/24/18 08:55:08] SSH Launch of Slave_Linux_Ubu_01 on 192.168.35.135 failed in 322 ms
+[01/24/18 09:17:08] SSH Launch of Slave_Linux_Ubu_01 on 192.168.35.135 failed in 341 ms
+[01/24/18 09:37:08] SSH Launch of Slave_Linux_Ubu_01 on 192.168.35.135 failed in 303 ms
+[01/24/18 09:57:08] SSH Launch of Slave_Linux_Ubu_01 on 192.168.35.135 failed in 286 ms
+[01/24/18 10:19:08] SSH Launch of Slave_Linux_Ubu_01 on 192.168.35.135 failed in 310 ms
+[01/24/18 10:41:08] SSH Launch of Slave_Linux_Ubu_01 on 192.168.35.135 failed in 267 ms
+[01/24/18 11:02:08] SSH Launch of Slave_Linux_Ubu_01 on 192.168.35.135 failed in 269 ms
+[01/24/18 11:24:08] SSH Launch of Slave_Linux_Ubu_01 on 192.168.35.135 failed in 310 ms
+[01/24/18 11:47:08] SSH Launch of Slave_Linux_Ubu_01 on 192.168.35.135 failed in 346 ms
+[01/24/18 12:10:08] SSH Launch of Slave_Linux_Ubu_01 on 192.168.35.135 failed in 337 ms
+[01/24/18 12:30:08] SSH Launch of Slave_Linux_Ubu_01 on 192.168.35.135 failed in 345 ms
+[01/24/18 12:52:08] SSH Launch of Slave_Linux_Ubu_01 on 192.168.35.135 failed in 275 ms
+[01/24/18 13:11:08] SSH Launch of Slave_Linux_Ubu_01 on 192.168.35.135 failed in 373 ms
+[01/25/18 07:10:07] SSH Launch of Slave_Linux_Ubu_01 on 192.168.35.135 failed in 325 ms
+[01/25/18 07:31:07] SSH Launch of Slave_Linux_Ubu_01 on 192.168.35.135 failed in 311 ms
+[01/25/18 07:52:07] SSH Launch of Slave_Linux_Ubu_01 on 192.168.35.135 failed in 316 ms
+[01/25/18 08:13:07] SSH Launch of Slave_Linux_Ubu_01 on 192.168.35.135 failed in 280 ms
+[01/25/18 08:36:07] SSH Launch of Slave_Linux_Ubu_01 on 192.168.35.135 failed in 312 ms
+[01/25/18 08:57:07] SSH Launch of Slave_Linux_Ubu_01 on 192.168.35.135 failed in 300 ms
+[01/25/18 09:18:02] SSH Launch of Slave_Linux_Ubu_01 on 192.168.35.135 failed in 288 ms
+[01/25/18 09:40:02] SSH Launch of Slave_Linux_Ubu_01 on 192.168.35.135 failed in 299 ms
+[01/25/18 10:02:02] SSH Launch of Slave_Linux_Ubu_01 on 192.168.35.135 failed in 398 ms
+[01/25/18 10:22:02] SSH Launch of Slave_Linux_Ubu_01 on 192.168.35.135 failed in 336 ms
+[01/25/18 10:41:02] SSH Launch of Slave_Linux_Ubu_01 on 192.168.35.135 failed in 315 ms
+Running from: C:\Program Files (x86)\Jenkins\jenkins.war
+Jenkins home directory: C:\Program Files (x86)\Jenkins found at: EnvVars.masterEnvVars.get("JENKINS_HOME")
+[01/25/18 10:54:34] SSH Launch of Slave_Linux_Ubu_01 on 192.168.35.135 failed in 799 ms
+[01/25/18 10:54:36] SSH Launch of Slave_Linux_Ubu_01 on 192.168.35.135 failed in 421 ms
+[01/25/18 10:55:15] SSH Launch of Slave_Linux_Ubu_01 on 192.168.35.135 failed in 312 ms
+[01/25/18 10:56:15] SSH Launch of Slave_Linux_Ubu_01 on 192.168.35.135 failed in 306 ms
+[01/25/18 10:57:15] SSH Launch of Slave_Linux_Ubu_01 on 192.168.35.135 failed in 354 ms
+Running from: C:\Program Files (x86)\Jenkins\jenkins.war
+Jenkins home directory: C:\Program Files (x86)\Jenkins found at: EnvVars.masterEnvVars.get("JENKINS_HOME")
+[01/25/18 11:00:37] SSH Launch of Slave_Linux_Ubu_01 on 192.168.35.135 failed in 757 ms
+[01/25/18 11:00:39] SSH Launch of Slave_Linux_Ubu_01 on 192.168.35.135 failed in 557 ms
+[01/25/18 11:00:55] SSH Launch of Slave_Linux_Ubu_01 on 192.168.35.135 failed in 295 ms
+[01/25/18 11:01:55] SSH Launch of Slave_Linux_Ubu_01 on 192.168.35.135 failed in 297 ms
+[01/25/18 11:03:57] SSH Launch of Slave_Linux_Ubu_01 on 192.168.35.135 failed in 2.273 ms
+[01/25/18 11:14:55] SSH Launch of Slave_Linux_Ubu_01 on 192.168.35.135 failed in 484 ms
+[01/25/18 11:33:55] SSH Launch of Slave_Linux_Ubu_01 on 192.168.35.135 failed in 294 ms
+[01/25/18 11:53:55] SSH Launch of Slave_Linux_Ubu_01 on 192.168.35.135 failed in 308 ms
+[01/25/18 12:09:55] SSH Launch of Slave_Linux_Ubu_01 on 192.168.35.135 failed in 363 ms
+[01/25/18 12:31:55] SSH Launch of Slave_Linux_Ubu_01 on 192.168.35.135 failed in 321 ms
+[01/25/18 12:50:55] SSH Launch of Slave_Linux_Ubu_01 on 192.168.35.135 failed in 311 ms
+[01/25/18 13:09:55] SSH Launch of Slave_Linux_Ubu_01 on 192.168.35.135 failed in 289 ms
+[01/25/18 13:31:55] SSH Launch of Slave_Linux_Ubu_01 on 192.168.35.135 failed in 284 ms
+[01/25/18 13:50:55] SSH Launch of Slave_Linux_Ubu_01 on 192.168.35.135 failed in 303 ms
+[01/25/18 14:10:55] SSH Launch of Slave_Linux_Ubu_01 on 192.168.35.135 failed in 283 ms
+[01/25/18 14:30:55] SSH Launch of Slave_Linux_Ubu_01 on 192.168.35.135 failed in 307 ms
+[01/25/18 14:48:55] SSH Launch of Slave_Linux_Ubu_01 on 192.168.35.135 failed in 385 ms
+[01/25/18 15:06:55] SSH Launch of Slave_Linux_Ubu_01 on 192.168.35.135 failed in 329 ms
+[01/25/18 15:27:55] SSH Launch of Slave_Linux_Ubu_01 on 192.168.35.135 failed in 382 ms
+[01/25/18 15:46:55] SSH Launch of Slave_Linux_Ubu_01 on 192.168.35.135 failed in 341 ms
+[01/26/18 07:29:05] SSH Launch of Slave_Linux_Ubu_01 on 192.168.35.135 failed in 10.255 ms
+Running from: C:\Program Files (x86)\Jenkins\jenkins.war
+Jenkins home directory: C:\Program Files (x86)\Jenkins found at: EnvVars.masterEnvVars.get("JENKINS_HOME")
+[01/26/18 07:58:24] SSH Launch of Slave_Linux_Ubu_01 on 192.168.35.135 failed in 21.325 ms
+[01/26/18 07:58:58] SSH Launch of Slave_Linux_Ubu_01 on 192.168.35.135 failed in 21.041 ms
+[01/26/18 07:59:58] SSH Launch of Slave_Linux_Ubu_01 on 192.168.35.135 failed in 21.036 ms
+[01/26/18 08:00:58] SSH Launch of Slave_Linux_Ubu_01 on 192.168.35.135 failed in 21.039 ms
+[01/26/18 08:02:58] SSH Launch of Slave_Linux_Ubu_01 on 192.168.35.135 failed in 21.200 ms
+[01/26/18 08:16:58] SSH Launch of Slave_Linux_Ubu_01 on 192.168.35.135 failed in 21.009 ms
+[01/26/18 08:37:58] SSH Launch of Slave_Linux_Ubu_01 on 192.168.35.135 failed in 21.006 ms
+[01/26/18 09:00:58] SSH Launch of Slave_Linux_Ubu_01 on 192.168.35.135 failed in 21.009 ms
+[01/26/18 09:23:58] SSH Launch of Slave_Linux_Ubu_01 on 192.168.35.135 failed in 21.008 ms
+[01/26/18 09:44:58] SSH Launch of Slave_Linux_Ubu_01 on 192.168.35.135 failed in 21.004 ms
+[01/26/18 10:06:58] SSH Launch of Slave_Linux_Ubu_01 on 192.168.35.135 failed in 21.004 ms
+[01/26/18 10:29:58] SSH Launch of Slave_Linux_Ubu_01 on 192.168.35.135 failed in 21.008 ms
+[01/26/18 10:52:58] SSH Launch of Slave_Linux_Ubu_01 on 192.168.35.135 failed in 21.009 ms
+[01/26/18 11:14:58] SSH Launch of Slave_Linux_Ubu_01 on 192.168.35.135 failed in 21.008 ms
+[01/26/18 11:35:58] SSH Launch of Slave_Linux_Ubu_01 on 192.168.35.135 failed in 21.008 ms
+[01/26/18 11:57:58] SSH Launch of Slave_Linux_Ubu_01 on 192.168.35.135 failed in 21.007 ms
+[01/26/18 12:19:58] SSH Launch of Slave_Linux_Ubu_01 on 192.168.35.135 failed in 21.008 ms
+[01/29/18 07:15:58] SSH Launch of Slave_Linux_Ubu_01 on 192.168.35.135 failed in 21.008 ms
+[01/29/18 07:39:54] SSH Launch of Slave_Linux_Ubu_01 on 192.168.35.135 failed in 21.007 ms
+[01/29/18 08:01:54] SSH Launch of Slave_Linux_Ubu_01 on 192.168.35.135 failed in 21.011 ms
+[01/29/18 08:23:54] SSH Launch of Slave_Linux_Ubu_01 on 192.168.35.135 failed in 21.008 ms
+[01/29/18 08:45:54] SSH Launch of Slave_Linux_Ubu_01 on 192.168.35.135 failed in 21.004 ms
+[01/29/18 09:07:54] SSH Launch of Slave_Linux_Ubu_01 on 192.168.35.135 failed in 21.007 ms
+[01/29/18 09:31:54] SSH Launch of Slave_Linux_Ubu_01 on 192.168.35.135 failed in 21.005 ms
+[01/29/18 09:49:54] SSH Launch of Slave_Linux_Ubu_01 on 192.168.35.135 failed in 21.010 ms
+[01/29/18 10:01:55] SSH Launch of Slave_Linux_Ubu_01 on 192.168.35.135 failed in 21.009 ms
+[01/29/18 10:16:55] SSH Launch of Slave_Linux_Ubu_01 on 192.168.35.135 failed in 21.005 ms
+[01/29/18 10:36:55] SSH Launch of Slave_Linux_Ubu_01 on 192.168.35.135 failed in 21.008 ms
+[01/29/18 10:55:55] SSH Launch of Slave_Linux_Ubu_01 on 192.168.35.135 failed in 21.009 ms
+[01/29/18 11:15:55] SSH Launch of Slave_Linux_Ubu_01 on 192.168.35.135 failed in 21.007 ms
+[01/29/18 11:32:55] SSH Launch of Slave_Linux_Ubu_01 on 192.168.35.135 failed in 21.008 ms
+[01/29/18 11:51:55] SSH Launch of Slave_Linux_Ubu_01 on 192.168.35.135 failed in 21.006 ms
+[01/29/18 12:13:55] SSH Launch of Slave_Linux_Ubu_01 on 192.168.35.135 failed in 21.008 ms
+[01/29/18 12:32:55] SSH Launch of Slave_Linux_Ubu_01 on 192.168.35.135 failed in 21.009 ms
+[01/29/18 12:53:55] SSH Launch of Slave_Linux_Ubu_01 on 192.168.35.135 failed in 21.007 ms
+[01/29/18 13:10:55] SSH Launch of Slave_Linux_Ubu_01 on 192.168.35.135 failed in 21.008 ms
+[01/29/18 13:30:55] SSH Launch of Slave_Linux_Ubu_01 on 192.168.35.135 failed in 21.009 ms
+[01/29/18 13:50:55] SSH Launch of Slave_Linux_Ubu_01 on 192.168.35.135 failed in 21.009 ms
+[01/29/18 14:13:55] SSH Launch of Slave_Linux_Ubu_01 on 192.168.35.135 failed in 21.007 ms
+[01/29/18 14:34:55] SSH Launch of Slave_Linux_Ubu_01 on 192.168.35.135 failed in 21.008 ms
+[01/29/18 14:53:55] SSH Launch of Slave_Linux_Ubu_01 on 192.168.35.135 failed in 21.007 ms
+[01/29/18 15:06:55] SSH Launch of Slave_Linux_Ubu_01 on 192.168.35.135 failed in 21.003 ms
+[01/29/18 15:24:55] SSH Launch of Slave_Linux_Ubu_01 on 192.168.35.135 failed in 21.010 ms
+[01/29/18 15:42:55] SSH Launch of Slave_Linux_Ubu_01 on 192.168.35.135 failed in 21.008 ms
+[01/30/18 07:05:55] SSH Launch of Slave_Linux_Ubu_01 on 192.168.35.135 failed in 21.014 ms
+[01/30/18 07:29:55] SSH Launch of Slave_Linux_Ubu_01 on 192.168.35.135 failed in 21.010 ms
+[01/30/18 07:53:55] SSH Launch of Slave_Linux_Ubu_01 on 192.168.35.135 failed in 21.003 ms
+[01/30/18 08:17:55] SSH Launch of Slave_Linux_Ubu_01 on 192.168.35.135 failed in 21.192 ms
+[01/30/18 08:41:55] SSH Launch of Slave_Linux_Ubu_01 on 192.168.35.135 failed in 21.006 ms
+[01/30/18 09:03:55] SSH Launch of Slave_Linux_Ubu_01 on 192.168.35.135 failed in 21.003 ms
+[01/30/18 09:25:55] SSH Launch of Slave_Linux_Ubu_01 on 192.168.35.135 failed in 21.008 ms
+[01/30/18 09:48:55] SSH Launch of Slave_Linux_Ubu_01 on 192.168.35.135 failed in 21.006 ms
+[01/30/18 10:11:55] SSH Launch of Slave_Linux_Ubu_01 on 192.168.35.135 failed in 21.038 ms
+[01/30/18 10:33:55] SSH Launch of Slave_Linux_Ubu_01 on 192.168.35.135 failed in 21.008 ms
+[01/30/18 10:56:55] SSH Launch of Slave_Linux_Ubu_01 on 192.168.35.135 failed in 21.002 ms
+[01/30/18 11:18:55] SSH Launch of Slave_Linux_Ubu_01 on 192.168.35.135 failed in 21.010 ms
+[01/30/18 11:40:55] SSH Launch of Slave_Linux_Ubu_01 on 192.168.35.135 failed in 21.004 ms
+[01/30/18 12:03:55] SSH Launch of Slave_Linux_Ubu_01 on 192.168.35.135 failed in 21.008 ms
+[01/30/18 12:26:55] SSH Launch of Slave_Linux_Ubu_01 on 192.168.35.135 failed in 21.010 ms
+[01/30/18 12:49:55] SSH Launch of Slave_Linux_Ubu_01 on 192.168.35.135 failed in 21.011 ms
+[01/30/18 13:12:55] SSH Launch of Slave_Linux_Ubu_01 on 192.168.35.135 failed in 21.005 ms
+[01/30/18 13:36:55] SSH Launch of Slave_Linux_Ubu_01 on 192.168.35.135 failed in 21.002 ms
+[01/30/18 13:58:55] SSH Launch of Slave_Linux_Ubu_01 on 192.168.35.135 failed in 21.012 ms
+[01/30/18 14:22:55] SSH Launch of Slave_Linux_Ubu_01 on 192.168.35.135 failed in 21.161 ms
+[01/30/18 14:44:55] SSH Launch of Slave_Linux_Ubu_01 on 192.168.35.135 failed in 21.009 ms
+[01/30/18 15:05:55] SSH Launch of Slave_Linux_Ubu_01 on 192.168.35.135 failed in 21.012 ms
+[01/30/18 15:19:55] SSH Launch of Slave_Linux_Ubu_01 on 192.168.35.135 failed in 21.009 ms
+[01/30/18 15:33:55] SSH Launch of Slave_Linux_Ubu_01 on 192.168.35.135 failed in 21.008 ms
+[01/30/18 15:48:55] SSH Launch of Slave_Linux_Ubu_01 on 192.168.35.135 failed in 21.012 ms
+[01/31/18 07:12:55] SSH Launch of Slave_Linux_Ubu_01 on 192.168.35.135 failed in 21.004 ms

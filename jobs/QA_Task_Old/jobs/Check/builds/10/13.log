@@ -1,0 +1,129 @@
+[C:\Program Files (x86)\Jenkins\workspace\Check] Running shell script
++ C://Software//apache-maven-3.5.0//bin/mvn sonar:sonar -f C://Users//antonio.f.herrera//Desktop//TutorialTest//pom.xml -U
+[INFO] Scanning for projects...
+Downloading: https://repo.maven.apache.org/maven2/org/codehaus/mojo/maven-metadata.xml
+Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-metadata.xml
+Progress (1): 2.1/13 kBProgress (2): 2.1/13 kB | 2.1/20 kBProgress (2): 4.9/13 kB | 2.1/20 kBProgress (2): 7.7/13 kB | 2.1/20 kBProgress (2): 10/13 kB | 2.1/20 kB Progress (2): 13/13 kB | 2.1/20 kBProgress (2): 13 kB | 2.1/20 kB   Progress (2): 13 kB | 4.9/20 kBProgress (2): 13 kB | 7.7/20 kBProgress (2): 13 kB | 10/20 kB Progress (2): 13 kB | 13/20 kBProgress (2): 13 kB | 16/20 kBProgress (2): 13 kB | 19/20 kBProgress (2): 13 kB | 20 kB                              Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-metadata.xml (13 kB at 32 kB/s)
+Downloaded: https://repo.maven.apache.org/maven2/org/codehaus/mojo/maven-metadata.xml (20 kB at 49 kB/s)
+Downloading: https://repo.maven.apache.org/maven2/org/codehaus/mojo/sonar-maven-plugin/maven-metadata.xml
+Progress (1): 941 B                   Downloaded: https://repo.maven.apache.org/maven2/org/codehaus/mojo/sonar-maven-plugin/maven-metadata.xml (941 B at 18 kB/s)
+[INFO] 
+[INFO] ------------------------------------------------------------------------
+[INFO] Building TutorialTest 0.0.1-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- sonar-maven-plugin:3.3.0.603:sonar (default-cli) @ TutorialTest ---
+Downloading: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-component-annotations/1.5.5/plexus-component-annotations-1.5.5.pom
+Downloaded: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-component-annotations/1.5.5/plexus-component-annotations-1.5.5.pom (0 B at 0 B/s)
+Downloading: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-containers/1.5.5/plexus-containers-1.5.5.pom
+Downloaded: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-containers/1.5.5/plexus-containers-1.5.5.pom (0 B at 0 B/s)
+Downloading: https://repo.maven.apache.org/maven2/org/eclipse/aether/aether-util/0.9.0.M2/aether-util-0.9.0.M2.pom
+Downloaded: https://repo.maven.apache.org/maven2/org/eclipse/aether/aether-util/0.9.0.M2/aether-util-0.9.0.M2.pom (0 B at 0 B/s)
+Downloading: https://repo.maven.apache.org/maven2/org/eclipse/aether/aether/0.9.0.M2/aether-0.9.0.M2.pom
+Downloaded: https://repo.maven.apache.org/maven2/org/eclipse/aether/aether/0.9.0.M2/aether-0.9.0.M2.pom (0 B at 0 B/s)
+Downloading: https://repo.maven.apache.org/maven2/org/sonatype/spice/spice-parent/12/spice-parent-12.pom
+Downloaded: https://repo.maven.apache.org/maven2/org/sonatype/spice/spice-parent/12/spice-parent-12.pom (0 B at 0 B/s)
+Downloading: https://repo.maven.apache.org/maven2/org/sonatype/forge/forge-parent/4/forge-parent-4.pom
+Downloaded: https://repo.maven.apache.org/maven2/org/sonatype/forge/forge-parent/4/forge-parent-4.pom (0 B at 0 B/s)
+Downloading: https://repo.maven.apache.org/maven2/org/sonatype/plexus/plexus-cipher/1.4/plexus-cipher-1.4.pom
+Downloaded: https://repo.maven.apache.org/maven2/org/sonatype/plexus/plexus-cipher/1.4/plexus-cipher-1.4.pom (0 B at 0 B/s)
+[INFO] User cache: C:\Windows\system32\config\systemprofile\.sonar\cache
+[INFO] Load global settings
+[INFO] Load global settings (done) | time=108ms
+[INFO] User cache: C:\Windows\system32\config\systemprofile\.sonar\cache
+[INFO] Load plugins index
+[INFO] Load plugins index (done) | time=6ms
+[INFO] Plugin [l10nes] defines 'l10nen' as base plugin. This metadata can be removed from manifest of l10n plugins since version 5.2.
+[INFO] SonarQube version: 6.5.0
+[INFO] Default locale: "es_ES", source code encoding: "windows-1252" (analysis is platform dependent)
+[INFO] Process project properties
+[INFO] Load project repositories
+[INFO] Load project repositories (done) | time=154ms
+[INFO] GlobalWorkingDir null
+[INFO] Execute project builders
+[INFO] Execute project builders (done) | time=2ms
+[INFO] Load quality profiles
+[INFO] Load quality profiles (done) | time=37ms
+[INFO] Load active rules
+[INFO] Load active rules (done) | time=1007ms
+[INFO] Load metrics repository
+[INFO] Load metrics repository (done) | time=83ms
+[WARNING] SCM provider autodetection failed. No SCM provider claims to support this project. Please use sonar.scm.provider to define SCM of your project.
+[INFO] Publish mode
+[INFO] Project key: TutorialTest:TutorialTest
+[INFO] -------------  Scan TutorialTest
+[INFO] Load server rules
+[INFO] Load server rules (done) | time=61ms
+[INFO] Base dir: C:\Users\antonio.f.herrera\Desktop\TutorialTest
+[INFO] Working dir: C:\Users\antonio.f.herrera\Desktop\TutorialTest\target\sonar
+[INFO] Source paths: pom.xml, src/main/java
+[INFO] Test paths: src/test/java
+[INFO] Source encoding: windows-1252, default locale: es_ES
+[INFO] Index files
+[INFO] 3 files indexed
+[INFO] Quality profile for java: Sonar way
+[INFO] Quality profile for xml: Sonar way
+[WARNING] ----------------------------------------------------------------
+[WARNING] Sonargraph Integration: Skipping project TutorialTest [TutorialTest:TutorialTest], since no Sonargraph rules are activated in current SonarQube quality profile [SonarQube].
+[WARNING] ----------------------------------------------------------------
+[WARNING] ----------------------------------------------------------------
+[WARNING] Sonargraph Integration: Skipping project TutorialTest [TutorialTest:TutorialTest], since no Sonargraph rules are activated in current SonarQube quality profile [SonarQube].
+[WARNING] ----------------------------------------------------------------
+[INFO] Sensor JavaSquidSensor [java]
+[INFO] Configured Java source version (sonar.java.source): 7
+[INFO] JavaClasspath initialization
+[INFO] JavaClasspath initialization (done) | time=20ms
+[INFO] JavaTestClasspath initialization
+[INFO] JavaTestClasspath initialization (done) | time=3ms
+[INFO] Java Main Files AST scan
+[INFO] 1 source files to be analyzed
+[INFO] Java Main Files AST scan (done) | time=397ms
+[INFO] 1/1 source files have been analyzed
+[INFO] Java Test Files AST scan
+[INFO] 1 source files to be analyzed
+[INFO] Java Test Files AST scan (done) | time=170ms
+[INFO] Sensor JavaSquidSensor [java] (done) | time=1434ms
+[INFO] Sensor Sonar-Sonargraph-Plugin [3.5] [Sonargraph]
+[INFO] 1/1 source files have been analyzed
+[INFO] ----------------------------------------------------------------
+[INFO] Sonargraph: Skipping project TutorialTest [TutorialTest:TutorialTest], since no Sonargraph rules are activated in current SonarQube quality profile.
+[INFO] ----------------------------------------------------------------
+[INFO] Sensor Sonar-Sonargraph-Plugin [3.5] [Sonargraph] (done) | time=2ms
+[INFO] Sensor SmellMeasuresSensor [smells]
+[INFO] Sensor SmellMeasuresSensor [smells] (done) | time=20ms
+[INFO] Sensor SurefireSensor [java]
+[INFO] Property 'sonar.junit.reportsPath' is deprecated. Use property 'sonar.junit.reportPaths' instead.
+[INFO] parsing [C:\Users\antonio.f.herrera\Desktop\TutorialTest\target\surefire-reports]
+[INFO] Sensor SurefireSensor [java] (done) | time=80ms
+[INFO] Sensor JaCoCoSensor [java]
+[INFO] Sensor JaCoCoSensor [java] (done) | time=0ms
+[INFO] Sensor SonarJavaXmlFileSensor [java]
+[INFO] 1 source files to be analyzed
+[INFO] Sensor SonarJavaXmlFileSensor [java] (done) | time=252ms
+[INFO] 1/1 source files have been analyzed
+[INFO] Sensor XML Sensor [xml]
+[INFO] Sensor XML Sensor [xml] (done) | time=172ms
+[INFO] Sensor Analyzer for "php.ini" files [php]
+[INFO] Sensor Analyzer for "php.ini" files [php] (done) | time=4ms
+[INFO] Sensor Zero Coverage Sensor
+[INFO] Sensor Zero Coverage Sensor (done) | time=14ms
+[INFO] Sensor CPD Block Indexer
+[INFO] Sensor CPD Block Indexer (done) | time=17ms
+[INFO] No SCM system was detected. You can use the 'sonar.scm.provider' property to explicitly specify it.
+[INFO] 1 file had no CPD blocks
+[INFO] Calculating CPD for 0 files
+[INFO] CPD calculation finished
+[INFO] Analysis report generated in 105ms, dir size=53 KB
+[INFO] Analysis reports compressed in 33ms, zip size=14 KB
+[INFO] Analysis report uploaded in 31ms
+[INFO] ANALYSIS SUCCESSFUL, you can browse http://192.168.35.128:9000/dashboard/index/TutorialTest:TutorialTest
+[INFO] Note that you will be able to access the updated dashboard once the server has processed the submitted analysis report
+[INFO] More about the report processing at http://192.168.35.128:9000/api/ce/task?id=AV9sotk1CDCz4vexyius
+[INFO] Task total time: 7.226 s
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 11.658 s
+[INFO] Finished at: 2017-10-30T10:35:35+01:00
+[INFO] Final Memory: 31M/489M
+[INFO] ------------------------------------------------------------------------

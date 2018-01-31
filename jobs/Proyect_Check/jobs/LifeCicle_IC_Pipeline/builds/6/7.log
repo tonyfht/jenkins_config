@@ -1,0 +1,13 @@
+ > git.exe rev-parse --is-inside-work-tree # timeout=10
+Fetching changes from the remote Git repository
+ > git.exe config remote.origin.url https://gitlab.com/antoniofrancisco.herrera/Check.git # timeout=10
+Fetching upstream changes from https://gitlab.com/antoniofrancisco.herrera/Check.git
+ > git.exe --version # timeout=10
+ > git.exe fetch --tags --progress https://gitlab.com/antoniofrancisco.herrera/Check.git +refs/heads/*:refs/remotes/origin/*
+ > git.exe rev-parse "refs/remotes/origin/master^{commit}" # timeout=10
+ > git.exe rev-parse "refs/remotes/origin/origin/master^{commit}" # timeout=10
+Checking out Revision b06f2e29f6bb36ceef0669093c29c5a0213316ee (refs/remotes/origin/master)
+ > git.exe config core.sparsecheckout # timeout=10
+ > git.exe checkout -f b06f2e29f6bb36ceef0669093c29c5a0213316ee
+Commit message: "añadido fuentes"
+ > git.exe rev-list b06f2e29f6bb36ceef0669093c29c5a0213316ee # timeout=10

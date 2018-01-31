@@ -1,0 +1,7 @@
+[CHECKSTYLE] Collecting checkstyle analysis files...
+[CHECKSTYLE] Searching for all files in C:\Program Files (x86)\Jenkins\workspace\Proyect_Check\LifeCicle_IC_Pipeline that match the pattern **/checkstyle-result.xml
+[CHECKSTYLE] Parsing 2 files in C:\Program Files (x86)\Jenkins\workspace\Proyect_Check\LifeCicle_IC_Pipeline
+[CHECKSTYLE] Successfully parsed file C:\Program Files (x86)\Jenkins\workspace\Proyect_Check\LifeCicle_IC_Pipeline\fuentes\BATCH_CHECK\target\checkstyle-result.xml of module CHECK-Main with 0 unique warnings and 0 duplicates.
+[CHECKSTYLE] Successfully parsed file C:\Program Files (x86)\Jenkins\workspace\Proyect_Check\LifeCicle_IC_Pipeline\fuentes\NEG_CHECK\target\checkstyle-result.xml of module CHECK-NEG with 2 unique warnings and 0 duplicates.
+Skipping warnings blame since pipelines do not have an SCM link.%n
+[CHECKSTYLE] Computing warning deltas based on reference build master

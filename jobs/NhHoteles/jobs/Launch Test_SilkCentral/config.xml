@@ -1,0 +1,65 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<project>
+  <actions/>
+  <description>Proyecto NH Hoteles. DEMO.&#xd;
+&#xd;
+Se lanza desde Jenkins de manera manual/programada el proyecto de Silk Central el proyecto &quot;NH Hoteles&quot;, el Plan de Ejecución &quot;Execution_Plan_Chrome&quot;.&#xd;
+&#xd;
+Esta ejecución se podría incorporar en un pipeline de testing, en un ciclo de vida de software...o ciclos de pruebas programados.&#xd;
+&#xd;
+http://esbcn01lgl0f3g2:19120/silk/DEF/TM/Execution?nEx=191&amp;execView=execDetails&amp;view=details&amp;pId=42&amp;nTP=-2&amp;etab=5</description>
+  <keepDependencies>false</keepDependencies>
+  <properties>
+    <com.dabsquared.gitlabjenkins.connection.GitLabConnectionProperty plugin="gitlab-plugin@1.5.2">
+      <gitLabConnection></gitLabConnection>
+    </com.dabsquared.gitlabjenkins.connection.GitLabConnectionProperty>
+    <org.jenkinsci.plugins.mavenrepocleaner.MavenRepoCleanerProperty plugin="maven-repo-cleaner@1.2">
+      <notOnThisProject>false</notOnThisProject>
+    </org.jenkinsci.plugins.mavenrepocleaner.MavenRepoCleanerProperty>
+    <com.sonyericsson.rebuild.RebuildSettings plugin="rebuild@1.27">
+      <autoRebuild>false</autoRebuild>
+      <rebuildDisabled>false</rebuildDisabled>
+    </com.sonyericsson.rebuild.RebuildSettings>
+    <com.synopsys.arc.jenkinsci.plugins.jobrestrictions.jobs.JobRestrictionProperty plugin="job-restrictions@0.6"/>
+    <org.jenkinsci.plugins.sharedworkspace.SharedWorkspace plugin="shared-workspace@1.0.2">
+      <name>NONE</name>
+    </org.jenkinsci.plugins.sharedworkspace.SharedWorkspace>
+    <hudson.plugins.throttleconcurrents.ThrottleJobProperty plugin="throttle-concurrents@2.0.1">
+      <maxConcurrentPerNode>0</maxConcurrentPerNode>
+      <maxConcurrentTotal>0</maxConcurrentTotal>
+      <categories class="java.util.concurrent.CopyOnWriteArrayList"/>
+      <throttleEnabled>false</throttleEnabled>
+      <throttleOption>project</throttleOption>
+      <limitOneJobWithMatchingParams>false</limitOneJobWithMatchingParams>
+      <paramsToUseForLimit></paramsToUseForLimit>
+      <configVersion>1</configVersion>
+    </hudson.plugins.throttleconcurrents.ThrottleJobProperty>
+  </properties>
+  <scm class="hudson.scm.NullSCM"/>
+  <canRoam>true</canRoam>
+  <disabled>false</disabled>
+  <blockBuildWhenDownstreamBuilding>false</blockBuildWhenDownstreamBuilding>
+  <blockBuildWhenUpstreamBuilding>false</blockBuildWhenUpstreamBuilding>
+  <triggers>
+    <hudson.triggers.TimerTrigger>
+      <spec></spec>
+    </hudson.triggers.TimerTrigger>
+  </triggers>
+  <concurrentBuild>false</concurrentBuild>
+  <builders>
+    <hudson.plugins.sctmexecutor.SCTMExecutor plugin="SCTMExecutor@2.2">
+      <projectId>42</projectId>
+      <execDefIds>191</execDefIds>
+      <delay>5</delay>
+      <buildNumberUsageOption>1</buildNumberUsageOption>
+      <contOnErr>false</contOnErr>
+      <collectResults>true</collectResults>
+      <ignoreSetupCleanup>true</ignoreSetupCleanup>
+      <useSpecificInstance>false</useSpecificInstance>
+    </hudson.plugins.sctmexecutor.SCTMExecutor>
+  </builders>
+  <publishers>
+    <hudson.plugins.sctmexecutor.publisher.SCTMResultArchiver plugin="SCTMExecutor@2.2"/>
+  </publishers>
+  <buildWrappers/>
+</project>

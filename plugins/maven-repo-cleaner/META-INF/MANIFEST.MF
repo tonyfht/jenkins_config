@@ -1,0 +1,20 @@
+Manifest-Version: 1.0
+Archiver-Version: Plexus Archiver
+Created-By: Apache Maven
+Built-By: olamy
+Build-Jdk: 1.6.0_37
+Extension-Name: maven-repo-cleaner
+Implementation-Title: maven-repo-cleaner
+Implementation-Version: 1.2
+Group-Id: org.jenkins-ci.plugins
+Short-Name: maven-repo-cleaner
+Long-Name: Maven Repository Scheduled Cleanup Plugin
+Url: https://wiki.jenkins-ci.org/display/JENKINS/Maven+Repo+Cleaner+Pl
+ ugin
+Plugin-Version: 1.2
+Hudson-Version: 1.468
+Jenkins-Version: 1.468
+Plugin-Dependencies: javadoc:1.0,maven-plugin:1.468
+Plugin-Developers: Andrew Bayer:abayer:andrew.bayer@gmail.com,Olivier 
+ Lamy:olamy:
+

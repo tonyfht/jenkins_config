@@ -1,0 +1,209 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<hudson>
+  <disabledAdministrativeMonitors>
+    <string>hudsonHomeIsFull</string>
+    <string>OldData</string>
+  </disabledAdministrativeMonitors>
+  <version>2.89.1</version>
+  <numExecutors>5</numExecutors>
+  <mode>NORMAL</mode>
+  <useSecurity>true</useSecurity>
+  <authorizationStrategy class="hudson.security.GlobalMatrixAuthorizationStrategy">
+    <permission>com.cloudbees.plugins.credentials.CredentialsProvider.Create:admin</permission>
+    <permission>com.cloudbees.plugins.credentials.CredentialsProvider.Create:antonio.f.herrera</permission>
+    <permission>com.cloudbees.plugins.credentials.CredentialsProvider.Delete:admin</permission>
+    <permission>com.cloudbees.plugins.credentials.CredentialsProvider.Delete:antonio.f.herrera</permission>
+    <permission>com.cloudbees.plugins.credentials.CredentialsProvider.ManageDomains:admin</permission>
+    <permission>com.cloudbees.plugins.credentials.CredentialsProvider.ManageDomains:antonio.f.herrera</permission>
+    <permission>com.cloudbees.plugins.credentials.CredentialsProvider.Update:admin</permission>
+    <permission>com.cloudbees.plugins.credentials.CredentialsProvider.Update:antonio.f.herrera</permission>
+    <permission>com.cloudbees.plugins.credentials.CredentialsProvider.View:admin</permission>
+    <permission>com.cloudbees.plugins.credentials.CredentialsProvider.View:antonio.f.herrera</permission>
+    <permission>hudson.model.Computer.Build:admin</permission>
+    <permission>hudson.model.Computer.Build:antonio.f.herrera</permission>
+    <permission>hudson.model.Computer.Configure:admin</permission>
+    <permission>hudson.model.Computer.Configure:antonio.f.herrera</permission>
+    <permission>hudson.model.Computer.Connect:admin</permission>
+    <permission>hudson.model.Computer.Connect:antonio.f.herrera</permission>
+    <permission>hudson.model.Computer.Create:admin</permission>
+    <permission>hudson.model.Computer.Create:antonio.f.herrera</permission>
+    <permission>hudson.model.Computer.Delete:admin</permission>
+    <permission>hudson.model.Computer.Delete:antonio.f.herrera</permission>
+    <permission>hudson.model.Computer.Disconnect:admin</permission>
+    <permission>hudson.model.Computer.Disconnect:antonio.f.herrera</permission>
+    <permission>hudson.model.Hudson.Administer:admin</permission>
+    <permission>hudson.model.Hudson.Administer:antonio.f.herrera</permission>
+    <permission>hudson.model.Hudson.Read:admin</permission>
+    <permission>hudson.model.Hudson.Read:anonymous</permission>
+    <permission>hudson.model.Hudson.Read:antonio.f.herrera</permission>
+    <permission>hudson.model.Hudson.Read:authenticated</permission>
+    <permission>hudson.model.Item.Build:admin</permission>
+    <permission>hudson.model.Item.Build:antonio.f.herrera</permission>
+    <permission>hudson.model.Item.Cancel:admin</permission>
+    <permission>hudson.model.Item.Cancel:antonio.f.herrera</permission>
+    <permission>hudson.model.Item.Configure:admin</permission>
+    <permission>hudson.model.Item.Configure:antonio.f.herrera</permission>
+    <permission>hudson.model.Item.Create:admin</permission>
+    <permission>hudson.model.Item.Create:antonio.f.herrera</permission>
+    <permission>hudson.model.Item.Delete:admin</permission>
+    <permission>hudson.model.Item.Delete:antonio.f.herrera</permission>
+    <permission>hudson.model.Item.Discover:admin</permission>
+    <permission>hudson.model.Item.Discover:antonio.f.herrera</permission>
+    <permission>hudson.model.Item.Move:admin</permission>
+    <permission>hudson.model.Item.Move:antonio.f.herrera</permission>
+    <permission>hudson.model.Item.Read:admin</permission>
+    <permission>hudson.model.Item.Read:antonio.f.herrera</permission>
+    <permission>hudson.model.Item.ViewStatus:admin</permission>
+    <permission>hudson.model.Item.ViewStatus:antonio.f.herrera</permission>
+    <permission>hudson.model.Item.Workspace:admin</permission>
+    <permission>hudson.model.Item.Workspace:antonio.f.herrera</permission>
+    <permission>hudson.model.Run.Delete:admin</permission>
+    <permission>hudson.model.Run.Delete:antonio.f.herrera</permission>
+    <permission>hudson.model.Run.Replay:admin</permission>
+    <permission>hudson.model.Run.Replay:antonio.f.herrera</permission>
+    <permission>hudson.model.Run.Update:admin</permission>
+    <permission>hudson.model.Run.Update:antonio.f.herrera</permission>
+    <permission>hudson.model.View.Configure:admin</permission>
+    <permission>hudson.model.View.Configure:antonio.f.herrera</permission>
+    <permission>hudson.model.View.Create:admin</permission>
+    <permission>hudson.model.View.Create:antonio.f.herrera</permission>
+    <permission>hudson.model.View.Delete:admin</permission>
+    <permission>hudson.model.View.Delete:antonio.f.herrera</permission>
+    <permission>hudson.model.View.Read:admin</permission>
+    <permission>hudson.model.View.Read:antonio.f.herrera</permission>
+    <permission>hudson.scm.SCM.Tag:admin</permission>
+    <permission>hudson.scm.SCM.Tag:antonio.f.herrera</permission>
+    <permission>jenkins.metrics.api.Metrics.HealthCheck:admin</permission>
+    <permission>jenkins.metrics.api.Metrics.HealthCheck:antonio.f.herrera</permission>
+    <permission>jenkins.metrics.api.Metrics.ThreadDump:admin</permission>
+    <permission>jenkins.metrics.api.Metrics.ThreadDump:antonio.f.herrera</permission>
+    <permission>jenkins.metrics.api.Metrics.View:admin</permission>
+    <permission>jenkins.metrics.api.Metrics.View:antonio.f.herrera</permission>
+    <permission>org.jenkinsci.plugins.puppetenterprise.api.HieraDataStore.Delete:admin</permission>
+    <permission>org.jenkinsci.plugins.puppetenterprise.api.HieraDataStore.Delete:antonio.f.herrera</permission>
+    <permission>org.jenkinsci.plugins.puppetenterprise.api.HieraDataStore.View:admin</permission>
+    <permission>org.jenkinsci.plugins.puppetenterprise.api.HieraDataStore.View:antonio.f.herrera</permission>
+    <permission>org.jfrog.hudson.ArtifactoryPlugin.Promote:admin</permission>
+    <permission>org.jfrog.hudson.ArtifactoryPlugin.Promote:antonio.f.herrera</permission>
+    <permission>org.jfrog.hudson.ArtifactoryPlugin.PushToBintray:admin</permission>
+    <permission>org.jfrog.hudson.ArtifactoryPlugin.PushToBintray:antonio.f.herrera</permission>
+    <permission>org.jfrog.hudson.ArtifactoryPlugin.Release:admin</permission>
+    <permission>org.jfrog.hudson.ArtifactoryPlugin.Release:antonio.f.herrera</permission>
+  </authorizationStrategy>
+  <securityRealm class="hudson.security.HudsonPrivateSecurityRealm">
+    <disableSignup>true</disableSignup>
+    <enableCaptcha>false</enableCaptcha>
+  </securityRealm>
+  <disableRememberMe>false</disableRememberMe>
+  <projectNamingStrategy class="jenkins.model.ProjectNamingStrategy$DefaultProjectNamingStrategy"/>
+  <workspaceDir>${JENKINS_HOME}/workspace/${ITEM_FULLNAME}</workspaceDir>
+  <buildsDir>${ITEM_ROOTDIR}/builds</buildsDir>
+  <markupFormatter class="hudson.markup.EscapedMarkupFormatter"/>
+  <jdks/>
+  <viewsTabBar class="hudson.views.DefaultViewsTabBar"/>
+  <myViewsTabBar class="hudson.views.DefaultMyViewsTabBar"/>
+  <clouds/>
+  <quietPeriod>5</quietPeriod>
+  <scmCheckoutRetryCount>0</scmCheckoutRetryCount>
+  <views>
+    <hudson.model.AllView>
+      <owner class="hudson" reference="../../.."/>
+      <name>all</name>
+      <filterExecutors>false</filterExecutors>
+      <filterQueue>false</filterQueue>
+      <properties class="hudson.model.View$PropertyList"/>
+    </hudson.model.AllView>
+    <se.diabol.jenkins.workflow.WorkflowPipelineView plugin="delivery-pipeline-plugin@1.0.8">
+      <owner class="hudson" reference="../../.."/>
+      <name>Pipeline View</name>
+      <description></description>
+      <filterExecutors>false</filterExecutors>
+      <filterQueue>false</filterQueue>
+      <properties class="hudson.model.View$PropertyList"/>
+      <updateInterval>2</updateInterval>
+      <noOfPipelines>6</noOfPipelines>
+      <noOfColumns>2</noOfColumns>
+      <allowPipelineStart>true</allowPipelineStart>
+      <showChanges>false</showChanges>
+      <theme>contrast</theme>
+      <project>Check_Maven_Pipeline</project>
+      <linkToConsoleLog>true</linkToConsoleLog>
+      <description defined-in="se.diabol.jenkins.workflow.WorkflowPipelineView"></description>
+    </se.diabol.jenkins.workflow.WorkflowPipelineView>
+    <hudson.plugins.view.dashboard.Dashboard plugin="dashboard-view@2.9.11">
+      <owner class="hudson" reference="../../.."/>
+      <name>Dashboard</name>
+      <filterExecutors>false</filterExecutors>
+      <filterQueue>false</filterQueue>
+      <properties class="hudson.model.View$PropertyList"/>
+      <jobNames>
+        <comparator class="hudson.util.CaseInsensitiveComparator"/>
+        <string>Check_Maven_Pipeline</string>
+      </jobNames>
+      <jobFilters/>
+      <columns>
+        <hudson.views.StatusColumn/>
+        <hudson.views.WeatherColumn/>
+        <hudson.views.JobColumn/>
+        <hudson.views.LastSuccessColumn/>
+        <hudson.views.LastFailureColumn/>
+        <hudson.views.LastDurationColumn/>
+        <hudson.views.BuildButtonColumn/>
+        <org.jenkins.plugins.builton.BuiltOnColumn plugin="built-on-column@1.1"/>
+        <jenkins.plugins.jobicon.CustomIconColumn plugin="custom-job-icon@0.2"/>
+        <hudson.plugins.favorite.column.FavoriteColumn plugin="favorite@2.3.1"/>
+        <hudson.plugins.projectstats.column.NumBuildsColumn plugin="project-stats-plugin@0.4"/>
+      </columns>
+      <recurse>false</recurse>
+      <useCssStyle>true</useCssStyle>
+      <includeStdJobList>true</includeStdJobList>
+      <hideJenkinsPanels>false</hideJenkinsPanels>
+      <leftPortletWidth>30%</leftPortletWidth>
+      <rightPortletWidth>70%</rightPortletWidth>
+      <leftPortlets/>
+      <rightPortlets/>
+      <topPortlets>
+        <hudson.plugins.view.dashboard.stats.StatBuilds>
+          <id>dashboard_portlet_29975</id>
+          <name>Build statistics</name>
+        </hudson.plugins.view.dashboard.stats.StatBuilds>
+        <hudson.plugins.checkstyle.dashboard.WarningsTotalsGraphPortlet plugin="checkstyle@3.49">
+          <id>dashboard_portlet_17910</id>
+          <name>Checkstyle warnings trend graph (totals)</name>
+          <width>400</width>
+          <height>200</height>
+          <dayCountString>30</dayCountString>
+        </hudson.plugins.checkstyle.dashboard.WarningsTotalsGraphPortlet>
+        <hudson.plugins.pmd.dashboard.WarningsTotalsGraphPortlet plugin="pmd@3.49">
+          <id>dashboard_portlet_10790</id>
+          <name>PMD warnings trend graph (totals)</name>
+          <width>400</width>
+          <height>200</height>
+          <dayCountString>30</dayCountString>
+        </hudson.plugins.pmd.dashboard.WarningsTotalsGraphPortlet>
+        <hudson.plugins.cobertura.dashboard.CoverageTablePortlet plugin="cobertura@1.12">
+          <id>dashboard_portlet_7346</id>
+          <name>Code Coverages(Cobertura)</name>
+        </hudson.plugins.cobertura.dashboard.CoverageTablePortlet>
+        <hudson.plugins.view.dashboard.test.TestStatisticsPortlet>
+          <id>dashboard_portlet_13140</id>
+          <name>Test Statistics Grid</name>
+          <useBackgroundColors>false</useBackgroundColors>
+          <skippedColor>FDB813</skippedColor>
+          <successColor>71E66D</successColor>
+          <failureColor>E86850</failureColor>
+          <hideZeroTestProjects>false</hideZeroTestProjects>
+        </hudson.plugins.view.dashboard.test.TestStatisticsPortlet>
+      </topPortlets>
+      <bottomPortlets/>
+    </hudson.plugins.view.dashboard.Dashboard>
+  </views>
+  <primaryView>all</primaryView>
+  <slaveAgentPort>-1</slaveAgentPort>
+  <label></label>
+  <crumbIssuer class="hudson.security.csrf.DefaultCrumbIssuer">
+    <excludeClientIPFromCrumb>false</excludeClientIPFromCrumb>
+  </crumbIssuer>
+  <nodeProperties/>
+  <globalNodeProperties/>
+</hudson>

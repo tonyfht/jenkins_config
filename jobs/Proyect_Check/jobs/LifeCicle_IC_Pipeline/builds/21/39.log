@@ -1,0 +1,7 @@
+[PMD] Collecting PMD analysis files...
+[PMD] Searching for all files in C:\Program Files (x86)\Jenkins\workspace\Check_Maven_Pipeline that match the pattern **/pmd.xml
+[PMD] Parsing 2 files in C:\Program Files (x86)\Jenkins\workspace\Check_Maven_Pipeline
+[PMD] Successfully parsed file C:\Program Files (x86)\Jenkins\workspace\Check_Maven_Pipeline\fuentes\BATCH_CHECK\target\pmd.xml with 0 unique warnings and 0 duplicates.
+[PMD] Successfully parsed file C:\Program Files (x86)\Jenkins\workspace\Check_Maven_Pipeline\fuentes\NEG_CHECK\target\pmd.xml with 3 unique warnings and 0 duplicates.
+Skipping warnings blame since pipelines do not have an SCM link.%n
+[PMD] Computing warning deltas based on reference build master

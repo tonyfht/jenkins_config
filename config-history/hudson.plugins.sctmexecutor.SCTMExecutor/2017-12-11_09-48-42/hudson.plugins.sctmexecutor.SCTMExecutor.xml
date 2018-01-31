@@ -1,0 +1,6 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<hudson.plugins.sctmexecutor.SCTMExecutorDescriptor plugin="SCTMExecutor@2.2">
+  <serviceURL>http://localhost:19120/silk</serviceURL>
+  <user>admin</user>
+  <password>{AQAAABAAAAAQc919kdUU31zJJ2xfLnM4Tf/Zq/znVZHNMMnHoIXXtLg=}</password>
+</hudson.plugins.sctmexecutor.SCTMExecutorDescriptor>

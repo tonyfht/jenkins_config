@@ -1,0 +1,21 @@
+Manifest-Version: 1.0
+Archiver-Version: Plexus Archiver
+Created-By: Apache Maven
+Built-By: sogabe
+Build-Jdk: 1.7.0_71
+Extension-Name: mantis
+Specification-Title: Integrates Jenkins to Mantis
+Implementation-Title: mantis
+Implementation-Version: 0.26
+Group-Id: org.jenkins-ci.plugins
+Short-Name: mantis
+Long-Name: Jenkins Mantis plugin
+Url: http://wiki.jenkins-ci.org/display/JENKINS/Mantis+Plugin
+Plugin-Version: 0.26
+Hudson-Version: 1.580.3
+Jenkins-Version: 1.580.3
+Plugin-Dependencies: mercurial:1.38;resolution:=optional,cvs:2.0;resol
+ ution:=optional,matrix-project:1.4,subversion:1.34;resolution:=option
+ al,maven-plugin:2.8,git:1.1.16;resolution:=optional,junit:1.4
+Plugin-Developers: Seiji Sogabe:sogabe:s.sogabe@gmail.com
+

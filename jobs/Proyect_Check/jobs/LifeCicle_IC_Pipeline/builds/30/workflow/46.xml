@@ -1,0 +1,87 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<org.jenkinsci.plugins.workflow.support.storage.SimpleXStreamFlowNodeStorage_-Tag plugin="workflow-support@2.16">
+  <node class="org.jenkinsci.plugins.workflow.cps.nodes.StepAtomNode" plugin="workflow-cps@2.41">
+    <parentIds>
+      <string>45</string>
+    </parentIds>
+    <id>46</id>
+    <descriptorId>org.jenkinsci.plugins.workflow.steps.CoreStep</descriptorId>
+  </node>
+  <actions>
+    <org.jenkinsci.plugins.workflow.support.actions.LogActionImpl>
+      <charset>windows-1252</charset>
+    </org.jenkinsci.plugins.workflow.support.actions.LogActionImpl>
+    <org.jenkinsci.plugins.workflow.cps.actions.ArgumentsActionImpl plugin="workflow-cps@2.41">
+      <arguments class="linked-hash-map">
+        <entry>
+          <string>delegate</string>
+          <org.jenkinsci.plugins.structs.describable.UninstantiatedDescribable plugin="structs@1.10">
+            <symbol>cobertura</symbol>
+            <arguments class="tree-map">
+              <entry>
+                <string>autoUpdateHealth</string>
+                <boolean>false</boolean>
+              </entry>
+              <entry>
+                <string>autoUpdateStability</string>
+                <boolean>false</boolean>
+              </entry>
+              <entry>
+                <string>classCoverageTargets</string>
+                <string>70, 0, 0</string>
+              </entry>
+              <entry>
+                <string>coberturaReportFile</string>
+                <string>**/coverage.xml</string>
+              </entry>
+              <entry>
+                <string>conditionalCoverageTargets</string>
+                <string>80, 0, 0</string>
+              </entry>
+              <entry>
+                <string>failUnhealthy</string>
+                <boolean>false</boolean>
+              </entry>
+              <entry>
+                <string>failUnstable</string>
+                <boolean>false</boolean>
+              </entry>
+              <entry>
+                <string>fileCoverageTargets</string>
+                <string>80, 0, 0</string>
+              </entry>
+              <entry>
+                <string>lineCoverageTargets</string>
+                <string>80, 0, 0</string>
+              </entry>
+              <entry>
+                <string>maxNumberOfBuilds</string>
+                <int>0</int>
+              </entry>
+              <entry>
+                <string>methodCoverageTargets</string>
+                <string>80, 0, 0</string>
+              </entry>
+              <entry>
+                <string>onlyStable</string>
+                <boolean>false</boolean>
+              </entry>
+              <entry>
+                <string>packageCoverageTargets</string>
+                <string>80, 0, 0</string>
+              </entry>
+              <entry>
+                <string>zoomCoverageChart</string>
+                <boolean>false</boolean>
+              </entry>
+            </arguments>
+          </org.jenkinsci.plugins.structs.describable.UninstantiatedDescribable>
+        </entry>
+      </arguments>
+      <isUnmodifiedBySanitization>true</isUnmodifiedBySanitization>
+    </org.jenkinsci.plugins.workflow.cps.actions.ArgumentsActionImpl>
+    <org.jenkinsci.plugins.workflow.actions.TimingAction plugin="workflow-api@2.23.1">
+      <startTime>1515747718578</startTime>
+    </org.jenkinsci.plugins.workflow.actions.TimingAction>
+  </actions>
+</org.jenkinsci.plugins.workflow.support.storage.SimpleXStreamFlowNodeStorage_-Tag>

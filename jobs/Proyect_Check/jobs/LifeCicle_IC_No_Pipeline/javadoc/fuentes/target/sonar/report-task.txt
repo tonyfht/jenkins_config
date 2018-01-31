@@ -1,0 +1,6 @@
+projectKey=es.iam.calidad.check:check
+serverUrl=http://192.168.35.128:9000
+serverVersion=6.5.0.27846
+dashboardUrl=http://192.168.35.128:9000/dashboard/index/es.iam.calidad.check:check
+ceTaskId=AWAmMW4LNMtQAOL4mucv
+ceTaskUrl=http://192.168.35.128:9000/api/ce/task?id=AWAmMW4LNMtQAOL4mucv

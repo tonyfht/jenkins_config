@@ -1,0 +1,16 @@
+<slave>
+  <name>Slave-3</name>
+  <description></description>
+  <remoteFS>c:\jenkins</remoteFS>
+  <numExecutors>5</numExecutors>
+  <mode>NORMAL</mode>
+  <retentionStrategy class="hudson.slaves.RetentionStrategy$Always"/>
+  <launcher class="hudson.os.windows.ManagedWindowsServiceLauncher" plugin="windows-slaves@1.3.1">
+    <userName>antonio.f.herrera</userName>
+    <password>{AQAAABAAAAAQcsPCfO7VepbQygWX+f4uC8JHcsNUIahq8kkeIVXKK6M=}</password>
+    <account class="hudson.os.windows.ManagedWindowsServiceAccount$LocalSystem"/>
+    <host>localhost</host>
+  </launcher>
+  <label></label>
+  <nodeProperties/>
+</slave>

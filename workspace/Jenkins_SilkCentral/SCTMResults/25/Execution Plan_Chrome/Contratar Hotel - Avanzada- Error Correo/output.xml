@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ResultElement TestItem="Execution Plan_Chrome">
+  <RunCount />
+  <Timer />
+  <WasSuccess />
+  <TestSuite TestItem="Contratar Hotel - Avanzada- Error Correo">
+    <RunCount />
+    <Timer />
+    <WasSuccess />
+    <ResultElement TestItem="">
+      <ErrorCount>0</ErrorCount>
+      <WarningCount>0</WarningCount>
+    </ResultElement>
+  </TestSuite>
+</ResultElement>
+

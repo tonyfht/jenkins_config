@@ -1,0 +1,470 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<flow-build plugin="workflow-job@2.15">
+  <actions>
+    <hudson.model.ParametersAction>
+      <safeParameters class="sorted-set"/>
+      <parameters>
+        <hudson.model.StringParameterValue>
+          <name>Rama</name>
+          <description>Se debe seleccionar la rama que se desea ejecutar</description>
+          <value>master</value>
+        </hudson.model.StringParameterValue>
+      </parameters>
+      <parameterDefinitionNames class="hudson.model.ParametersDefinitionProperty$1">
+        <outer-class>
+          <parameterDefinitions>
+            <hudson.model.ChoiceParameterDefinition>
+              <name>Rama</name>
+              <description>Se debe seleccionar la rama que se desea ejecutar</description>
+              <choices class="java.util.Arrays$ArrayList">
+                <a class="string-array">
+                  <string>master</string>
+                  <string>branches</string>
+                  <string>branches2</string>
+                  <string>branchesdemo</string>
+                </a>
+              </choices>
+            </hudson.model.ChoiceParameterDefinition>
+          </parameterDefinitions>
+        </outer-class>
+      </parameterDefinitionNames>
+    </hudson.model.ParametersAction>
+    <hudson.model.CauseAction>
+      <causeBag class="linked-hash-map">
+        <entry>
+          <hudson.model.Cause_-UserIdCause>
+            <userId>admin</userId>
+          </hudson.model.Cause_-UserIdCause>
+          <int>1</int>
+        </entry>
+      </causeBag>
+    </hudson.model.CauseAction>
+    <io.jenkins.blueocean.service.embedded.BlueOceanUrlAction plugin="blueocean-rest-impl@1.3.3">
+      <blueOceanUrlObject class="io.jenkins.blueocean.service.embedded.BlueOceanUrlObjectImpl">
+        <mappedUrl>blue/organizations/jenkins/Check_Maven_Pipeline/detail/Check_Maven_Pipeline/17</mappedUrl>
+        <modelObject class="flow-build" reference="../../../.."/>
+      </blueOceanUrlObject>
+    </io.jenkins.blueocean.service.embedded.BlueOceanUrlAction>
+    <hudson.plugins.jobConfigHistory.JobConfigBadgeAction plugin="jobConfigHistory@2.18">
+      <configDates>
+        <string>2017-12-18_12-34-58</string>
+        <string>2017-12-11_13-08-44</string>
+      </configDates>
+    </hudson.plugins.jobConfigHistory.JobConfigBadgeAction>
+    <jenkins.metrics.impl.TimeInQueueAction plugin="metrics@3.1.2.10">
+      <queuingDurationMillis>7</queuingDurationMillis>
+    </jenkins.metrics.impl.TimeInQueueAction>
+    <org.jenkinsci.plugins.workflow.libs.LibrariesAction plugin="workflow-cps-global-lib@2.9">
+      <libraries/>
+    </org.jenkinsci.plugins.workflow.libs.LibrariesAction>
+    <org.jenkinsci.plugins.workflow.cps.EnvActionImpl plugin="workflow-cps@2.41">
+      <env class="tree-map"/>
+    </org.jenkinsci.plugins.workflow.cps.EnvActionImpl>
+    <hudson.plugins.git.util.BuildData plugin="git@3.6.4">
+      <buildsByBranchName>
+        <entry>
+          <string>refs/remotes/origin/master</string>
+          <hudson.plugins.git.util.Build>
+            <marked plugin="git-client@2.6.0">
+              <sha1>2bf105c150b2ddb975ec44cd8515d2eb35ad3262</sha1>
+              <branches class="list">
+                <hudson.plugins.git.Branch>
+                  <sha1 reference="../../../sha1"/>
+                  <name>refs/remotes/origin/master</name>
+                </hudson.plugins.git.Branch>
+              </branches>
+            </marked>
+            <revision reference="../marked"/>
+            <hudsonBuildNumber>17</hudsonBuildNumber>
+          </hudson.plugins.git.util.Build>
+        </entry>
+      </buildsByBranchName>
+      <lastBuild reference="../buildsByBranchName/entry/hudson.plugins.git.util.Build"/>
+      <remoteUrls>
+        <string>https://gitlab.com/antoniofrancisco.herrera/Check.git</string>
+      </remoteUrls>
+    </hudson.plugins.git.util.BuildData>
+    <hudson.plugins.git.GitTagAction plugin="git@3.6.4">
+      <tags class="hudson.util.CopyOnWriteMap$Tree">
+        <entry>
+          <string>refs/remotes/origin/master</string>
+          <list/>
+        </entry>
+      </tags>
+      <ws>C:\Program Files (x86)\Jenkins\workspace\Check_Maven_Pipeline</ws>
+    </hudson.plugins.git.GitTagAction>
+    <org.jenkinsci.plugins.workflow.steps.scm.MultiSCMRevisionState plugin="workflow-scm-step@2.6">
+      <revisionStates>
+        <entry>
+          <string>git https://gitlab.com/antoniofrancisco.herrera/Check.git</string>
+          <hudson.scm.SCMRevisionState_-None/>
+        </entry>
+      </revisionStates>
+    </org.jenkinsci.plugins.workflow.steps.scm.MultiSCMRevisionState>
+    <hudson.plugins.checkstyle.CheckStyleResultAction plugin="checkstyle@3.49">
+      <owner class="flow-build" reference="../../.."/>
+      <healthDescriptor class="hudson.plugins.checkstyle.CheckStyleHealthDescriptor">
+        <priority>LOW</priority>
+        <healthy></healthy>
+        <unHealthy></unHealthy>
+        <thresholds plugin="analysis-core@1.92">
+          <unstableTotalAll></unstableTotalAll>
+          <unstableTotalHigh></unstableTotalHigh>
+          <unstableTotalNormal></unstableTotalNormal>
+          <unstableTotalLow></unstableTotalLow>
+          <unstableNewAll></unstableNewAll>
+          <unstableNewHigh></unstableNewHigh>
+          <unstableNewNormal></unstableNewNormal>
+          <unstableNewLow></unstableNewLow>
+          <failedTotalAll></failedTotalAll>
+          <failedTotalHigh></failedTotalHigh>
+          <failedTotalNormal></failedTotalNormal>
+          <failedTotalLow></failedTotalLow>
+          <failedNewAll></failedNewAll>
+          <failedNewHigh></failedNewHigh>
+          <failedNewNormal></failedNewNormal>
+          <failedNewLow></failedNewLow>
+        </thresholds>
+      </healthDescriptor>
+      <result class="hudson.plugins.checkstyle.CheckStyleResult">
+        <owner class="flow-build" reference="../../../.."/>
+        <modules>
+          <string></string>
+        </modules>
+        <numberOfModules>1</numberOfModules>
+        <defaultEncoding></defaultEncoding>
+        <numberOfWarnings>2</numberOfWarnings>
+        <numberOfNewWarnings>0</numberOfNewWarnings>
+        <numberOfFixedWarnings>0</numberOfFixedWarnings>
+        <delta>0</delta>
+        <lowDelta>0</lowDelta>
+        <normalDelta>0</normalDelta>
+        <highDelta>0</highDelta>
+        <lowWarnings>0</lowWarnings>
+        <normalWarnings>0</normalWarnings>
+        <highWarnings>2</highWarnings>
+        <zeroWarningsSinceBuild>0</zeroWarningsSinceBuild>
+        <zeroWarningsSinceDate>0</zeroWarningsSinceDate>
+        <zeroWarningsHighScore>0</zeroWarningsHighScore>
+        <isZeroWarningsHighscore>false</isZeroWarningsHighscore>
+        <highScoreGap>0</highScoreGap>
+        <errors/>
+        <pluginResult>SUCCESS</pluginResult>
+        <successfulSinceBuild>0</successfulSinceBuild>
+        <successfulSinceDate>0</successfulSinceDate>
+        <successfulHighscore>0</successfulHighscore>
+        <isSuccessfulHighscore>false</isSuccessfulHighscore>
+        <successfulHighScoreGap>0</successfulHighScoreGap>
+        <isSuccessfulStateTouched>false</isSuccessfulStateTouched>
+        <referenceBuild>11</referenceBuild>
+      </result>
+    </hudson.plugins.checkstyle.CheckStyleResultAction>
+    <hudson.plugins.pmd.PmdResultAction plugin="pmd@3.49">
+      <owner class="flow-build" reference="../../.."/>
+      <healthDescriptor class="hudson.plugins.pmd.PmdHealthDescriptor">
+        <priority>LOW</priority>
+        <healthy></healthy>
+        <unHealthy></unHealthy>
+        <thresholds plugin="analysis-core@1.92">
+          <unstableTotalAll></unstableTotalAll>
+          <unstableTotalHigh></unstableTotalHigh>
+          <unstableTotalNormal></unstableTotalNormal>
+          <unstableTotalLow></unstableTotalLow>
+          <unstableNewAll></unstableNewAll>
+          <unstableNewHigh></unstableNewHigh>
+          <unstableNewNormal></unstableNewNormal>
+          <unstableNewLow></unstableNewLow>
+          <failedTotalAll></failedTotalAll>
+          <failedTotalHigh></failedTotalHigh>
+          <failedTotalNormal></failedTotalNormal>
+          <failedTotalLow></failedTotalLow>
+          <failedNewAll></failedNewAll>
+          <failedNewHigh></failedNewHigh>
+          <failedNewNormal></failedNewNormal>
+          <failedNewLow></failedNewLow>
+        </thresholds>
+      </healthDescriptor>
+      <result class="hudson.plugins.pmd.PmdResult">
+        <owner class="flow-build" reference="../../../.."/>
+        <modules>
+          <string></string>
+        </modules>
+        <numberOfModules>1</numberOfModules>
+        <defaultEncoding></defaultEncoding>
+        <numberOfWarnings>3</numberOfWarnings>
+        <numberOfNewWarnings>0</numberOfNewWarnings>
+        <numberOfFixedWarnings>0</numberOfFixedWarnings>
+        <delta>0</delta>
+        <lowDelta>0</lowDelta>
+        <normalDelta>0</normalDelta>
+        <highDelta>0</highDelta>
+        <lowWarnings>0</lowWarnings>
+        <normalWarnings>3</normalWarnings>
+        <highWarnings>0</highWarnings>
+        <zeroWarningsSinceBuild>0</zeroWarningsSinceBuild>
+        <zeroWarningsSinceDate>0</zeroWarningsSinceDate>
+        <zeroWarningsHighScore>0</zeroWarningsHighScore>
+        <isZeroWarningsHighscore>false</isZeroWarningsHighscore>
+        <highScoreGap>0</highScoreGap>
+        <errors/>
+        <pluginResult>SUCCESS</pluginResult>
+        <successfulSinceBuild>0</successfulSinceBuild>
+        <successfulSinceDate>0</successfulSinceDate>
+        <successfulHighscore>0</successfulHighscore>
+        <isSuccessfulHighscore>false</isSuccessfulHighscore>
+        <successfulHighScoreGap>0</successfulHighScoreGap>
+        <isSuccessfulStateTouched>false</isSuccessfulStateTouched>
+        <referenceBuild>11</referenceBuild>
+      </result>
+    </hudson.plugins.pmd.PmdResultAction>
+    <hudson.plugins.cobertura.CoberturaBuildAction plugin="cobertura@1.12">
+      <healthyTarget>
+        <targets class="enum-map" enum-type="hudson.plugins.cobertura.targets.CoverageMetric">
+          <entry>
+            <hudson.plugins.cobertura.targets.CoverageMetric>METHOD</hudson.plugins.cobertura.targets.CoverageMetric>
+            <int>8000000</int>
+          </entry>
+          <entry>
+            <hudson.plugins.cobertura.targets.CoverageMetric>LINE</hudson.plugins.cobertura.targets.CoverageMetric>
+            <int>8000000</int>
+          </entry>
+          <entry>
+            <hudson.plugins.cobertura.targets.CoverageMetric>CONDITIONAL</hudson.plugins.cobertura.targets.CoverageMetric>
+            <int>7000000</int>
+          </entry>
+        </targets>
+      </healthyTarget>
+      <unhealthyTarget>
+        <targets class="enum-map" enum-type="hudson.plugins.cobertura.targets.CoverageMetric">
+          <entry>
+            <hudson.plugins.cobertura.targets.CoverageMetric>METHOD</hudson.plugins.cobertura.targets.CoverageMetric>
+            <int>0</int>
+          </entry>
+          <entry>
+            <hudson.plugins.cobertura.targets.CoverageMetric>LINE</hudson.plugins.cobertura.targets.CoverageMetric>
+            <int>0</int>
+          </entry>
+          <entry>
+            <hudson.plugins.cobertura.targets.CoverageMetric>CONDITIONAL</hudson.plugins.cobertura.targets.CoverageMetric>
+            <int>0</int>
+          </entry>
+        </targets>
+      </unhealthyTarget>
+      <failUnhealthy>false</failUnhealthy>
+      <failUnstable>false</failUnstable>
+      <autoUpdateHealth>false</autoUpdateHealth>
+      <autoUpdateStability>false</autoUpdateStability>
+      <zoomCoverageChart>false</zoomCoverageChart>
+      <maxNumberOfBuilds>0</maxNumberOfBuilds>
+      <result class="enum-map" enum-type="hudson.plugins.cobertura.targets.CoverageMetric">
+        <entry>
+          <hudson.plugins.cobertura.targets.CoverageMetric>PACKAGES</hudson.plugins.cobertura.targets.CoverageMetric>
+          <hudson.plugins.cobertura.Ratio>
+            <numerator>9.0</numerator>
+            <denominator>13.0</denominator>
+          </hudson.plugins.cobertura.Ratio>
+        </entry>
+        <entry>
+          <hudson.plugins.cobertura.targets.CoverageMetric>FILES</hudson.plugins.cobertura.targets.CoverageMetric>
+          <hudson.plugins.cobertura.Ratio>
+            <numerator>43.0</numerator>
+            <denominator>50.0</denominator>
+          </hudson.plugins.cobertura.Ratio>
+        </entry>
+        <entry>
+          <hudson.plugins.cobertura.targets.CoverageMetric>CLASSES</hudson.plugins.cobertura.targets.CoverageMetric>
+          <hudson.plugins.cobertura.Ratio>
+            <numerator>46.0</numerator>
+            <denominator>55.0</denominator>
+          </hudson.plugins.cobertura.Ratio>
+        </entry>
+        <entry>
+          <hudson.plugins.cobertura.targets.CoverageMetric>METHOD</hudson.plugins.cobertura.targets.CoverageMetric>
+          <hudson.plugins.cobertura.Ratio>
+            <numerator>179.0</numerator>
+            <denominator>273.0</denominator>
+          </hudson.plugins.cobertura.Ratio>
+        </entry>
+        <entry>
+          <hudson.plugins.cobertura.targets.CoverageMetric>LINE</hudson.plugins.cobertura.targets.CoverageMetric>
+          <hudson.plugins.cobertura.Ratio>
+            <numerator>723.0</numerator>
+            <denominator>1024.0</denominator>
+          </hudson.plugins.cobertura.Ratio>
+        </entry>
+        <entry>
+          <hudson.plugins.cobertura.targets.CoverageMetric>CONDITIONAL</hudson.plugins.cobertura.targets.CoverageMetric>
+          <hudson.plugins.cobertura.Ratio>
+            <numerator>187.0</numerator>
+            <denominator>268.0</denominator>
+          </hudson.plugins.cobertura.Ratio>
+        </entry>
+      </result>
+      <health>
+        <score>82</score>
+        <iconClassName>icon-health-80plus</iconClassName>
+        <iconUrl>health-80plus.png</iconUrl>
+        <localizibleDescription>
+          <holder>
+            <owner>hudson.plugins.cobertura.Messages</owner>
+          </holder>
+          <key>CoberturaBuildAction.description</key>
+          <args>
+            <int>66</int>
+            <string>179/273</string>
+            <string>MÃ©todos</string>
+          </args>
+        </localizibleDescription>
+      </health>
+      <onlyStable>false</onlyStable>
+    </hudson.plugins.cobertura.CoberturaBuildAction>
+    <com.sonyericsson.rebuild.RebuildAction plugin="rebuild@1.27"/>
+  </actions>
+  <queueId>17</queueId>
+  <timestamp>1513694639030</timestamp>
+  <startTime>1513694639032</startTime>
+  <result>SUCCESS</result>
+  <description>Check maven pipeline prueba de concepto</description>
+  <displayName>master</displayName>
+  <duration>351710</duration>
+  <keepLog>false</keepLog>
+  <execution class="org.jenkinsci.plugins.workflow.cps.CpsFlowExecution">
+    <result>SUCCESS</result>
+    <script>node {
+
+    currentBuild.displayName=&quot;${Rama}&quot;
+    currentBuild.description=&quot;Check maven pipeline prueba de concepto&quot;
+
+    def m2=&quot;C://Software//apache-maven-3.5.0//bin&quot;
+
+        stage(&apos;Checkout&apos;) {
+            /* 
+            Se realiza el checkout del repositorio de GIT. Se proporciona un parámetro
+            de entrada que será una etiqueta o rama para ejecutar. 
+          */
+            checkout([$class: &apos;GitSCM&apos;, branches: [[name: &apos;*/master&apos;]], doGenerateSubmoduleConfigurations: false, extensions: [], submoduleCfg: [], userRemoteConfigs: [[url: &apos;https://gitlab.com/antoniofrancisco.herrera/Check.git&apos;]]])
+            
+            echo &apos;Stage Checkout realizado correctamente.&apos;
+        }
+        stage(&apos;Build&apos;) {
+            /* 
+            Se realiza la contrucción del proyecto y test unitarios. Los parámetros
+            de uso general se han declarado en environment for the run
+            */ 
+            
+             sh &quot;${m2}/mvn install -Dmaven.test.failure.ignore=true -f fuentes/pom.xml -U&quot;
+             
+            echo &apos;Stage Build realizado correctamente.&apos;
+        }
+        stage(&apos;Quality&apos;) {
+            /* 
+            Se realiza la revisión de código en el proyecto con SonarQube.
+            */
+            
+            sh &quot;${m2}/mvn install sonar:sonar -Dmaven.test.failure.ignore=true -f fuentes/pom.xml -U&quot;
+
+            echo &apos;Stage Quality realizado correctamente.&apos;
+        }
+
+        stage(&apos;Tests&apos;) {
+             /* 
+            En este ejemplo solo incluye la parte de test unitarios integrados en la compilación.
+            Se podrían integrar todos los test que se quieran incorporar (funcionales, rendimiento, regresión...)
+            */
+            sh &quot;${m2}/mvn test -Dmaven.test.failure.ignore=true -f fuentes/pom.xml -U&quot;
+            
+            echo &apos;Stage Test realizado correctamente.&apos;
+        }
+        stage(&apos;InformeCheckstyle&apos;) {
+            /* 
+            Se integra el plugin de CheckStyle en el pipeline con las reglas configuradas en el fichero xml que es el mismo
+            que se integra en SonarQube.
+            */
+            sh &quot;${m2}/mvn checkstyle:checkstyle -f fuentes/pom.xml -U&quot;
+            checkstyle canComputeNew: false, defaultEncoding: &apos;&apos;, healthy: &apos;&apos;, pattern: &apos;**/checkstyle-result.xml&apos;, unHealthy: &apos;&apos;
+            echo &apos;Stage InformeCheckstyle realizado correctamente.&apos;
+        }
+        stage(&apos;InformePMD&apos;) {
+            /* 
+            Se integra el plugin de PMD en el pipeline con las reglas configuradas en el fichero xml que es el mismo
+            que se integra en SonarQube.
+            */
+            sh &quot;${m2}/mvn pmd:pmd -f fuentes/pom.xml -U&quot;
+            pmd canComputeNew: false, defaultEncoding: &apos;&apos;, healthy: &apos;&apos;, pattern: &apos;**/pmd.xml&apos;, unHealthy: &apos;&apos;
+            echo &apos;Stage InformePMD realizado correctamente.&apos;
+        }
+        stage(&apos;InformeCobertura&apos;) {
+            /* 
+            Se integra el plugin de Cobertura en el pipeline con las reglas configuradas en el fichero xml que es el mismo
+            que se integra en SonarQube.
+            */
+            sh &quot;${m2}/mvn cobertura:cobertura -Dcobertura.report.format=xml -f fuentes/pom.xml -U&quot;
+            cobertura autoUpdateHealth: false, autoUpdateStability: false, coberturaReportFile: &apos;**/coverage.xml &apos;, conditionalCoverageTargets: &apos;70, 0, 0&apos;, failUnhealthy: false, failUnstable: false, lineCoverageTargets: &apos;80, 0, 0&apos;, maxNumberOfBuilds: 0, methodCoverageTargets: &apos;80, 0, 0&apos;, onlyStable: false, sourceEncoding: &apos;ASCII&apos;, zoomCoverageChart: false
+            echo &apos;Stage InformeCobertura realizado correctamente.&apos;
+        }
+        stage(&apos;DeployNexus&apos;) {
+            /*
+            Se realiza la subida de los Artefactos a Nexus. Los parámetros de uso 
+            general se han declarado en environment for the run de usuario y password de Nexus
+            Se tiene que configurar en el pom.xml el distributionManagement y el plugin maven-deploy.
+            */
+                sh &quot;${m2}/mvn deploy:deploy-file -Dmaven.test.skip=true -Durl=${UrlNexus} -Dfile=${UrlFichero} -DrepositoryId=${repository} -DgroupId=${groupId} -DartifactId=${artifactId} -Dversion=${version}&quot;
+            echo &apos;Stage DeployNexus realizado correctamente.&apos;   
+        }
+        stage(&apos;DeployApp&apos;) {
+            
+            echo &apos;Stage DeployApp realizado correctamente.&apos;  
+        }
+}</script>
+    <loadedScripts class="map"/>
+    <timings class="map">
+      <entry>
+        <string>flowNode</string>
+        <long>947329958</long>
+      </entry>
+      <entry>
+        <string>classLoad</string>
+        <long>37155408</long>
+      </entry>
+      <entry>
+        <string>run</string>
+        <long>5022637057</long>
+      </entry>
+      <entry>
+        <string>parse</string>
+        <long>106789294</long>
+      </entry>
+      <entry>
+        <string>saveProgram</string>
+        <long>1948516241</long>
+      </entry>
+    </timings>
+    <sandbox>true</sandbox>
+    <iota>63</iota>
+    <head>1:63</head>
+  </execution>
+  <checkouts class="hudson.util.PersistedList">
+    <org.jenkinsci.plugins.workflow.job.WorkflowRun_-SCMCheckout>
+      <scm class="hudson.plugins.git.GitSCM" plugin="git@3.6.4">
+        <configVersion>2</configVersion>
+        <userRemoteConfigs>
+          <hudson.plugins.git.UserRemoteConfig>
+            <url>https://gitlab.com/antoniofrancisco.herrera/Check.git</url>
+          </hudson.plugins.git.UserRemoteConfig>
+        </userRemoteConfigs>
+        <branches>
+          <hudson.plugins.git.BranchSpec>
+            <name>*/master</name>
+          </hudson.plugins.git.BranchSpec>
+        </branches>
+        <doGenerateSubmoduleConfigurations>false</doGenerateSubmoduleConfigurations>
+        <submoduleCfg class="list"/>
+        <extensions/>
+      </scm>
+      <node></node>
+      <workspace>C:\Program Files (x86)\Jenkins\workspace\Check_Maven_Pipeline</workspace>
+      <changelogFile>C:\Program Files (x86)\Jenkins\jobs\Check_Maven_Pipeline\builds\17\changelog0.xml</changelogFile>
+      <pollingBaseline class="hudson.scm.SCMRevisionState$None" reference="../../../actions/org.jenkinsci.plugins.workflow.steps.scm.MultiSCMRevisionState/revisionStates/entry/hudson.scm.SCMRevisionState_-None"/>
+    </org.jenkinsci.plugins.workflow.job.WorkflowRun_-SCMCheckout>
+  </checkouts>
+</flow-build>

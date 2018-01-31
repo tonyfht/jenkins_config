@@ -1,0 +1,49 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<annotation-array>
+  <warning plugin="checkstyle@3.49">
+    <message>La línea coincide con el patrón ilegal &apos;System\.out&apos;.</message>
+    <priority>HIGH</priority>
+    <key>5929887760427598412</key>
+    <lineRanges>
+      <range plugin="analysis-core@1.92">
+        <start>57</start>
+        <end>57</end>
+      </range>
+    </lineRanges>
+    <primaryLineNumber>57</primaryLineNumber>
+    <fileName>C:/Program Files (x86)/Jenkins/workspace/Proyect_Check/LifeCicle_IC_Pipeline/fuentes/NEG_CHECK/src/main/java/es/iam/check/analisisDespliegues/business/main/Uso.java</fileName>
+    <moduleName>CHECK-NEG</moduleName>
+    <packageName>es.iam.check.analisisDespliegues.business.main</packageName>
+    <category>Checks</category>
+    <type>RegexpCheck</type>
+    <contextHashCode>265429709</contextHashCode>
+    <origin>checkstyle</origin>
+    <pathName>fuentes/NEG_CHECK/src/main/java/es/iam/check/analisisDespliegues/business/main</pathName>
+    <primaryColumnStart>0</primaryColumnStart>
+    <primaryColumnEnd>0</primaryColumnEnd>
+    <build>6</build>
+  </warning>
+  <warning plugin="checkstyle@3.49">
+    <message reference="../../warning/message"/>
+    <priority>HIGH</priority>
+    <key>5929887760427598411</key>
+    <lineRanges>
+      <range plugin="analysis-core@1.92">
+        <start>44</start>
+        <end>44</end>
+      </range>
+    </lineRanges>
+    <primaryLineNumber>44</primaryLineNumber>
+    <fileName reference="../../warning/fileName"/>
+    <moduleName reference="../../warning/moduleName"/>
+    <packageName reference="../../warning/packageName"/>
+    <category>Checks</category>
+    <type>RegexpCheck</type>
+    <contextHashCode>-903316427</contextHashCode>
+    <origin>checkstyle</origin>
+    <pathName>fuentes/NEG_CHECK/src/main/java/es/iam/check/analisisDespliegues/business/main</pathName>
+    <primaryColumnStart>0</primaryColumnStart>
+    <primaryColumnEnd>0</primaryColumnEnd>
+    <build>6</build>
+  </warning>
+</annotation-array>

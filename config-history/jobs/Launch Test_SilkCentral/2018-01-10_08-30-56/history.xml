@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<hudson.plugins.jobConfigHistory.HistoryDescr plugin="jobConfigHistory@2.18">
+  <user>admin</user>
+  <userId>admin</userId>
+  <operation>Renamed</operation>
+  <timestamp>2018-01-10_08-30-56</timestamp>
+  <currentName>Launch Test_SilkCentral</currentName>
+  <oldName>launch Test_SilkCentral</oldName>
+</hudson.plugins.jobConfigHistory.HistoryDescr>

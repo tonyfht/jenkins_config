@@ -1,0 +1,1040 @@
+[C:\Program Files (x86)\Jenkins\workspace\Check_Maven_Pipeline] Running shell script
++ C://Software//apache-maven-3.5.0//bin/mvn install sonar:sonar -Dmaven.test.failure.ignore=true -f fuentes/pom.xml -U
+[INFO] Scanning for projects...
+[WARNING] 
+[WARNING] Some problems were encountered while building the effective model for es.iam.calidad.check:check-neg:jar:2.1.1
+[WARNING] 'version' contains an expression but should be a constant. @ es.iam.calidad.check:check:${check.version}, C:\Program Files (x86)\Jenkins\workspace\Check_Maven_Pipeline\fuentes\pom.xml, line 9, column 12
+[WARNING] Reporting configuration should be done in <reporting> section, not in maven-site-plugin <configuration> as reportPlugins parameter.
+[WARNING] 
+[WARNING] Some problems were encountered while building the effective model for es.iam.calidad.check:check-main:jar:2.1.1
+[WARNING] Reporting configuration should be done in <reporting> section, not in maven-site-plugin <configuration> as reportPlugins parameter.
+[WARNING] 
+[WARNING] Some problems were encountered while building the effective model for es.iam.calidad.check:check-config:pom:2.1.1
+[WARNING] Reporting configuration should be done in <reporting> section, not in maven-site-plugin <configuration> as reportPlugins parameter.
+[WARNING] 
+[WARNING] Some problems were encountered while building the effective model for es.iam.calidad.check:check:pom:2.1.1
+[WARNING] 'version' contains an expression but should be a constant. @ es.iam.calidad.check:check:${check.version}, C:\Program Files (x86)\Jenkins\workspace\Check_Maven_Pipeline\fuentes\pom.xml, line 9, column 12
+[WARNING] Reporting configuration should be done in <reporting> section, not in maven-site-plugin <configuration> as reportPlugins parameter. @ es.iam.calidad.check:check:${check.version}, C:\Program Files (x86)\Jenkins\workspace\Check_Maven_Pipeline\fuentes\pom.xml, line 101, column 20
+[WARNING] 
+[WARNING] It is highly recommended to fix these problems because they threaten the stability of your build.
+[WARNING] 
+[WARNING] For this reason, future Maven versions might no longer support building such malformed projects.
+[WARNING] 
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Build Order:
+[INFO] 
+[INFO] CHECK
+[INFO] CHECK-NEG
+[INFO] CHECK-Main
+[INFO] CHECK-config
+Downloading: http://192.168.35.134:8081/repository/maven-central/org/apache/maven/plugins/maven-metadata.xml
+Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-metadata.xml
+Downloading: http://192.168.35.134:8081/repository/maven-central/org/codehaus/mojo/maven-metadata.xml
+Downloading: https://repo.maven.apache.org/maven2/org/codehaus/mojo/maven-metadata.xml
+Progress (1): 2.1/20 kBProgress (1): 4.9/20 kBProgress (1): 7.7/20 kBProgress (1): 10/20 kB Progress (1): 13/20 kBProgress (1): 16/20 kBProgress (1): 19/20 kBProgress (1): 20 kB   Progress (2): 20 kB | 2.1/14 kBProgress (2): 20 kB | 4.9/14 kBProgress (2): 20 kB | 7.7/14 kBProgress (2): 20 kB | 10/14 kB Progress (2): 20 kB | 13/14 kBProgress (2): 20 kB | 14 kB                              Downloaded: https://repo.maven.apache.org/maven2/org/codehaus/mojo/maven-metadata.xml (20 kB at 30 kB/s)
+Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-metadata.xml (14 kB at 19 kB/s)
+Progress (1): 4.1/14 kBProgress (2): 4.1/14 kB | 4.1/20 kBProgress (2): 7.9/14 kB | 4.1/20 kBProgress (2): 8.2/14 kB | 4.1/20 kBProgress (2): 8.2/14 kB | 7.9/20 kBProgress (2): 8.2/14 kB | 12/20 kB Progress (2): 8.2/14 kB | 16/20 kBProgress (2): 8.2/14 kB | 16/20 kBProgress (2): 12/14 kB | 16/20 kB Progress (2): 12/14 kB | 20 kB   Progress (2): 14 kB | 20 kB                              Downloaded: http://192.168.35.134:8081/repository/maven-central/org/apache/maven/plugins/maven-metadata.xml (14 kB at 4.6 kB/s)
+Downloaded: http://192.168.35.134:8081/repository/maven-central/org/codehaus/mojo/maven-metadata.xml (20 kB at 6.9 kB/s)
+Downloading: https://repo.maven.apache.org/maven2/org/codehaus/mojo/sonar-maven-plugin/maven-metadata.xml
+Downloading: http://192.168.35.134:8081/repository/maven-central/org/codehaus/mojo/sonar-maven-plugin/maven-metadata.xml
+Progress (1): 976 B                   Downloaded: https://repo.maven.apache.org/maven2/org/codehaus/mojo/sonar-maven-plugin/maven-metadata.xml (976 B at 2.4 kB/s)
+Progress (1): 976 B                   Downloaded: http://192.168.35.134:8081/repository/maven-central/org/codehaus/mojo/sonar-maven-plugin/maven-metadata.xml (976 B at 2.0 kB/s)
+[INFO] 
+[INFO] ------------------------------------------------------------------------
+[INFO] Building CHECK 2.1.1
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-install-plugin:2.4:install (default-install) @ check ---
+[INFO] Installing C:\Program Files (x86)\Jenkins\workspace\Check_Maven_Pipeline\fuentes\pom.xml to C:\Windows\system32\config\systemprofile\.m2\repository\es\iam\calidad\check\check\2.1.1\check-2.1.1.pom
+[INFO] 
+[INFO] ------------------------------------------------------------------------
+[INFO] Building CHECK-NEG 2.1.1
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ check-neg ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory C:\Program Files (x86)\Jenkins\workspace\Check_Maven_Pipeline\fuentes\NEG_CHECK\src\main\resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:2.3.2:compile (default-compile) @ check-neg ---
+[INFO] Compiling 11 source files to C:\Program Files (x86)\Jenkins\workspace\Check_Maven_Pipeline\fuentes\NEG_CHECK\target\classes
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ check-neg ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 14 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:2.3.2:testCompile (default-testCompile) @ check-neg ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.12.4:test (default-test) @ check-neg ---
+[INFO] Surefire report directory: C:\Program Files (x86)\Jenkins\workspace\Check_Maven_Pipeline\fuentes\NEG_CHECK\target\surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running es.iam.check.analisisDespliegues.integracionChequeos.artefacto.ChequeoArchivosNoPermitidosEARIntegrationTest
+Tests run: 73, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 10.976 sec
+Running es.iam.check.analisisDespliegues.integracionChequeos.artefacto.ChequeoContenidoAppXMLTest
+Tests run: 6, Failures: 0, Errors: 6, Skipped: 0, Time elapsed: 0.104 sec <<< FAILURE!
+detectarErrorNoExistenciaApplicationXMLDescriptor6_WAS85(es.iam.check.analisisDespliegues.integracionChequeos.artefacto.ChequeoContenidoAppXMLTest)  Time elapsed: 0.001 sec  <<< ERROR!
+java.lang.IllegalArgumentException: File must exist: C:\Program%20Files%20(x86)\Jenkins\workspace\Check_Maven_Pipeline\fuentes\NEG_CHECK\target\test-classes\artefactos\application.xml
+	at org.jboss.shrinkwrap.api.asset.FileAsset.<init>(FileAsset.java:49)
+	at org.jboss.shrinkwrap.impl.base.container.EnterpriseContainerBase.addAsApplicationResource(EnterpriseContainerBase.java:177)
+	at es.iam.check.analisisDespliegues.integracionChequeos.Artefacto.agregarApplicationXML(Artefacto.java:96)
+	at es.iam.check.analisisDespliegues.integracionChequeos.artefacto.ChequeoContenidoAppXMLTest.detectarErrorNoExistenciaApplicationXMLDescriptor6_WAS85(ChequeoContenidoAppXMLTest.java:30)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:45)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:15)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:42)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:20)
+	at org.junit.rules.ExternalResource$1.evaluate(ExternalResource.java:46)
+	at org.junit.rules.RunRules.evaluate(RunRules.java:18)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:263)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:68)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:47)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:231)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:60)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:229)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:50)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:222)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:300)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+
+detectarExistenciaDescriptor6ApplicationXML_WAS85(es.iam.check.analisisDespliegues.integracionChequeos.artefacto.ChequeoContenidoAppXMLTest)  Time elapsed: 0.002 sec  <<< ERROR!
+java.lang.IllegalArgumentException: File must exist: C:\Program%20Files%20(x86)\Jenkins\workspace\Check_Maven_Pipeline\fuentes\NEG_CHECK\target\test-classes\artefactos\application6.xml
+	at org.jboss.shrinkwrap.api.asset.FileAsset.<init>(FileAsset.java:49)
+	at org.jboss.shrinkwrap.impl.base.container.EnterpriseContainerBase.addAsApplicationResource(EnterpriseContainerBase.java:177)
+	at es.iam.check.analisisDespliegues.integracionChequeos.Artefacto.agregarApplicationXML(Artefacto.java:96)
+	at es.iam.check.analisisDespliegues.integracionChequeos.artefacto.ChequeoContenidoAppXMLTest.detectarExistenciaDescriptor6ApplicationXML_WAS85(ChequeoContenidoAppXMLTest.java:42)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:45)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:15)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:42)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:20)
+	at org.junit.rules.ExternalResource$1.evaluate(ExternalResource.java:46)
+	at org.junit.rules.RunRules.evaluate(RunRules.java:18)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:263)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:68)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:47)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:231)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:60)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:229)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:50)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:222)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:300)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+
+detectarExistenciaDescriptor6ApplicationXML_JBOSS(es.iam.check.analisisDespliegues.integracionChequeos.artefacto.ChequeoContenidoAppXMLTest)  Time elapsed: 0.059 sec  <<< ERROR!
+java.lang.IllegalArgumentException: File must exist: C:\Program%20Files%20(x86)\Jenkins\workspace\Check_Maven_Pipeline\fuentes\NEG_CHECK\target\test-classes\artefactos\application6.xml
+	at org.jboss.shrinkwrap.api.asset.FileAsset.<init>(FileAsset.java:49)
+	at org.jboss.shrinkwrap.impl.base.container.EnterpriseContainerBase.addAsApplicationResource(EnterpriseContainerBase.java:177)
+	at es.iam.check.analisisDespliegues.integracionChequeos.Artefacto.agregarApplicationXML(Artefacto.java:96)
+	at es.iam.check.analisisDespliegues.integracionChequeos.artefacto.ChequeoContenidoAppXMLTest.detectarExistenciaDescriptor6ApplicationXML_JBOSS(ChequeoContenidoAppXMLTest.java:66)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:45)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:15)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:42)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:20)
+	at org.junit.rules.ExternalResource$1.evaluate(ExternalResource.java:46)
+	at org.junit.rules.RunRules.evaluate(RunRules.java:18)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:263)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:68)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:47)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:231)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:60)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:229)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:50)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:222)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:300)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+
+detectarErrorNoExistenciaApplicationXMLDescriptor4_WAS61(es.iam.check.analisisDespliegues.integracionChequeos.artefacto.ChequeoContenidoAppXMLTest)  Time elapsed: 0.029 sec  <<< ERROR!
+java.lang.IllegalArgumentException: File must exist: C:\Program%20Files%20(x86)\Jenkins\workspace\Check_Maven_Pipeline\fuentes\NEG_CHECK\target\test-classes\artefactos\application6.xml
+	at org.jboss.shrinkwrap.api.asset.FileAsset.<init>(FileAsset.java:49)
+	at org.jboss.shrinkwrap.impl.base.container.EnterpriseContainerBase.addAsApplicationResource(EnterpriseContainerBase.java:177)
+	at es.iam.check.analisisDespliegues.integracionChequeos.Artefacto.agregarApplicationXML(Artefacto.java:96)
+	at es.iam.check.analisisDespliegues.integracionChequeos.artefacto.ChequeoContenidoAppXMLTest.detectarErrorNoExistenciaApplicationXMLDescriptor4_WAS61(ChequeoContenidoAppXMLTest.java:78)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:45)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:15)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:42)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:20)
+	at org.junit.rules.ExternalResource$1.evaluate(ExternalResource.java:46)
+	at org.junit.rules.RunRules.evaluate(RunRules.java:18)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:263)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:68)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:47)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:231)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:60)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:229)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:50)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:222)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:300)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+
+detectarErrorNoExistenciaApplicationXMLDescriptor6_JBOSS(es.iam.check.analisisDespliegues.integracionChequeos.artefacto.ChequeoContenidoAppXMLTest)  Time elapsed: 0.004 sec  <<< ERROR!
+java.lang.IllegalArgumentException: File must exist: C:\Program%20Files%20(x86)\Jenkins\workspace\Check_Maven_Pipeline\fuentes\NEG_CHECK\target\test-classes\artefactos\application.xml
+	at org.jboss.shrinkwrap.api.asset.FileAsset.<init>(FileAsset.java:49)
+	at org.jboss.shrinkwrap.impl.base.container.EnterpriseContainerBase.addAsApplicationResource(EnterpriseContainerBase.java:177)
+	at es.iam.check.analisisDespliegues.integracionChequeos.Artefacto.agregarApplicationXML(Artefacto.java:96)
+	at es.iam.check.analisisDespliegues.integracionChequeos.artefacto.ChequeoContenidoAppXMLTest.detectarErrorNoExistenciaApplicationXMLDescriptor6_JBOSS(ChequeoContenidoAppXMLTest.java:54)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:45)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:15)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:42)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:20)
+	at org.junit.rules.ExternalResource$1.evaluate(ExternalResource.java:46)
+	at org.junit.rules.RunRules.evaluate(RunRules.java:18)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:263)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:68)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:47)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:231)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:60)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:229)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:50)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:222)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:300)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+
+detectarExistenciaDescriptor6ApplicationXML_WAS61(es.iam.check.analisisDespliegues.integracionChequeos.artefacto.ChequeoContenidoAppXMLTest)  Time elapsed: 0.006 sec  <<< ERROR!
+java.lang.IllegalArgumentException: File must exist: C:\Program%20Files%20(x86)\Jenkins\workspace\Check_Maven_Pipeline\fuentes\NEG_CHECK\target\test-classes\artefactos\application.xml
+	at org.jboss.shrinkwrap.api.asset.FileAsset.<init>(FileAsset.java:49)
+	at org.jboss.shrinkwrap.impl.base.container.EnterpriseContainerBase.addAsApplicationResource(EnterpriseContainerBase.java:177)
+	at es.iam.check.analisisDespliegues.integracionChequeos.Artefacto.agregarApplicationXML(Artefacto.java:96)
+	at es.iam.check.analisisDespliegues.integracionChequeos.artefacto.ChequeoContenidoAppXMLTest.detectarExistenciaDescriptor6ApplicationXML_WAS61(ChequeoContenidoAppXMLTest.java:90)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:45)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:15)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:42)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:20)
+	at org.junit.rules.ExternalResource$1.evaluate(ExternalResource.java:46)
+	at org.junit.rules.RunRules.evaluate(RunRules.java:18)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:263)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:68)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:47)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:231)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:60)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:229)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:50)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:222)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:300)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+
+Running es.iam.check.analisisDespliegues.integracionChequeos.artefacto.ChequeoContenidoWebAppTest
+Tests run: 10, Failures: 0, Errors: 10, Skipped: 0, Time elapsed: 0.05 sec <<< FAILURE!
+detectarExistenciaNamespace30_Y_No_SessionTimeout_WebApplicationXML_WAS85(es.iam.check.analisisDespliegues.integracionChequeos.artefacto.ChequeoContenidoWebAppTest)  Time elapsed: 0.005 sec  <<< ERROR!
+java.lang.IllegalArgumentException: File must exist: C:\Program%20Files%20(x86)\Jenkins\workspace\Check_Maven_Pipeline\fuentes\NEG_CHECK\target\test-classes\artefactos\web30.xml
+	at org.jboss.shrinkwrap.api.asset.FileAsset.<init>(FileAsset.java:49)
+	at org.jboss.shrinkwrap.impl.base.container.WebContainerBase.setWebXML(WebContainerBase.java:105)
+	at es.iam.check.analisisDespliegues.integracionChequeos.ChequeosIntegrationTest.crearArtefactoWARConWebXML(ChequeosIntegrationTest.java:169)
+	at es.iam.check.analisisDespliegues.integracionChequeos.artefacto.ChequeoContenidoWebAppTest.detectarExistenciaNamespace30_Y_No_SessionTimeout_WebApplicationXML_WAS85(ChequeoContenidoWebAppTest.java:50)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:45)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:15)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:42)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:20)
+	at org.junit.rules.ExternalResource$1.evaluate(ExternalResource.java:46)
+	at org.junit.rules.RunRules.evaluate(RunRules.java:18)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:263)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:68)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:47)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:231)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:60)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:229)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:50)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:222)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:300)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+
+detectarErrorNoExistenciaNamespace30YSessionTimeoutEnWebApplicationXML_JBOSS(es.iam.check.analisisDespliegues.integracionChequeos.artefacto.ChequeoContenidoWebAppTest)  Time elapsed: 0.008 sec  <<< ERROR!
+java.lang.IllegalArgumentException: File must exist: C:\Program%20Files%20(x86)\Jenkins\workspace\Check_Maven_Pipeline\fuentes\NEG_CHECK\target\test-classes\artefactos\web.xml
+	at org.jboss.shrinkwrap.api.asset.FileAsset.<init>(FileAsset.java:49)
+	at org.jboss.shrinkwrap.impl.base.container.WebContainerBase.setWebXML(WebContainerBase.java:105)
+	at es.iam.check.analisisDespliegues.integracionChequeos.ChequeosIntegrationTest.crearArtefactoWARConWebXML(ChequeosIntegrationTest.java:169)
+	at es.iam.check.analisisDespliegues.integracionChequeos.artefacto.ChequeoContenidoWebAppTest.detectarErrorNoExistenciaNamespace30YSessionTimeoutEnWebApplicationXML_JBOSS(ChequeoContenidoWebAppTest.java:87)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:45)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:15)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:42)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:20)
+	at org.junit.rules.ExternalResource$1.evaluate(ExternalResource.java:46)
+	at org.junit.rules.RunRules.evaluate(RunRules.java:18)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:263)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:68)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:47)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:231)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:60)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:229)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:50)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:222)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:300)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+
+detectarExistenciaNamespace30_Y_SI_SessionTimeout_WebApplicationXML_JBOSS(es.iam.check.analisisDespliegues.integracionChequeos.artefacto.ChequeoContenidoWebAppTest)  Time elapsed: 0.007 sec  <<< ERROR!
+java.lang.IllegalArgumentException: File must exist: C:\Program%20Files%20(x86)\Jenkins\workspace\Check_Maven_Pipeline\fuentes\NEG_CHECK\target\test-classes\artefactos\webSessionTimeout.xml
+	at org.jboss.shrinkwrap.api.asset.FileAsset.<init>(FileAsset.java:49)
+	at org.jboss.shrinkwrap.impl.base.container.WebContainerBase.setWebXML(WebContainerBase.java:105)
+	at es.iam.check.analisisDespliegues.integracionChequeos.ChequeosIntegrationTest.crearArtefactoWARConWebXML(ChequeosIntegrationTest.java:169)
+	at es.iam.check.analisisDespliegues.integracionChequeos.artefacto.ChequeoContenidoWebAppTest.detectarExistenciaNamespace30_Y_SI_SessionTimeout_WebApplicationXML_JBOSS(ChequeoContenidoWebAppTest.java:97)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:45)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:15)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:42)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:20)
+	at org.junit.rules.ExternalResource$1.evaluate(ExternalResource.java:46)
+	at org.junit.rules.RunRules.evaluate(RunRules.java:18)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:263)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:68)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:47)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:231)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:60)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:229)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:50)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:222)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:300)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+
+detectarErrorExistenciaSessionTimeoutWebApplicationXML_WAS85(es.iam.check.analisisDespliegues.integracionChequeos.artefacto.ChequeoContenidoWebAppTest)  Time elapsed: 0.004 sec  <<< ERROR!
+java.lang.IllegalArgumentException: File must exist: C:\Program%20Files%20(x86)\Jenkins\workspace\Check_Maven_Pipeline\fuentes\NEG_CHECK\target\test-classes\artefactos\webSessionTimeout.xml
+	at org.jboss.shrinkwrap.api.asset.FileAsset.<init>(FileAsset.java:49)
+	at org.jboss.shrinkwrap.impl.base.container.WebContainerBase.setWebXML(WebContainerBase.java:105)
+	at es.iam.check.analisisDespliegues.integracionChequeos.ChequeosIntegrationTest.crearArtefactoWARConWebXML(ChequeosIntegrationTest.java:169)
+	at es.iam.check.analisisDespliegues.integracionChequeos.artefacto.ChequeoContenidoWebAppTest.detectarErrorExistenciaSessionTimeoutWebApplicationXML_WAS85(ChequeoContenidoWebAppTest.java:30)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:45)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:15)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:42)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:20)
+	at org.junit.rules.ExternalResource$1.evaluate(ExternalResource.java:46)
+	at org.junit.rules.RunRules.evaluate(RunRules.java:18)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:263)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:68)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:47)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:231)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:60)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:229)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:50)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:222)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:300)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+
+detectarExistenciaEnableFileServing_WebApplicationXML_WAS85(es.iam.check.analisisDespliegues.integracionChequeos.artefacto.ChequeoContenidoWebAppTest)  Time elapsed: 0.009 sec  <<< ERROR!
+java.lang.IllegalArgumentException: File must exist: C:\Program%20Files%20(x86)\Jenkins\workspace\Check_Maven_Pipeline\fuentes\NEG_CHECK\target\test-classes\artefactos\ibm-web-ext.xml
+	at org.jboss.shrinkwrap.api.asset.FileAsset.<init>(FileAsset.java:49)
+	at org.jboss.shrinkwrap.impl.base.container.WebContainerBase.setWebXML(WebContainerBase.java:105)
+	at es.iam.check.analisisDespliegues.integracionChequeos.ChequeosIntegrationTest.crearArtefactoWARConWebXML(ChequeosIntegrationTest.java:169)
+	at es.iam.check.analisisDespliegues.integracionChequeos.artefacto.ChequeoContenidoWebAppTest.detectarExistenciaEnableFileServing_WebApplicationXML_WAS85(ChequeoContenidoWebAppTest.java:60)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:45)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:15)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:42)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:20)
+	at org.junit.rules.ExternalResource$1.evaluate(ExternalResource.java:46)
+	at org.junit.rules.RunRules.evaluate(RunRules.java:18)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:263)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:68)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:47)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:231)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:60)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:229)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:50)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:222)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:300)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+
+detectarErrorNoExistenciaNamespace30WebApplicationXML_WAS85(es.iam.check.analisisDespliegues.integracionChequeos.artefacto.ChequeoContenidoWebAppTest)  Time elapsed: 0.005 sec  <<< ERROR!
+java.lang.IllegalArgumentException: File must exist: C:\Program%20Files%20(x86)\Jenkins\workspace\Check_Maven_Pipeline\fuentes\NEG_CHECK\target\test-classes\artefactos\web.xml
+	at org.jboss.shrinkwrap.api.asset.FileAsset.<init>(FileAsset.java:49)
+	at org.jboss.shrinkwrap.impl.base.container.WebContainerBase.setWebXML(WebContainerBase.java:105)
+	at es.iam.check.analisisDespliegues.integracionChequeos.ChequeosIntegrationTest.crearArtefactoWARConWebXML(ChequeosIntegrationTest.java:169)
+	at es.iam.check.analisisDespliegues.integracionChequeos.artefacto.ChequeoContenidoWebAppTest.detectarErrorNoExistenciaNamespace30WebApplicationXML_WAS85(ChequeoContenidoWebAppTest.java:40)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:45)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:15)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:42)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:20)
+	at org.junit.rules.ExternalResource$1.evaluate(ExternalResource.java:46)
+	at org.junit.rules.RunRules.evaluate(RunRules.java:18)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:263)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:68)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:47)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:231)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:60)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:229)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:50)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:222)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:300)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+
+detectarErrorNoExistenciaSessionTimeoutWebApplicationXML_JBOSS(es.iam.check.analisisDespliegues.integracionChequeos.artefacto.ChequeoContenidoWebAppTest)  Time elapsed: 0.003 sec  <<< ERROR!
+java.lang.IllegalArgumentException: File must exist: C:\Program%20Files%20(x86)\Jenkins\workspace\Check_Maven_Pipeline\fuentes\NEG_CHECK\target\test-classes\artefactos\web30.xml
+	at org.jboss.shrinkwrap.api.asset.FileAsset.<init>(FileAsset.java:49)
+	at org.jboss.shrinkwrap.impl.base.container.WebContainerBase.setWebXML(WebContainerBase.java:105)
+	at es.iam.check.analisisDespliegues.integracionChequeos.ChequeosIntegrationTest.crearArtefactoWARConWebXML(ChequeosIntegrationTest.java:169)
+	at es.iam.check.analisisDespliegues.integracionChequeos.artefacto.ChequeoContenidoWebAppTest.detectarErrorNoExistenciaSessionTimeoutWebApplicationXML_JBOSS(ChequeoContenidoWebAppTest.java:77)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:45)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:15)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:42)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:20)
+	at org.junit.rules.ExternalResource$1.evaluate(ExternalResource.java:46)
+	at org.junit.rules.RunRules.evaluate(RunRules.java:18)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:263)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:68)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:47)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:231)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:60)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:229)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:50)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:222)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:300)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+
+detectarErrorExistenciaSessionTimeoutWebApplicationXML_WAS61(es.iam.check.analisisDespliegues.integracionChequeos.artefacto.ChequeoContenidoWebAppTest)  Time elapsed: 0.002 sec  <<< ERROR!
+java.lang.IllegalArgumentException: File must exist: C:\Program%20Files%20(x86)\Jenkins\workspace\Check_Maven_Pipeline\fuentes\NEG_CHECK\target\test-classes\artefactos\web.xml
+	at org.jboss.shrinkwrap.api.asset.FileAsset.<init>(FileAsset.java:49)
+	at org.jboss.shrinkwrap.impl.base.container.WebContainerBase.setWebXML(WebContainerBase.java:105)
+	at es.iam.check.analisisDespliegues.integracionChequeos.ChequeosIntegrationTest.crearArtefactoWARConWebXML(ChequeosIntegrationTest.java:169)
+	at es.iam.check.analisisDespliegues.integracionChequeos.artefacto.ChequeoContenidoWebAppTest.detectarErrorExistenciaSessionTimeoutWebApplicationXML_WAS61(ChequeoContenidoWebAppTest.java:114)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:45)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:15)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:42)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:20)
+	at org.junit.rules.ExternalResource$1.evaluate(ExternalResource.java:46)
+	at org.junit.rules.RunRules.evaluate(RunRules.java:18)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:263)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:68)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:47)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:231)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:60)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:229)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:50)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:222)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:300)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+
+detectarErrorNoExistenciaNamespace24WebApplicationXML_WAS61(es.iam.check.analisisDespliegues.integracionChequeos.artefacto.ChequeoContenidoWebAppTest)  Time elapsed: 0.003 sec  <<< ERROR!
+java.lang.IllegalArgumentException: File must exist: C:\Program%20Files%20(x86)\Jenkins\workspace\Check_Maven_Pipeline\fuentes\NEG_CHECK\target\test-classes\artefactos\web30.xml
+	at org.jboss.shrinkwrap.api.asset.FileAsset.<init>(FileAsset.java:49)
+	at org.jboss.shrinkwrap.impl.base.container.WebContainerBase.setWebXML(WebContainerBase.java:105)
+	at es.iam.check.analisisDespliegues.integracionChequeos.ChequeosIntegrationTest.crearArtefactoWARConWebXML(ChequeosIntegrationTest.java:169)
+	at es.iam.check.analisisDespliegues.integracionChequeos.artefacto.ChequeoContenidoWebAppTest.detectarErrorNoExistenciaNamespace24WebApplicationXML_WAS61(ChequeoContenidoWebAppTest.java:124)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:45)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:15)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:42)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:20)
+	at org.junit.rules.ExternalResource$1.evaluate(ExternalResource.java:46)
+	at org.junit.rules.RunRules.evaluate(RunRules.java:18)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:263)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:68)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:47)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:231)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:60)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:229)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:50)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:222)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:300)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+
+detectarExistenciaNamespace24_Y_No_SessionTimeout_WebApplicationXML_WAS61(es.iam.check.analisisDespliegues.integracionChequeos.artefacto.ChequeoContenidoWebAppTest)  Time elapsed: 0.003 sec  <<< ERROR!
+java.lang.IllegalArgumentException: File must exist: C:\Program%20Files%20(x86)\Jenkins\workspace\Check_Maven_Pipeline\fuentes\NEG_CHECK\target\test-classes\artefactos\web.xml
+	at org.jboss.shrinkwrap.api.asset.FileAsset.<init>(FileAsset.java:49)
+	at org.jboss.shrinkwrap.impl.base.container.WebContainerBase.setWebXML(WebContainerBase.java:105)
+	at es.iam.check.analisisDespliegues.integracionChequeos.ChequeosIntegrationTest.crearArtefactoWARConWebXML(ChequeosIntegrationTest.java:169)
+	at es.iam.check.analisisDespliegues.integracionChequeos.artefacto.ChequeoContenidoWebAppTest.detectarExistenciaNamespace24_Y_No_SessionTimeout_WebApplicationXML_WAS61(ChequeoContenidoWebAppTest.java:134)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:45)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:15)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:42)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:20)
+	at org.junit.rules.ExternalResource$1.evaluate(ExternalResource.java:46)
+	at org.junit.rules.RunRules.evaluate(RunRules.java:18)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:263)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:68)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:47)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:231)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:60)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:229)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:50)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:222)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:300)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+
+Running es.iam.check.analisisDespliegues.integracionChequeos.artefacto.ChequeoDescriptoresIntegrationTest
+Tests run: 26, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.586 sec
+Running es.iam.check.analisisDespliegues.integracionChequeos.artefacto.ChequeoEstructuraIntegrationTest
+Tests run: 18, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.067 sec
+Running es.iam.check.analisisDespliegues.integracionChequeos.artefacto.ChequeoExtensionArtefactoIntegrationTest
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.502 sec
+Running es.iam.check.analisisDespliegues.integracionChequeos.artefacto.ChequeoFicherosTrazaIntegrationTest
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.477 sec
+Running es.iam.check.analisisDespliegues.integracionChequeos.artefacto.ChequeoLibreriasDuplicadasIntegrationTest
+Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.84 sec
+Running es.iam.check.analisisDespliegues.integracionChequeos.artefacto.ChequeoLibreriasNoPermitidasTest
+Tests run: 12, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.976 sec
+Running es.iam.check.analisisDespliegues.integracionChequeos.estaticos.ChequeoArchivosNoPermitidosEstaticosIntegationTest
+Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.228 sec
+Running es.iam.check.analisisDespliegues.integracionChequeos.estaticos.ChequeoExtensionEstaticosIntegrationTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.277 sec
+Running es.iam.check.analisisDespliegues.integracionChequeos.propiedades.ChequeoArchivosNoPermitidosRecursosIntegrationTest
+Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1 sec
+Running es.iam.check.analisisDespliegues.integracionChequeos.propiedades.ChequeoExtensionRecursosIntegrationTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.278 sec
+
+Results :
+
+Tests in error: 
+  detectarErrorNoExistenciaApplicationXMLDescriptor6_WAS85(es.iam.check.analisisDespliegues.integracionChequeos.artefacto.ChequeoContenidoAppXMLTest): File must exist: C:\Program%20Files%20(x86)\Jenkins\workspace\Check_Maven_Pipeline\fuentes\NEG_CHECK\target\test-classes\artefactos\application.xml
+  detectarExistenciaDescriptor6ApplicationXML_WAS85(es.iam.check.analisisDespliegues.integracionChequeos.artefacto.ChequeoContenidoAppXMLTest): File must exist: C:\Program%20Files%20(x86)\Jenkins\workspace\Check_Maven_Pipeline\fuentes\NEG_CHECK\target\test-classes\artefactos\application6.xml
+  detectarExistenciaDescriptor6ApplicationXML_JBOSS(es.iam.check.analisisDespliegues.integracionChequeos.artefacto.ChequeoContenidoAppXMLTest): File must exist: C:\Program%20Files%20(x86)\Jenkins\workspace\Check_Maven_Pipeline\fuentes\NEG_CHECK\target\test-classes\artefactos\application6.xml
+  detectarErrorNoExistenciaApplicationXMLDescriptor4_WAS61(es.iam.check.analisisDespliegues.integracionChequeos.artefacto.ChequeoContenidoAppXMLTest): File must exist: C:\Program%20Files%20(x86)\Jenkins\workspace\Check_Maven_Pipeline\fuentes\NEG_CHECK\target\test-classes\artefactos\application6.xml
+  detectarErrorNoExistenciaApplicationXMLDescriptor6_JBOSS(es.iam.check.analisisDespliegues.integracionChequeos.artefacto.ChequeoContenidoAppXMLTest): File must exist: C:\Program%20Files%20(x86)\Jenkins\workspace\Check_Maven_Pipeline\fuentes\NEG_CHECK\target\test-classes\artefactos\application.xml
+  detectarExistenciaDescriptor6ApplicationXML_WAS61(es.iam.check.analisisDespliegues.integracionChequeos.artefacto.ChequeoContenidoAppXMLTest): File must exist: C:\Program%20Files%20(x86)\Jenkins\workspace\Check_Maven_Pipeline\fuentes\NEG_CHECK\target\test-classes\artefactos\application.xml
+  detectarExistenciaNamespace30_Y_No_SessionTimeout_WebApplicationXML_WAS85(es.iam.check.analisisDespliegues.integracionChequeos.artefacto.ChequeoContenidoWebAppTest): File must exist: C:\Program%20Files%20(x86)\Jenkins\workspace\Check_Maven_Pipeline\fuentes\NEG_CHECK\target\test-classes\artefactos\web30.xml
+  detectarErrorNoExistenciaNamespace30YSessionTimeoutEnWebApplicationXML_JBOSS(es.iam.check.analisisDespliegues.integracionChequeos.artefacto.ChequeoContenidoWebAppTest): File must exist: C:\Program%20Files%20(x86)\Jenkins\workspace\Check_Maven_Pipeline\fuentes\NEG_CHECK\target\test-classes\artefactos\web.xml
+  detectarExistenciaNamespace30_Y_SI_SessionTimeout_WebApplicationXML_JBOSS(es.iam.check.analisisDespliegues.integracionChequeos.artefacto.ChequeoContenidoWebAppTest): File must exist: C:\Program%20Files%20(x86)\Jenkins\workspace\Check_Maven_Pipeline\fuentes\NEG_CHECK\target\test-classes\artefactos\webSessionTimeout.xml
+  detectarErrorExistenciaSessionTimeoutWebApplicationXML_WAS85(es.iam.check.analisisDespliegues.integracionChequeos.artefacto.ChequeoContenidoWebAppTest): File must exist: C:\Program%20Files%20(x86)\Jenkins\workspace\Check_Maven_Pipeline\fuentes\NEG_CHECK\target\test-classes\artefactos\webSessionTimeout.xml
+  detectarExistenciaEnableFileServing_WebApplicationXML_WAS85(es.iam.check.analisisDespliegues.integracionChequeos.artefacto.ChequeoContenidoWebAppTest): File must exist: C:\Program%20Files%20(x86)\Jenkins\workspace\Check_Maven_Pipeline\fuentes\NEG_CHECK\target\test-classes\artefactos\ibm-web-ext.xml
+  detectarErrorNoExistenciaNamespace30WebApplicationXML_WAS85(es.iam.check.analisisDespliegues.integracionChequeos.artefacto.ChequeoContenidoWebAppTest): File must exist: C:\Program%20Files%20(x86)\Jenkins\workspace\Check_Maven_Pipeline\fuentes\NEG_CHECK\target\test-classes\artefactos\web.xml
+  detectarErrorNoExistenciaSessionTimeoutWebApplicationXML_JBOSS(es.iam.check.analisisDespliegues.integracionChequeos.artefacto.ChequeoContenidoWebAppTest): File must exist: C:\Program%20Files%20(x86)\Jenkins\workspace\Check_Maven_Pipeline\fuentes\NEG_CHECK\target\test-classes\artefactos\web30.xml
+  detectarErrorExistenciaSessionTimeoutWebApplicationXML_WAS61(es.iam.check.analisisDespliegues.integracionChequeos.artefacto.ChequeoContenidoWebAppTest): File must exist: C:\Program%20Files%20(x86)\Jenkins\workspace\Check_Maven_Pipeline\fuentes\NEG_CHECK\target\test-classes\artefactos\web.xml
+  detectarErrorNoExistenciaNamespace24WebApplicationXML_WAS61(es.iam.check.analisisDespliegues.integracionChequeos.artefacto.ChequeoContenidoWebAppTest): File must exist: C:\Program%20Files%20(x86)\Jenkins\workspace\Check_Maven_Pipeline\fuentes\NEG_CHECK\target\test-classes\artefactos\web30.xml
+  detectarExistenciaNamespace24_Y_No_SessionTimeout_WebApplicationXML_WAS61(es.iam.check.analisisDespliegues.integracionChequeos.artefacto.ChequeoContenidoWebAppTest): File must exist: C:\Program%20Files%20(x86)\Jenkins\workspace\Check_Maven_Pipeline\fuentes\NEG_CHECK\target\test-classes\artefactos\web.xml
+
+Tests run: 186, Failures: 0, Errors: 16, Skipped: 0
+
+[ERROR] There are test failures.
+
+Please refer to C:\Program Files (x86)\Jenkins\workspace\Check_Maven_Pipeline\fuentes\NEG_CHECK\target\surefire-reports for the individual test results.
+[INFO] 
+[INFO] --- maven-jar-plugin:2.4:jar (default-jar) @ check-neg ---
+[INFO] 
+[INFO] --- maven-install-plugin:2.4:install (default-install) @ check-neg ---
+[INFO] Installing C:\Program Files (x86)\Jenkins\workspace\Check_Maven_Pipeline\fuentes\NEG_CHECK\target\check-neg-2.1.1.jar to C:\Windows\system32\config\systemprofile\.m2\repository\es\iam\calidad\check\check-neg\2.1.1\check-neg-2.1.1.jar
+[INFO] Installing C:\Program Files (x86)\Jenkins\workspace\Check_Maven_Pipeline\fuentes\NEG_CHECK\pom.xml to C:\Windows\system32\config\systemprofile\.m2\repository\es\iam\calidad\check\check-neg\2.1.1\check-neg-2.1.1.pom
+[INFO] 
+[INFO] ------------------------------------------------------------------------
+[INFO] Building CHECK-Main 2.1.1
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ check-main ---
+[WARNING] Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+[INFO] skip non existing resourceDirectory C:\Program Files (x86)\Jenkins\workspace\Check_Maven_Pipeline\fuentes\BATCH_CHECK\src\main\resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:2.3.2:compile (default-compile) @ check-main ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ check-main ---
+[WARNING] Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+[INFO] skip non existing resourceDirectory C:\Program Files (x86)\Jenkins\workspace\Check_Maven_Pipeline\fuentes\BATCH_CHECK\src\test\resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:2.3.2:testCompile (default-testCompile) @ check-main ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.12.4:test (default-test) @ check-main ---
+[INFO] No tests to run.
+[INFO] 
+[INFO] --- maven-jar-plugin:2.4:jar (default-jar) @ check-main ---
+[INFO] 
+[INFO] --- maven-shade-plugin:3.1.0:shade (default) @ check-main ---
+[INFO] Including es.iam.calidad.check:check-neg:jar:2.1.1 in the shaded jar.
+[INFO] Excluding org.hsqldb:hsqldb:jar:2.2.8 from the shaded jar.
+[INFO] Excluding net.sourceforge.htmlunit:htmlunit:jar:2.14 from the shaded jar.
+[INFO] Excluding xalan:xalan:jar:2.7.1 from the shaded jar.
+[INFO] Excluding xalan:serializer:jar:2.7.1 from the shaded jar.
+[INFO] Excluding commons-collections:commons-collections:jar:3.2.1 from the shaded jar.
+[INFO] Excluding org.apache.commons:commons-lang3:jar:3.2.1 from the shaded jar.
+[INFO] Excluding org.apache.httpcomponents:httpclient:jar:4.3.2 from the shaded jar.
+[INFO] Excluding org.apache.httpcomponents:httpcore:jar:4.3.1 from the shaded jar.
+[INFO] Excluding org.apache.httpcomponents:httpmime:jar:4.3.2 from the shaded jar.
+[INFO] Excluding commons-codec:commons-codec:jar:1.9 from the shaded jar.
+[INFO] Excluding net.sourceforge.htmlunit:htmlunit-core-js:jar:2.14 from the shaded jar.
+[INFO] Excluding xerces:xercesImpl:jar:2.11.0 from the shaded jar.
+[INFO] Excluding xml-apis:xml-apis:jar:1.4.01 from the shaded jar.
+[INFO] Excluding net.sourceforge.nekohtml:nekohtml:jar:1.9.20 from the shaded jar.
+[INFO] Excluding net.sourceforge.cssparser:cssparser:jar:0.9.13 from the shaded jar.
+[INFO] Excluding org.w3c.css:sac:jar:1.3 from the shaded jar.
+[INFO] Excluding commons-logging:commons-logging:jar:1.1.3 from the shaded jar.
+[INFO] Excluding org.eclipse.jetty:jetty-websocket:jar:8.1.14.v20131031 from the shaded jar.
+[INFO] Excluding org.eclipse.jetty:jetty-util:jar:8.1.14.v20131031 from the shaded jar.
+[INFO] Excluding org.eclipse.jetty:jetty-io:jar:8.1.14.v20131031 from the shaded jar.
+[INFO] Excluding org.eclipse.jetty:jetty-http:jar:8.1.14.v20131031 from the shaded jar.
+[INFO] Excluding commons-io:commons-io:jar:2.4 from the shaded jar.
+[WARNING] check-main-2.1.1.jar, check-neg-2.1.1.jar define 59 overlapping classes: 
+[WARNING]   - es.iam.check.analisisDespliegues.business.configuracion.TipoServidor
+[WARNING]   - es.iam.check.analisisDespliegues.business.analizadores.AnalizadorRecursos
+[WARNING]   - es.iam.check.analisisDespliegues.business.chequeos.ChequeosFactory
+[WARNING]   - es.iam.check.analisisDespliegues.business.chequeos.ChequeoExistenciaFicheros
+[WARNING]   - es.iam.check.analisisDespliegues.business.chequeos.Valoracion
+[WARNING]   - es.iam.check.analisisDespliegues.business.chequeos.ChequeoContenidoDescriptoresDespliegue
+[WARNING]   - es.iam.check.analisisDespliegues.business.ficheros.FicheroComprimidoAnalizable
+[WARNING]   - es.iam.check.analisisDespliegues.business.configuracion.excepcion.NumeroArgumentosIncorrectoException
+[WARNING]   - es.iam.check.analisisDespliegues.business.analizadores.AnalizadorArtefacto
+[WARNING]   - es.iam.check.analisisDespliegues.business.configuracion.Argumentos
+[WARNING]   - 49 more...
+[WARNING] maven-shade-plugin has detected that some class files are
+[WARNING] present in two or more JARs. When this happens, only one
+[WARNING] single version of the class is copied to the uber jar.
+[WARNING] Usually this is not harmful and you can skip these warnings,
+[WARNING] otherwise try to manually exclude artifacts based on
+[WARNING] mvn dependency:tree -Ddetail=true and the above output.
+[WARNING] See http://maven.apache.org/plugins/maven-shade-plugin/
+[INFO] Replacing original artifact with shaded artifact.
+[INFO] Replacing C:\Program Files (x86)\Jenkins\workspace\Check_Maven_Pipeline\fuentes\BATCH_CHECK\target\check-main-2.1.1.jar with C:\Program Files (x86)\Jenkins\workspace\Check_Maven_Pipeline\fuentes\BATCH_CHECK\target\check-main-2.1.1-shaded.jar
+[INFO] Dependency-reduced POM written at: C:\Program Files (x86)\Jenkins\workspace\Check_Maven_Pipeline\fuentes\BATCH_CHECK\dependency-reduced-pom.xml
+[INFO] 
+[INFO] --- maven-install-plugin:2.4:install (default-install) @ check-main ---
+[INFO] Installing C:\Program Files (x86)\Jenkins\workspace\Check_Maven_Pipeline\fuentes\BATCH_CHECK\target\check-main-2.1.1.jar to C:\Windows\system32\config\systemprofile\.m2\repository\es\iam\calidad\check\check-main\2.1.1\check-main-2.1.1.jar
+[INFO] Installing C:\Program Files (x86)\Jenkins\workspace\Check_Maven_Pipeline\fuentes\BATCH_CHECK\dependency-reduced-pom.xml to C:\Windows\system32\config\systemprofile\.m2\repository\es\iam\calidad\check\check-main\2.1.1\check-main-2.1.1.pom
+[INFO] 
+[INFO] ------------------------------------------------------------------------
+[INFO] Building CHECK-config 2.1.1
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-assembly-plugin:2.2.2:single (id) @ check-config ---
+[INFO] Building zip: C:\Program Files (x86)\Jenkins\workspace\Check_Maven_Pipeline\fuentes\config\..\..\despliegues\componentes\check_2.1-distribution.zip
+[INFO] 
+[INFO] --- maven-install-plugin:2.4:install (default-install) @ check-config ---
+[INFO] Installing C:\Program Files (x86)\Jenkins\workspace\Check_Maven_Pipeline\fuentes\config\pom.xml to C:\Windows\system32\config\systemprofile\.m2\repository\es\iam\calidad\check\check-config\2.1.1\check-config-2.1.1.pom
+[INFO] Installing C:\Program Files (x86)\Jenkins\workspace\Check_Maven_Pipeline\fuentes\config\..\..\despliegues\componentes\check_2.1-distribution.zip to C:\Windows\system32\config\systemprofile\.m2\repository\es\iam\calidad\check\check-config\2.1.1\check-config-2.1.1-distribution.zip
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:copy-resources (copy-resources) @ check-config ---
+[WARNING] File encoding has not been set, using platform encoding Cp1252, i.e. build is platform dependent!
+[WARNING] Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+[INFO] Copying 1 resource
+[INFO] 
+[INFO] ------------------------------------------------------------------------
+[INFO] Building CHECK 2.1.1
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- sonar-maven-plugin:3.4.0.905:sonar (default-cli) @ check ---
+[INFO] User cache: C:\Windows\system32\config\systemprofile\.sonar\cache
+[INFO] SonarQube version: 6.5.0
+[INFO] Default locale: "es_ES", source code encoding: "windows-1252" (analysis is platform dependent)
+[INFO] Load global settings
+[INFO] Load global settings (done) | time=139ms
+[INFO] User cache: C:\Windows\system32\config\systemprofile\.sonar\cache
+[INFO] Load plugins index
+[INFO] Load plugins index (done) | time=9ms
+[INFO] Plugin [l10nes] defines 'l10nen' as base plugin. This metadata can be removed from manifest of l10n plugins since version 5.2.
+[INFO] Process project properties
+[INFO] Load project repositories
+[INFO] Load project repositories (done) | time=205ms
+[INFO] GlobalWorkingDir null
+[INFO] Execute project builders
+[INFO] Execute project builders (done) | time=0ms
+[INFO] Load quality profiles
+[INFO] Load quality profiles (done) | time=104ms
+[INFO] Load active rules
+[INFO] Load active rules (done) | time=1211ms
+[INFO] Load metrics repository
+[INFO] Load metrics repository (done) | time=142ms
+[INFO] Publish mode
+[INFO] Project key: es.iam.calidad.check:check
+[INFO] -------------  Scan CHECK-NEG
+[INFO] Load server rules
+[INFO] Load server rules (done) | time=117ms
+[INFO] Base dir: C:\Program Files (x86)\Jenkins\workspace\Check_Maven_Pipeline\fuentes\NEG_CHECK
+[INFO] Working dir: C:\Program Files (x86)\Jenkins\workspace\Check_Maven_Pipeline\fuentes\NEG_CHECK\target\sonar
+[INFO] Source paths: pom.xml, src/main/java
+[INFO] Test paths: src/test/java
+[INFO] Source encoding: UTF-8, default locale: es_ES
+[INFO] Index files
+[INFO] 81 files indexed
+[INFO] Quality profile for java: Sonar way
+[INFO] Quality profile for xml: Sonar way
+[WARNING] ----------------------------------------------------------------
+[WARNING] Sonargraph Integration: Skipping project CHECK-NEG [es.iam.calidad.check:check-neg], since no Sonargraph rules are activated in current SonarQube quality profile [SonarQube].
+[WARNING] ----------------------------------------------------------------
+[INFO] Sensor JavaSquidSensor [java]
+[INFO] Configured Java source version (sonar.java.source): 5
+[INFO] JavaClasspath initialization
+[INFO] JavaClasspath initialization (done) | time=12ms
+[INFO] JavaTestClasspath initialization
+[INFO] JavaTestClasspath initialization (done) | time=4ms
+[INFO] Java Main Files AST scan
+[INFO] 65 source files to be analyzed
+[INFO] 59/65 files analyzed, current file: C:\Program Files (x86)\Jenkins\workspace\Check_Maven_Pipeline\fuentes\NEG_CHECK\src\main\java\es\iam\check\analisisDespliegues\business\view\informes\AbstractHtmlInforme.java
+[INFO] Java Main Files AST scan (done) | time=10793ms
+[INFO] 65/65 source files have been analyzed
+[INFO] Java Test Files AST scan
+[INFO] 15 source files to be analyzed
+[INFO] 15/15 source files have been analyzed
+[INFO] Java Test Files AST scan (done) | time=1755ms
+[INFO] Sensor JavaSquidSensor [java] (done) | time=13377ms
+[INFO] Sensor Sonar-Sonargraph-Plugin [3.5] [Sonargraph]
+[INFO] ----------------------------------------------------------------
+[INFO] Sonargraph: Skipping project CHECK-NEG [es.iam.calidad.check:check-neg], since no Sonargraph rules are activated in current SonarQube quality profile.
+[INFO] ----------------------------------------------------------------
+[INFO] Sensor Sonar-Sonargraph-Plugin [3.5] [Sonargraph] (done) | time=2ms
+[INFO] Sensor SmellMeasuresSensor [smells]
+[INFO] Sensor SmellMeasuresSensor [smells] (done) | time=162ms
+[INFO] Sensor SurefireSensor [java]
+[INFO] Property 'sonar.junit.reportsPath' is deprecated. Use property 'sonar.junit.reportPaths' instead.
+[INFO] Property 'sonar.junit.reportsPath' is deprecated and will be ignored, as property 'sonar.junit.reportPaths' is also set.
+[INFO] parsing [C:\Program Files (x86)\Jenkins\workspace\Check_Maven_Pipeline\fuentes\NEG_CHECK\target\surefire-reports]
+[INFO] Sensor SurefireSensor [java] (done) | time=496ms
+[INFO] Sensor JaCoCoSensor [java]
+[INFO] Sensor JaCoCoSensor [java] (done) | time=1ms
+[INFO] Sensor SonarJavaXmlFileSensor [java]
+[INFO] 1 source files to be analyzed
+[INFO] Sensor SonarJavaXmlFileSensor [java] (done) | time=525ms
+[INFO] Sensor XML Sensor [xml]
+[INFO] 1/1 source files have been analyzed
+[INFO] Sensor XML Sensor [xml] (done) | time=161ms
+[INFO] Sensor Analyzer for "php.ini" files [php]
+[INFO] Sensor Analyzer for "php.ini" files [php] (done) | time=3ms
+[INFO] -------------  Scan CHECK-Main
+[INFO] Base dir: C:\Program Files (x86)\Jenkins\workspace\Check_Maven_Pipeline\fuentes\BATCH_CHECK
+[INFO] Working dir: C:\Program Files (x86)\Jenkins\workspace\Check_Maven_Pipeline\fuentes\BATCH_CHECK\target\sonar
+[INFO] Source paths: dependency-reduced-pom.xml, src/main/java
+[INFO] Source encoding: windows-1252, default locale: es_ES
+[INFO] Index files
+[INFO] 2 files indexed
+[INFO] Quality profile for java: Sonar way
+[INFO] Quality profile for xml: Sonar way
+[WARNING] ----------------------------------------------------------------
+[WARNING] Sonargraph Integration: Skipping project CHECK-Main [es.iam.calidad.check:check-main], since no Sonargraph rules are activated in current SonarQube quality profile [SonarQube].
+[WARNING] ----------------------------------------------------------------
+[INFO] Sensor JavaSquidSensor [java]
+[INFO] Configured Java source version (sonar.java.source): 5
+[INFO] JavaClasspath initialization
+[INFO] JavaClasspath initialization (done) | time=2ms
+[INFO] JavaTestClasspath initialization
+[INFO] JavaTestClasspath initialization (done) | time=2ms
+[INFO] Java Main Files AST scan
+[INFO] 1 source files to be analyzed
+[INFO] Java Main Files AST scan (done) | time=36ms
+[INFO] Java Test Files AST scan
+[INFO] 0 source files to be analyzed
+[INFO] 1/1 source files have been analyzed
+[INFO] Java Test Files AST scan (done) | time=1ms
+[INFO] Sensor JavaSquidSensor [java] (done) | time=93ms
+[INFO] Sensor Sonar-Sonargraph-Plugin [3.5] [Sonargraph]
+[INFO] ----------------------------------------------------------------
+[INFO] Sonargraph: Skipping project CHECK-Main [es.iam.calidad.check:check-main], since no Sonargraph rules are activated in current SonarQube quality profile.
+[INFO] ----------------------------------------------------------------
+[INFO] Sensor Sonar-Sonargraph-Plugin [3.5] [Sonargraph] (done) | time=0ms
+[INFO] Sensor SmellMeasuresSensor [smells]
+[INFO] 0/0 source files have been analyzed
+[INFO] Sensor SmellMeasuresSensor [smells] (done) | time=1ms
+[INFO] Sensor SurefireSensor [java]
+[INFO] parsing [C:\Program Files (x86)\Jenkins\workspace\Check_Maven_Pipeline\fuentes\BATCH_CHECK\target\surefire-reports]
+[INFO] Sensor SurefireSensor [java] (done) | time=0ms
+[INFO] Sensor JaCoCoSensor [java]
+[INFO] Sensor JaCoCoSensor [java] (done) | time=1ms
+[INFO] Sensor SonarJavaXmlFileSensor [java]
+[INFO] 1 source files to be analyzed
+[INFO] Sensor SonarJavaXmlFileSensor [java] (done) | time=16ms
+[INFO] 1/1 source files have been analyzed
+[INFO] Sensor XML Sensor [xml]
+[INFO] Sensor XML Sensor [xml] (done) | time=20ms
+[INFO] Sensor Analyzer for "php.ini" files [php]
+[INFO] Sensor Analyzer for "php.ini" files [php] (done) | time=0ms
+[INFO] -------------  Scan CHECK-config
+[INFO] Base dir: C:\Program Files (x86)\Jenkins\workspace\Check_Maven_Pipeline\fuentes\config
+[INFO] Working dir: C:\Program Files (x86)\Jenkins\workspace\Check_Maven_Pipeline\fuentes\config\target\sonar
+[INFO] Source paths: pom.xml
+[INFO] Source encoding: windows-1252, default locale: es_ES
+[INFO] Index files
+[INFO] 1 file indexed
+[INFO] Quality profile for xml: Sonar way
+[WARNING] ----------------------------------------------------------------
+[WARNING] Sonargraph Integration: Skipping project CHECK-config [es.iam.calidad.check:check-config], since no Sonargraph rules are activated in current SonarQube quality profile [SonarQube].
+[WARNING] ----------------------------------------------------------------
+[INFO] Sensor Sonar-Sonargraph-Plugin [3.5] [Sonargraph]
+[INFO] ----------------------------------------------------------------
+[INFO] Sonargraph: Skipping project CHECK-config [es.iam.calidad.check:check-config], since no Sonargraph rules are activated in current SonarQube quality profile.
+[INFO] ----------------------------------------------------------------
+[INFO] Sensor Sonar-Sonargraph-Plugin [3.5] [Sonargraph] (done) | time=0ms
+[INFO] Sensor SonarJavaXmlFileSensor [java]
+[INFO] 1 source files to be analyzed
+[INFO] Sensor SonarJavaXmlFileSensor [java] (done) | time=106ms
+[INFO] Sensor XML Sensor [xml]
+[INFO] 1/1 source files have been analyzed
+[INFO] Sensor XML Sensor [xml] (done) | time=19ms
+[INFO] Sensor Analyzer for "php.ini" files [php]
+[INFO] Sensor Analyzer for "php.ini" files [php] (done) | time=0ms
+[INFO] -------------  Scan CHECK
+[INFO] Base dir: C:\Program Files (x86)\Jenkins\workspace\Check_Maven_Pipeline\fuentes
+[INFO] Working dir: C:\Program Files (x86)\Jenkins\workspace\Check_Maven_Pipeline\fuentes\target\sonar
+[INFO] Source paths: pom.xml
+[INFO] Source encoding: windows-1252, default locale: es_ES
+[INFO] Index files
+[INFO] 1 file indexed
+[INFO] Quality profile for xml: Sonar way
+[WARNING] ----------------------------------------------------------------
+[WARNING] Sonargraph Integration: Skipping project CHECK [es.iam.calidad.check:check], since no Sonargraph rules are activated in current SonarQube quality profile [SonarQube].
+[WARNING] ----------------------------------------------------------------
+[WARNING] ----------------------------------------------------------------
+[WARNING] Sonargraph Integration: Skipping project CHECK [es.iam.calidad.check:check], since no Sonargraph rules are activated in current SonarQube quality profile [SonarQube].
+[WARNING] ----------------------------------------------------------------
+[INFO] Sensor Sonar-Sonargraph-Plugin [3.5] [Sonargraph]
+[INFO] ----------------------------------------------------------------
+[INFO] Sonargraph: Skipping project CHECK [es.iam.calidad.check:check], since no Sonargraph rules are activated in current SonarQube quality profile.
+[INFO] ----------------------------------------------------------------
+[INFO] Sensor Sonar-Sonargraph-Plugin [3.5] [Sonargraph] (done) | time=1ms
+[INFO] Sensor SonarJavaXmlFileSensor [java]
+[INFO] 1 source files to be analyzed
+[INFO] Sensor SonarJavaXmlFileSensor [java] (done) | time=99ms
+[INFO] Sensor XML Sensor [xml]
+[INFO] 1/1 source files have been analyzed
+[INFO] Sensor XML Sensor [xml] (done) | time=62ms
+[INFO] Sensor Analyzer for "php.ini" files [php]
+[INFO] Sensor Analyzer for "php.ini" files [php] (done) | time=1ms
+[INFO] Sensor Zero Coverage Sensor
+[INFO] Sensor Zero Coverage Sensor (done) | time=130ms
+[INFO] Sensor CPD Block Indexer
+[INFO] Sensor CPD Block Indexer (done) | time=181ms
+[INFO] SCM provider for this project is: git
+[INFO] 1 files to be analyzed
+[INFO] 1/1 files analyzed
+[INFO] 33 files had no CPD blocks
+[INFO] Calculating CPD for 33 files
+[INFO] CPD calculation finished
+[INFO] Analysis report generated in 1197ms, dir size=590 KB
+[INFO] Analysis reports compressed in 415ms, zip size=275 KB
+[INFO] Analysis report uploaded in 55ms
+[INFO] ANALYSIS SUCCESSFUL, you can browse http://192.168.35.128:9000/dashboard/index/es.iam.calidad.check:check
+[INFO] Note that you will be able to access the updated dashboard once the server has processed the submitted analysis report
+[INFO] More about the report processing at http://192.168.35.128:9000/api/ce/task?id=AWDaQVSoap_-KciLn4ob
+[INFO] Task total time: 24.794 s
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Summary:
+[INFO] 
+[INFO] CHECK .............................................. SUCCESS [ 26.740 s]
+[INFO] CHECK-NEG .......................................... SUCCESS [ 24.905 s]
+[INFO] CHECK-Main ......................................... SUCCESS [  1.265 s]
+[INFO] CHECK-config ....................................... SUCCESS [  1.080 s]
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 59.735 s
+[INFO] Finished at: 2018-01-09T10:30:08+01:00
+[INFO] Final Memory: 42M/590M
+[INFO] ------------------------------------------------------------------------

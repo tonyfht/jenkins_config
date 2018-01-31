@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<hudson.plugins.jobConfigHistory.HistoryDescr plugin="jobConfigHistory@2.18">
+  <user>admin</user>
+  <userId>admin</userId>
+  <operation>Renamed</operation>
+  <timestamp>2018-01-10_10-09-11</timestamp>
+  <currentName>LifeCicle_IC_No_Pipeline</currentName>
+  <oldName>Check_Maven_No_Pipeline</oldName>
+</hudson.plugins.jobConfigHistory.HistoryDescr>

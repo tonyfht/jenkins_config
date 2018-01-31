@@ -1,0 +1,33 @@
+Manifest-Version: 1.0
+Archiver-Version: Plexus Archiver
+Created-By: Apache Maven
+Built-By: lix
+Build-Jdk: 1.8.0_144
+Extension-Name: ibm-cloud-devops
+Specification-Title: This plugin can be used to integrate your Jenkins
+  pipelines and jobs with IBM DevOps Insights offering.  The IBM DevOp
+ s Insights offering tracks your deployment risk based on the data tha
+ t you publish to it.  It provides Gates so that you can stop builds f
+ rom getting deployed if the Gate policy is not met.  The offering als
+ o provides analysis of your Git repo.  For example, it can provide tr
+ ends for large commits, error prone files, and team dynamics.  Very s
+ oon, the offering will provide more trends, e.g., Deploy Frequency, B
+ uild Frequency, Unit Tests and Code Coverage and Function Verificatio
+ n Tests for builds that have deployed to production or other environm
+ ents.
+Implementation-Title: ibm-cloud-devops
+Implementation-Version: 1.1.16
+Group-Id: com.ibm.devops
+Short-Name: ibm-cloud-devops
+Long-Name: IBM Cloud DevOps
+Url: https://wiki.jenkins-ci.org/display/JENKINS/IBM+Cloud+DevOps+Plugin
+Plugin-Version: 1.1.16
+Hudson-Version: 2.7.1
+Jenkins-Version: 2.7.1
+PluginFirstClassLoader: true
+Plugin-Dependencies: credentials:2.1.1,workflow-step-api:1.14
+Plugin-Developers: Xunrong Li:xunrongl:xunrongli@us.ibm.com,Vijay Agga
+ rwal:aggarwav:aggarwav@us.ibm.com,Vijay Jegaselvan:imvijay2007:vjegas
+ e@us.ibm.com,Eric Jodet:ejodet:eric_jodet@fr.ibm.com,Patrick Joy:patj
+ oy:patrick.joy1@ibm.com
+

@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<l:dependencies xmlns:l='licenses' groupId='org.jenkins-ci.plugins' artifactId='label-linked-jobs' version='5.1.2'><l:dependency name='Label Linked Jobs Plugin' groupId='org.jenkins-ci.plugins' artifactId='label-linked-jobs' version='5.1.2' url='http://wiki.jenkins-ci.org/display/JENKINS/Label+Linked+Jobs+Plugin'><l:description>Gives the list of jobs associated to a given atomic label.</l:description><l:license name='MIT License' url='http://opensource.org/licenses/MIT'/></l:dependency></l:dependencies>

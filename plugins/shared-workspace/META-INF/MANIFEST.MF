@@ -1,0 +1,19 @@
+Manifest-Version: 1.0
+Archiver-Version: Plexus Archiver
+Created-By: Apache Maven
+Built-By: vestnik
+Build-Jdk: 1.8.0_45
+Extension-Name: shared-workspace
+Implementation-Title: shared-workspace
+Implementation-Version: 1.0.2
+Group-Id: org.jenkins-ci.plugins
+Short-Name: shared-workspace
+Long-Name: Shared Workspace
+Url: http://wiki.jenkins-ci.org/display/JENKINS/Shared+workspace+plugin
+Plugin-Version: 1.0.2
+Hudson-Version: 1.576
+Jenkins-Version: 1.576
+Plugin-Dependencies: matrix-project:1.4
+Plugin-Developers: Sergey Mylnikov:sapone:smylnikov@ac-sw.com,Sergey V
+ idyuk:VestniK:sir.vestnik@gmail.com
+

@@ -1,0 +1,27 @@
+<l:dependencies xmlns:l='licenses' groupId='org.jenkins-ci.plugins' artifactId='maven-repo-cleaner' version='1.2'>
+  <l:dependency name='Maven Repository Scheduled Cleanup Plugin' groupId='org.jenkins-ci.plugins' artifactId='maven-repo-cleaner' version='1.2' url='https://wiki.jenkins-ci.org/display/JENKINS/Maven+Repo+Cleaner+Plugin'>
+    <l:description />
+  </l:dependency>
+  <l:dependency name='Maven :: Indexer Artifact Utils' groupId='org.apache.maven.indexer' artifactId='indexer-artifact' version='4.1.2' url='http://maven.apache.org/maven-indexer/indexer-artifact/'>
+    <l:description>Indexer Artifact Utils module contains small set of reusable utilities, mostly artifact, path and their two way conversion related.</l:description>
+    <l:license name='The Apache Software License, Version 2.0' url='http://www.apache.org/licenses/LICENSE-2.0.txt' />
+  </l:dependency>
+  <l:dependency name='Maven Repository Metadata Model' groupId='org.apache.maven' artifactId='maven-repository-metadata' version='3.0.4' url='http://maven.apache.org/ref/3.0.4//maven-repository-metadata'>
+    <l:description>Per-directory local and remote repository metadata.</l:description>
+    <l:license name='The Apache Software License, Version 2.0' url='http://www.apache.org/licenses/LICENSE-2.0.txt' />
+  </l:dependency>
+  <l:dependency name='org.apache.tools.ant' groupId='org.apache.ant' artifactId='ant' version='1.7.0' url='http://ant.apache.org/ant/'>
+    <l:description>Apache Ant</l:description>
+  </l:dependency>
+  <l:dependency name='ant-launcher' groupId='org.apache.ant' artifactId='ant-launcher' version='1.7.0' url='http://ant.apache.org/ant-launcher/'>
+    <l:description>master POM</l:description>
+  </l:dependency>
+  <l:dependency name='Plexus Common Utilities' groupId='org.codehaus.plexus' artifactId='plexus-utils' version='2.0.6' url='http://plexus.codehaus.org/plexus-utils'>
+    <l:description>A collection of various utility classes to ease working with strings, files, command lines, XML and more.</l:description>
+    <l:license name='The Apache Software License, Version 2.0' url='http://www.apache.org/licenses/LICENSE-2.0.txt' />
+  </l:dependency>
+  <l:dependency name='Commons IO' groupId='commons-io' artifactId='commons-io' version='2.0.1' url='http://commons.apache.org/io/'>
+    <l:description>Commons-IO contains utility classes, stream implementations, file filters, file comparators and endian classes.</l:description>
+    <l:license name='The Apache Software License, Version 2.0' url='http://www.apache.org/licenses/LICENSE-2.0.txt' />
+  </l:dependency>
+</l:dependencies>

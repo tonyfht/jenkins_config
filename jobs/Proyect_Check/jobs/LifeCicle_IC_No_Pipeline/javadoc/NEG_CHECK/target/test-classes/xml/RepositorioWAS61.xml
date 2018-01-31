@@ -1,0 +1,2136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<analisis xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.iam.es/repositorio repositorio.xsd" xmlns="http://www.iam.es/repositorio">
+	<AnalizadorEstaticos>
+		<chequeos>
+			<chequeo tipo="ChequeoExistenciaFicheros" nombre="ChequeoExtensionEstaticos" descripcion="Comprobacion de la extenion del archivo de estaticos. La extensión de los archivo de estáticos tiene que ser *.zip ">
+				<mensaje>
+					<incorrecto>El fichero no tiene la extension adecuada</incorrecto>
+					<correcto>El fichero tiene la extension adecuada</correcto>
+					<avisos/>
+				</mensaje>
+				<reglas>
+					<regla tipo="ReglaArchivo">
+						<ejemplo> .El fichero de estaticos no tiene extensión zip</ejemplo>
+						<patronOCadena>.*\.zip</patronOCadena>
+						<tipoComprobacion>OBLIGATORIEDAD</tipoComprobacion>
+						<tratamientoMayusculas>IGNORAR</tratamientoMayusculas>
+					</regla>
+				</reglas>
+			</chequeo>
+			<chequeo tipo="ChequeoExistenciaFicheros" nombre="ChequeoArchivosNoPermitidosEstaticos" descripcion="Ficheros no permitidos dentro del archivo de estaticos. Estan prohibidos los ficheros: thumbs.db, maven, .maven, .class, .jar, .asp, .java, .svn, .log, .jsp ">
+				<mensaje>
+					<incorrecto> .Se han encontrado fichero no permitidos</incorrecto>
+					<correcto> .No existen ficheros no permitido</correcto>
+					<avisos> .Hay un fichero que debe ser revisado</avisos>
+				</mensaje>
+				<reglas>
+					<regla tipo="ReglaArchivo">
+						<ejemplo> .Existe un fichero thumbs.db que no esta permitido dentro del zip de estaticos</ejemplo>
+						<patronOCadena>.*\\thumbs\.db</patronOCadena>
+						<tipoComprobacion>PROHIBIDO</tipoComprobacion>
+						<tratamientoMayusculas>IGNORAR</tratamientoMayusculas>
+					</regla>
+					<regla tipo="ReglaArchivo">
+						<ejemplo> .Existe un fichero maven que no esta permitido dentro del zip de estaticos</ejemplo>
+						<patronOCadena>.*\\maven\\</patronOCadena>
+						<tipoComprobacion>PROHIBIDO</tipoComprobacion>
+						<tratamientoMayusculas>ESTRICTO</tratamientoMayusculas>
+					</regla>
+					<regla tipo="ReglaArchivo">
+						<ejemplo>.Existe un fichero .maven que no esta permitido dentro del zip de estaticos</ejemplo>
+						<patronOCadena>.*\.maven</patronOCadena>
+						<tipoComprobacion>PROHIBIDO</tipoComprobacion>
+						<tratamientoMayusculas>ESTRICTO</tratamientoMayusculas>
+					</regla>
+					<regla tipo="ReglaArchivo">
+						<ejemplo> .Existe un fichero .class que no esta permitido dentro del zip de estaticos</ejemplo>
+						<patronOCadena>.*\.class</patronOCadena>
+						<tipoComprobacion>PROHIBIDO</tipoComprobacion>
+						<tratamientoMayusculas>ESTRICTO</tratamientoMayusculas>
+					</regla>
+					<regla tipo="ReglaArchivo">
+						<ejemplo> .Existe un fichero .jar que no esta permitido dentro del zip de estaticos</ejemplo>
+						<patronOCadena>.*\.jar</patronOCadena>
+						<tipoComprobacion>PROHIBIDO</tipoComprobacion>
+						<tratamientoMayusculas>ESTRICTO</tratamientoMayusculas>
+					</regla>
+					<regla tipo="ReglaArchivo">
+						<ejemplo> .Existe un fichero .asp que no esta permitido dentro del zip de estaticos</ejemplo>
+						<patronOCadena>.*\.asp</patronOCadena>
+						<tipoComprobacion>PROHIBIDO</tipoComprobacion>
+						<tratamientoMayusculas>ESTRICTO</tratamientoMayusculas>
+					</regla>
+					<regla tipo="ReglaArchivo">
+						<ejemplo> .Existe un fichero .jsp que no esta permitido dentro del zip de estaticos</ejemplo>
+						<patronOCadena>.*\.jsp</patronOCadena>
+						<tipoComprobacion>PROHIBIDO</tipoComprobacion>
+						<tratamientoMayusculas>ESTRICTO</tratamientoMayusculas>
+					</regla>
+					<regla tipo="ReglaArchivo">
+						<ejemplo> .Existe un fichero .java que no esta permitido dentro del zip de estaticos</ejemplo>
+						<patronOCadena>.*\.java</patronOCadena>
+						<tipoComprobacion>PROHIBIDO</tipoComprobacion>
+						<tratamientoMayusculas>ESTRICTO</tratamientoMayusculas>
+					</regla>
+					<regla tipo="ReglaArchivo">
+						<ejemplo> .Existe un fichero .svn que no esta permitido dentro del zip de estaticos</ejemplo>
+						<patronOCadena>.*\\\.svn\\</patronOCadena>
+						<tipoComprobacion>PROHIBIDO</tipoComprobacion>
+						<tratamientoMayusculas>ESTRICTO</tratamientoMayusculas>
+					</regla>
+					<regla tipo="ReglaArchivo">
+						<ejemplo> .Existe un fichero .log que no esta permitido dentro del zip de estaticos</ejemplo>
+						<patronOCadena>.*\.log</patronOCadena>
+						<tipoComprobacion>PROHIBIDO</tipoComprobacion>
+						<tratamientoMayusculas>ESTRICTO</tratamientoMayusculas>
+					</regla>
+					<regla tipo="ReglaArchivo">
+						<ejemplo> .Existe un fichero .jsp que no esta permitido dentro del zip de estaticos</ejemplo>
+						<patronOCadena>.*\.jsp</patronOCadena>
+						<tipoComprobacion>PROHIBIDO</tipoComprobacion>
+						<tratamientoMayusculas>ESTRICTO</tratamientoMayusculas>
+					</regla>
+					<regla tipo="ReglaArchivo">
+						<ejemplo> .Existe un fichero .php que no esta permitido dentro del zip de estaticos</ejemplo>
+						<patronOCadena>.*\.php</patronOCadena>
+						<tipoComprobacion>EXISTENCIA</tipoComprobacion>
+						<tratamientoMayusculas>ESTRICTO</tratamientoMayusculas>
+					</regla>
+				</reglas>
+			</chequeo>
+		</chequeos>
+		<chequeos>
+	</chequeos>
+		<chequeos>
+	</chequeos>
+	</AnalizadorEstaticos>
+	<AnalizadorRecursos>
+	<chequeos>
+		<chequeo tipo="ChequeoExistenciaFicheros" nombre="ChequeoExtensionRecursos" descripcion="Comprobacion de la extenion del archivo de recursos. La extensión de los archivo de recursos tiene que ser *.zip">
+				<mensaje>
+					<incorrecto> . El fichero no tiene la extension adecuada</incorrecto>
+					<correcto> . El fichero tiene la extension adecuada</correcto>
+					<avisos/>
+				</mensaje>
+				<reglas>
+					<regla tipo="ReglaArchivo">
+						<ejemplo> .El fichero de propiedades de recursos no tiene extensión zip</ejemplo>
+						<patronOCadena>.*\.zip</patronOCadena>
+						<tipoComprobacion>OBLIGATORIEDAD</tipoComprobacion>
+						<tratamientoMayusculas>IGNORAR</tratamientoMayusculas>
+					</regla>
+				</reglas>
+			</chequeo>
+			<chequeo tipo="ChequeoExistenciaFicheros" nombre="ChequeoArchivosNoPermitidosRecursos" descripcion="Ficheros no permitidos dentro del archivo de recursos. Estas prohibidos los ficheros: .class, .jar, .asp, .jsp, .java, .svn, .log ">
+				<mensaje>
+					<incorrecto> .Se han encontrado fichero no permitidos dentro del archivo de recursos</incorrecto>
+					<correcto> .No existen ficheros no permitidos dentro del archivo de recursos</correcto>
+					<avisos> .Hay un fichero dentro del archivo de recursos que debe ser revisado</avisos>
+				</mensaje>
+				<reglas>
+				<regla tipo="ReglaArchivo">
+						<ejemplo> .Existe un fichero .class que no esta permitido dentro del zip de recursos</ejemplo>
+						<patronOCadena>.*\.class</patronOCadena>
+						<tipoComprobacion>PROHIBIDO</tipoComprobacion>
+						<tratamientoMayusculas>ESTRICTO</tratamientoMayusculas>
+					</regla>
+					<regla tipo="ReglaArchivo">
+						<ejemplo> .Existe un fichero .jar que no esta permitido dentro del zip de recursos</ejemplo>
+						<patronOCadena>.*\.jar</patronOCadena>
+						<tipoComprobacion>PROHIBIDO</tipoComprobacion>
+						<tratamientoMayusculas>ESTRICTO</tratamientoMayusculas>
+					</regla>
+					<regla tipo="ReglaArchivo">
+						<ejemplo> .Existe un fichero .asp que no esta permitido dentro del zip de recursos</ejemplo>
+						<patronOCadena>.*\.asp</patronOCadena>
+						<tipoComprobacion>PROHIBIDO</tipoComprobacion>
+						<tratamientoMayusculas>ESTRICTO</tratamientoMayusculas>
+					</regla>
+					<regla tipo="ReglaArchivo">
+						<ejemplo> .Existe un fichero .jsp que no esta permitido dentro del zip de recursos</ejemplo>
+						<patronOCadena>.*\.jsp</patronOCadena>
+						<tipoComprobacion>PROHIBIDO</tipoComprobacion>
+						<tratamientoMayusculas>ESTRICTO</tratamientoMayusculas>
+					</regla>
+					<regla tipo="ReglaArchivo">
+						<ejemplo> .Existe un fichero .java que no esta permitido dentro del zip de recursos</ejemplo>
+						<patronOCadena>.*\.java</patronOCadena>
+						<tipoComprobacion>PROHIBIDO</tipoComprobacion>
+						<tratamientoMayusculas>ESTRICTO</tratamientoMayusculas>
+					</regla>
+					<regla tipo="ReglaArchivo">
+						<ejemplo> .Existe un fichero .svn que no esta permitido dentro del zip de recursos</ejemplo>
+						<patronOCadena>.*\\\.svn\\</patronOCadena>
+						<tipoComprobacion>PROHIBIDO</tipoComprobacion>
+						<tratamientoMayusculas>ESTRICTO</tratamientoMayusculas>
+					</regla>
+					<regla tipo="ReglaArchivo">
+						<ejemplo> .Existe un fichero .log que no esta permitido dentro del zip de recursos</ejemplo>
+						<patronOCadena>.*\.log</patronOCadena>
+						<tipoComprobacion>PROHIBIDO</tipoComprobacion>
+						<tratamientoMayusculas>ESTRICTO</tratamientoMayusculas>
+					</regla>
+				</reglas>
+			</chequeo>
+		</chequeos>
+	</AnalizadorRecursos>
+	<AnalizadorArtefacto>
+	   <chequeos>
+			<chequeo tipo="ChequeoExistenciaFicheros" nombre="ChequeoExtensionArtefacto" descripcion="Comprobacion de la extenion del artefacto desplegable. El archivo de aplicación JEE tiene extensión *.ear">
+				<mensaje>
+					<incorrecto> .NO CUMPLE: El archivo de aplicación JEE tiene extensión .ear</incorrecto>
+					<correcto> .El archivo de aplicación JEE tiene extensión .ear</correcto>
+					<avisos/>
+				</mensaje>
+				<reglas>
+					<regla tipo="ReglaArchivo">
+						<ejemplo> .El archivo de aplicacion JEE no tiene extensión .ear</ejemplo>
+						<patronOCadena>.*\.ear</patronOCadena>
+						<tipoComprobacion>OBLIGATORIEDAD</tipoComprobacion>
+						<tratamientoMayusculas>IGNORAR</tratamientoMayusculas>
+					</regla>
+				</reglas>
+			</chequeo>
+			<chequeo tipo="ChequeoExistenciaFicheros" nombre="ChequeosEstructura" descripcion="Comprobacion de la estructura de EAR. Los archivos .ear deben incluir la carpeta META-INF">
+				<mensaje>
+					<incorrecto> .Los archivos .ear NO incluyen la carpeta META-INF</incorrecto>
+					<correcto> .Los archivos .ear deben incluir la carpeta META-INF</correcto>
+					<avisos/>
+				</mensaje>
+				<reglas>
+					<regla tipo="ReglaArchivo">
+						<ejemplo> .La carpeta META-INF/ no se encuentra dentro del .ear</ejemplo>
+						<patronOCadena>.*\.ear\\META-INF\\</patronOCadena>
+						<tipoComprobacion>OBLIGATORIEDAD</tipoComprobacion>
+						<tratamientoMayusculas>IGNORAR</tratamientoMayusculas>
+					</regla>
+				</reglas>
+			</chequeo>
+			<chequeo  tipo="ChequeoExistenciaFicheros" nombre="ChequeosEstructura" descripcion="Comprobacion de la estructura de WAR. Los archivos .war deben incluir las carpetas WEB-INF/clases, WEB-INF/lib">
+				<mensaje>
+					<incorrecto> .Los archivos .war NO incluyen las carpetas WEB-INF/clases, WEB-INF/lib</incorrecto>
+					<correcto> .Los archivos .war incluyen las carpetas WEB-INF/clases, WEB-INF/lib</correcto>
+					<avisos/>
+				</mensaje>
+				<reglas>
+					<regla tipo="ReglaArchivo">
+						<ejemplo> .La carpeta WEB-INF/lib no se encuentra dentro del archivo .war</ejemplo>
+						<patronOCadena>.*\.war\\WEB-INF\\lib\\</patronOCadena>
+						<tipoComprobacion>OBLIGATORIEDAD</tipoComprobacion>
+						<tratamientoMayusculas>IGNORAR</tratamientoMayusculas>
+					</regla>
+					<regla tipo="ReglaArchivo">
+						<ejemplo> .La carpeta WEB-INF/classes no se encuentra dentro del archivo .war</ejemplo>
+						<patronOCadena>.*\.war\\WEB-INF\\classes\\</patronOCadena>
+						<tipoComprobacion>OBLIGATORIEDAD</tipoComprobacion>
+						<tratamientoMayusculas>IGNORAR</tratamientoMayusculas>
+					</regla>
+				</reglas>
+			</chequeo>
+			<chequeo tipo="ChequeoExistenciaFicheros" nombre="ChequeosEstructura" descripcion="Comprobacion de la estructura de EAR. Los archivos .ear no contienen la carpeta META-INF/ibmconfig">
+				<mensaje>
+					<incorrecto> .El archivo .ear contiene la carpeta META-INF/ibmconfig</incorrecto>
+					<correcto> .El archivo .ear no contiene la carpeta META-INF/ibmconfig</correcto>
+					<avisos/>
+				</mensaje>
+				<reglas>
+					<regla tipo="ReglaArchivo">
+						<ejemplo> .La carpeta META-INF/ibmconfig no debe estar dentro del .ear</ejemplo>
+						<patronOCadena>.*\\META-INF\\ibmconfig\\</patronOCadena>
+						<tipoComprobacion>PROHIBIDO</tipoComprobacion>
+						<tratamientoMayusculas>IGNORAR</tratamientoMayusculas>
+					</regla>
+				</reglas>
+			</chequeo>
+			<chequeo tipo="ChequeoExistenciaFicheros" nombre="ChequeosDescriptores" descripcion="Comprobacion de la estructura de EAR. El archivo .ear incluye el archivo application.xml en la carpeta META-INF ">
+				<mensaje>
+					<incorrecto> .El archivo .ear  no contiene el archivo application.xml en la carpeta META-INF</incorrecto>
+					<correcto> .El archivo .ear contiene el archivo application.xml en la carpeta META-INF</correcto>
+					<avisos></avisos>
+				</mensaje>
+				<reglas>
+					<regla tipo="ReglaArchivo">
+						<ejemplo> .El archivo .ear  no contiene el archivo application.xml en la carpeta META-INF</ejemplo>
+						<patronOCadena>.*\.ear\\META-INF\\application\.xml$</patronOCadena>
+						<tipoComprobacion>OBLIGATORIEDAD</tipoComprobacion>
+						<tratamientoMayusculas>IGNORAR</tratamientoMayusculas>
+					</regla>
+				</reglas>
+			</chequeo>
+			<chequeo tipo="ChequeoExistenciaFicheros" nombre="ChequeosDescriptores" descripcion="Comprobacion de la estructura de WAR. El archivo .war incluye el archivo web.xml en la carpeta WEB-INF">
+				<mensaje>
+					<incorrecto> .El archivo .war no incluyen el archivo web.xml en la carpeta WEB-INF</incorrecto>
+					<correcto> .El archivo .war incluye el archivo web.xml en la carpeta WEB-INF</correcto>
+					<avisos/>
+				</mensaje>
+				<reglas>
+					<regla tipo="ReglaArchivo">
+						<ejemplo> .En el archivo *.war,  dentro de la carpeta WEB-INF, no se incluye el archivo web.xml</ejemplo>
+						<patronOCadena>.*\.war\\WEB-INF\\web\.xml$</patronOCadena>
+						<tipoComprobacion>OBLIGATORIEDAD</tipoComprobacion>
+						<tratamientoMayusculas>IGNORAR</tratamientoMayusculas>
+					</regla>
+				</reglas>
+			</chequeo>
+			<chequeo tipo="ChequeoExistenciaFicheros" nombre="ChequeosDescriptores" descripcion="Comprobacion sobre la inclusion de descriptores de despliegue. Está incluido el archivo ibm-web-ext.xmi en el *.ear o *.war">
+				<mensaje>
+					<incorrecto> .NO Existe en los archivos .war o .ear el archivo ibm-web-ext.xmi</incorrecto>
+					<correcto> .Existe en los archivos .war o .ear el archivo ibm-web-ext.xmi</correcto>
+					<avisos/>
+				</mensaje>
+				<reglas>
+					<regla tipo="ReglaArchivo">
+						<ejemplo> .NO Está incluido el archivo ibm-web-ext.xmi dentro del *.ear o el *.war</ejemplo>
+						<patronOCadena>.*\\ibm-web-ext\.xmi$</patronOCadena>
+						<tipoComprobacion>OBLIGATORIEDAD</tipoComprobacion>
+						<tratamientoMayusculas>IGNORAR</tratamientoMayusculas>
+					</regla>
+				</reglas>
+			</chequeo>
+			<chequeo tipo="ChequeoExistenciaFicheros" nombre="ChequeosDescriptores" descripcion="Comprobacion sobre la inclusion de descriptores de despliegue. El fichero .ear no contendra descriptores de despliegue propios de otros servidores(ibm-web-ext.xml, jboss-web.xml)">
+				<mensaje>
+					<incorrecto> .El fichero .ear conteniene descriptores de despliegue propios de otros servidores</incorrecto>
+					<correcto> .El fichero .ear no contendra descriptores de despliegue propios de otros servidores</correcto>
+					<avisos/>
+				</mensaje>
+				<reglas>
+					<regla tipo="ReglaArchivo">
+						<ejemplo> .Dentro del fichero *.ear existe el fichero ibm-web-ext.xml</ejemplo>
+						<patronOCadena>.*\\ibm-web-ext\.xml$</patronOCadena>
+						<tipoComprobacion>PROHIBIDO</tipoComprobacion>
+						<tratamientoMayusculas>IGNORAR</tratamientoMayusculas>
+					</regla>
+					<regla tipo="ReglaArchivo">
+						<ejemplo> .Dentro del fichero *.ear existe el fichero jboss-web.xml</ejemplo>
+						<patronOCadena>.*\\jboss-web\.xml$</patronOCadena>
+						<tipoComprobacion>PROHIBIDO</tipoComprobacion>
+						<tratamientoMayusculas>IGNORAR</tratamientoMayusculas>
+					</regla>
+					<regla tipo="ReglaArchivo">
+						<ejemplo>Se encuentra el descriptor sun-jaws.xml dentro del ear</ejemplo>
+						<patronOCadena>.*\\sun-jaws\.xml$</patronOCadena>
+						<tipoComprobacion>PROHIBIDO</tipoComprobacion>
+						<tratamientoMayusculas>IGNORAR</tratamientoMayusculas>
+					</regla>						
+				</reglas>
+			</chequeo>
+
+			<chequeo tipo="ChequeoExistenciaFicheros" nombre="ChequeosDescriptores" descripcion="Comprobacion sobre la inclusion de descriptores de despliegue. Cualquier descriptor *-bnd.(xmi/xml) no se incluye en el .ear ">
+				<mensaje>
+					<incorrecto> .Existen descriptores BND.(xmi/xml) que no deben incluirse en el .ear</incorrecto>
+					<correcto> .No Existen descriptores BND.(xmi/xml) dentro del .ear</correcto>
+					<avisos/>
+				</mensaje>
+				<reglas>
+					<regla tipo="ReglaArchivo">
+						<ejemplo> .Existen descriptores bnd que no deben incluirse dentro del *.ear</ejemplo>
+						<patronOCadena>.*bnd..*</patronOCadena>
+						<tipoComprobacion>EXISTENCIA</tipoComprobacion>
+						<tratamientoMayusculas>IGNORAR</tratamientoMayusculas>
+					</regla>
+				</reglas>
+			</chequeo>
+			<chequeo tipo="ChequeoContenidoDescriptoresDespliegue" nombre="ChequeosContenidoWebXML" descripcion="Comprueba el correcto contenido del fichero web.xml. No se configura el tiempo de sesión en descriptores de despliegue: session-timeout">
+				<mensaje>
+					<incorrecto>NO CUMPLE: No se configura el tiempo de sesión en descriptores de despliegue : web.xml->session-timeout</incorrecto>
+					<correcto>No se configura el tiempo de sesión en descriptores de despliegue : web.xml->session-timeout</correcto>
+					<avisos/>
+				</mensaje>
+				<reglas>
+					<regla tipo="ReglaArchivo">
+						<ejemplo></ejemplo>
+						<patronOCadena>.*\.war\\WEB-INF\\web\.xml$</patronOCadena>
+						<tipoComprobacion>OBLIGATORIEDAD</tipoComprobacion>
+						<tratamientoMayusculas>IGNORAR</tratamientoMayusculas>
+					</regla>
+					<regla tipo="ReglaContenidoXML">
+						<ejemplo> .Esta configurado el tiempo de sesión en descriptores de despliegue (session-timeout)</ejemplo>
+						<patronOCadena>//session-timeout</patronOCadena>
+						<tipoComprobacion>PROHIBIDO</tipoComprobacion>
+						<tratamientoMayusculas>IGNORAR</tratamientoMayusculas>
+					</regla>
+				</reglas>
+			</chequeo>
+			<chequeo tipo="ChequeoContenidoDescriptoresDespliegue" nombre="ChequeosContenidoWebXML" descripcion="En el fichero web.xml se encuentra la cadena web-app_2_4.xsd">
+				<mensaje>
+					<incorrecto> .En el fichero web.xml NO se encuentra la cadena web-app_2_4.xsd</incorrecto>
+					   <correcto> .En el fichero web.xml se encuentra la cadena web-app_2_4.xsd</correcto>
+					<avisos/>
+				</mensaje>
+				<reglas>
+					<regla tipo="ReglaArchivo">
+						<ejemplo></ejemplo>
+						<patronOCadena>.*\.war\\WEB-INF\\web\.xml$</patronOCadena>
+						<tipoComprobacion>OBLIGATORIEDAD</tipoComprobacion>
+						<tratamientoMayusculas>IGNORAR</tratamientoMayusculas>
+					</regla>
+					<regla tipo="ReglaContenido">
+						<ejemplo> .En el fichero web.xml NO se encuentra la cadena web-app_2_4.xsd</ejemplo>
+						<patronOCadena>.*http://java.sun.com/xml/ns/.*\/web-app_2_4.xsd.*</patronOCadena>
+						<tipoComprobacion>OBLIGATORIEDAD</tipoComprobacion>
+						<tratamientoMayusculas>IGNORAR</tratamientoMayusculas>
+					</regla>
+				</reglas>
+			</chequeo>
+			<chequeo tipo="ChequeoContenidoDescriptoresDespliegue" nombre="ChequeosContenidoApplicationXML" descripcion="Comprueba el correcto contenido del fichero application.xml. En el fichero application.xml se encuentra la cadena application_1_4.xsd">
+				<mensaje>
+					<incorrecto>NO CUMPLE: En el fichero application.xml se encuentra la cadena application_1_4.xsd. Se está utilizando el nivel de jee 4</incorrecto>
+					<correcto>En el fichero application.xml se encuentra la cadena application_1_4.xsd. Se está utilizando el nivel de jee 4</correcto>
+					<avisos/>
+				</mensaje>
+				<reglas>
+					<regla tipo="ReglaArchivo">
+						<ejemplo></ejemplo>
+						<patronOCadena>.*\.ear\\META-INF\\application\.xml$</patronOCadena>
+						<tipoComprobacion>OBLIGATORIEDAD</tipoComprobacion>
+						<tratamientoMayusculas>IGNORAR</tratamientoMayusculas>
+					</regla>
+					<regla tipo="ReglaContenido">
+						<ejemplo> .En el fichero application.xml NO se encuentra la cadena application_1_4.xsd</ejemplo>
+						<patronOCadena>.*http://java.sun.com/xml/ns/.*\/application_1_4.xsd.*</patronOCadena>
+						<tipoComprobacion>OBLIGATORIEDAD</tipoComprobacion>
+						<tratamientoMayusculas>IGNORAR</tratamientoMayusculas>
+					</regla>
+				</reglas>
+			</chequeo>
+			<chequeo tipo="ChequeoExistenciaFicheros" nombre="ChequeoArchivosNoPermitidosEAR" descripcion="Comprobacion de ficheros no permitidos dentro del EAR. Estan prohibidos los ficheros: .htm, .css, .js, .gif, .jpg, .jpeg, .img, .png, .html, .doc, .pdf, .bak, .old, .back, .desa, .pre, .pro, .v1, svn, thumbs.db, cvs, index.do, .desarrollo, jboss.properties, .maven">
+				<mensaje>
+					<incorrecto>NO CUMPLE: No existen ficheros no permitido</incorrecto>
+					<correcto>No existen ficheros no permitido</correcto>
+					<avisos>Hay un fichero que debe ser revisado</avisos>
+				</mensaje>
+				<reglas>
+				<regla tipo="ReglaArchivo">
+						<ejemplo> .Se ha empaquetado un fichero *.htm dentro del EAR</ejemplo>
+						<patronOCadena>.*\.htm</patronOCadena>
+						<tipoComprobacion>PROHIBIDO</tipoComprobacion>
+						<tratamientoMayusculas>IGNORAR</tratamientoMayusculas>
+					</regla>
+					<regla tipo="ReglaArchivo">
+						<ejemplo> .Se ha empaquetado un fichero *.css dentro del EAR</ejemplo>
+						<patronOCadena>.*\.css</patronOCadena>
+						<tipoComprobacion>PROHIBIDO</tipoComprobacion>
+						<tratamientoMayusculas>IGNORAR</tratamientoMayusculas>
+					</regla>
+					<regla tipo="ReglaArchivo">
+						<ejemplo> .Se ha empaquetado un fichero *.js dentro del EAR</ejemplo>
+						<patronOCadena>.*\.js</patronOCadena>
+						<tipoComprobacion>PROHIBIDO</tipoComprobacion>
+						<tratamientoMayusculas>IGNORAR</tratamientoMayusculas>
+					</regla>
+					<regla tipo="ReglaArchivo">
+						<ejemplo> .Se ha empaquetado un fichero *.gif dentro del EAR</ejemplo>
+						<patronOCadena>.*\.gif</patronOCadena>
+						<tipoComprobacion>PROHIBIDO</tipoComprobacion>
+						<tratamientoMayusculas>IGNORAR</tratamientoMayusculas>
+					</regla>
+					<regla tipo="ReglaArchivo">
+						<ejemplo> .Se ha empaquetado un fichero *.jpg dentro del EAR</ejemplo>
+						<patronOCadena>.*\.jpg</patronOCadena>
+						<tipoComprobacion>PROHIBIDO</tipoComprobacion>
+						<tratamientoMayusculas>IGNORAR</tratamientoMayusculas>
+					</regla>
+					<regla tipo="ReglaArchivo">
+						<ejemplo> .Se ha empaquetado un fichero *.jpeg dentro del EAR</ejemplo>
+						<patronOCadena>.*\.jpeg</patronOCadena>
+						<tipoComprobacion>PROHIBIDO</tipoComprobacion>
+						<tratamientoMayusculas>IGNORAR</tratamientoMayusculas>
+					</regla>
+					<regla tipo="ReglaArchivo">
+						<ejemplo> .Se ha empaquetado un fichero *.img dentro del EAR</ejemplo>
+						<patronOCadena>.*\.img</patronOCadena>
+						<tipoComprobacion>PROHIBIDO</tipoComprobacion>
+						<tratamientoMayusculas>IGNORAR</tratamientoMayusculas>
+					</regla>
+					<regla tipo="ReglaArchivo">
+						<ejemplo> .Se ha empaquetado un fichero *.png dentro del EAR</ejemplo>
+						<patronOCadena>.*\.png</patronOCadena>
+						<tipoComprobacion>PROHIBIDO</tipoComprobacion>
+						<tratamientoMayusculas>IGNORAR</tratamientoMayusculas>
+					</regla>
+					<regla tipo="ReglaArchivo">
+						<ejemplo> .Se ha empaquetado un fichero *.html dentro del EAR</ejemplo>
+						<patronOCadena>.*\.html</patronOCadena>
+						<tipoComprobacion>PROHIBIDO</tipoComprobacion>
+						<tratamientoMayusculas>IGNORAR</tratamientoMayusculas>
+					</regla>
+					<regla tipo="ReglaArchivo">
+						<ejemplo> .Se ha empaquetado un fichero *.doc dentro del EAR</ejemplo>
+						<patronOCadena>.*\.doc</patronOCadena>
+						<tipoComprobacion>PROHIBIDO</tipoComprobacion>
+						<tratamientoMayusculas>IGNORAR</tratamientoMayusculas>
+					</regla>
+					<regla tipo="ReglaArchivo">
+						<ejemplo> .Se ha empaquetado un fichero *.pdf dentro del EAR</ejemplo>
+						<patronOCadena>.*\.pdf</patronOCadena>
+						<tipoComprobacion>PROHIBIDO</tipoComprobacion>
+						<tratamientoMayusculas>IGNORAR</tratamientoMayusculas>
+					</regla>
+					<regla tipo="ReglaArchivo">
+						<ejemplo> .Se ha empaquetado un fichero *.bak dentro del EAR</ejemplo>
+						<patronOCadena>.*\.bak</patronOCadena>
+						<tipoComprobacion>PROHIBIDO</tipoComprobacion>
+						<tratamientoMayusculas>IGNORAR</tratamientoMayusculas>
+					</regla>
+					<regla tipo="ReglaArchivo">
+						<ejemplo> .Se ha empaquetado un fichero *.old dentro del EAR</ejemplo>
+						<patronOCadena>.*\.old</patronOCadena>
+						<tipoComprobacion>PROHIBIDO</tipoComprobacion>
+						<tratamientoMayusculas>IGNORAR</tratamientoMayusculas>
+					</regla>
+						<regla tipo="ReglaArchivo">
+						<ejemplo> .Se ha empaquetado un fichero *.back dentro del EAR</ejemplo>
+						<patronOCadena>.*\.back</patronOCadena>
+						<tipoComprobacion>PROHIBIDO</tipoComprobacion>
+						<tratamientoMayusculas>IGNORAR</tratamientoMayusculas>
+					</regla>
+						<regla tipo="ReglaArchivo">
+						<ejemplo> .Se ha empaquetado un fichero *.desa dentro del EAR</ejemplo>
+						<patronOCadena>.*\.desa</patronOCadena>
+						<tipoComprobacion>PROHIBIDO</tipoComprobacion>
+						<tratamientoMayusculas>IGNORAR</tratamientoMayusculas>
+					</regla>
+						<regla tipo="ReglaArchivo">
+						<ejemplo> .Se ha empaquetado un fichero *.pre dentro del EAR</ejemplo>
+						<patronOCadena>.*\.pre</patronOCadena>
+						<tipoComprobacion>PROHIBIDO</tipoComprobacion>
+						<tratamientoMayusculas>IGNORAR</tratamientoMayusculas>
+					</regla>
+						<regla tipo="ReglaArchivo">
+						<ejemplo> .Se ha empaquetado un fichero *.pro dentro del EAR</ejemplo>
+						<patronOCadena>.*\.pro</patronOCadena>
+						<tipoComprobacion>PROHIBIDO</tipoComprobacion>
+						<tratamientoMayusculas>IGNORAR</tratamientoMayusculas>
+					</regla>
+						<regla tipo="ReglaArchivo">
+						<ejemplo> .Se ha empaquetado un fichero *.v1 dentro del EAR</ejemplo>
+						<patronOCadena>.*\.v1</patronOCadena>
+						<tipoComprobacion>PROHIBIDO</tipoComprobacion>
+						<tratamientoMayusculas>IGNORAR</tratamientoMayusculas>
+					</regla>
+					<regla tipo="ReglaArchivo">
+						<ejemplo> .Se ha empaquetado un fichero \\svn dentro del EAR</ejemplo>
+						<patronOCadena>.*\\\.svn\\</patronOCadena>
+						<tipoComprobacion>PROHIBIDO</tipoComprobacion>
+						<tratamientoMayusculas>IGNORAR</tratamientoMayusculas>
+					</regla>
+					<regla tipo="ReglaArchivo">
+						<ejemplo> .Se ha empaquetado un fichero thumbs.db dentro del EAR</ejemplo>
+						<patronOCadena>.*\\thumbs\.db</patronOCadena>
+						<tipoComprobacion>PROHIBIDO</tipoComprobacion>
+						<tratamientoMayusculas>IGNORAR</tratamientoMayusculas>
+					</regla>
+					<regla tipo="ReglaArchivo">
+						<ejemplo> .Se ha empaquetado un fichero \\cvs dentro del EAR</ejemplo>
+						<patronOCadena>.*\\cvs\\</patronOCadena>
+						<tipoComprobacion>PROHIBIDO</tipoComprobacion>
+						<tratamientoMayusculas>IGNORAR</tratamientoMayusculas>
+					</regla>
+					<regla tipo="ReglaArchivo">
+						<ejemplo> .Se ha empaquetado un fichero cvs dentro del EAR</ejemplo>
+						<patronOCadena>.*\.cvs</patronOCadena>
+						<tipoComprobacion>PROHIBIDO</tipoComprobacion>
+						<tratamientoMayusculas>IGNORAR</tratamientoMayusculas>
+					</regla>
+					<regla tipo="ReglaArchivo">
+						<ejemplo> .Se ha empaquetado un fichero index.do dentro del EAR</ejemplo>
+						<patronOCadena>.*\\index\.do</patronOCadena>
+						<tipoComprobacion>PROHIBIDO</tipoComprobacion>
+						<tratamientoMayusculas>IGNORAR</tratamientoMayusculas>
+					</regla>
+					<regla tipo="ReglaArchivo">
+						<ejemplo> .Se ha empaquetado un fichero *.desarrollo dentro del EAR</ejemplo>
+						<patronOCadena>.*\.desarrollo</patronOCadena>
+						<tipoComprobacion>PROHIBIDO</tipoComprobacion>
+						<tratamientoMayusculas>IGNORAR</tratamientoMayusculas>
+					</regla>
+					<regla tipo="ReglaArchivo">
+						<ejemplo> .Se ha empaquetado un fichero jboss.properties dentro del EAR</ejemplo>
+						<patronOCadena>.*\\jboss.*\.properties</patronOCadena>
+						<tipoComprobacion>PROHIBIDO</tipoComprobacion>
+						<tratamientoMayusculas>IGNORAR</tratamientoMayusculas>
+					</regla>
+					<regla tipo="ReglaArchivo">
+						<ejemplo> .Se ha empaquetado un fichero *.maven dentro del EAR</ejemplo>
+						<patronOCadena>.*\.maven</patronOCadena>
+						<tipoComprobacion>PROHIBIDO</tipoComprobacion>
+						<tratamientoMayusculas>IGNORAR</tratamientoMayusculas>
+					</regla>
+					<regla tipo="ReglaArchivo">
+						<ejemplo> .Se ha empaquetado un fichero *.json dentro del EAR</ejemplo>
+						<patronOCadena>.*\.json</patronOCadena>
+						<tipoComprobacion>EXISTENCIA</tipoComprobacion>
+						<tratamientoMayusculas>IGNORAR</tratamientoMayusculas>
+					</regla>
+					<regla tipo="ReglaArchivo">
+						<ejemplo> .Se ha empaquetado un fichero *.properties dentro del EAR</ejemplo>
+						<patronOCadena>.*\.properties</patronOCadena>
+						<tipoComprobacion>EXISTENCIA</tipoComprobacion>
+						<tratamientoMayusculas>IGNORAR</tratamientoMayusculas>
+					</regla>	
+					<regla tipo="ReglaArchivo">
+						<ejemplo> .Se ha empaquetado un fichero *.jrxml dentro del EAR</ejemplo>
+						<patronOCadena>.*\.jrxml</patronOCadena>
+						<tipoComprobacion>EXISTENCIA</tipoComprobacion>
+						<tratamientoMayusculas>IGNORAR</tratamientoMayusculas>
+					</regla>
+					<regla tipo="ReglaArchivo">
+						<ejemplo> .Se ha empaquetado un fichero *.jasper dentro del EAR</ejemplo>
+						<patronOCadena>.*\.jasper</patronOCadena>
+						<tipoComprobacion>EXISTENCIA</tipoComprobacion>
+						<tratamientoMayusculas>IGNORAR</tratamientoMayusculas>
+					</regla>						
+				<!--ARCHIVOS DEL PAQUETE OFFICE QUE NO PUEDEN ESTAR EMPAQUETADOS DENTRO DEL EAR -->	
+				
+					<regla tipo="ReglaArchivo">
+						<ejemplo> .Se ha empaquetado un fichero *.xls dentro del EAR</ejemplo>
+						<patronOCadena>.*\.xls</patronOCadena>
+						<tipoComprobacion>PROHIBIDO</tipoComprobacion>
+						<tratamientoMayusculas>IGNORAR</tratamientoMayusculas>
+					</regla>	
+					<regla tipo="ReglaArchivo">
+						<ejemplo> .Se ha empaquetado un fichero *.docx dentro del EAR</ejemplo>
+						<patronOCadena>.*\.docx</patronOCadena>
+						<tipoComprobacion>PROHIBIDO</tipoComprobacion>
+						<tratamientoMayusculas>IGNORAR</tratamientoMayusculas>
+					</regla>
+					<regla tipo="ReglaArchivo">
+						<ejemplo> .Se ha empaquetado un fichero *.ppt dentro del EAR</ejemplo>
+						<patronOCadena>.*\.ppt</patronOCadena>
+						<tipoComprobacion>PROHIBIDO</tipoComprobacion>
+						<tratamientoMayusculas>IGNORAR</tratamientoMayusculas>
+					</regla>					
+					<regla tipo="ReglaArchivo">
+						<ejemplo> .Se ha empaquetado un fichero *.pptx dentro del EAR</ejemplo>
+						<patronOCadena>.*\.pptx</patronOCadena>
+						<tipoComprobacion>PROHIBIDO</tipoComprobacion>
+						<tratamientoMayusculas>IGNORAR</tratamientoMayusculas>
+					</regla>									
+				</reglas>
+			</chequeo>
+			<chequeo tipo="ChequeoExistenciaFicheros" nombre="ChequeosFicherosTraza" descripcion="No hay ficheros de traza detro del EAR (Log4j.xml, Log4j.properties)">
+				<mensaje>
+					<incorrecto>Hay ficheros de traza dentro del EAR</incorrecto>
+					<correcto>No hay ficheros de traza detro del EAR</correcto>
+					<avisos/>
+				</mensaje>
+				<reglas>
+					<regla tipo="ReglaArchivo">
+						<ejemplo> .Se ha incluido el fichero de trazas log4j.xml dentro del EAR</ejemplo>
+						<patronOCadena>.*\\Log4j\.xml$</patronOCadena>
+						<tipoComprobacion>PROHIBIDO</tipoComprobacion>
+						<tratamientoMayusculas>IGNORAR</tratamientoMayusculas>
+					</regla>
+					<regla tipo="ReglaArchivo">
+						<ejemplo> .Se ha incluido el fichero de trazas log4j.properties dentro del EAR</ejemplo>
+						<patronOCadena>.*\\Log4j\.properties$</patronOCadena>
+						<tipoComprobacion>PROHIBIDO</tipoComprobacion>
+						<tratamientoMayusculas>IGNORAR</tratamientoMayusculas>
+					</regla>
+				</reglas>
+			</chequeo>	
+			
+			<chequeo tipo="ChequeoLibreriasDuplicadas" nombre="ChequeoLibreriasDuplicadas" descripcion="Comprobacion de que no existen librerias duplicadas dentro del EAR">
+				<mensaje>
+					<incorrecto>NO CUMPLEN: Se han encontrado librerias duplicadas</incorrecto>
+					<correcto>No se han encontrado librerias duplicadas</correcto>
+					<avisos>Se han encontrado librerias duplicadas dentro del EAR</avisos>
+				</mensaje>
+				<reglas>
+					<regla tipo="ReglaArchivo">
+						<ejemplo>Existen librerías duplicadas dentro de EAR</ejemplo>
+						<patronOCadena>.*\.jar$</patronOCadena>
+						<tipoComprobacion>EXISTENCIA</tipoComprobacion>
+						<tratamientoMayusculas>IGNORAR</tratamientoMayusculas>
+					</regla>
+				</reglas>
+			</chequeo>
+
+			
+<!--CHEQUEOS DE LIBRERIAS -->
+    			
+			<chequeo tipo="ChequeoExistenciaFicheros" nombre="ChequeoLibreriasNoPermitidas" descripcion="Librerias no permitidas dentro del EAR">
+				<mensaje>
+					<incorrecto>NO CUMPLE: El archivo .ear no debe contender las  librerías indicadas en el Anexo 21 de la Guía de Estándares</incorrecto>
+					<correcto>El archivo .ear no debe contender las  librerías indicadas en el Anexo 21 de la Guía de Estándares</correcto>
+					<avisos/>
+				</mensaje>	
+	<!--
+	LIBRERIAS QUE NO SE DEBEN EMPAQUEJAR EN EL EAR
+		El conjunto de librerías que se encuentra en este apartado se pueden usar durante la fase de desarrollo
+		y durante la construcción del proyecto pero no se deben encontrar en los artefactos de despliegue
+	-->	
+		<!--		
+		LIBRERIAS PROPIAS DEL SERVIDOR O DE LA JDK
+			Conjunto de librerías que son propias de un servidor de aplicaciones.
+			Tanto si está ya presente en el servidor destino o pertenecen al tiempo de ejecución de cualquier otro servidor.
+		-->
+				<reglas>
+					<regla tipo="ReglaArchivo">
+						<ejemplo>Librería prohibida en el empaquetado.Son librerías que son propias de un servidor de aplicaciones. Tanto si está ya presente en el servidor destino o pertenecen al tiempo de ejecución de cualquier otro servidor.</ejemplo>
+						<patronOCadena>.*\\lib\\ant-antlr-.*\.jar</patronOCadena>
+						<tipoComprobacion>PROHIBIDO</tipoComprobacion>
+						<tratamientoMayusculas>IGNORAR</tratamientoMayusculas>
+					</regla>
+					<regla tipo="ReglaArchivo">
+						<ejemplo>Librería prohibida en el empaquetado.Son librerías que son propias de un servidor de aplicaciones. Tanto si está ya presente en el servidor destino o pertenecen al tiempo de ejecución de cualquier otro servidor.</ejemplo>
+						<patronOCadena>.*\\lib\\com.ibm.*\.jar</patronOCadena>
+						<tipoComprobacion>PROHIBIDO</tipoComprobacion>
+						<tratamientoMayusculas>IGNORAR</tratamientoMayusculas>
+					</regla>
+					<regla tipo="ReglaArchivo">
+						<ejemplo>Librería prohibida en el empaquetado.Son librerías que son propias de un servidor de aplicaciones. Tanto si está ya presente en el servidor destino o pertenecen al tiempo de ejecución de cualquier otro servidor.</ejemplo>
+						<patronOCadena>.*\\lib\\core\.jar</patronOCadena>
+						<tipoComprobacion>PROHIBIDO</tipoComprobacion>
+						<tratamientoMayusculas>IGNORAR</tratamientoMayusculas>
+					</regla>
+					<regla tipo="ReglaArchivo">
+						<ejemplo>Librería prohibida en el empaquetado.Son librerías que son propias de un servidor de aplicaciones. Tanto si está ya presente en el servidor destino o pertenecen al tiempo de ejecución de cualquier otro servidor.</ejemplo>
+						<patronOCadena>.*\\lib\\ffdc\.jar</patronOCadena>
+						<tipoComprobacion>PROHIBIDO</tipoComprobacion>
+						<tratamientoMayusculas>IGNORAR</tratamientoMayusculas>
+					</regla>
+					<regla tipo="ReglaArchivo">
+						<ejemplo>Librería prohibida en el empaquetado.Son librerías que son propias de un servidor de aplicaciones. Tanto si está ya presente en el servidor destino o pertenecen al tiempo de ejecución de cualquier otro servidor.</ejemplo>
+						<patronOCadena>.*\\lib\\ibm.*\.jar</patronOCadena>
+						<tipoComprobacion>PROHIBIDO</tipoComprobacion>
+						<tratamientoMayusculas>IGNORAR</tratamientoMayusculas>
+					</regla>
+					<regla tipo="ReglaArchivo">
+						<ejemplo>Librería prohibida en el empaquetado.Son librerías que son propias de un servidor de aplicaciones. Tanto si está ya presente en el servidor destino o pertenecen al tiempo de ejecución de cualquier otro servidor.</ejemplo>
+						<patronOCadena>.*\\lib\\ivjejb35\.jar</patronOCadena>
+						<tipoComprobacion>PROHIBIDO</tipoComprobacion>
+						<tratamientoMayusculas>IGNORAR</tratamientoMayusculas>
+					</regla>
+					<regla tipo="ReglaArchivo">
+						<ejemplo>Librería prohibida en el empaquetado.Son librerías que son propias de un servidor de aplicaciones. Tanto si está ya presente en el servidor destino o pertenecen al tiempo de ejecución de cualquier otro servidor.</ejemplo>
+						<patronOCadena>.*\\lib\\j2ee\.jar</patronOCadena>
+						<tipoComprobacion>PROHIBIDO</tipoComprobacion>
+						<tratamientoMayusculas>IGNORAR</tratamientoMayusculas>
+					</regla>
+					<regla tipo="ReglaArchivo">
+						<ejemplo>Librería prohibida en el empaquetado.Son librerías que son propias de un servidor de aplicaciones. Tanto si está ya presente en el servidor destino o pertenecen al tiempo de ejecución de cualquier otro servidor.</ejemplo>
+						<patronOCadena>.*\\lib\\jaas\.jar</patronOCadena>
+						<tipoComprobacion>PROHIBIDO</tipoComprobacion>
+						<tratamientoMayusculas>IGNORAR</tratamientoMayusculas>
+					</regla>
+					<regla tipo="ReglaArchivo">
+						<ejemplo>Librería prohibida en el empaquetado.Son librerías que son propias de un servidor de aplicaciones. Tanto si está ya presente en el servidor destino o pertenecen al tiempo de ejecución de cualquier otro servidor.</ejemplo>
+						<patronOCadena>.*\\lib\\jboss.*\.jar</patronOCadena>
+						<tipoComprobacion>PROHIBIDO</tipoComprobacion>
+						<tratamientoMayusculas>IGNORAR</tratamientoMayusculas>
+					</regla>
+					<regla tipo="ReglaArchivo">
+						<ejemplo>Librería prohibida en el empaquetado.Son librerías que son propias de un servidor de aplicaciones. Tanto si está ya presente en el servidor destino o pertenecen al tiempo de ejecución de cualquier otro servidor.</ejemplo>
+						<patronOCadena>.*\\lib\\jboss.*\.properties</patronOCadena>
+						<tipoComprobacion>PROHIBIDO</tipoComprobacion>
+						<tratamientoMayusculas>IGNORAR</tratamientoMayusculas>
+					</regla>
+					<regla tipo="ReglaArchivo">
+						<ejemplo>Librería prohibida en el empaquetado.Son librerías que son propias de un servidor de aplicaciones. Tanto si está ya presente en el servidor destino o pertenecen al tiempo de ejecución de cualquier otro servidor.</ejemplo>
+						<patronOCadena>.*\\lib\\jcert\.jar</patronOCadena>
+						<tipoComprobacion>PROHIBIDO</tipoComprobacion>
+						<tratamientoMayusculas>IGNORAR</tratamientoMayusculas>
+					</regla>
+					
+					<regla tipo="ReglaArchivo">
+						<ejemplo>Librería prohibida en el empaquetado.Son librerías que son propias de un servidor de aplicaciones. Tanto si está ya presente en el servidor destino o pertenecen al tiempo de ejecución de cualquier otro servidor.</ejemplo>
+						<patronOCadena>.*\\lib\\jdbc2_0-stdext\.jar</patronOCadena>
+						<tipoComprobacion>PROHIBIDO</tipoComprobacion>
+						<tratamientoMayusculas>IGNORAR</tratamientoMayusculas>
+					</regla>
+					<regla tipo="ReglaArchivo">
+						<ejemplo>Librería prohibida en el empaquetado.Son librerías que son propias de un servidor de aplicaciones. Tanto si está ya presente en el servidor destino o pertenecen al tiempo de ejecución de cualquier otro servidor.</ejemplo>
+						<patronOCadena>.*\\lib\\jnet\.jar</patronOCadena>
+						<tipoComprobacion>PROHIBIDO</tipoComprobacion>
+						<tratamientoMayusculas>IGNORAR</tratamientoMayusculas>
+					</regla>
+					<regla tipo="ReglaArchivo">
+						<ejemplo>Librería prohibida en el empaquetado.Son librerías que son propias de un servidor de aplicaciones. Tanto si está ya presente en el servidor destino o pertenecen al tiempo de ejecución de cualquier otro servidor.</ejemplo>
+						<patronOCadena>.*\\lib\\jsse\.jar</patronOCadena>
+						<tipoComprobacion>PROHIBIDO</tipoComprobacion>
+						<tratamientoMayusculas>IGNORAR</tratamientoMayusculas>
+					</regla>
+					<regla tipo="ReglaArchivo">
+						<ejemplo>Librería prohibida en el empaquetado.Son librerías que son propias de un servidor de aplicaciones. Tanto si está ya presente en el servidor destino o pertenecen al tiempo de ejecución de cualquier otro servidor.</ejemplo>
+						<patronOCadena>.*\\lib\\jstl\.jar</patronOCadena>
+						<tipoComprobacion>PROHIBIDO</tipoComprobacion>
+						<tratamientoMayusculas>IGNORAR</tratamientoMayusculas>
+					</regla>
+					<regla tipo="ReglaArchivo">
+						<ejemplo>Librería prohibida en el empaquetado.Son librerías que son propias de un servidor de aplicaciones. Tanto si está ya presente en el servidor destino o pertenecen al tiempo de ejecución de cualquier otro servidor.</ejemplo>
+						<patronOCadena>.*\\lib\\jta\.jar</patronOCadena>
+						<tipoComprobacion>PROHIBIDO</tipoComprobacion>
+						<tratamientoMayusculas>IGNORAR</tratamientoMayusculas>
+					</regla>
+					<regla tipo="ReglaArchivo">
+						<ejemplo>Librería prohibida en el empaquetado.Son librerías que son propias de un servidor de aplicaciones. Tanto si está ya presente en el servidor destino o pertenecen al tiempo de ejecución de cualquier otro servidor.</ejemplo>
+						<patronOCadena>.*\\lib\\namespace\.jar</patronOCadena>
+						<tipoComprobacion>PROHIBIDO</tipoComprobacion>
+						<tratamientoMayusculas>IGNORAR</tratamientoMayusculas>
+					</regla>
+					
+					<regla tipo="ReglaArchivo">
+						<ejemplo>Librería prohibida en el empaquetado.Son librerías que son propias de un servidor de aplicaciones. Tanto si está ya presente en el servidor destino o pertenecen al tiempo de ejecución de cualquier otro servidor.</ejemplo>
+						<patronOCadena>.*\\lib\\tomcat.*\.jar</patronOCadena>
+						<tipoComprobacion>PROHIBIDO</tipoComprobacion>
+						<tratamientoMayusculas>IGNORAR</tratamientoMayusculas>
+					</regla>
+					<regla tipo="ReglaArchivo">
+						<ejemplo>Librería prohibida en el empaquetado.Son librerías que son propias de un servidor de aplicaciones. Tanto si está ya presente en el servidor destino o pertenecen al tiempo de ejecución de cualquier otro servidor.</ejemplo>
+						<patronOCadena>.*\\lib\\rt\.jar</patronOCadena>
+						<tipoComprobacion>PROHIBIDO</tipoComprobacion>
+						<tratamientoMayusculas>IGNORAR</tratamientoMayusculas>
+					</regla>
+					<regla tipo="ReglaArchivo">
+						<ejemplo>Librería prohibida en el empaquetado.Son librerías que son propias de un servidor de aplicaciones. Tanto si está ya presente en el servidor destino o pertenecen al tiempo de ejecución de cualquier otro servidor.</ejemplo>
+						<patronOCadena>.*\\lib\\server\.jar</patronOCadena>
+						<tipoComprobacion>PROHIBIDO</tipoComprobacion>
+						<tratamientoMayusculas>IGNORAR</tratamientoMayusculas>
+					</regla>
+					<regla tipo="ReglaArchivo">
+						<ejemplo>Librería prohibida en el empaquetado.Son librerías que son propias de un servidor de aplicaciones. Tanto si está ya presente en el servidor destino o pertenecen al tiempo de ejecución de cualquier otro servidor.</ejemplo>
+						<patronOCadena>.*\\lib\\servlet\.jar</patronOCadena>
+						<tipoComprobacion>PROHIBIDO</tipoComprobacion>
+						<tratamientoMayusculas>IGNORAR</tratamientoMayusculas>
+					</regla>
+					<regla tipo="ReglaArchivo">
+						<ejemplo>Librería prohibida en el empaquetado.Son librerías que son propias de un servidor de aplicaciones. Tanto si está ya presente en el servidor destino o pertenecen al tiempo de ejecución de cualquier otro servidor.</ejemplo>
+						<patronOCadena>.*\\lib\\webcontainer\.jar</patronOCadena>
+						<tipoComprobacion>PROHIBIDO</tipoComprobacion>
+						<tratamientoMayusculas>IGNORAR</tratamientoMayusculas>
+					</regla>
+					
+					<regla tipo="ReglaArchivo">
+						<ejemplo>Librería prohibida en el empaquetado.Son librerías que son propias de un servidor de aplicaciones. Tanto si está ya presente en el servidor destino o pertenecen al tiempo de ejecución de cualquier otro servidor.</ejemplo>
+						<patronOCadena>.*\\lib\\weblogic.*\.jar</patronOCadena>
+						<tipoComprobacion>PROHIBIDO</tipoComprobacion>
+						<tratamientoMayusculas>IGNORAR</tratamientoMayusculas>
+					</regla>
+					<regla tipo="ReglaArchivo">
+						<ejemplo>Librería prohibida en el empaquetado.Son librerías que son propias de un servidor de aplicaciones. Tanto si está ya presente en el servidor destino o pertenecen al tiempo de ejecución de cualquier otro servidor.</ejemplo>
+						<patronOCadena>.*\\lib\\websphere\.jar</patronOCadena>
+						<tipoComprobacion>PROHIBIDO</tipoComprobacion>
+						<tratamientoMayusculas>IGNORAR</tratamientoMayusculas>
+					</regla>
+					<regla tipo="ReglaArchivo">
+						<ejemplo>Librería prohibida en el empaquetado.Son librerías que son propias de un servidor de aplicaciones. Tanto si está ya presente en el servidor destino o pertenecen al tiempo de ejecución de cualquier otro servidor.</ejemplo>
+						<patronOCadena>.*\\lib\\xml\.jar</patronOCadena>
+						<tipoComprobacion>PROHIBIDO</tipoComprobacion>
+						<tratamientoMayusculas>IGNORAR</tratamientoMayusculas>
+					</regla>		
+		<!-- 
+		FIN DE LAS LIBRERIAS PROPIAS DEL SERVIDOR O DE LA JDK
+		-->
+					
+					
+		<!-- 
+		LIBRERIAS INCLUIDAS EN EL SERVIDOR DE APLICACIONES WAS 6.1
+		(conjunto de librerias que no siendo estándar del servidor de aplicaciones se han incluido en el mismo error)
+		-->
+					
+					<regla tipo="ReglaArchivo">
+						<ejemplo> Librería Prohibida en el empaquetado. Esta librería puede estar incluida en el servidor de Aplicaciones</ejemplo>
+						<patronOCadena>.*\\lib\\API StandAlone eAS_TSP_v6.2.7\.jar</patronOCadena>
+						<tipoComprobacion>EXISTENCIA</tipoComprobacion>
+						<tratamientoMayusculas>IGNORAR</tratamientoMayusculas>
+					</regla>
+					<regla tipo="ReglaArchivo">
+						<ejemplo> Librería Prohibida en el empaquetado. Esta librería puede estar incluida en el servidor de Aplicaciones</ejemplo>
+						<patronOCadena>.*\\lib\\base\.jar</patronOCadena>
+						<tipoComprobacion>EXISTENCIA</tipoComprobacion>
+						<tratamientoMayusculas>IGNORAR</tratamientoMayusculas>
+					</regla>
+					<regla tipo="ReglaArchivo">
+						<ejemplo> Librería Prohibida en el empaquetado. Esta librería puede estar incluida en el servidor de Aplicaciones</ejemplo>
+						<patronOCadena>.*\\lib\\bcmail-jdk15-138\.jar</patronOCadena>
+						<tipoComprobacion>EXISTENCIA</tipoComprobacion>
+						<tratamientoMayusculas>IGNORAR</tratamientoMayusculas>
+					</regla>
+					<regla tipo="ReglaArchivo">
+						<ejemplo> Librería Prohibida en el empaquetado. Esta librería puede estar incluida en el servidor de Aplicaciones</ejemplo>
+						<patronOCadena>.*\\lib\\bcprov-jdk15-138\.jar</patronOCadena>
+						<tipoComprobacion>EXISTENCIA</tipoComprobacion>
+						<tratamientoMayusculas>IGNORAR</tratamientoMayusculas>
+					</regla>
+					<regla tipo="ReglaArchivo">
+						<ejemplo> Librería Prohibida en el empaquetado. Esta librería puede estar incluida en el servidor de Aplicaciones</ejemplo>
+						<patronOCadena>.*\\lib\\classes12\.jar</patronOCadena>
+						<tipoComprobacion>EXISTENCIA</tipoComprobacion>
+						<tratamientoMayusculas>IGNORAR</tratamientoMayusculas>
+					</regla>
+					<regla tipo="ReglaArchivo">
+						<ejemplo> Librería Prohibida en el empaquetado. Esta librería puede estar incluida en el servidor de Aplicaciones</ejemplo>
+						<patronOCadena>.*\\lib\\db2java\.jar</patronOCadena>
+						<tipoComprobacion>EXISTENCIA</tipoComprobacion>
+						<tratamientoMayusculas>IGNORAR</tratamientoMayusculas>
+					</regla>
+					<regla tipo="ReglaArchivo">
+						<ejemplo> Librería Prohibida en el empaquetado. Esta librería puede estar incluida en el servidor de Aplicaciones</ejemplo>
+						<patronOCadena>.*\\lib\\db2jcc\.jar</patronOCadena>
+						<tipoComprobacion>EXISTENCIA</tipoComprobacion>
+						<tratamientoMayusculas>IGNORAR</tratamientoMayusculas>
+					</regla>
+					<regla tipo="ReglaArchivo">
+						<ejemplo> Librería Prohibida en el empaquetado. Esta librería puede estar incluida en el servidor de Aplicaciones</ejemplo>
+						<patronOCadena>.*\\lib\\db2jcc_lidense_cu\.jar</patronOCadena>
+						<tipoComprobacion>EXISTENCIA</tipoComprobacion>
+						<tratamientoMayusculas>IGNORAR</tratamientoMayusculas>
+					</regla>
+					<regla tipo="ReglaArchivo">
+						<ejemplo> Librería Prohibida en el empaquetado. Esta librería puede estar incluida en el servidor de Aplicaciones</ejemplo>
+						<patronOCadena>.*\\lib\\jbase-1.0\.jar</patronOCadena>
+						<tipoComprobacion>EXISTENCIA</tipoComprobacion>
+						<tratamientoMayusculas>IGNORAR</tratamientoMayusculas>
+					</regla>
+					<regla tipo="ReglaArchivo">
+						<ejemplo> Librería Prohibida en el empaquetado. Esta librería puede estar incluida en el servidor de Aplicaciones</ejemplo>
+						<patronOCadena>.*\\lib\\msbase\.jar</patronOCadena>
+						<tipoComprobacion>EXISTENCIA</tipoComprobacion>
+						<tratamientoMayusculas>IGNORAR</tratamientoMayusculas>
+					</regla>
+					<regla tipo="ReglaArchivo">
+						<ejemplo> Librería Prohibida en el empaquetado. Esta librería puede estar incluida en el servidor de Aplicaciones</ejemplo>
+						<patronOCadena>.*\\lib\\msutil\.jar</patronOCadena>
+						<tipoComprobacion>EXISTENCIA</tipoComprobacion>
+						<tratamientoMayusculas>IGNORAR</tratamientoMayusculas>
+					</regla>
+					<regla tipo="ReglaArchivo">
+						<ejemplo> Librería Prohibida en el empaquetado. Esta librería puede estar incluida en el servidor de Aplicaciones</ejemplo>
+						<patronOCadena>.*\\lib\\sapjco3\.jar</patronOCadena>
+						<tipoComprobacion>EXISTENCIA</tipoComprobacion>
+						<tratamientoMayusculas>IGNORAR</tratamientoMayusculas>
+					</regla>
+					<regla tipo="ReglaArchivo">
+						<ejemplo> Librería Prohibida en el empaquetado. Esta librería puede estar incluida en el servidor de Aplicaciones</ejemplo>
+						<patronOCadena>.*\\lib\\spy\.jar</patronOCadena>
+						<tipoComprobacion>EXISTENCIA</tipoComprobacion>
+						<tratamientoMayusculas>IGNORAR</tratamientoMayusculas>
+					</regla>
+					<regla tipo="ReglaArchivo">
+						<ejemplo> Librería Prohibida en el empaquetado. Esta librería puede estar incluida en el servidor de Aplicaciones</ejemplo>
+						<patronOCadena>.*\\lib\\sqlsever\.jar</patronOCadena>
+						<tipoComprobacion>EXISTENCIA</tipoComprobacion>
+						<tratamientoMayusculas>IGNORAR</tratamientoMayusculas>
+					</regla>
+					<regla tipo="ReglaArchivo">
+						<ejemplo> Librería Prohibida en el empaquetado. Esta librería puede estar incluida en el servidor de Aplicaciones</ejemplo>
+						<patronOCadena>.*\\lib\\util\.jar</patronOCadena>
+						<tipoComprobacion>EXISTENCIA</tipoComprobacion>
+						<tratamientoMayusculas>IGNORAR</tratamientoMayusculas>
+					</regla>	
+		<!-- 
+		FIN DE LAS LIBRERIAS INCLUIDAS EN EL SERVIDOR DE APLICACIONES WAS 6.1
+		-->
+		
+		
+		<!-- 
+		LIBRERIAS QUE ESTAN PROHIBIDAS EN EL EMPAQUETADO EN WAS 6.1
+		-->
+					
+					<regla tipo="ReglaArchivo">
+						<ejemplo> Librería Prohibida en el empaquetado de WAS6.1</ejemplo>
+						<patronOCadena>.*\\EJB3\.jar$</patronOCadena>
+						<tipoComprobacion>EXISTENCIA</tipoComprobacion>
+						<tratamientoMayusculas>IGNORAR</tratamientoMayusculas>
+					</regla>
+					<regla tipo="ReglaArchivo">
+						<ejemplo> Librería Prohibida en el empaquetado de WAS6.1</ejemplo>
+						<patronOCadena>.*\\lib\\BD\.jar</patronOCadena>
+						<tipoComprobacion>PROHIBIDO</tipoComprobacion>
+						<tratamientoMayusculas>IGNORAR</tratamientoMayusculas>
+					</regla>
+					<regla tipo="ReglaArchivo">
+						<ejemplo> Librería Prohibida en el empaquetado de WAS6.1</ejemplo>
+						<patronOCadena>.*\\lib\\charsets\.jar</patronOCadena>
+						<tipoComprobacion>PROHIBIDO</tipoComprobacion>
+						<tratamientoMayusculas>IGNORAR</tratamientoMayusculas>
+					</regla>
+					<regla tipo="ReglaArchivo">
+						<ejemplo> Librería Prohibida en el empaquetado de WAS6.1</ejemplo>
+						<patronOCadena>.*\\lib\\CmpCrmf\.jar</patronOCadena>
+						<tipoComprobacion>PROHIBIDO</tipoComprobacion>
+						<tratamientoMayusculas>IGNORAR</tratamientoMayusculas>
+					</regla>
+					<regla tipo="ReglaArchivo">
+						<ejemplo> Librería Prohibida en el empaquetado de WAS6.1</ejemplo>
+						<patronOCadena>.*\\lib\\dtfj\.jar</patronOCadena>
+						<tipoComprobacion>PROHIBIDO</tipoComprobacion>
+						<tratamientoMayusculas>IGNORAR</tratamientoMayusculas>
+					</regla>
+					<regla tipo="ReglaArchivo">
+						<ejemplo> Librería Prohibida en el empaquetado de WAS6.1</ejemplo>
+						<patronOCadena>.*\\lib\\dtfj-interface\.jar</patronOCadena>
+						<tipoComprobacion>PROHIBIDO</tipoComprobacion>
+						<tratamientoMayusculas>IGNORAR</tratamientoMayusculas>
+					</regla>
+					<regla tipo="ReglaArchivo">
+						<ejemplo> Librería Prohibida en el empaquetado de WAS6.1</ejemplo>
+						<patronOCadena>.*\\lib\\graphics\.jar</patronOCadena>
+						<tipoComprobacion>PROHIBIDO</tipoComprobacion>
+						<tratamientoMayusculas>IGNORAR</tratamientoMayusculas>
+					</regla>
+					<regla tipo="ReglaArchivo">
+						<ejemplo> Librería Prohibida en el empaquetado de WAS6.1</ejemplo>
+						<patronOCadena>.*\\lib\\gskikm\.jar</patronOCadena>
+						<tipoComprobacion>PROHIBIDO</tipoComprobacion>
+						<tratamientoMayusculas>IGNORAR</tratamientoMayusculas>
+					</regla>
+					<regla tipo="ReglaArchivo">
+						<ejemplo> Librería Prohibida en el empaquetado de WAS6.1</ejemplo>
+						<patronOCadena>.*\\lib\\healthcenter\.jar</patronOCadena>
+						<tipoComprobacion>PROHIBIDO</tipoComprobacion>
+						<tratamientoMayusculas>IGNORAR</tratamientoMayusculas>
+					</regla>
+					
+					<regla tipo="ReglaArchivo">
+						<ejemplo> Librería Prohibida en el empaquetado de WAS6.1</ejemplo>
+						<patronOCadena>.*\\lib\\ibmcertpathprovider\.jar</patronOCadena>
+						<tipoComprobacion>PROHIBIDO</tipoComprobacion>
+						<tratamientoMayusculas>IGNORAR</tratamientoMayusculas>
+					</regla>
+					<regla tipo="ReglaArchivo">
+						<ejemplo> Librería Prohibida en el empaquetado de WAS6.1</ejemplo>
+						<patronOCadena>.*\\lib\\ibmcfw\.jar</patronOCadena>
+						<tipoComprobacion>PROHIBIDO</tipoComprobacion>
+						<tratamientoMayusculas>IGNORAR</tratamientoMayusculas>
+					</regla>
+					<regla tipo="ReglaArchivo">
+						<ejemplo> Librería Prohibida en el empaquetado de WAS6.1</ejemplo>
+						<patronOCadena>.*\\lib\\ibmcmsprovider\.jar</patronOCadena>
+						<tipoComprobacion>PROHIBIDO</tipoComprobacion>
+						<tratamientoMayusculas>IGNORAR</tratamientoMayusculas>
+					</regla>
+					<regla tipo="ReglaArchivo">
+						<ejemplo> Librería Prohibida en el empaquetado de WAS6.1</ejemplo>
+						<patronOCadena>.*\\lib\\ibmjaasactivelm\.jar</patronOCadena>
+						<tipoComprobacion>PROHIBIDO</tipoComprobacion>
+						<tratamientoMayusculas>IGNORAR</tratamientoMayusculas>
+					</regla>
+					<regla tipo="ReglaArchivo">
+						<ejemplo> Librería Prohibida en el empaquetado de WAS6.1</ejemplo>
+						<patronOCadena>.*\\lib\\ibmjaaslm\.jar</patronOCadena>
+						<tipoComprobacion>PROHIBIDO</tipoComprobacion>
+						<tratamientoMayusculas>IGNORAR</tratamientoMayusculas>
+					</regla>
+					<regla tipo="ReglaArchivo">
+						<ejemplo> Librería Prohibida en el empaquetado de WAS6.1</ejemplo>
+						<patronOCadena>.*\\lib\\ibmjcefips\.jar</patronOCadena>
+						<tipoComprobacion>PROHIBIDO</tipoComprobacion>
+						<tratamientoMayusculas>IGNORAR</tratamientoMayusculas>
+					</regla>	
+					<regla tipo="ReglaArchivo">
+						<ejemplo> Librería Prohibida en el empaquetado de WAS6.1</ejemplo>
+						<patronOCadena>.*\\lib\\ibmjcefw\.jar</patronOCadena>
+						<tipoComprobacion>PROHIBIDO</tipoComprobacion>
+						<tratamientoMayusculas>IGNORAR</tratamientoMayusculas>
+					</regla>
+					<regla tipo="ReglaArchivo">
+						<ejemplo> Librería Prohibida en el empaquetado de WAS6.1</ejemplo>
+						<patronOCadena>.*\\lib\\ibmjceprovider\.jar</patronOCadena>
+						<tipoComprobacion>PROHIBIDO</tipoComprobacion>
+						<tratamientoMayusculas>IGNORAR</tratamientoMayusculas>
+					</regla>
+					<regla tipo="ReglaArchivo">
+						<ejemplo> Librería Prohibida en el empaquetado de WAS6.1</ejemplo>
+						<patronOCadena>.*\\lib\\ibmjgssprovider\.jar</patronOCadena>
+						<tipoComprobacion>PROHIBIDO</tipoComprobacion>
+						<tratamientoMayusculas>IGNORAR</tratamientoMayusculas>
+					</regla>
+					<regla tipo="ReglaArchivo">
+						<ejemplo> Librería Prohibida en el empaquetado de WAS6.1</ejemplo>
+						<patronOCadena>.*\\lib\\ibmjsseprovider2\.jar</patronOCadena>
+						<tipoComprobacion>PROHIBIDO</tipoComprobacion>
+						<tratamientoMayusculas>IGNORAR</tratamientoMayusculas>
+					</regla>
+					<regla tipo="ReglaArchivo">
+						<ejemplo> Librería Prohibida en el empaquetado de WAS6.1</ejemplo>
+						<patronOCadena>.*\\lib\\ibmkeycert\.jar</patronOCadena>
+						<tipoComprobacion>PROHIBIDO</tipoComprobacion>
+						<tratamientoMayusculas>IGNORAR</tratamientoMayusculas>
+					</regla>
+					<regla tipo="ReglaArchivo">
+						<ejemplo> Librería Prohibida en el empaquetado de WAS6.1</ejemplo>
+						<patronOCadena>.*\\lib\\IBMKeyManagementServer\.jar</patronOCadena>
+						<tipoComprobacion>PROHIBIDO</tipoComprobacion>
+						<tratamientoMayusculas>IGNORAR</tratamientoMayusculas>
+					</regla>
+					<regla tipo="ReglaArchivo">
+						<ejemplo> Librería Prohibida en el empaquetado de WAS6.1</ejemplo>
+						<patronOCadena>.*\\lib\\ibmorb\.jar</patronOCadena>
+						<tipoComprobacion>PROHIBIDO</tipoComprobacion>
+						<tratamientoMayusculas>IGNORAR</tratamientoMayusculas>
+					</regla>
+					<regla tipo="ReglaArchivo">
+						<ejemplo> Librería Prohibida en el empaquetado de WAS6.1</ejemplo>
+						<patronOCadena>.*\\lib\\ibmorbapi\.jar</patronOCadena>
+						<tipoComprobacion>PROHIBIDO</tipoComprobacion>
+						<tratamientoMayusculas>IGNORAR</tratamientoMayusculas>
+					</regla>
+					<regla tipo="ReglaArchivo">
+						<ejemplo> Librería Prohibida en el empaquetado de WAS6.1</ejemplo>
+						<patronOCadena>.*\\lib\\ibmpkcs\.jar</patronOCadena>
+						<tipoComprobacion>PROHIBIDO</tipoComprobacion>
+						<tratamientoMayusculas>IGNORAR</tratamientoMayusculas>
+					</regla>
+					<regla tipo="ReglaArchivo">
+						<ejemplo> Librería Prohibida en el empaquetado de WAS6.1</ejemplo>
+						<patronOCadena>.*\\lib\\ibmpkcs11\.jar</patronOCadena>
+						<tipoComprobacion>PROHIBIDO</tipoComprobacion>
+						<tratamientoMayusculas>IGNORAR</tratamientoMayusculas>
+					</regla>
+					<regla tipo="ReglaArchivo">
+						<ejemplo> Librería Prohibida en el empaquetado de WAS6.1</ejemplo>
+						<patronOCadena>.*\\lib\\ibmpkcs11impl\.jar</patronOCadena>
+						<tipoComprobacion>PROHIBIDO</tipoComprobacion>
+						<tratamientoMayusculas>IGNORAR</tratamientoMayusculas>
+					</regla>
+					<regla tipo="ReglaArchivo">
+						<ejemplo> Librería Prohibida en el empaquetado de WAS6.1</ejemplo>
+						<patronOCadena>.*\\lib\\ibmsaslprovider\.jar</patronOCadena>
+						<tipoComprobacion>PROHIBIDO</tipoComprobacion>
+						<tratamientoMayusculas>IGNORAR</tratamientoMayusculas>
+					</regla>
+					<regla tipo="ReglaArchivo">
+						<ejemplo> Librería Prohibida en el empaquetado de WAS6.1</ejemplo>
+						<patronOCadena>.*\\lib\\ibmspnego\.jar</patronOCadena>
+						<tipoComprobacion>PROHIBIDO</tipoComprobacion>
+						<tratamientoMayusculas>IGNORAR</tratamientoMayusculas>
+					</regla>
+					<regla tipo="ReglaArchivo">
+						<ejemplo> Librería Prohibida en el empaquetado de WAS6.1</ejemplo>
+						<patronOCadena>.*\\lib\\indicim\.jar</patronOCadena>
+						<tipoComprobacion>PROHIBIDO</tipoComprobacion>
+						<tratamientoMayusculas>IGNORAR</tratamientoMayusculas>
+					</regla>
+					<regla tipo="ReglaArchivo">
+						<ejemplo> Librería Prohibida en el empaquetado de WAS6.1</ejemplo>
+						<patronOCadena>.*\\lib\\iwsorbutil\.jar</patronOCadena>
+						<tipoComprobacion>PROHIBIDO</tipoComprobacion>
+						<tratamientoMayusculas>IGNORAR</tratamientoMayusculas>
+					</regla>
+					<regla tipo="ReglaArchivo">
+						<ejemplo> Librería Prohibida en el empaquetado de WAS6.1</ejemplo>
+						<patronOCadena>.*\\lib\\jaccess\.jar</patronOCadena>
+						<tipoComprobacion>PROHIBIDO</tipoComprobacion>
+						<tratamientoMayusculas>IGNORAR</tratamientoMayusculas>
+					</regla>
+					<regla tipo="ReglaArchivo">
+						<ejemplo> Librería Prohibida en el empaquetado de WAS6.1</ejemplo>
+						<patronOCadena>.*\\lib\\JavaDiagnosticsCollector\.jar</patronOCadena>
+						<tipoComprobacion>PROHIBIDO</tipoComprobacion>
+						<tratamientoMayusculas>IGNORAR</tratamientoMayusculas>
+					</regla>
+					<regla tipo="ReglaArchivo">
+						<ejemplo> Librería Prohibida en el empaquetado de WAS6.1</ejemplo>
+						<patronOCadena>.*\\lib\\JawBridge\.jar</patronOCadena>
+						<tipoComprobacion>PROHIBIDO</tipoComprobacion>
+						<tratamientoMayusculas>IGNORAR</tratamientoMayusculas>
+					</regla>
+					<regla tipo="ReglaArchivo">
+						<ejemplo> Librería Prohibida en el empaquetado de WAS6.1</ejemplo>
+						<patronOCadena>.*\\lib\\jdmpview\.jar</patronOCadena>
+						<tipoComprobacion>PROHIBIDO</tipoComprobacion>
+						<tratamientoMayusculas>IGNORAR</tratamientoMayusculas>
+					</regla>
+					<regla tipo="ReglaArchivo">
+						<ejemplo> Librería Prohibida en el empaquetado de WAS6.1</ejemplo>
+						<patronOCadena>.*\\lib\\local_policy\.jar</patronOCadena>
+						<tipoComprobacion>PROHIBIDO</tipoComprobacion>
+						<tratamientoMayusculas>IGNORAR</tratamientoMayusculas>
+					</regla>
+					<regla tipo="ReglaArchivo">
+						<ejemplo> Librería Prohibida en el empaquetado de WAS6.1</ejemplo>
+						<patronOCadena>.*\\lib\\PD\.jar</patronOCadena>
+						<tipoComprobacion>PROHIBIDO</tipoComprobacion>
+						<tratamientoMayusculas>IGNORAR</tratamientoMayusculas>
+					</regla>
+					<regla tipo="ReglaArchivo">
+						<ejemplo> Librería Prohibida en el empaquetado de WAS6.1</ejemplo>
+						<patronOCadena>.*\\lib\\security\.jar</patronOCadena>
+						<tipoComprobacion>PROHIBIDO</tipoComprobacion>
+						<tratamientoMayusculas>IGNORAR</tratamientoMayusculas>
+					</regla>
+					<regla tipo="ReglaArchivo">
+						<ejemplo> Librería Prohibida en el empaquetado de WAS6.1</ejemplo>
+						<patronOCadena>.*\\lib\\US_export_policy\.jar</patronOCadena>
+						<tipoComprobacion>PROHIBIDO</tipoComprobacion>
+						<tratamientoMayusculas>IGNORAR</tratamientoMayusculas>
+					</regla>			
+					<regla tipo="ReglaArchivo">
+						<ejemplo> Librería Prohibida en el empaquetado de WAS6.1</ejemplo>
+						<patronOCadena>.*\\lib\\vm\.jar</patronOCadena>
+						<tipoComprobacion>PROHIBIDO</tipoComprobacion>
+						<tratamientoMayusculas>IGNORAR</tratamientoMayusculas>
+					</regla>
+					<regla tipo="ReglaArchivo">
+						<ejemplo> Librería Prohibida en el empaquetado de WAS6.1</ejemplo>
+						<patronOCadena>.*\\lib\\dt\.jar</patronOCadena>
+						<tipoComprobacion>PROHIBIDO</tipoComprobacion>
+						<tratamientoMayusculas>IGNORAR</tratamientoMayusculas>
+					</regla>
+					<regla tipo="ReglaArchivo">
+						<ejemplo> Librería Prohibida en el empaquetado de WAS6.1</ejemplo>
+						<patronOCadena>.*\\lib\\tools\.jar</patronOCadena>
+						<tipoComprobacion>PROHIBIDO</tipoComprobacion>
+						<tratamientoMayusculas>IGNORAR</tratamientoMayusculas>
+					</regla>
+					<regla tipo="ReglaArchivo">
+						<ejemplo> Librería Prohibida en el empaquetado de WAS6.1</ejemplo>
+						<patronOCadena>.*\\lib\\activation-impl\.jar</patronOCadena>
+						<tipoComprobacion>PROHIBIDO</tipoComprobacion>
+						<tratamientoMayusculas>IGNORAR</tratamientoMayusculas>
+					</regla>
+					<regla tipo="ReglaArchivo">
+						<ejemplo> Librería Prohibida en el empaquetado de WAS6.1</ejemplo>
+						<patronOCadena>.*\\lib\\aspectjrt\.jar</patronOCadena>
+						<tipoComprobacion>PROHIBIDO</tipoComprobacion>
+						<tratamientoMayusculas>IGNORAR</tratamientoMayusculas>
+					</regla>
+					<regla tipo="ReglaArchivo">
+						<ejemplo> Librería Prohibida en el empaquetado de WAS6.1</ejemplo>
+						<patronOCadena>.*\\lib\\base\.jar</patronOCadena>
+						<tipoComprobacion>PROHIBIDO</tipoComprobacion>
+						<tratamientoMayusculas>IGNORAR</tratamientoMayusculas>
+					</regla>
+					<regla tipo="ReglaArchivo">
+						<ejemplo> Librería Prohibida en el empaquetado de WAS6.1</ejemplo>
+						<patronOCadena>.*\\lib\\bootstrap\.jar</patronOCadena>
+						<tipoComprobacion>PROHIBIDO</tipoComprobacion>
+						<tratamientoMayusculas>IGNORAR</tratamientoMayusculas>
+					</regla>
+					<regla tipo="ReglaArchivo">
+						<ejemplo> Librería Prohibida en el empaquetado de WAS6.1</ejemplo>
+						<patronOCadena>.*\\lib\\bsf-engines\.jar</patronOCadena>
+						<tipoComprobacion>PROHIBIDO</tipoComprobacion>
+						<tratamientoMayusculas>IGNORAR</tratamientoMayusculas>
+					</regla>
+					<regla tipo="ReglaArchivo">
+						<ejemplo> Librería Prohibida en el empaquetado de WAS6.1</ejemplo>
+						<patronOCadena>.*\\lib\\commandlineutils\.jar</patronOCadena>
+						<tipoComprobacion>PROHIBIDO</tipoComprobacion>
+						<tratamientoMayusculas>IGNORAR</tratamientoMayusculas>
+					</regla>
+					<regla tipo="ReglaArchivo">
+						<ejemplo> Librería Prohibida en el empaquetado de WAS6.1</ejemplo>
+						<patronOCadena>.*\\lib\\EJBCommandTarget\.jar</patronOCadena>
+						<tipoComprobacion>PROHIBIDO</tipoComprobacion>
+						<tratamientoMayusculas>IGNORAR</tratamientoMayusculas>
+					</regla>
+					<regla tipo="ReglaArchivo">
+						<ejemplo> Librería Prohibida en el empaquetado de WAS6.1</ejemplo>
+						<patronOCadena>.*\\lib\\ffdcSupport\.jar</patronOCadena>
+						<tipoComprobacion>PROHIBIDO</tipoComprobacion>
+						<tratamientoMayusculas>IGNORAR</tratamientoMayusculas>
+					</regla>
+					<regla tipo="ReglaArchivo">
+						<ejemplo> Librería Prohibida en el empaquetado de WAS6.1</ejemplo>
+						<patronOCadena>.*\\lib\\htmlshell\.jar</patronOCadena>
+						<tipoComprobacion>PROHIBIDO</tipoComprobacion>
+						<tratamientoMayusculas>IGNORAR</tratamientoMayusculas>
+					</regla>
+					<regla tipo="ReglaArchivo">
+						<ejemplo> Librería Prohibida en el empaquetado de WAS6.1</ejemplo>
+						<patronOCadena>.*\\lib\\installver\.jar</patronOCadena>
+						<tipoComprobacion>PROHIBIDO</tipoComprobacion>
+						<tratamientoMayusculas>IGNORAR</tratamientoMayusculas>
+					</regla>
+					<regla tipo="ReglaArchivo">
+						<ejemplo> Librería Prohibida en el empaquetado de WAS6.1</ejemplo>
+						<patronOCadena>.*\\lib\\installxml\.jar</patronOCadena>
+						<tipoComprobacion>PROHIBIDO</tipoComprobacion>
+						<tratamientoMayusculas>IGNORAR</tratamientoMayusculas>
+					</regla>
+					<regla tipo="ReglaArchivo">
+						<ejemplo> Librería Prohibida en el empaquetado de WAS6.1</ejemplo>
+						<patronOCadena>.*\\lib\\iscdeploy\.jar</patronOCadena>
+						<tipoComprobacion>PROHIBIDO</tipoComprobacion>
+						<tratamientoMayusculas>IGNORAR</tratamientoMayusculas>
+					</regla>
+					<regla tipo="ReglaArchivo">
+						<ejemplo> Librería Prohibida en el empaquetado de WAS6.1</ejemplo>
+						<patronOCadena>.*\\lib\\ivblogbr\.jar</patronOCadena>
+						<tipoComprobacion>PROHIBIDO</tipoComprobacion>
+						<tratamientoMayusculas>IGNORAR</tratamientoMayusculas>
+					</regla>
+					<regla tipo="ReglaArchivo">
+						<ejemplo> Librería Prohibida en el empaquetado de WAS6.1</ejemplo>
+						<patronOCadena>.*\\lib\\IVTClient\.jar</patronOCadena>
+						<tipoComprobacion>PROHIBIDO</tipoComprobacion>
+						<tratamientoMayusculas>IGNORAR</tratamientoMayusculas>
+					</regla>
+					<regla tipo="ReglaArchivo">
+						<ejemplo> Librería Prohibida en el empaquetado de WAS6.1</ejemplo>
+						<patronOCadena>.*\\lib\\launchclient\.jar</patronOCadena>
+						<tipoComprobacion>PROHIBIDO</tipoComprobacion>
+						<tratamientoMayusculas>IGNORAR</tratamientoMayusculas>
+					</regla>
+					<regla tipo="ReglaArchivo">
+						<ejemplo> Librería Prohibida en el empaquetado de WAS6.1</ejemplo>
+						<patronOCadena>.*\\lib\\lmproxy\.jar</patronOCadena>
+						<tipoComprobacion>PROHIBIDO</tipoComprobacion>
+						<tratamientoMayusculas>IGNORAR</tratamientoMayusculas>
+					</regla>
+					<regla tipo="ReglaArchivo">
+						<ejemplo> Librería Prohibida en el empaquetado de WAS6.1</ejemplo>
+						<patronOCadena>.*\\lib\\mail-impl\.jar</patronOCadena>
+						<tipoComprobacion>PROHIBIDO</tipoComprobacion>
+						<tratamientoMayusculas>IGNORAR</tratamientoMayusculas>
+					</regla>
+					
+					<regla tipo="ReglaArchivo">
+						<ejemplo> Librería Prohibida en el empaquetado de WAS6.1</ejemplo>
+						<patronOCadena>.*\\lib\\marshall\.jar</patronOCadena>
+						<tipoComprobacion>PROHIBIDO</tipoComprobacion>
+						<tratamientoMayusculas>IGNORAR</tratamientoMayusculas>
+					</regla>
+					<regla tipo="ReglaArchivo">
+						<ejemplo> Librería Prohibida en el empaquetado de WAS6.1</ejemplo>
+						<patronOCadena>.*\\lib\\nif\.jar</patronOCadena>
+						<tipoComprobacion>PROHIBIDO</tipoComprobacion>
+						<tratamientoMayusculas>IGNORAR</tratamientoMayusculas>
+					</regla>
+					<regla tipo="ReglaArchivo">
+						<ejemplo> Librería Prohibida en el empaquetado de WAS6.1</ejemplo>
+						<patronOCadena>.*\\lib\\physicalrep\.jar</patronOCadena>
+						<tipoComprobacion>PROHIBIDO</tipoComprobacion>
+						<tratamientoMayusculas>IGNORAR</tratamientoMayusculas>
+					</regla>
+					<regla tipo="ReglaArchivo">
+						<ejemplo> Librería Prohibida en el empaquetado de WAS6.1</ejemplo>
+						<patronOCadena>.*\\lib\\pmirm4arm\.jar</patronOCadena>
+						<tipoComprobacion>PROHIBIDO</tipoComprobacion>
+						<tratamientoMayusculas>IGNORAR</tratamientoMayusculas>
+					</regla>
+					<regla tipo="ReglaArchivo">
+						<ejemplo> Librería Prohibida en el empaquetado de WAS6.1</ejemplo>
+						<patronOCadena>.*\\lib\\rsadbutils\.jar</patronOCadena>
+						<tipoComprobacion>PROHIBIDO</tipoComprobacion>
+						<tratamientoMayusculas>IGNORAR</tratamientoMayusculas>
+					</regla>
+					<regla tipo="ReglaArchivo">
+						<ejemplo> Librería Prohibida en el empaquetado de WAS6.1</ejemplo>
+						<patronOCadena>.*\\lib\\rsahelpers\.jar</patronOCadena>
+						<tipoComprobacion>PROHIBIDO</tipoComprobacion>
+						<tratamientoMayusculas>IGNORAR</tratamientoMayusculas>
+					</regla>
+					<regla tipo="ReglaArchivo">
+						<ejemplo> Librería Prohibida en el empaquetado de WAS6.1</ejemplo>
+						<patronOCadena>.*\\lib\\serviceadapter\.jar</patronOCadena>
+						<tipoComprobacion>PROHIBIDO</tipoComprobacion>
+						<tratamientoMayusculas>IGNORAR</tratamientoMayusculas>
+					</regla>
+					<regla tipo="ReglaArchivo">
+						<ejemplo> Librería Prohibida en el empaquetado de WAS6.1</ejemplo>
+						<patronOCadena>.*\\lib\\sib.api.jmsra\.jar</patronOCadena>			
+						<tipoComprobacion>PROHIBIDO</tipoComprobacion>
+						<tratamientoMayusculas>IGNORAR</tratamientoMayusculas>
+					</regla>
+					<regla tipo="ReglaArchivo">
+						<ejemplo> Librería Prohibida en el empaquetado de WAS6.1</ejemplo>
+						<patronOCadena>.*\\lib\\sib.ra\.jar</patronOCadena>					
+						<tipoComprobacion>PROHIBIDO</tipoComprobacion>
+						<tratamientoMayusculas>IGNORAR</tratamientoMayusculas>
+					</regla>
+					<regla tipo="ReglaArchivo">
+						<ejemplo> Librería Prohibida en el empaquetado de WAS6.1</ejemplo>
+						<patronOCadena>.*\\lib\\sljc\.jar</patronOCadena>
+						<tipoComprobacion>PROHIBIDO</tipoComprobacion>
+						<tratamientoMayusculas>IGNORAR</tratamientoMayusculas>
+					</regla>
+					<regla tipo="ReglaArchivo">
+						<ejemplo> Librería Prohibida en el empaquetado de WAS6.1</ejemplo>
+						<patronOCadena>.*\\lib\\spy\.jar</patronOCadena>
+						<tipoComprobacion>PROHIBIDO</tipoComprobacion>
+						<tratamientoMayusculas>IGNORAR</tratamientoMayusculas>
+					</regla>
+					<regla tipo="ReglaArchivo">
+						<ejemplo> Librería Prohibida en el empaquetado de WAS6.1</ejemplo>
+						<patronOCadena>.*\\lib\\spy-sl\.jar</patronOCadena>
+						<tipoComprobacion>PROHIBIDO</tipoComprobacion>
+						<tratamientoMayusculas>IGNORAR</tratamientoMayusculas>
+					</regla>
+					<regla tipo="ReglaArchivo">
+						<ejemplo> Librería Prohibida en el empaquetado de WAS6.1</ejemplo>
+						<patronOCadena>.*\\lib\\sqlserver\.jar</patronOCadena>
+						<tipoComprobacion>PROHIBIDO</tipoComprobacion>
+						<tratamientoMayusculas>IGNORAR</tratamientoMayusculas>
+					</regla>
+					<regla tipo="ReglaArchivo">
+						<ejemplo> Librería Prohibida en el empaquetado de WAS6.1</ejemplo>
+						<patronOCadena>.*\\lib\\startup\.jar</patronOCadena>
+						<tipoComprobacion>PROHIBIDO</tipoComprobacion>
+						<tratamientoMayusculas>IGNORAR</tratamientoMayusculas>
+					</regla>
+					<regla tipo="ReglaArchivo">
+						<ejemplo> Librería Prohibida en el empaquetado de WAS6.1</ejemplo>
+						<patronOCadena>.*\\lib\\urlprotocols\.jar</patronOCadena>
+						<tipoComprobacion>PROHIBIDO</tipoComprobacion>
+						<tratamientoMayusculas>IGNORAR</tratamientoMayusculas>
+					</regla>
+					<regla tipo="ReglaArchivo">
+						<ejemplo> Librería Prohibida en el empaquetado de WAS6.1</ejemplo>
+						<patronOCadena>.*\\lib\\util\.jar</patronOCadena>
+						<tipoComprobacion>PROHIBIDO</tipoComprobacion>
+						<tratamientoMayusculas>IGNORAR</tratamientoMayusculas>
+					</regla>
+					<regla tipo="ReglaArchivo">
+						<ejemplo> Librería Prohibida en el empaquetado de WAS6.1</ejemplo>
+						<patronOCadena>.*\\lib\\wsatlib\.jar</patronOCadena>
+						<tipoComprobacion>PROHIBIDO</tipoComprobacion>
+						<tratamientoMayusculas>IGNORAR</tratamientoMayusculas>
+					</regla>
+					<regla tipo="ReglaArchivo">
+						<ejemplo> Librería Prohibida en el empaquetado de WAS6.1</ejemplo>
+						<patronOCadena>.*\\lib\\wsif-compatb\.jar</patronOCadena>
+						<tipoComprobacion>PROHIBIDO</tipoComprobacion>
+						<tratamientoMayusculas>IGNORAR</tratamientoMayusculas>
+					</regla>
+					
+					<regla tipo="ReglaArchivo">
+						<ejemplo> Librería Prohibida en el empaquetado de WAS6.1</ejemplo>
+						<patronOCadena>.*\\lib\\com.ibm.mq\.jar</patronOCadena>						
+						<tipoComprobacion>PROHIBIDO</tipoComprobacion>
+						<tratamientoMayusculas>IGNORAR</tratamientoMayusculas>						
+					</regla>
+					<regla tipo="ReglaArchivo">
+						<ejemplo> Librería Prohibida en el empaquetado de WAS6.1</ejemplo>
+						<patronOCadena>.*\\lib\\com.ibm.mqjms\.jar</patronOCadena>	
+						<tipoComprobacion>PROHIBIDO</tipoComprobacion>
+						<tratamientoMayusculas>IGNORAR</tratamientoMayusculas>
+					</regla>
+					<regla tipo="ReglaArchivo">
+						<ejemplo> Librería Prohibida en el empaquetado de WAS6.1</ejemplo>
+						<patronOCadena>.*\\lib\\dhbcore\.jar</patronOCadena>
+						<tipoComprobacion>PROHIBIDO</tipoComprobacion>
+						<tratamientoMayusculas>IGNORAR</tratamientoMayusculas>
+					</regla>			
+					<regla tipo="ReglaArchivo">
+						<ejemplo> Librería Prohibida en el empaquetado de WAS6.1</ejemplo>
+						<patronOCadena>.*\\lib\\jsf-portletbridge\.jar</patronOCadena>				
+						<tipoComprobacion>PROHIBIDO</tipoComprobacion>
+						<tratamientoMayusculas>IGNORAR</tratamientoMayusculas>
+					</regla>				
+					<regla tipo="ReglaArchivo">
+						<ejemplo> Librería Prohibida en el empaquetado de WAS6.1</ejemplo>
+						<patronOCadena>.*\\lib\\jsf-ibm\.jar</patronOCadena>						
+						<tipoComprobacion>PROHIBIDO</tipoComprobacion>
+						<tratamientoMayusculas>IGNORAR</tratamientoMayusculas>
+					</regla>
+					<regla tipo="ReglaArchivo">
+						<ejemplo> Librería Prohibida en el empaquetado de WAS6.1</ejemplo>
+						<patronOCadena>.*\\lib\\odc-jsf\.jar</patronOCadena>							
+						<tipoComprobacion>PROHIBIDO</tipoComprobacion>						
+						<tratamientoMayusculas>IGNORAR</tratamientoMayusculas>
+					</regla>
+					<regla tipo="ReglaArchivo">
+						<ejemplo> Librería Prohibida en el empaquetado de WAS6.1</ejemplo>
+						<patronOCadena>.*\\lib\\tmx4jTransform\.jar</patronOCadena>
+						<tipoComprobacion>PROHIBIDO</tipoComprobacion>
+						<tratamientoMayusculas>IGNORAR</tratamientoMayusculas>
+					</regla>				
+		<!-- 
+		FIN DE LAS LIBRERIAS QUE ESTAN PROHIBIDAS EN EL EMPAQUETADO EN WAS 6.1
+		-->
+				
+		<!-- 
+		LIBRERÍAS DE DRIVERS DE ACCESO A PROVEEDORES DE DATOS
+		(Conjunto de drivers de acceso a proveedores de datos que ya se encuentran en el servidor de aplicaciones)
+		-->
+						
+				<regla tipo="ReglaArchivo">
+						<ejemplo> Librería Prohibida en el empaquetado de WAS6.1 Conjunto de drivers de acceso a proveedores de datos que ya se encuentran en el servidor de aplicaciones.</ejemplo>
+						<patronOCadena>.*\\lib\\db2jcc.*\.jar</patronOCadena>
+						<tipoComprobacion>PROHIBIDO</tipoComprobacion>
+						<tratamientoMayusculas>IGNORAR</tratamientoMayusculas>
+				</regla>
+				<regla tipo="ReglaArchivo">
+						<ejemplo> Librería Prohibida en el empaquetado de WAS6.1 Conjunto de drivers de acceso a proveedores de datos que ya se encuentran en el servidor de aplicaciones.</ejemplo>
+						<patronOCadena>.*\\lib\\db2jcc_license_cu\.jar</patronOCadena>
+						<tipoComprobacion>PROHIBIDO</tipoComprobacion>
+						<tratamientoMayusculas>IGNORAR</tratamientoMayusculas>
+				</regla>
+				<regla tipo="ReglaArchivo">
+						<ejemplo> Librería Prohibida en el empaquetado de WAS6.1 Conjunto de drivers de acceso a proveedores de datos que ya se encuentran en el servidor de aplicaciones.</ejemplo>
+						<patronOCadena>.*\\lib\\derby.*\.jar</patronOCadena>
+						<tipoComprobacion>PROHIBIDO</tipoComprobacion>
+						<tratamientoMayusculas>IGNORAR</tratamientoMayusculas>
+				</regla>
+				<regla tipo="ReglaArchivo">
+						<ejemplo> Librería Prohibida en el empaquetado de WAS6.1 Conjunto de drivers de acceso a proveedores de datos que ya se encuentran en el servidor de aplicaciones.</ejemplo>
+						<patronOCadena>.*\\lib\\jt400\.jar</patronOCadena>
+						<tipoComprobacion>PROHIBIDO</tipoComprobacion>
+						<tratamientoMayusculas>IGNORAR</tratamientoMayusculas>
+				</regla>
+				<regla tipo="ReglaArchivo">
+						<ejemplo> Librería Prohibida en el empaquetado de WAS6.1 Conjunto de drivers de acceso a proveedores de datos que ya se encuentran en el servidor de aplicaciones.</ejemplo>
+						<patronOCadena>.*\\lib\\msbase.*\.jar</patronOCadena>
+						<tipoComprobacion>PROHIBIDO</tipoComprobacion>
+						<tratamientoMayusculas>IGNORAR</tratamientoMayusculas>
+				</regla>
+				<regla tipo="ReglaArchivo">
+						<ejemplo> Librería Prohibida en el empaquetado de WAS6.1 Conjunto de drivers de acceso a proveedores de datos que ya se encuentran en el servidor de aplicaciones.</ejemplo>
+						<patronOCadena>.*\\lib\\mssqlserver.*\.jar</patronOCadena>
+						<tipoComprobacion>PROHIBIDO</tipoComprobacion>
+						<tratamientoMayusculas>IGNORAR</tratamientoMayusculas>
+				</regla>
+				<regla tipo="ReglaArchivo">
+						<ejemplo> Librería Prohibida en el empaquetado de WAS6.1 Conjunto de drivers de acceso a proveedores de datos que ya se encuentran en el servidor de aplicaciones.</ejemplo>
+						<patronOCadena>.*\\lib\\mysql.*\.jar</patronOCadena>
+						<tipoComprobacion>PROHIBIDO</tipoComprobacion>
+						<tratamientoMayusculas>IGNORAR</tratamientoMayusculas>
+				</regla>
+				<regla tipo="ReglaArchivo">
+						<ejemplo> Librería Prohibida en el empaquetado de WAS6.1 Conjunto de drivers de acceso a proveedores de datos que ya se encuentran en el servidor de aplicaciones.</ejemplo>
+						<patronOCadena>.*\\lib\\ojdbc.*\.jar</patronOCadena>
+						<tipoComprobacion>PROHIBIDO</tipoComprobacion>
+						<tratamientoMayusculas>IGNORAR</tratamientoMayusculas>
+				</regla>
+				<regla tipo="ReglaArchivo">
+						<ejemplo> Librería Prohibida en el empaquetado de WAS6.1 Conjunto de drivers de acceso a proveedores de datos que ya se encuentran en el servidor de aplicaciones.</ejemplo>
+						<patronOCadena>.*\\lib\\postgresql.*\.jar</patronOCadena>
+						<tipoComprobacion>PROHIBIDO</tipoComprobacion>
+						<tratamientoMayusculas>IGNORAR</tratamientoMayusculas>
+				</regla>
+				<regla tipo="ReglaArchivo">
+						<ejemplo> Librería Prohibida en el empaquetado de WAS6.1 Conjunto de drivers de acceso a proveedores de datos que ya se encuentran en el servidor de aplicaciones.</ejemplo>
+						<patronOCadena>.*\\lib\\sqljdbc.*\.jar</patronOCadena>
+						<tipoComprobacion>PROHIBIDO</tipoComprobacion>
+						<tratamientoMayusculas>IGNORAR</tratamientoMayusculas>
+				</regla>
+				
+		<!-- 
+		FIN DE LAS LIBRERIAS DE DRIVERS DE ACCESO A PROVEEDORES DE DATOS
+		-->
+				
+				
+		<!-- 
+		LIBRERÍAS DE CONECTORES
+		(Conjunto de conectores que ya se encuentran en el servidor de aplicaciones)
+		-->
+				
+				
+				<regla tipo="ReglaArchivo">
+						<ejemplo> Librería Prohibida en el empaquetado. Conjunto de conectores que ya se encuentran en el servidor de aplicaciones</ejemplo>
+						<patronOCadena>.*\\lib\\com.ibm.mq.commonservices\.jar</patronOCadena>
+						<tipoComprobacion>PROHIBIDO</tipoComprobacion>
+						<tratamientoMayusculas>IGNORAR</tratamientoMayusculas>
+				</regla>
+				<regla tipo="ReglaArchivo">
+						<ejemplo>Librería Prohibida en el empaquetado. Conjunto de conectores que ya se encuentran en el servidor de aplicaciones</ejemplo>
+						<patronOCadena>.*\\lib\\com.ibm.mq.connector\.jar</patronOCadena>
+						<tipoComprobacion>PROHIBIDO</tipoComprobacion>
+						<tratamientoMayusculas>IGNORAR</tratamientoMayusculas>
+				</regla>
+				<regla tipo="ReglaArchivo">
+						<ejemplo>Librería Prohibida en el empaquetado. Conjunto de conectores que ya se encuentran en el servidor de aplicaciones</ejemplo>
+						<patronOCadena>.*\\lib\\com.ibm.mq.headers\.jar</patronOCadena>
+						<tipoComprobacion>PROHIBIDO</tipoComprobacion>
+						<tratamientoMayusculas>IGNORAR</tratamientoMayusculas>
+				</regla>
+				<regla tipo="ReglaArchivo">
+						<ejemplo>Librería Prohibida en el empaquetado. Conjunto de conectores que ya se encuentran en el servidor de aplicaciones</ejemplo>
+						<patronOCadena>.*\\lib\\com.ibm.mq\.jar</patronOCadena>
+						<tipoComprobacion>PROHIBIDO</tipoComprobacion>
+						<tratamientoMayusculas>IGNORAR</tratamientoMayusculas>
+				</regla>
+				<regla tipo="ReglaArchivo">
+						<ejemplo>Librería Prohibida en el empaquetado. Conjunto de conectores que ya se encuentran en el servidor de aplicaciones</ejemplo>
+						<patronOCadena>.*\\lib\\com.ibm.mq.jmqi\.jar</patronOCadena>
+						<tipoComprobacion>PROHIBIDO</tipoComprobacion>
+						<tratamientoMayusculas>IGNORAR</tratamientoMayusculas>
+				</regla>
+				<regla tipo="ReglaArchivo">
+						<ejemplo>Librería Prohibida en el empaquetado. Conjunto de conectores que ya se encuentran en el servidor de aplicaciones</ejemplo>
+						<patronOCadena>.*\\lib\\com.ibm.mq.jmqi.local\.jar</patronOCadena>
+						<tipoComprobacion>PROHIBIDO</tipoComprobacion>
+						<tratamientoMayusculas>IGNORAR</tratamientoMayusculas>
+				</regla>
+				<regla tipo="ReglaArchivo">
+						<ejemplo>Librería Prohibida en el empaquetado. Conjunto de conectores que ya se encuentran en el servidor de aplicaciones</ejemplo>
+						<patronOCadena>.*\\lib\\com.ibm.mq.jmqi.remote\.jar</patronOCadena>
+						<tipoComprobacion>PROHIBIDO</tipoComprobacion>
+						<tratamientoMayusculas>IGNORAR</tratamientoMayusculas>
+				</regla>
+				<regla tipo="ReglaArchivo">
+						<ejemplo>Librería Prohibida en el empaquetado. Conjunto de conectores que ya se encuentran en el servidor de aplicaciones</ejemplo>
+						<patronOCadena>.*\\lib\\com.ibm.mq.jmqi.system\.jar</patronOCadena>
+						<tipoComprobacion>PROHIBIDO</tipoComprobacion>
+						<tratamientoMayusculas>IGNORAR</tratamientoMayusculas>
+				</regla>
+				<regla tipo="ReglaArchivo">
+						<ejemplo>Librería Prohibida en el empaquetado. Conjunto de conectores que ya se encuentran en el servidor de aplicaciones</ejemplo>
+						<patronOCadena>.*\\lib\\com.ibm.mq.jms.admin\.jar</patronOCadena>
+						<tipoComprobacion>PROHIBIDO</tipoComprobacion>
+						<tratamientoMayusculas>IGNORAR</tratamientoMayusculas>
+				</regla>
+				<regla tipo="ReglaArchivo">
+						<ejemplo>Librería Prohibida en el empaquetado. Conjunto de conectores que ya se encuentran en el servidor de aplicaciones</ejemplo>
+						<patronOCadena>.*\\lib\\com.ibm.mq.pcf\.jar</patronOCadena>
+						<tipoComprobacion>PROHIBIDO</tipoComprobacion>
+						<tratamientoMayusculas>IGNORAR</tratamientoMayusculas>
+				</regla>
+				<regla tipo="ReglaArchivo">
+						<ejemplo>Librería Prohibida en el empaquetado. Conjunto de conectores que ya se encuentran en el servidor de aplicaciones</ejemplo>
+						<patronOCadena>.*\\lib\\com.ibm.mqjms\.jar</patronOCadena>
+						<tipoComprobacion>PROHIBIDO</tipoComprobacion>
+						<tratamientoMayusculas>IGNORAR</tratamientoMayusculas>
+				</regla>
+				<regla tipo="ReglaArchivo">
+						<ejemplo>Librería Prohibida en el empaquetado. Conjunto de conectores que ya se encuentran en el servidor de aplicaciones</ejemplo>
+						<patronOCadena>.*\\lib\\com.ibm.msg.client.commonservices.j2se\.jar</patronOCadena>
+						<tipoComprobacion>PROHIBIDO</tipoComprobacion>
+						<tratamientoMayusculas>IGNORAR</tratamientoMayusculas>
+				</regla>
+				<regla tipo="ReglaArchivo">
+						<ejemplo>Librería Prohibida en el empaquetado. Conjunto de conectores que ya se encuentran en el servidor de aplicaciones</ejemplo>
+						<patronOCadena>.*\\lib\\com.ibm.msg.client.commonservices\.jar</patronOCadena>
+						<tipoComprobacion>PROHIBIDO</tipoComprobacion>
+						<tratamientoMayusculas>IGNORAR</tratamientoMayusculas>
+				</regla>
+				<regla tipo="ReglaArchivo">
+						<ejemplo>Librería Prohibida en el empaquetado. Conjunto de conectores que ya se encuentran en el servidor de aplicaciones</ejemplo>
+						<patronOCadena>.*\\lib\\com.ibm.msg.client.jms.internal\.jar</patronOCadena>
+						<tipoComprobacion>PROHIBIDO</tipoComprobacion>
+						<tratamientoMayusculas>IGNORAR</tratamientoMayusculas>
+				</regla>
+				<regla tipo="ReglaArchivo">
+						<ejemplo>Librería Prohibida en el empaquetado. Conjunto de conectores que ya se encuentran en el servidor de aplicaciones</ejemplo>
+						<patronOCadena>.*\\lib\\com.ibm.msg.client.jms\.jar</patronOCadena>
+						<tipoComprobacion>PROHIBIDO</tipoComprobacion>
+						<tratamientoMayusculas>IGNORAR</tratamientoMayusculas>
+				</regla>
+				<regla tipo="ReglaArchivo">
+						<ejemplo>Librería Prohibida en el empaquetado. Conjunto de conectores que ya se encuentran en el servidor de aplicaciones</ejemplo>
+						<patronOCadena>.*\\lib\\com.ibm.msg.client.matchspace\.jar</patronOCadena>
+						<tipoComprobacion>PROHIBIDO</tipoComprobacion>
+						<tratamientoMayusculas>IGNORAR</tratamientoMayusculas>
+				</regla>
+				<regla tipo="ReglaArchivo">
+						<ejemplo>Librería Prohibida en el empaquetado. Conjunto de conectores que ya se encuentran en el servidor de aplicaciones</ejemplo>
+						<patronOCadena>.*\\lib\\com.ibm.msg.client.provider\.jar</patronOCadena>
+						<tipoComprobacion>PROHIBIDO</tipoComprobacion>
+						<tratamientoMayusculas>IGNORAR</tratamientoMayusculas>
+				</regla>
+				<regla tipo="ReglaArchivo">
+						<ejemplo>Librería Prohibida en el empaquetado. Conjunto de conectores que ya se encuentran en el servidor de aplicaciones</ejemplo>
+						<patronOCadena>.*\\lib\\com.ibm.msg.client.ref\.jar</patronOCadena>
+						<tipoComprobacion>PROHIBIDO</tipoComprobacion>
+						<tratamientoMayusculas>IGNORAR</tratamientoMayusculas>
+				</regla>
+				<regla tipo="ReglaArchivo">
+						<ejemplo>Librería Prohibida en el empaquetado. Conjunto de conectores que ya se encuentran en el servidor de aplicaciones</ejemplo>
+						<patronOCadena>.*\\lib\\com.ibm.msg.client.wmq.common\.jar</patronOCadena>
+						<tipoComprobacion>PROHIBIDO</tipoComprobacion>
+						<tratamientoMayusculas>IGNORAR</tratamientoMayusculas>
+				</regla>
+				<regla tipo="ReglaArchivo">
+						<ejemplo>Librería Prohibida en el empaquetado. Conjunto de conectores que ya se encuentran en el servidor de aplicaciones</ejemplo>
+						<patronOCadena>.*\\lib\\com.ibm.msg.client.wmq.factories\.jar</patronOCadena>
+						<tipoComprobacion>PROHIBIDO</tipoComprobacion>
+						<tratamientoMayusculas>IGNORAR</tratamientoMayusculas>
+				</regla>
+				<regla tipo="ReglaArchivo">
+						<ejemplo>Librería Prohibida en el empaquetado. Conjunto de conectores que ya se encuentran en el servidor de aplicaciones</ejemplo>
+						<patronOCadena>.*\\lib\\com.ibm.msg.client.wmq\.jar</patronOCadena>
+						<tipoComprobacion>PROHIBIDO</tipoComprobacion>
+						<tratamientoMayusculas>IGNORAR</tratamientoMayusculas>
+				</regla>
+				<regla tipo="ReglaArchivo">
+						<ejemplo>Librería Prohibida en el empaquetado. Conjunto de conectores que ya se encuentran en el servidor de aplicaciones</ejemplo>
+						<patronOCadena>.*\\lib\\com.ibm.msg.client.wmq.v6\.jar</patronOCadena>
+						<tipoComprobacion>PROHIBIDO</tipoComprobacion>
+						<tratamientoMayusculas>IGNORAR</tratamientoMayusculas>
+				</regla>
+				<regla tipo="ReglaArchivo">
+						<ejemplo>Librería Prohibida en el empaquetado. Conjunto de conectores que ya se encuentran en el servidor de aplicaciones</ejemplo>
+						<patronOCadena>.*\\lib\\dhbcore\.jar</patronOCadena>
+						<tipoComprobacion>PROHIBIDO</tipoComprobacion>
+						<tratamientoMayusculas>IGNORAR</tratamientoMayusculas>
+				</regla>
+				<regla tipo="ReglaArchivo">
+						<ejemplo>Librería Prohibida en el empaquetado. Conjunto de conectores que ya se encuentran en el servidor de aplicaciones</ejemplo>
+						<patronOCadena>.*\\lib\\sib.api.jmsra\.jar</patronOCadena>
+						<tipoComprobacion>PROHIBIDO</tipoComprobacion>
+						<tratamientoMayusculas>IGNORAR</tratamientoMayusculas>
+				</regla>
+				
+		<!-- 
+		FIN DE LAS LIBRERIAS DE CONECTORES
+		-->
+				
+				
+		<!-- 
+		LIBRERIAS DESTINADAS A PRUEBAS
+		Conjunto de librerias que se pueden usar durante las pruebas del sistema pero no deben empaquetarse en el mismo)
+		-->
+				
+				<regla tipo="ReglaArchivo">
+						<ejemplo>Librería Prohibida. Conjunto  de librerias que se pueden usar durante las pruebas del sistema pero no deben empaquetarse en el mismo</ejemplo>
+						<patronOCadena>.*\\lib\\cactus.*\.jar</patronOCadena>
+						<tipoComprobacion>PROHIBIDO</tipoComprobacion>
+						<tratamientoMayusculas>IGNORAR</tratamientoMayusculas>
+				</regla>
+				<regla tipo="ReglaArchivo">
+						<ejemplo>Librería Prohibida. Conjunto  de librerias que se pueden usar durante las pruebas del sistema pero no deben empaquetarse en el mismo</ejemplo>
+						<patronOCadena>.*\\lib\\cobertura\.jar</patronOCadena>
+						<tipoComprobacion>PROHIBIDO</tipoComprobacion>
+						<tratamientoMayusculas>IGNORAR</tratamientoMayusculas>
+				</regla>
+				<regla tipo="ReglaArchivo">
+						<ejemplo>Librería Prohibida. Conjunto  de librerias que se pueden usar durante las pruebas del sistema pero no deben empaquetarse en el mismo</ejemplo>
+						<patronOCadena>.*\\lib\\dbunit\.jar</patronOCadena>
+						<tipoComprobacion>PROHIBIDO</tipoComprobacion>
+						<tratamientoMayusculas>IGNORAR</tratamientoMayusculas>
+				</regla>
+				<regla tipo="ReglaArchivo">
+						<ejemplo>Librería Prohibida. Conjunto  de librerias que se pueden usar durante las pruebas del sistema pero no deben empaquetarse en el mismo</ejemplo>
+						<patronOCadena>.*\\lib\\jmock.*\.jar</patronOCadena>
+						<tipoComprobacion>PROHIBIDO</tipoComprobacion>
+						<tratamientoMayusculas>IGNORAR</tratamientoMayusculas>
+				</regla>
+				<regla tipo="ReglaArchivo">
+						<ejemplo>Librería Prohibida. Conjunto  de librerias que se pueden usar durante las pruebas del sistema pero no deben empaquetarse en el mismo</ejemplo>
+						<patronOCadena>.*\\lib\\jtestcvase.*\.jar</patronOCadena>
+						<tipoComprobacion>PROHIBIDO</tipoComprobacion>
+						<tratamientoMayusculas>IGNORAR</tratamientoMayusculas>
+				</regla>
+				<regla tipo="ReglaArchivo">
+						<ejemplo>Librería Prohibida. Conjunto  de librerias que se pueden usar durante las pruebas del sistema pero no deben empaquetarse en el mismo</ejemplo>
+						<patronOCadena>.*\\lib\\junit.*\.jar</patronOCadena>
+						<tipoComprobacion>PROHIBIDO</tipoComprobacion>
+						<tratamientoMayusculas>IGNORAR</tratamientoMayusculas>
+				</regla>
+				<regla tipo="ReglaArchivo">
+						<ejemplo>Librería Prohibida. Conjunto  de librerias que se pueden usar durante las pruebas del sistema pero no deben empaquetarse en el mismo</ejemplo>
+						<patronOCadena>.*\\lib\\junitee\.jar</patronOCadena>
+						<tipoComprobacion>PROHIBIDO</tipoComprobacion>
+						<tratamientoMayusculas>IGNORAR</tratamientoMayusculas>
+				</regla>
+				<regla tipo="ReglaArchivo">
+						<ejemplo>Librería Prohibida. Conjunto  de librerias que se pueden usar durante las pruebas del sistema pero no deben empaquetarse en el mismo</ejemplo>
+						<patronOCadena>.*\\lib\\junitee-anttask\.jar</patronOCadena>
+						<tipoComprobacion>PROHIBIDO</tipoComprobacion>
+						<tratamientoMayusculas>IGNORAR</tratamientoMayusculas>
+				</regla>
+				<regla tipo="ReglaArchivo">
+						<ejemplo>Librería Prohibida. Conjunto  de librerias que se pueden usar durante las pruebas del sistema pero no deben empaquetarse en el mismo</ejemplo>
+						<patronOCadena>.*\\lib\\mockito.*\.jar</patronOCadena>
+						<tipoComprobacion>PROHIBIDO</tipoComprobacion>
+						<tratamientoMayusculas>IGNORAR</tratamientoMayusculas>
+				</regla>
+				<regla tipo="ReglaArchivo">
+						<ejemplo>Librería Prohibida. Conjunto  de librerias que se pueden usar durante las pruebas del sistema pero no deben empaquetarse en el mismo</ejemplo>
+						<patronOCadena>.*\\lib\\powermock.*\.jar</patronOCadena>
+						<tipoComprobacion>PROHIBIDO</tipoComprobacion>
+						<tratamientoMayusculas>IGNORAR</tratamientoMayusculas>
+				</regla>
+				<regla tipo="ReglaArchivo">
+						<ejemplo>Librería Prohibida. Conjunto  de librerias que se pueden usar durante las pruebas del sistema pero no deben empaquetarse en el mismo</ejemplo>
+						<patronOCadena>.*\\lib\\strutstest.*\.jar</patronOCadena>
+						<tipoComprobacion>PROHIBIDO</tipoComprobacion>
+						<tratamientoMayusculas>IGNORAR</tratamientoMayusculas>
+				</regla>
+		<!-- 
+		FIN DE LAS LIBRERIAS DESTINADAS A PRUEBAS
+		-->
+		
+	<!-- 	
+	FIN DE LAS LIBRERIAS QUE NO SE DEBEN EMPAQUEJAR EN EL EAR
+	-->						
+			
+
+	<!-- 
+	LIBRERIAS QUE ESTA PROHIBIDO SU USO
+	Este conjunto de librerías queda prohibido para su uso, por lo tanto no se pueden usar para la construcción del proyecto 
+	y deben aparecen en los artefactos de despliegue.
+	-->
+		
+	
+		<!-- 
+		LIBRERIAS CON CODIGO FUENTE, EJEMPLOS Y JAVADOC
+		(Conjunto de librerias que se pueden usar durante las pruebas del sistema pero no deben empaquetarse en el mismo)
+		-->				
+				<regla tipo="ReglaArchivo">
+						<ejemplo> Conjunto de librerias que se pueden usar durante las pruebas del sistema pero no deben empaquetarse en el mismo </ejemplo>
+						<patronOCadena>.*\\lib\\*.-javadoc\.jar</patronOCadena>
+						<tipoComprobacion>PROHIBIDO</tipoComprobacion>
+						<tratamientoMayusculas>IGNORAR</tratamientoMayusculas>
+				</regla>
+				<regla tipo="ReglaArchivo">
+						<ejemplo> Conjunto de librerias que se pueden usar durante las pruebas del sistema pero no deben empaquetarse en el mismo </ejemplo>
+						<patronOCadena>.*\\lib\\*.-sources\.jar</patronOCadena>
+						<tipoComprobacion>PROHIBIDO</tipoComprobacion>
+						<tratamientoMayusculas>IGNORAR</tratamientoMayusculas>
+				</regla>
+				<regla tipo="ReglaArchivo">
+						<ejemplo> Conjunto de librerias que se pueden usar durante las pruebas del sistema pero no deben empaquetarse en el mismo </ejemplo>
+						<patronOCadena>.*\\lib\\xercessamples\.jar</patronOCadena>
+						<tipoComprobacion>PROHIBIDO</tipoComprobacion>
+						<tratamientoMayusculas>IGNORAR</tratamientoMayusculas>
+				</regla>
+		<!-- 
+		FIN DE LAS LIBRERIAS CON CODIGO FUENTE, EJEMPLOS Y JAVADOC
+		-->
+		
+		
+		<!-- 
+		LIBRERIAS DEPRECADAS DESARROLLADAS POR EL IAM 
+		(Conjunto  de librerias  desarrolladas por el IAM que incumplen  la normativa y deben eliminar o actualizar a una versión más reciente)
+		-->	
+				<regla tipo="ReglaArchivo">
+						<ejemplo> Conjunto  de librerias  desarrolladas por el IAM que incumplen  la normativa y deben eliminar o actualizar a una versión más reciente </ejemplo>
+						<patronOCadena>.*\\lib\\obtencionBDC_platea-20\.jar</patronOCadena>
+						<tipoComprobacion>PROHIBIDO</tipoComprobacion>
+						<tratamientoMayusculas>IGNORAR</tratamientoMayusculas>
+				</regla>
+				<regla tipo="ReglaArchivo">
+						<ejemplo> Conjunto  de librerias  desarrolladas por el IAM que incumplen  la normativa y deben eliminar o actualizar a una versión más reciente </ejemplo>
+						<patronOCadena>.*\\lib\\traduccionBDC11\.jar</patronOCadena>
+						<tipoComprobacion>PROHIBIDO</tipoComprobacion>
+						<tratamientoMayusculas>IGNORAR</tratamientoMayusculas>
+				</regla>
+				<regla tipo="ReglaArchivo">
+						<ejemplo> Conjunto  de librerias  desarrolladas por el IAM que incumplen  la normativa y deben eliminar o actualizar a una versión más reciente </ejemplo>
+						<patronOCadena>.*\\lib\\AccessoHost\.jar</patronOCadena>
+						<tipoComprobacion>PROHIBIDO</tipoComprobacion>
+						<tratamientoMayusculas>IGNORAR</tratamientoMayusculas>
+				</regla>
+				<regla tipo="ReglaArchivo">
+						<ejemplo> Conjunto  de librerias  desarrolladas por el IAM que incumplen  la normativa y deben eliminar o actualizar a una versión más reciente </ejemplo>
+						<patronOCadena>.*\\lib\\SBAE_132_InsertarIndicador\.jar</patronOCadena>
+						<tipoComprobacion>PROHIBIDO</tipoComprobacion>
+						<tratamientoMayusculas>IGNORAR</tratamientoMayusculas>
+				</regla>
+				<regla tipo="ReglaArchivo">
+						<ejemplo> Conjunto  de librerias  desarrolladas por el IAM que incumplen  la normativa y deben eliminar o actualizar a una versión más reciente </ejemplo>
+						<patronOCadena>.*\\lib\\iam-commons\.jar</patronOCadena>
+						<tipoComprobacion>PROHIBIDO</tipoComprobacion>
+						<tratamientoMayusculas>IGNORAR</tratamientoMayusculas>
+				</regla>
+				<regla tipo="ReglaArchivo">
+						<ejemplo> Conjunto  de librerias  desarrolladas por el IAM que incumplen  la normativa y deben eliminar o actualizar a una versión más reciente </ejemplo>
+						<patronOCadena>.*\\lib\\cemi.infodis.general\.jar</patronOCadena>
+						<tipoComprobacion>PROHIBIDO</tipoComprobacion>
+						<tratamientoMayusculas>IGNORAR</tratamientoMayusculas>
+				</regla>
+				<regla tipo="ReglaArchivo">
+						<ejemplo> Conjunto  de librerias  desarrolladas por el IAM que incumplen  la normativa y deben eliminar o actualizar a una versión más reciente </ejemplo>
+						<patronOCadena>.*\\lib\\conectorCics\.jar</patronOCadena>
+						<tipoComprobacion>PROHIBIDO</tipoComprobacion>
+						<tratamientoMayusculas>IGNORAR</tratamientoMayusculas>
+				</regla>
+				<regla tipo="ReglaArchivo">
+						<ejemplo> Conjunto  de librerias  desarrolladas por el IAM que incumplen  la normativa y deben eliminar o actualizar a una versión más reciente </ejemplo>
+						<patronOCadena>.*\\lib\\detail\.jar</patronOCadena>
+						<tipoComprobacion>PROHIBIDO</tipoComprobacion>
+						<tratamientoMayusculas>IGNORAR</tratamientoMayusculas>
+				</regla>
+				<regla tipo="ReglaArchivo">
+						<ejemplo> Conjunto  de librerias  desarrolladas por el IAM que incumplen  la normativa y deben eliminar o actualizar a una versión más reciente </ejemplo>
+						<patronOCadena>.*\\lib\\language\.jar</patronOCadena>
+						<tipoComprobacion>PROHIBIDO</tipoComprobacion>
+						<tratamientoMayusculas>IGNORAR</tratamientoMayusculas>
+				</regla>
+				<regla tipo="ReglaArchivo">
+						<ejemplo> Conjunto  de librerias  desarrolladas por el IAM que incumplen  la normativa y deben eliminar o actualizar a una versión más reciente </ejemplo>
+						<patronOCadena>.*\\lib\\obtencionBDC20_pmh\.jar</patronOCadena>
+						<tipoComprobacion>PROHIBIDO</tipoComprobacion>
+						<tratamientoMayusculas>IGNORAR</tratamientoMayusculas>
+				</regla>
+				<regla tipo="ReglaArchivo">
+						<ejemplo> Conjunto  de librerias  desarrolladas por el IAM que incumplen  la normativa y deben eliminar o actualizar a una versión más reciente </ejemplo>
+						<patronOCadena>.*\\lib\\traduccionBDC13\.jar</patronOCadena>
+						<tipoComprobacion>PROHIBIDO</tipoComprobacion>
+						<tratamientoMayusculas>IGNORAR</tratamientoMayusculas>
+				</regla>
+				<regla tipo="ReglaArchivo">
+						<ejemplo> Conjunto  de librerias  desarrolladas por el IAM que incumplen  la normativa y deben eliminar o actualizar a una versión más reciente </ejemplo>
+						<patronOCadena>.*\\lib\\ePobComponent\.jar</patronOCadena>
+						<tipoComprobacion>PROHIBIDO</tipoComprobacion>
+						<tratamientoMayusculas>IGNORAR</tratamientoMayusculas>
+				</regla>
+				<regla tipo="ReglaArchivo">
+						<ejemplo> Conjunto  de librerias  desarrolladas por el IAM que incumplen  la normativa y deben eliminar o actualizar a una versión más reciente </ejemplo>
+						<patronOCadena>.*\\lib\\SecurityUweb\.jar</patronOCadena>
+						<tipoComprobacion>PROHIBIDO</tipoComprobacion>
+						<tratamientoMayusculas>IGNORAR</tratamientoMayusculas>
+				</regla>
+				<regla tipo="ReglaArchivo">
+						<ejemplo> Conjunto  de librerias  desarrolladas por el IAM que incumplen  la normativa y deben eliminar o actualizar a una versión más reciente </ejemplo>
+						<patronOCadena>.*\\lib\\generadorPdfACTUATE\.jar</patronOCadena>
+						<tipoComprobacion>PROHIBIDO</tipoComprobacion>
+						<tratamientoMayusculas>IGNORAR</tratamientoMayusculas>
+				</regla>
+				<regla tipo="ReglaArchivo">
+						<ejemplo> Conjunto  de librerias  desarrolladas por el IAM que incumplen  la normativa y deben eliminar o actualizar a una versión más reciente </ejemplo>
+						<patronOCadena>.*\\lib\\utilidades\.jar</patronOCadena>
+						<tipoComprobacion>PROHIBIDO</tipoComprobacion>
+						<tratamientoMayusculas>IGNORAR</tratamientoMayusculas>
+				</regla>
+				<regla tipo="ReglaArchivo">
+						<ejemplo> Conjunto  de librerias  desarrolladas por el IAM que incumplen  la normativa y deben eliminar o actualizar a una versión más reciente </ejemplo>
+						<patronOCadena>.*\\lib\\libServGDdctm-1.0\.jar</patronOCadena>
+						<tipoComprobacion>PROHIBIDO</tipoComprobacion>
+						<tratamientoMayusculas>IGNORAR</tratamientoMayusculas>
+				</regla>
+				<regla tipo="ReglaArchivo">
+						<ejemplo> Conjunto  de librerias  desarrolladas por el IAM que incumplen  la normativa y deben eliminar o actualizar a una versión más reciente </ejemplo>
+						<patronOCadena>.*\\lib\\libIAM_WSAE-2.0\.jar</patronOCadena>
+						<tipoComprobacion>PROHIBIDO</tipoComprobacion>
+						<tratamientoMayusculas>IGNORAR</tratamientoMayusculas>
+				</regla>
+				<regla tipo="ReglaArchivo">
+						<ejemplo> Conjunto  de librerias  desarrolladas por el IAM que incumplen  la normativa y deben eliminar o actualizar a una versión más reciente </ejemplo>
+						<patronOCadena>.*\\lib\\plateaCore-3.1.2.1\.jar</patronOCadena>
+						<tipoComprobacion>PROHIBIDO</tipoComprobacion>
+						<tratamientoMayusculas>IGNORAR</tratamientoMayusculas>
+				</regla>
+				<regla tipo="ReglaArchivo">
+						<ejemplo> Conjunto  de librerias  desarrolladas por el IAM que incumplen  la normativa y deben eliminar o actualizar a una versión más reciente </ejemplo>
+						<patronOCadena>.*\\lib\\plateaCore-3.1.2\.jar</patronOCadena>
+						<tipoComprobacion>PROHIBIDO</tipoComprobacion>
+						<tratamientoMayusculas>IGNORAR</tratamientoMayusculas>
+				</regla>
+				<regla tipo="ReglaArchivo">
+						<ejemplo> Conjunto  de librerias  desarrolladas por el IAM que incumplen  la normativa y deben eliminar o actualizar a una versión más reciente </ejemplo>
+						<patronOCadena>.*\\lib\\plateaWeb-3.1.2\.jar</patronOCadena>
+						<tipoComprobacion>PROHIBIDO</tipoComprobacion>
+						<tratamientoMayusculas>IGNORAR</tratamientoMayusculas>
+				</regla>
+				<regla tipo="ReglaArchivo">
+						<ejemplo> Conjunto  de librerias  desarrolladas por el IAM que incumplen  la normativa y deben eliminar o actualizar a una versión más reciente </ejemplo>
+						<patronOCadena>.*\\lib\\plateaComun-3.1.2\.jar</patronOCadena>
+						<tipoComprobacion>PROHIBIDO</tipoComprobacion>
+						<tratamientoMayusculas>IGNORAR</tratamientoMayusculas>
+				</regla>
+				<regla tipo="ReglaArchivo">
+						<ejemplo> Conjunto  de librerias  desarrolladas por el IAM que incumplen  la normativa y deben eliminar o actualizar a una versión más reciente </ejemplo>
+						<patronOCadena>.*\\lib\\pasarelafirma-0.0.1\.jar</patronOCadena>
+						<tipoComprobacion>PROHIBIDO</tipoComprobacion>
+						<tratamientoMayusculas>IGNORAR</tratamientoMayusculas>
+				</regla>
+				<regla tipo="ReglaArchivo">
+						<ejemplo> Conjunto  de librerias  desarrolladas por el IAM que incumplen  la normativa y deben eliminar o actualizar a una versión más reciente </ejemplo>
+						<patronOCadena>.*\\lib\\NTIS-1.0.1\.jar</patronOCadena>
+						<tipoComprobacion>PROHIBIDO</tipoComprobacion>
+						<tratamientoMayusculas>IGNORAR</tratamientoMayusculas>
+				</regla>
+				<regla tipo="ReglaArchivo">
+						<ejemplo> Conjunto  de librerias  desarrolladas por el IAM que incumplen  la normativa y deben eliminar o actualizar a una versión más reciente </ejemplo>
+						<patronOCadena>.*\\lib\\fwtao-hibernate-1.0.2-dev\.jar</patronOCadena>
+						<tipoComprobacion>PROHIBIDO</tipoComprobacion>
+						<tratamientoMayusculas>IGNORAR</tratamientoMayusculas>
+				</regla>
+				<regla tipo="ReglaArchivo">
+						<ejemplo> Conjunto  de librerias  desarrolladas por el IAM que incumplen  la normativa y deben eliminar o actualizar a una versión más reciente </ejemplo>
+						<patronOCadena>.*\\lib\\fwcommon-core-1.0.18-dev\.jar</patronOCadena>
+						<tipoComprobacion>PROHIBIDO</tipoComprobacion>
+						<tratamientoMayusculas>IGNORAR</tratamientoMayusculas>
+				</regla>	
+		<!-- 
+		FIN DE LAS LIBRERIAS DEPRECADAS DESARROLLADAS POR EL IAM 
+		-->	
+			
+		<!-- 
+		LIBRERIAS VULNERABILIDADES O ERRORES (STRUTS2-CORE)
+		(Conjunto de librerias que se han detectado vulnerabilidades o errores que ponen en riesgo los servidores de aplicaciones)
+		-->
+			
+				<regla tipo="ReglaArchivo">
+						<ejemplo>Conjunto de librerias que se han detectado vulnerabilidades o errores que ponen en riesgo los servidores de aplicaciones</ejemplo>
+						<patronOCadena>.*\\lib\\struts2-core-2.0.5.jar</patronOCadena>
+						<tipoComprobacion>PROHIBIDO</tipoComprobacion>
+						<tratamientoMayusculas>IGNORAR</tratamientoMayusculas>
+				</regla>
+								<regla tipo="ReglaArchivo">
+						<ejemplo>Conjunto de librerias que se han detectado vulnerabilidades o errores que ponen en riesgo los servidores de aplicaciones</ejemplo>
+						<patronOCadena>.*\\lib\\struts2-core-2.0.6\.jar</patronOCadena>
+						<tipoComprobacion>PROHIBIDO</tipoComprobacion>
+						<tratamientoMayusculas>IGNORAR</tratamientoMayusculas>
+				</regla>
+				<regla tipo="ReglaArchivo">
+						<ejemplo>Conjunto de librerias que se han detectado vulnerabilidades o errores que ponen en riesgo los servidores de aplicaciones</ejemplo>
+						<patronOCadena>.*\\lib\\struts2-core-2.0.8\.jar</patronOCadena>
+						<tipoComprobacion>PROHIBIDO</tipoComprobacion>
+						<tratamientoMayusculas>IGNORAR</tratamientoMayusculas>
+				</regla>
+				<regla tipo="ReglaArchivo">
+						<ejemplo>Conjunto de librerias que se han detectado vulnerabilidades o errores que ponen en riesgo los servidores de aplicaciones</ejemplo>
+						<patronOCadena>.*\\lib\\struts2-core-2.0.9\.jar</patronOCadena>
+						<tipoComprobacion>PROHIBIDO</tipoComprobacion>
+						<tratamientoMayusculas>IGNORAR</tratamientoMayusculas>
+				</regla>
+				<regla tipo="ReglaArchivo">
+						<ejemplo>Conjunto de librerias que se han detectado vulnerabilidades o errores que ponen en riesgo los servidores de aplicaciones</ejemplo>
+						<patronOCadena>.*\\lib\\struts2-core-2.0.11\.jar</patronOCadena>
+						<tipoComprobacion>PROHIBIDO</tipoComprobacion>
+						<tratamientoMayusculas>IGNORAR</tratamientoMayusculas>
+				</regla>
+				<regla tipo="ReglaArchivo">
+						<ejemplo>Conjunto de librerias que se han detectado vulnerabilidades o errores que ponen en riesgo los servidores de aplicaciones</ejemplo>
+						<patronOCadena>.*\\lib\\struts2-core-2.0.11.1\.jar</patronOCadena>
+						<tipoComprobacion>PROHIBIDO</tipoComprobacion>
+						<tratamientoMayusculas>IGNORAR</tratamientoMayusculas>
+				</regla>
+				<regla tipo="ReglaArchivo">
+						<ejemplo>Conjunto de librerias que se han detectado vulnerabilidades o errores que ponen en riesgo los servidores de aplicaciones</ejemplo>
+						<patronOCadena>.*\\lib\\struts2-core-2.0.11.2\.jar</patronOCadena>
+						<tipoComprobacion>PROHIBIDO</tipoComprobacion>
+						<tratamientoMayusculas>IGNORAR</tratamientoMayusculas>
+				</regla>
+				<regla tipo="ReglaArchivo">
+						<ejemplo>Conjunto de librerias que se han detectado vulnerabilidades o errores que ponen en riesgo los servidores de aplicaciones</ejemplo>
+						<patronOCadena>.*\\lib\\struts2-core-2.0.12\.jar</patronOCadena>
+						<tipoComprobacion>PROHIBIDO</tipoComprobacion>
+						<tratamientoMayusculas>IGNORAR</tratamientoMayusculas>
+				</regla>		
+				<regla tipo="ReglaArchivo">
+						<ejemplo>Conjunto de librerias que se han detectado vulnerabilidades o errores que ponen en riesgo los servidores de aplicaciones</ejemplo>
+						<patronOCadena>.*\\lib\\struts2-core-2.0.14\.jar</patronOCadena>
+						<tipoComprobacion>PROHIBIDO</tipoComprobacion>
+						<tratamientoMayusculas>IGNORAR</tratamientoMayusculas>
+				</regla>
+				<regla tipo="ReglaArchivo">
+						<ejemplo>Conjunto de librerias que se han detectado vulnerabilidades o errores que ponen en riesgo los servidores de aplicaciones</ejemplo>
+						<patronOCadena>.*\\lib\\struts2-core-2.1.2\.jar</patronOCadena>
+						<tipoComprobacion>PROHIBIDO</tipoComprobacion>
+						<tratamientoMayusculas>IGNORAR</tratamientoMayusculas>
+				</regla>
+				<regla tipo="ReglaArchivo">
+						<ejemplo>Conjunto de librerias que se han detectado vulnerabilidades o errores que ponen en riesgo los servidores de aplicaciones</ejemplo>
+						<patronOCadena>.*\\lib\\struts2-core-2.1.6\.jar</patronOCadena>
+						<tipoComprobacion>PROHIBIDO</tipoComprobacion>
+						<tratamientoMayusculas>IGNORAR</tratamientoMayusculas>
+				</regla>
+				<regla tipo="ReglaArchivo">
+						<ejemplo>Conjunto de librerias que se han detectado vulnerabilidades o errores que ponen en riesgo los servidores de aplicaciones</ejemplo>
+						<patronOCadena>.*\\lib\\struts2-core-2.1.8\.jar</patronOCadena>
+						<tipoComprobacion>PROHIBIDO</tipoComprobacion>
+						<tratamientoMayusculas>IGNORAR</tratamientoMayusculas>
+				</regla>
+				<regla tipo="ReglaArchivo">
+						<ejemplo>Conjunto de librerias que se han detectado vulnerabilidades o errores que ponen en riesgo los servidores de aplicaciones</ejemplo>
+						<patronOCadena>.*\\lib\\struts2-core-2.2.1\.jar</patronOCadena>
+						<tipoComprobacion>PROHIBIDO</tipoComprobacion>
+						<tratamientoMayusculas>IGNORAR</tratamientoMayusculas>
+				</regla>
+				<regla tipo="ReglaArchivo">
+						<ejemplo>Conjunto de librerias que se han detectado vulnerabilidades o errores que ponen en riesgo los servidores de aplicaciones</ejemplo>
+						<patronOCadena>.*\\lib\\struts2-core-2.2.1.1\.jar</patronOCadena>
+						<tipoComprobacion>PROHIBIDO</tipoComprobacion>
+						<tratamientoMayusculas>IGNORAR</tratamientoMayusculas>
+				</regla>
+				<regla tipo="ReglaArchivo">
+						<ejemplo>Conjunto de librerias que se han detectado vulnerabilidades o errores que ponen en riesgo los servidores de aplicaciones</ejemplo>
+						<patronOCadena>.*\\lib\\struts2-core-2.2.3\.jar</patronOCadena>
+						<tipoComprobacion>PROHIBIDO</tipoComprobacion>
+						<tratamientoMayusculas>IGNORAR</tratamientoMayusculas>
+				</regla>
+				<regla tipo="ReglaArchivo">
+						<ejemplo>Conjunto de librerias que se han detectado vulnerabilidades o errores que ponen en riesgo los servidores de aplicaciones</ejemplo>
+						<patronOCadena>.*\\lib\\struts2-core-2.2.3.1\.jar</patronOCadena>
+						<tipoComprobacion>PROHIBIDO</tipoComprobacion>
+						<tratamientoMayusculas>IGNORAR</tratamientoMayusculas>
+				</regla>
+				<regla tipo="ReglaArchivo">
+						<ejemplo>Conjunto de librerias que se han detectado vulnerabilidades o errores que ponen en riesgo los servidores de aplicaciones</ejemplo>
+						<patronOCadena>.*\\lib\\struts2-core-2.3.1\.jar</patronOCadena>
+						<tipoComprobacion>PROHIBIDO</tipoComprobacion>
+						<tratamientoMayusculas>IGNORAR</tratamientoMayusculas>
+				</regla>
+				<regla tipo="ReglaArchivo">
+						<ejemplo>Conjunto de librerias que se han detectado vulnerabilidades o errores que ponen en riesgo los servidores de aplicaciones</ejemplo>
+						<patronOCadena>.*\\lib\\struts2-core-2.3.1.1\.jar</patronOCadena>
+						<tipoComprobacion>PROHIBIDO</tipoComprobacion>
+						<tratamientoMayusculas>IGNORAR</tratamientoMayusculas>
+				</regla>
+				<regla tipo="ReglaArchivo">
+						<ejemplo>Conjunto de librerias que se han detectado vulnerabilidades o errores que ponen en riesgo los servidores de aplicaciones</ejemplo>
+						<patronOCadena>.*\\lib\\struts2-core-2.3.1.2\.jar</patronOCadena>
+						<tipoComprobacion>PROHIBIDO</tipoComprobacion>
+						<tratamientoMayusculas>IGNORAR</tratamientoMayusculas>
+				</regla>
+				<regla tipo="ReglaArchivo">
+						<ejemplo>Conjunto de librerias que se han detectado vulnerabilidades o errores que ponen en riesgo los servidores de aplicaciones</ejemplo>
+						<patronOCadena>.*\\lib\\struts2-core-2.3.3\.jar</patronOCadena>
+						<tipoComprobacion>PROHIBIDO</tipoComprobacion>
+						<tratamientoMayusculas>IGNORAR</tratamientoMayusculas>
+				</regla>
+				<regla tipo="ReglaArchivo">
+						<ejemplo>Conjunto de librerias que se han detectado vulnerabilidades o errores que ponen en riesgo los servidores de aplicaciones</ejemplo>
+						<patronOCadena>.*\\lib\\struts2-core-2.3.4\.jar</patronOCadena>
+						<tipoComprobacion>PROHIBIDO</tipoComprobacion>
+						<tratamientoMayusculas>IGNORAR</tratamientoMayusculas>
+				</regla>
+				<regla tipo="ReglaArchivo">
+						<ejemplo>Conjunto de librerias que se han detectado vulnerabilidades o errores que ponen en riesgo los servidores de aplicaciones</ejemplo>
+						<patronOCadena>.*\\lib\\struts2-core-2.3.4.1\.jar</patronOCadena>
+						<tipoComprobacion>PROHIBIDO</tipoComprobacion>
+						<tratamientoMayusculas>IGNORAR</tratamientoMayusculas>
+				</regla>
+				<regla tipo="ReglaArchivo">
+						<ejemplo>Conjunto de librerias que se han detectado vulnerabilidades o errores que ponen en riesgo los servidores de aplicaciones</ejemplo>
+						<patronOCadena>.*\\lib\\struts2-core-2.3.7\.jar</patronOCadena>
+						<tipoComprobacion>PROHIBIDO</tipoComprobacion>
+						<tratamientoMayusculas>IGNORAR</tratamientoMayusculas>
+				</regla>
+				<regla tipo="ReglaArchivo">
+						<ejemplo>Conjunto de librerias que se han detectado vulnerabilidades o errores que ponen en riesgo los servidores de aplicaciones</ejemplo>
+						<patronOCadena>.*\\lib\\struts2-core-2.3.8\.jar</patronOCadena>
+						<tipoComprobacion>PROHIBIDO</tipoComprobacion>
+						<tratamientoMayusculas>IGNORAR</tratamientoMayusculas>
+				</regla>
+				<regla tipo="ReglaArchivo">
+						<ejemplo>Conjunto de librerias que se han detectado vulnerabilidades o errores que ponen en riesgo los servidores de aplicaciones</ejemplo>
+						<patronOCadena>.*\\lib\\struts2-core-2.3.12\.jar</patronOCadena>
+						<tipoComprobacion>PROHIBIDO</tipoComprobacion>
+						<tratamientoMayusculas>IGNORAR</tratamientoMayusculas>
+				</regla>
+				<regla tipo="ReglaArchivo">
+						<ejemplo>Conjunto de librerias que se han detectado vulnerabilidades o errores que ponen en riesgo los servidores de aplicaciones</ejemplo>
+						<patronOCadena>.*\\lib\\struts2-core-2.3.14\.jar</patronOCadena>
+						<tipoComprobacion>PROHIBIDO</tipoComprobacion>
+						<tratamientoMayusculas>IGNORAR</tratamientoMayusculas>
+				</regla>
+				<regla tipo="ReglaArchivo">
+						<ejemplo>Conjunto de librerias que se han detectado vulnerabilidades o errores que ponen en riesgo los servidores de aplicaciones</ejemplo>
+						<patronOCadena>.*\\lib\\struts2-core-2.3.14.1\.jar</patronOCadena>
+						<tipoComprobacion>PROHIBIDO</tipoComprobacion>
+						<tratamientoMayusculas>IGNORAR</tratamientoMayusculas>
+				</regla>
+				<regla tipo="ReglaArchivo">
+						<ejemplo>Conjunto de librerias que se han detectado vulnerabilidades o errores que ponen en riesgo los servidores de aplicaciones</ejemplo>
+						<patronOCadena>.*\\lib\\struts2-core-2.3.14.2\.jar</patronOCadena>
+						<tipoComprobacion>PROHIBIDO</tipoComprobacion>
+						<tratamientoMayusculas>IGNORAR</tratamientoMayusculas>
+				</regla>
+				<regla tipo="ReglaArchivo">
+						<ejemplo>Conjunto de librerias que se han detectado vulnerabilidades o errores que ponen en riesgo los servidores de aplicaciones</ejemplo>
+						<patronOCadena>.*\\lib\\struts2-core-2.3.14.3\.jar</patronOCadena>
+						<tipoComprobacion>PROHIBIDO</tipoComprobacion>
+						<tratamientoMayusculas>IGNORAR</tratamientoMayusculas>
+				</regla>
+				<regla tipo="ReglaArchivo">
+						<ejemplo>Conjunto de librerias que se han detectado vulnerabilidades o errores que ponen en riesgo los servidores de aplicaciones</ejemplo>
+						<patronOCadena>.*\\lib\\struts2-core-2.3.15\.jar</patronOCadena>
+						<tipoComprobacion>PROHIBIDO</tipoComprobacion>
+						<tratamientoMayusculas>IGNORAR</tratamientoMayusculas>
+				</regla>
+		<!-- 
+		LIBRERIAS VULNERABILIDADES O ERRORES (STRUTS2-CORE)
+		-->				
+			</reglas>
+	<!-- 
+	FIN DE LAS LIBRERIAS QUE ESTA PROHIBIDO SU USO
+	-->		
+			
+<!-- END LIBRERIAS -->			
+		</chequeo>
+		
+
+	</chequeos>
+	
+	</AnalizadorArtefacto>
+
+</analisis>

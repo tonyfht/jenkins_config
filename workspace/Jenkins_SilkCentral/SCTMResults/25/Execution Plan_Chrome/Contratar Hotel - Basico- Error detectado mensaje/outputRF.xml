@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generated="20171220 08:48:58.834" generator="Robot 3.0.2 (Python 2.7.13 on win32)">
+<suite source="C:\Users\ANTONI~1.HER\AppData\Local\Temp\SCC_ExecServer_19124_19125\TempExecutionResults\SC_37_1513756135888\Test.robot" id="s1" name="Test">
+<test id="s1-t1" name="Contratar Hotel - Basico- Error detectado mensaje">
+<kw name="Abrir Aplicacion" library="RicohWeb">
+<arguments>
+<arg>https://www.nh-hoteles.es/</arg>
+</arguments>
+<msg timestamp="20171220 08:49:00.704" level="INFO">Abrir aplicacion https://www.nh-hoteles.es/</msg>
+<msg timestamp="20171220 08:49:00.705" level="INFO">Opening browser 'chrome' to base url 'https://www.nh-hoteles.es/'</msg>
+<status status="PASS" endtime="20171220 08:49:25.873" starttime="20171220 08:49:00.704"></status>
+</kw>
+<kw name="Introducir Texto" library="RicohWeb">
+<arguments>
+<arg>Inicio</arg>
+<arg>A donde viajas</arg>
+<arg>Lanzarote</arg>
+</arguments>
+<msg timestamp="20171220 08:49:26.021" level="INFO">Introducir texto en inputSearch</msg>
+<msg timestamp="20171220 08:49:26.022" level="INFO">Typing text 'Lanzarote' into text field 'inputSearch'</msg>
+<status status="PASS" endtime="20171220 08:49:26.529" starttime="20171220 08:49:25.873"></status>
+</kw>
+<kw name="Pulsar Enlace" library="RicohWeb">
+<arguments>
+<arg>Inicio</arg>
+<arg>Playa Dorada</arg>
+</arguments>
+<msg timestamp="20171220 08:49:26.530" level="INFO">Pusar enlace</msg>
+<msg timestamp="20171220 08:49:26.930" level="INFO">Clicking element '//*[@id='results']/li[contains(.,'Playa Dorada')]'.</msg>
+<status status="PASS" endtime="20171220 08:49:27.046" starttime="20171220 08:49:26.530"></status>
+</kw>
+<kw name="Pulsar Boton" library="RicohWeb">
+<arguments>
+<arg>Inicio</arg>
+<arg>Buscar hotel</arg>
+</arguments>
+<msg timestamp="20171220 08:49:27.046" level="INFO">Pulsar boton Buscar hotel</msg>
+<msg timestamp="20171220 08:49:29.065" level="INFO">Clicking element '//*[@id="idButton"]'.</msg>
+<status status="PASS" endtime="20171220 08:49:33.542" starttime="20171220 08:49:27.046"></status>
+</kw>
+<kw name="Pulsar Boton" library="RicohWeb">
+<arguments>
+<arg>Hotel</arg>
+<arg>Media Pension Standard</arg>
+</arguments>
+<msg timestamp="20171220 08:49:33.543" level="INFO">Pulsar boton Media Pension Standard</msg>
+<msg timestamp="20171220 08:49:35.567" level="INFO">Clicking element '//*[@id='grid-REWARDS']/section[1]/div[2]/div/div[1]/div[2]/div/div[5]/div/form/button'.</msg>
+<status status="PASS" endtime="20171220 08:49:44.415" starttime="20171220 08:49:33.542"></status>
+</kw>
+<kw name="Introducir Texto" library="RicohWeb">
+<arguments>
+<arg>Reserva</arg>
+<arg>Nombre</arg>
+<arg>Javier</arg>
+</arguments>
+<msg timestamp="20171220 08:49:44.514" level="INFO">Introducir texto en //*[@id='name-checkout']</msg>
+<msg timestamp="20171220 08:49:44.515" level="INFO">Typing text 'Javier' into text field '//*[@id='name-checkout']'</msg>
+<status status="PASS" endtime="20171220 08:49:44.661" starttime="20171220 08:49:44.415"></status>
+</kw>
+<kw name="Introducir Texto" library="RicohWeb">
+<arguments>
+<arg>Reserva</arg>
+<arg>Apellidos</arg>
+<arg>Castro Perez</arg>
+</arguments>
+<msg timestamp="20171220 08:49:44.684" level="INFO">Introducir texto en //*[@id='last-name-checkout']</msg>
+<msg timestamp="20171220 08:49:44.685" level="INFO">Typing text 'Castro Perez' into text field '//*[@id='last-name-checkout']'</msg>
+<status status="PASS" endtime="20171220 08:49:44.871" starttime="20171220 08:49:44.661"></status>
+</kw>
+<kw name="Introducir Texto" library="RicohWeb">
+<arguments>
+<arg>Reserva</arg>
+<arg>Correo Electronico</arg>
+<arg>javier</arg>
+</arguments>
+<msg timestamp="20171220 08:49:44.892" level="INFO">Introducir texto en //*[@id='email-checkout']</msg>
+<msg timestamp="20171220 08:49:44.892" level="INFO">Typing text 'javier' into text field '//*[@id='email-checkout']'</msg>
+<status status="PASS" endtime="20171220 08:49:45.028" starttime="20171220 08:49:44.871"></status>
+</kw>
+<kw name="Introducir Texto" library="RicohWeb">
+<arguments>
+<arg>Reserva</arg>
+<arg>Confirmar Correo Electronico</arg>
+<arg>javier</arg>
+</arguments>
+<msg timestamp="20171220 08:49:45.056" level="INFO">Introducir texto en //*[@id='confirm-email-checkout']</msg>
+<msg timestamp="20171220 08:49:45.057" level="INFO">Typing text 'javier' into text field '//*[@id='confirm-email-checkout']'</msg>
+<status status="PASS" endtime="20171220 08:49:45.231" starttime="20171220 08:49:45.028"></status>
+</kw>
+<kw name="Introducir Texto" library="RicohWeb">
+<arguments>
+<arg>Reserva</arg>
+<arg>Telefono</arg>
+<arg>0034914416831</arg>
+</arguments>
+<msg timestamp="20171220 08:49:45.259" level="INFO">Introducir texto en //*[@id='phone-checkout']</msg>
+<msg timestamp="20171220 08:49:45.259" level="INFO">Typing text '0034914416831' into text field '//*[@id='phone-checkout']'</msg>
+<status status="PASS" endtime="20171220 08:49:45.494" starttime="20171220 08:49:45.231"></status>
+</kw>
+<kw name="Validar Mensaje Error" library="RicohWeb">
+<arguments>
+<arg>Reserva</arg>
+<arg>Mensaje correo electronico</arg>
+<arg>dirección de mail no válida</arg>
+</arguments>
+<msg timestamp="20171220 08:49:45.495" level="INFO">Validar mensaje error Mensaje correo electronico</msg>
+<msg timestamp="20171220 08:49:45.558" level="INFO">La validacion es correcta</msg>
+<status status="PASS" endtime="20171220 08:49:45.558" starttime="20171220 08:49:45.494"></status>
+</kw>
+<kw name="Validar Mensaje Error" library="RicohWeb">
+<arguments>
+<arg>Reserva</arg>
+<arg>Mensaje confirmacion correo electronico</arg>
+<arg>dirección de mail no válida</arg>
+</arguments>
+<msg timestamp="20171220 08:49:45.559" level="INFO">Validar mensaje error Mensaje confirmacion correo electronico</msg>
+<msg timestamp="20171220 08:49:45.623" level="INFO">Capturar pantalla</msg>
+<msg timestamp="20171220 08:49:45.907" html="yes" level="INFO">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-1.png"&gt;&lt;img src="selenium-screenshot-1.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg timestamp="20171220 08:49:45.915" level="FAIL">La validacion no es correcta. Se esperaba dirección de mail no válida pero se muestra Not a valid email address</msg>
+<status status="FAIL" endtime="20171220 08:49:45.915" starttime="20171220 08:49:45.558"></status>
+</kw>
+<kw type="teardown" name="Cerrar Aplicacion" library="RicohWeb">
+<msg timestamp="20171220 08:49:45.916" level="INFO">Cerrar aplicacion</msg>
+<status status="PASS" endtime="20171220 08:49:48.960" starttime="20171220 08:49:45.915"></status>
+</kw>
+<status status="FAIL" endtime="20171220 08:49:48.960" critical="yes" starttime="20171220 08:49:00.704">La validacion no es correcta. Se esperaba dirección de mail no válida pero se muestra Not a valid email address</status>
+</test>
+<status status="FAIL" endtime="20171220 08:49:48.961" starttime="20171220 08:48:58.837"></status>
+</suite>
+<statistics>
+<total>
+<stat fail="1" pass="0">Critical Tests</stat>
+<stat fail="1" pass="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat fail="1" id="s1" name="Test" pass="0">Test</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

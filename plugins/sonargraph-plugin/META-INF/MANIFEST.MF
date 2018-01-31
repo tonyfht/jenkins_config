@@ -1,0 +1,23 @@
+Manifest-Version: 1.0
+Archiver-Version: Plexus Archiver
+Created-By: Apache Maven
+Built-By: andreas
+Build-Jdk: 1.7.0_21
+Extension-Name: sonargraph-plugin
+Specification-Vendor: hello2morrow GmbH, hello2morrow Inc., hello2morr
+ ow S.A.S
+Implementation-Vendor: hello2morrow GmbH, hello2morrow Inc., hello2mor
+ row S.A.S
+Implementation-Title: sonargraph-plugin
+Implementation-Version: 1.6.4
+Group-Id: org.jenkins-ci.plugins
+Short-Name: sonargraph-plugin
+Long-Name: Sonargraph Plugin
+Url: https://wiki.jenkins-ci.org/display/JENKINS/Sonargraph+Plugin
+Plugin-Version: 1.6.4
+Hudson-Version: 1.554.3
+Jenkins-Version: 1.554.3
+Plugin-Dependencies: maven-plugin:2.12
+Plugin-Developers: Ingmar Kellner:ingmarkellner:,Esteban Angee:esteban
+ -h2m:,Andreas Hoyer:andreashoyerh2m:
+

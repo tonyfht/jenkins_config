@@ -1,0 +1,19 @@
+<slave>
+  <name>Slave_Linux_Ubu_01</name>
+  <description></description>
+  <remoteFS>c:\jenkins</remoteFS>
+  <numExecutors>5</numExecutors>
+  <mode>NORMAL</mode>
+  <retentionStrategy class="hudson.slaves.RetentionStrategy$Always"/>
+  <launcher class="hudson.os.windows.ManagedWindowsServiceLauncher" plugin="windows-slaves@1.3.1">
+    <userName>aht005</userName>
+    <password>{AQAAABAAAAAQ3ZDmzMRl/Y0f0BoYd/xaqBwyfldvHgOf/kNC38pcIbY=}</password>
+    <account class="hudson.os.windows.ManagedWindowsServiceAccount$AnotherUser">
+      <userName>aht005</userName>
+      <password>{AQAAABAAAAAQzDoH1M9lxSHMcrNULE6Xs/7F+/4ljUiaJl4SRd67kw0=}</password>
+    </account>
+    <host>192.168.35.135</host>
+  </launcher>
+  <label></label>
+  <nodeProperties/>
+</slave>

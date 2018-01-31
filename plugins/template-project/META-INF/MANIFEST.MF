@@ -1,0 +1,21 @@
+Manifest-Version: 1.0
+Archiver-Version: Plexus Archiver
+Created-By: Apache Maven
+Built-By: bartb036
+Build-Jdk: 1.7.0_79
+Extension-Name: template-project
+Specification-Title: Use builders, publishers and SCM settings from an
+ other project.
+Implementation-Title: template-project
+Implementation-Version: 1.5.2
+Group-Id: org.jenkins-ci.plugins
+Short-Name: template-project
+Long-Name: Template Project plugin
+Url: http://wiki.jenkins-ci.org/display/JENKINS/Template+Project+Plugin
+Plugin-Version: 1.5.2
+Hudson-Version: 1.580.1
+Jenkins-Version: 1.580.1
+Plugin-Dependencies: matrix-project:1.4;resolution:=optional,multiple-
+ scms:0.5;resolution:=optional,cloudbees-folder:4.9;resolution:=optional
+Plugin-Developers: Tom Huybrechts:huybrechts:,Brenton B:Brantone:
+

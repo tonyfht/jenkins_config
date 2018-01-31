@@ -1,0 +1,32 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<hudson.plugins.selenium.PluginImpl plugin="selenium@3.7.1">
+  <port>4444</port>
+  <exclusionPatterns></exclusionPatterns>
+  <newSessionWaitTimeout>-1</newSessionWaitTimeout>
+  <maxSession>5</maxSession>
+  <timeout>300</timeout>
+  <browserTimeout>0</browserTimeout>
+  <throwOnCapabilityNotPresent>false</throwOnCapabilityNotPresent>
+  <hubLogLevel>INFO</hubLogLevel>
+  <hostnameResolver class="hudson.plugins.selenium.configuration.global.hostname.JenkinsRootHostnameResolver"/>
+  <configurations>
+    <hudson.plugins.selenium.configuration.global.SeleniumGlobalConfiguration>
+      <name>Chrome</name>
+      <matcher class="hudson.plugins.selenium.configuration.global.matcher.MatchAllMatcher"/>
+      <configuration class="hudson.plugins.selenium.configuration.CustomWDConfiguration">
+        <display></display>
+        <port>4445</port>
+        <maxSession>5</maxSession>
+        <browsers>
+          <hudson.plugins.selenium.configuration.browser.webdriver.ChromeBrowser>
+            <maxInstances>5</maxInstances>
+            <version></version>
+            <protocol>WebDriver</protocol>
+            <name>chrome</name>
+            <driverBinaryPath>C:\Software\FrameworkAPR\PYTHON\drivers\chromedriver.exe</driverBinaryPath>
+          </hudson.plugins.selenium.configuration.browser.webdriver.ChromeBrowser>
+        </browsers>
+      </configuration>
+    </hudson.plugins.selenium.configuration.global.SeleniumGlobalConfiguration>
+  </configurations>
+</hudson.plugins.selenium.PluginImpl>

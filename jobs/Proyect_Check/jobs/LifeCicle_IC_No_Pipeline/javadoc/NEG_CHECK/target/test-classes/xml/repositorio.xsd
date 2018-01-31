@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema" xmlns:tns="http://www.iam.es/repositorio" targetNamespace="http://www.iam.es/repositorio" elementFormDefault="qualified">
+	<element name="analisis" type="tns:TipoAnalisis"/>
+	<complexType name="TipoAnalisis">
+		<sequence>
+			<element name="AnalizadorEstaticos" type="tns:Listachequeos"/>
+			<element name="AnalizadorRecursos" type="tns:Listachequeos"/>
+			<element name="AnalizadorArtefacto" type="tns:Listachequeos"/>
+			
+			<!--<element name="AnalizadorSubsistemas" type="tns:Listachequeos"/>
+        	-->
+		</sequence>
+	</complexType>
+	<complexType name="Listachequeos">
+		<sequence>
+			<element name="chequeos" type="tns:TipoChequeos" minOccurs="0" maxOccurs="unbounded"/>
+		</sequence>
+	</complexType>
+	<complexType name="TipoChequeos">
+		<sequence>
+			<element name="chequeo" type="tns:TipoChequeo" minOccurs="0" maxOccurs="unbounded"/>
+		</sequence>
+		<attribute name="tipo" type="string"/>
+	</complexType>
+	<complexType name="TipoChequeo">
+		<sequence>
+			<element name="mensaje" type="tns:TipoMensaje"/>
+			<element name="reglas" type="tns:TipoReglas"/>
+		</sequence>
+		<attribute name="tipo" type="string"/>
+		<attribute name="nombre" type="tns:TipoNombreChequeos"/>
+		<attribute name="descripcion" type="string"/>
+	</complexType>
+	<complexType name="TipoReglas">
+		<sequence>
+			<element name="regla" type="tns:TipoRegla" minOccurs="0" maxOccurs="unbounded"/>
+		</sequence>
+	</complexType>
+	<complexType name="TipoRegla">
+		<sequence>
+			<element name="ejemplo" type="string"/>
+			<element name="patronOCadena" type="string"/>
+			<element name="tipoComprobacion" type="tns:ValuesTipoComprobacion"/>
+			<element name="tratamientoMayusculas" type="tns:ValuesTratamientoMayusculas" minOccurs="0"/>
+		</sequence>
+		<attribute name="tipo" type="tns:ValuesTipoRegla"/>
+	</complexType>
+	<complexType name="TipoMensaje">
+		<sequence>
+			<element name="incorrecto" type="string"/>
+			<element name="correcto" type="string"/>
+			<element name="avisos" type="string"/>
+		</sequence>
+	</complexType>
+	<simpleType name="ValuesTipoRegla">
+		<restriction base="string">
+			<enumeration value="ReglaArchivo"/>
+			<enumeration value="ReglaContenido"/>
+			<enumeration value="ReglaContenidoXML"/>
+		</restriction>
+	</simpleType>
+	<simpleType name="ValuesTipoComprobacion">
+		<restriction base="string">
+			<enumeration value="EXISTENCIA"/>
+			<enumeration value="OBLIGATORIEDAD"/>
+			<enumeration value="PROHIBIDO"/>
+		</restriction>
+	</simpleType>
+	<simpleType name="ValuesTratamientoMayusculas">
+		<restriction base="string">
+			<enumeration value="ESTRICTO"/>
+			<enumeration value="IGNORAR"/>
+		</restriction>
+	</simpleType>
+	<simpleType name="ValuesTiposChequeos">
+		<restriction base="string">
+			<enumeration value="ChequeoContenidoDescriptoresDespliegue"/>
+			<enumeration value="ChequeoExistenciaFicheros"/>
+			<enumeration value="ChequeoLibreriasDuplicadas"/>
+		</restriction>
+	</simpleType>
+    <simpleType name="TipoNombreChequeos">
+		<restriction base="string">
+			<enumeration value="ChequeoExtensionArtefacto"/>
+			<enumeration value="ChequeosEstructura"/>
+			<enumeration value="ChequeosDescriptores"/>
+			<enumeration value="ChequeoArchivosNoPermitidosEAR"/>
+			<enumeration value="ChequeosFicherosTraza"/>
+			<enumeration value="ChequeoLibreriasDuplicadas"/>
+			<enumeration value="ChequeosContenidoWebXML"/>
+			<enumeration value="ChequeosContenidoApplicationXML"/>
+			<enumeration value="ChequeoExtensionEstaticos"/>
+			<enumeration value="ChequeoArchivosNoPermitidosEstaticos"/>
+			<enumeration value="ChequeoExtensionRecursos"/>
+			<enumeration value="ChequeoArchivosNoPermitidosRecursos"/>
+			<enumeration value="ChequeoLibreriasNoPermitidas"/>
+			
+		</restriction>
+	</simpleType>
+</schema>

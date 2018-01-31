@@ -1,0 +1,6 @@
+[CHECKSTYLE] Collecting checkstyle analysis files...
+[CHECKSTYLE] Searching for all files in C:\Program Files (x86)\Jenkins\workspace\Check_Maven_Pipeline that match the pattern **/checkstyle-result.xml
+[CHECKSTYLE] Parsing 2 files in C:\Program Files (x86)\Jenkins\workspace\Check_Maven_Pipeline
+[CHECKSTYLE] Successfully parsed file C:\Program Files (x86)\Jenkins\workspace\Check_Maven_Pipeline\fuentes\BATCH_CHECK\target\checkstyle-result.xml with 0 unique warnings and 0 duplicates.
+[CHECKSTYLE] Successfully parsed file C:\Program Files (x86)\Jenkins\workspace\Check_Maven_Pipeline\fuentes\NEG_CHECK\target\checkstyle-result.xml with 2 unique warnings and 0 duplicates.
+Skipping warnings blame since pipelines do not have an SCM link.%n

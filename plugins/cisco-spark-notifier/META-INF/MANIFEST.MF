@@ -1,0 +1,13 @@
+Manifest-Version: 1.0
+Plugin-Dependencies: workflow-cps:1.11,workflow-job:1.11,workflow-step
+ -api:1.11,credentials:1.25,plain-credentials:1.2,envinject:1.92.1;res
+ olution:=optional
+Long-Name: Cisco Spark Notifier
+Plugin-Developers: Taylor Patton:taypatto:taylorp36@gmail.com
+Group-Id: org.jenkins-ci.plugins
+Extension-Name: cisco-spark-notifier
+Plugin-Version: 1.1.1
+Jenkins-Version: 1.580.1
+Url: https://wiki.jenkins-ci.org/display/JENKINS/Spark+Notifier+Plugin
+Short-Name: cisco-spark-notifier
+

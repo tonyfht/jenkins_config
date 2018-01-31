@@ -1,0 +1,19 @@
+[2018-01-31 07:11:34] [windows-slaves] Conectando con localhost
+ERROR: [2018-01-31 07:11:34] [windows-slaves] Acceso denegado. Echa un vistazo a http://wiki.jenkins-ci.org/display/JENKINS/Windows+slaves+fail+to+start+via+DCOM para mas información
+[8mha:////4B+yXNOVxa3ztvylL/+YaehjY9TpHLFcgthNPefAmysFAAAAVx+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P08vOT+vOD8nVc8DzHWtSE4tKMnMz/PLL0mV3NWzufebKBsTA0NFEYMUmgZnCA1SyAABjCCFBQC2xNaiYAAAAA==[0morg.jinterop.dcom.common.JIException: Message not found for errorCode: 0x00000005
+	at org.jinterop.dcom.core.JIComServer.init(JIComServer.java:542)
+	at org.jinterop.dcom.core.JIComServer.initialise(JIComServer.java:458)
+	at org.jinterop.dcom.core.JIComServer.<init>(JIComServer.java:427)
+	at org.jvnet.hudson.wmi.WMI.connect(WMI.java:59)
+	at hudson.os.windows.ManagedWindowsServiceLauncher.launch(ManagedWindowsServiceLauncher.java:208)
+	at hudson.slaves.SlaveComputer$1.call(SlaveComputer.java:285)
+	at jenkins.util.ContextResettingExecutorService$2.call(ContextResettingExecutorService.java:46)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: rpc.FaultException: Received fault. (unknown)
+	at rpc.ConnectionOrientedEndpoint.call(ConnectionOrientedEndpoint.java:142)
+	at rpc.Stub.call(Stub.java:112)
+	at org.jinterop.dcom.core.JIComServer.init(JIComServer.java:538)
+	... 10 more

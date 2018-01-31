@@ -1,0 +1,13 @@
+ > git.exe rev-parse --is-inside-work-tree # timeout=10
+Fetching changes from the remote Git repository
+ > git.exe config remote.origin.url https://gitlab.com/antoniofrancisco.herrera/Check.git # timeout=10
+Fetching upstream changes from https://gitlab.com/antoniofrancisco.herrera/Check.git
+ > git.exe --version # timeout=10
+ > git.exe fetch --tags --progress https://gitlab.com/antoniofrancisco.herrera/Check.git +refs/heads/*:refs/remotes/origin/*
+ > git.exe rev-parse "refs/remotes/origin/master^{commit}" # timeout=10
+ > git.exe rev-parse "refs/remotes/origin/origin/master^{commit}" # timeout=10
+Checking out Revision ad50563b49822c17c9176ac856c4354ce1149cc4 (refs/remotes/origin/master)
+ > git.exe config core.sparsecheckout # timeout=10
+ > git.exe checkout -f ad50563b49822c17c9176ac856c4354ce1149cc4
+Commit message: "Cambio ip nexus"
+ > git.exe rev-list dd7e84c85d9bc4b9aae170e0d61c8f3568cf3bee # timeout=10

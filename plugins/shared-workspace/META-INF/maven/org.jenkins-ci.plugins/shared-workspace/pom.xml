@@ -1,0 +1,76 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<name>Shared Workspace</name>
+	<parent>
+		<groupId>org.jenkins-ci.plugins</groupId>
+		<artifactId>plugin</artifactId>
+		<version>1.576</version><!-- which version of Jenkins is this plugin built against? -->
+	</parent>
+
+	<licenses>
+		<license>
+			<name>MIT</name>
+			<url>http://www.opensource.org/licenses/mit-license.php</url>
+			<comments>
+				Copyright (c) 2013, JSC "Center of Navigation Technologies"
+			</comments>
+		</license>
+	</licenses>
+
+	<artifactId>shared-workspace</artifactId>
+	<version>1.0.2</version>
+	<packaging>hpi</packaging>
+
+	<!-- get every artifact through repo.jenkins-ci.org, which proxies all the artifacts that we need -->
+	<repositories>
+		<repository>
+			<id>repo.jenkins-ci.org</id>
+			<url>http://repo.jenkins-ci.org/public/</url>
+		</repository>
+	</repositories>
+
+	<pluginRepositories>
+		<pluginRepository>
+			<id>repo.jenkins-ci.org</id>
+			<url>http://repo.jenkins-ci.org/public/</url>
+		</pluginRepository>
+	</pluginRepositories>
+
+	<properties>
+		<!--
+		explicitly specifying the latest version here because one we get from the parent POM
+		tends to lag behind a bit
+		-->
+		<maven-hpi-plugin.version>1.95</maven-hpi-plugin.version>
+	</properties>
+
+	<dependencies>
+		<dependency>
+			<groupId>org.jenkins-ci.plugins</groupId>
+			<artifactId>matrix-project</artifactId>
+			<version>1.4</version>
+		</dependency>
+	</dependencies>
+
+	<url>http://wiki.jenkins-ci.org/display/JENKINS/Shared+workspace+plugin</url>
+
+	<scm>
+		<connection>scm:git:ssh://github.com/jenkinsci/shared-workspace-plugin.git</connection>
+		<developerConnection>scm:git:ssh://git@github.com/jenkinsci/shared-workspace-plugin.git</developerConnection>
+		<url>https://github.com/jenkinsci/shared-workspace-plugin</url>
+	  <tag>shared-workspace-1.0.2</tag>
+  </scm>
+
+	<developers>
+		<developer>
+			<id>sapone</id>
+			<name>Sergey Mylnikov</name>
+			<email>smylnikov@ac-sw.com</email>
+		</developer>
+		<developer>
+			<id>VestniK</id>
+			<name>Sergey Vidyuk</name>
+			<email>sir.vestnik@gmail.com</email>
+		</developer>
+	</developers>
+</project>

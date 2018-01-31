@@ -1,0 +1,117 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<flow-build plugin="workflow-job@2.12.2">
+  <actions>
+    <hudson.model.CauseAction>
+      <causeBag class="linked-hash-map">
+        <entry>
+          <hudson.model.Cause_-UserIdCause>
+            <userId>antonio.f.herrera</userId>
+          </hudson.model.Cause_-UserIdCause>
+          <int>1</int>
+        </entry>
+      </causeBag>
+    </hudson.model.CauseAction>
+    <io.jenkins.blueocean.service.embedded.BlueOceanUrlAction plugin="blueocean-rest-impl@1.1.7">
+      <blueOceanUrlObject class="io.jenkins.blueocean.service.embedded.BlueOceanUrlObjectImpl">
+        <mappedUrl>blue/organizations/jenkins/Pipeline/detail/Pipeline/27</mappedUrl>
+      </blueOceanUrlObject>
+    </io.jenkins.blueocean.service.embedded.BlueOceanUrlAction>
+    <jenkins.metrics.impl.TimeInQueueAction plugin="metrics@3.1.2.10">
+      <queuingDurationMillis>64</queuingDurationMillis>
+    </jenkins.metrics.impl.TimeInQueueAction>
+    <org.jenkinsci.plugins.workflow.libs.LibrariesAction plugin="workflow-cps-global-lib@2.8">
+      <libraries/>
+    </org.jenkinsci.plugins.workflow.libs.LibrariesAction>
+    <com.sonyericsson.rebuild.RebuildAction plugin="rebuild@1.25"/>
+  </actions>
+  <queueId>35</queueId>
+  <timestamp>1506000114592</timestamp>
+  <startTime>1506000114602</startTime>
+  <result>FAILURE</result>
+  <description>Pipeline de prueba de Concepto</description>
+  <displayName>Prueba</displayName>
+  <duration>47572</duration>
+  <keepLog>false</keepLog>
+  <execution class="org.jenkinsci.plugins.workflow.cps.CpsFlowExecution">
+    <result>FAILURE</result>
+    <script>node {
+
+    currentBuild.displayName=&quot;Prueba&quot;
+    currentBuild.description=&quot;Pipeline de prueba de Concepto&quot;
+
+    def m2=&quot;C://Software//apache-maven-3.5.0//bin&quot;
+
+        stage(&apos;Checkout&apos;) {
+            /* 
+            Se realiza el checkout del repositorio de GIT. Se proporciona un parámetro
+            de entrada que será una etiqueta o rama para ejecutar. 
+          */
+            echo &apos;Pipeline Checkout finalizado correctamente&apos;
+        }
+        stage(&apos;Build&apos;) {
+            /* 
+            Se realiza la contrucción del proyecto y test unitarios. Los parámetros
+            de uso general se han declarado en environment for the run
+            */
+            
+             sh &quot;${m2}/mvn clean install -f C://Users//antonio.f.herrera//Desktop//maven-plugins-master//pom.xml -U&quot;
+            
+            echo &apos;Pipeline Build finalizado correctamente&apos;
+        }
+        stage(&apos;Quality&apos;) {
+            /* 
+            Se realiza la revisión de código en el proyecto. Los parámetros de uso
+            general se han declarado en environment for the run
+             */
+            sh &quot;${m2}/mvn sonar:sonar -f C://Users//antonio.f.herrera//Desktop//maven-plugins-master//pom.xml -U -Psonar -Dmaven.test.skip=true -Dsonar.login=admin -Dsonar.password=admin&quot;
+           
+            echo &apos;Pipeline Quality finalizado correctamente&apos;
+        }
+
+        stage(&apos;Tests&apos;) {
+            echo &apos;Pipeline Tests finalizado correctamente&apos;
+        }
+        
+        stage(&apos;DeployNexus&apos;) {
+            /*
+            Se realiza la subida de los Artefactos a Nexus. Los parámetros de uso 
+            general se han declarado en environment for the run
+            
+            sh &quot;${m2}/mvn deploy -Denv-pro=true -Dmaven.test.skip=true -Dusuario=${user} -Dclave=${password}&quot;
+            */
+            echo &apos;Pipeline Deploy_Nexus finalizado correctamente&apos;   
+        }
+        stage(&apos;DeployApp&apos;) {
+            
+            echo &apos;Pipeline DeployApp finalizado correctamente&apos;  
+        }
+}</script>
+    <loadedScripts class="map"/>
+    <timings class="map">
+      <entry>
+        <string>flowNode</string>
+        <long>477399076</long>
+      </entry>
+      <entry>
+        <string>classLoad</string>
+        <long>1719189558</long>
+      </entry>
+      <entry>
+        <string>run</string>
+        <long>2471495389</long>
+      </entry>
+      <entry>
+        <string>parse</string>
+        <long>973030660</long>
+      </entry>
+      <entry>
+        <string>saveProgram</string>
+        <long>877588628</long>
+      </entry>
+    </timings>
+    <sandbox>true</sandbox>
+    <iota>23</iota>
+    <head>1:23</head>
+  </execution>
+  <checkouts class="hudson.util.PersistedList"/>
+</flow-build>

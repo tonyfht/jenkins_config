@@ -1,0 +1,338 @@
+<list>
+  <jbr plugin="global-build-stats@1.5">
+    <r>SUCCESS</r>
+    <n>Jenkins_SilkCentral</n>
+    <nb>25</nb>
+    <d>
+      <time>1513756132624</time>
+      <timezone>Europe/Paris</timezone>
+    </d>
+    <du>256645</du>
+    <nn>master</nn>
+    <un>admin</un>
+  </jbr>
+  <jbr plugin="global-build-stats@1.5">
+    <r>FAILURE</r>
+    <n>Jenkins_SilkCentral</n>
+    <nb>24</nb>
+    <d>
+      <time>1513670636479</time>
+      <timezone>Europe/Paris</timezone>
+    </d>
+    <du>414</du>
+    <nn>master</nn>
+    <un>admin</un>
+  </jbr>
+  <jbr plugin="global-build-stats@1.5">
+    <r>UNSTABLE</r>
+    <n>Jenkins_SilkCentral</n>
+    <nb>23</nb>
+    <d>
+      <time>1513670598444</time>
+      <timezone>Europe/Paris</timezone>
+    </d>
+    <du>20489</du>
+    <nn>master</nn>
+    <un>admin</un>
+  </jbr>
+  <jbr plugin="global-build-stats@1.5">
+    <r>UNSTABLE</r>
+    <n>Jenkins_SilkCentral</n>
+    <nb>22</nb>
+    <d>
+      <time>1513595353847</time>
+      <timezone>Europe/Paris</timezone>
+    </d>
+    <du>5446</du>
+    <nn>master</nn>
+    <un>admin</un>
+  </jbr>
+  <jbr plugin="global-build-stats@1.5">
+    <r>SUCCESS</r>
+    <n>Jenkins_SilkCentral</n>
+    <nb>21</nb>
+    <d>
+      <time>1513593260939</time>
+      <timezone>Europe/Paris</timezone>
+    </d>
+    <du>5755</du>
+    <nn>master</nn>
+    <un>admin</un>
+  </jbr>
+  <jbr plugin="global-build-stats@1.5">
+    <r>SUCCESS</r>
+    <n>Jenkins_SilkCentral</n>
+    <nb>19</nb>
+    <d>
+      <time>1513588352251</time>
+      <timezone>Europe/Paris</timezone>
+    </d>
+    <du>1161</du>
+    <nn>master</nn>
+    <un>admin</un>
+  </jbr>
+  <jbr plugin="global-build-stats@1.5">
+    <r>SUCCESS</r>
+    <n>Check_Maven</n>
+    <nb>47</nb>
+    <d>
+      <time>1513002153294</time>
+      <timezone>Europe/Paris</timezone>
+    </d>
+    <du>157630</du>
+    <nn>master</nn>
+    <un>admin</un>
+  </jbr>
+  <jbr plugin="global-build-stats@1.5">
+    <r>SUCCESS</r>
+    <n>Jenkins_SilkCentral</n>
+    <nb>18</nb>
+    <d>
+      <time>1512997855408</time>
+      <timezone>Europe/Paris</timezone>
+    </d>
+    <du>25852</du>
+    <nn>master</nn>
+    <un>admin</un>
+  </jbr>
+  <jbr plugin="global-build-stats@1.5">
+    <r>UNSTABLE</r>
+    <n>Jenkins_SilkCentral</n>
+    <nb>17</nb>
+    <d>
+      <time>1512992022910</time>
+      <timezone>Europe/Paris</timezone>
+    </d>
+    <du>25809</du>
+    <nn>master</nn>
+    <un>admin</un>
+  </jbr>
+  <jbr plugin="global-build-stats@1.5">
+    <r>SUCCESS</r>
+    <n>Jenkins_SilkCentral</n>
+    <nb>16</nb>
+    <d>
+      <time>1512991910379</time>
+      <timezone>Europe/Paris</timezone>
+    </d>
+    <du>26050</du>
+    <nn>master</nn>
+    <un>admin</un>
+  </jbr>
+  <jbr plugin="global-build-stats@1.5">
+    <r>FAILURE</r>
+    <n>Jenkins_SilkCentral</n>
+    <nb>12</nb>
+    <d>
+      <time>1512987136541</time>
+      <timezone>Europe/Paris</timezone>
+    </d>
+    <du>289</du>
+    <nn>master</nn>
+    <un>admin</un>
+  </jbr>
+  <jbr plugin="global-build-stats@1.5">
+    <r>SUCCESS</r>
+    <n>Check_Maven</n>
+    <nb>46</nb>
+    <d>
+      <time>1512469686637</time>
+      <timezone>Europe/Paris</timezone>
+    </d>
+    <du>140960</du>
+    <nn>master</nn>
+    <un>admin</un>
+  </jbr>
+  <jbr plugin="global-build-stats@1.5">
+    <r>SUCCESS</r>
+    <n>Check_Maven</n>
+    <nb>45</nb>
+    <d>
+      <time>1512469150955</time>
+      <timezone>Europe/Paris</timezone>
+    </d>
+    <du>129199</du>
+    <nn>master</nn>
+    <un>admin</un>
+  </jbr>
+  <jbr plugin="global-build-stats@1.5">
+    <r>SUCCESS</r>
+    <n>Check_Maven</n>
+    <nb>44</nb>
+    <d>
+      <time>1512468728688</time>
+      <timezone>Europe/Paris</timezone>
+    </d>
+    <du>140741</du>
+    <nn>master</nn>
+    <un>admin</un>
+  </jbr>
+  <jbr plugin="global-build-stats@1.5">
+    <r>SUCCESS</r>
+    <n>Check_Maven</n>
+    <nb>43</nb>
+    <d>
+      <time>1512467764061</time>
+      <timezone>Europe/Paris</timezone>
+    </d>
+    <du>141322</du>
+    <nn>master</nn>
+    <un>admin</un>
+  </jbr>
+  <jbr plugin="global-build-stats@1.5">
+    <r>SUCCESS</r>
+    <n>Check_Maven</n>
+    <nb>17</nb>
+    <d>
+      <time>1512459481734</time>
+      <timezone>Europe/Paris</timezone>
+    </d>
+    <du>4865</du>
+    <nn>master</nn>
+    <un>admin</un>
+  </jbr>
+  <jbr plugin="global-build-stats@1.5">
+    <r>SUCCESS</r>
+    <n>NhHoteles/Launch Test_SilkCentral</n>
+    <nb>25</nb>
+    <d>
+      <time>1513756132624</time>
+      <timezone>Europe/Paris</timezone>
+    </d>
+    <du>256645</du>
+    <nn>master</nn>
+    <un>admin</un>
+  </jbr>
+  <jbr plugin="global-build-stats@1.5">
+    <r>SUCCESS</r>
+    <n>NhHoteles/Launch Test_SilkCentral</n>
+    <nb>21</nb>
+    <d>
+      <time>1513593260939</time>
+      <timezone>Europe/Paris</timezone>
+    </d>
+    <du>5755</du>
+    <nn>master</nn>
+    <un>admin</un>
+  </jbr>
+  <jbr plugin="global-build-stats@1.5">
+    <r>SUCCESS</r>
+    <n>NhHoteles/Launch Test_SilkCentral</n>
+    <nb>19</nb>
+    <d>
+      <time>1513588352251</time>
+      <timezone>Europe/Paris</timezone>
+    </d>
+    <du>1161</du>
+    <nn>master</nn>
+    <un>admin</un>
+  </jbr>
+  <jbr plugin="global-build-stats@1.5">
+    <r>UNSTABLE</r>
+    <n>NhHoteles/Launch Test_SilkCentral</n>
+    <nb>17</nb>
+    <d>
+      <time>1512992022910</time>
+      <timezone>Europe/Paris</timezone>
+    </d>
+    <du>25809</du>
+    <nn>master</nn>
+    <un>admin</un>
+  </jbr>
+  <jbr plugin="global-build-stats@1.5">
+    <r>SUCCESS</r>
+    <n>NhHoteles/Launch Test_SilkCentral</n>
+    <nb>16</nb>
+    <d>
+      <time>1512991910379</time>
+      <timezone>Europe/Paris</timezone>
+    </d>
+    <du>26050</du>
+    <nn>master</nn>
+    <un>admin</un>
+  </jbr>
+  <jbr plugin="global-build-stats@1.5">
+    <r>FAILURE</r>
+    <n>NhHoteles/Launch Test_SilkCentral</n>
+    <nb>12</nb>
+    <d>
+      <time>1512987136541</time>
+      <timezone>Europe/Paris</timezone>
+    </d>
+    <du>289</du>
+    <nn>master</nn>
+    <un>admin</un>
+  </jbr>
+  <jbr plugin="global-build-stats@1.5">
+    <r>SUCCESS</r>
+    <n>Proyect_Check/LifeCicle_IC_No_Pipeline</n>
+    <nb>47</nb>
+    <d>
+      <time>1513002153294</time>
+      <timezone>Europe/Paris</timezone>
+    </d>
+    <du>157630</du>
+    <nn>master</nn>
+    <un>admin</un>
+  </jbr>
+  <jbr plugin="global-build-stats@1.5">
+    <r>SUCCESS</r>
+    <n>Proyect_Check/LifeCicle_IC_No_Pipeline</n>
+    <nb>46</nb>
+    <d>
+      <time>1512469686637</time>
+      <timezone>Europe/Paris</timezone>
+    </d>
+    <du>140960</du>
+    <nn>master</nn>
+    <un>admin</un>
+  </jbr>
+  <jbr plugin="global-build-stats@1.5">
+    <r>SUCCESS</r>
+    <n>Proyect_Check/LifeCicle_IC_No_Pipeline</n>
+    <nb>45</nb>
+    <d>
+      <time>1512469150955</time>
+      <timezone>Europe/Paris</timezone>
+    </d>
+    <du>129199</du>
+    <nn>master</nn>
+    <un>admin</un>
+  </jbr>
+  <jbr plugin="global-build-stats@1.5">
+    <r>SUCCESS</r>
+    <n>Proyect_Check/LifeCicle_IC_No_Pipeline</n>
+    <nb>44</nb>
+    <d>
+      <time>1512468728688</time>
+      <timezone>Europe/Paris</timezone>
+    </d>
+    <du>140741</du>
+    <nn>master</nn>
+    <un>admin</un>
+  </jbr>
+  <jbr plugin="global-build-stats@1.5">
+    <r>SUCCESS</r>
+    <n>Proyect_Check/LifeCicle_IC_No_Pipeline</n>
+    <nb>43</nb>
+    <d>
+      <time>1512467764061</time>
+      <timezone>Europe/Paris</timezone>
+    </d>
+    <du>141322</du>
+    <nn>master</nn>
+    <un>admin</un>
+  </jbr>
+  <jbr plugin="global-build-stats@1.5">
+    <r>SUCCESS</r>
+    <n>Proyect_Check/LifeCicle_IC_No_Pipeline</n>
+    <nb>17</nb>
+    <d>
+      <time>1512459481734</time>
+      <timezone>Europe/Paris</timezone>
+    </d>
+    <du>4865</du>
+    <nn>master</nn>
+    <un>admin</un>
+  </jbr>
+</list>

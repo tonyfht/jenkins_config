@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<l:dependencies xmlns:l='licenses' groupId='org.jenkins-ci.plugins' artifactId='customize-build-now' version='1.1'><l:dependency name='Customize Build Now Label' groupId='org.jenkins-ci.plugins' artifactId='customize-build-now' version='1.1' url='https://wiki.jenkins-ci.org/display/JENKINS/Customize+Build+Now+Plugin'><l:description>Provide an alternate label to 'Build Now' to run a job</l:description><l:license name='MIT License' url='http://opensource.org/licenses/MIT'/></l:dependency></l:dependencies>

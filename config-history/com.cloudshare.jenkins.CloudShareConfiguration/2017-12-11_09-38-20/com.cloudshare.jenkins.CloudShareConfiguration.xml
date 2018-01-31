@@ -1,0 +1,5 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<com.cloudshare.jenkins.CloudShareConfiguration plugin="cloudshare-docker@1.1.0">
+  <apiKey></apiKey>
+  <apiId></apiId>
+</com.cloudshare.jenkins.CloudShareConfiguration>

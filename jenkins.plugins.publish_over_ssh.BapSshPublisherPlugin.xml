@@ -1,0 +1,11 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<jenkins.plugins.publish__over__ssh.BapSshPublisherPlugin_-Descriptor plugin="publish-over-ssh@1.18">
+  <hostConfigurations/>
+  <commonConfig>
+    <secretPassphrase>{AQAAABAAAAAQzweqy/KyoLyT0BV5os419/J27Yicc0vsfcPKMwgyNcQ=}</secretPassphrase>
+    <key>ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDR4kWOJZXCrnY3JnzXxw13do0Z3pHezxmLRq3wruYH/XX2TIpImVdc6/KQEyFP7cuqyV6Ar4nZsCyHgTGGBllGaMCctkI/jm0C5IOb7O4kkTUVXlZXlC7+ijp/3YeVNuPVR/cpz3IPbE3fkBhQSNRRucEJPGcA8ybQiY96+q51yK7OMQWyOP0NMQeAqhA2zpB6rYnVpiaFXH+rcYGftSc1kHP2Dt/N0u2wfUOSH4C6XbOKar9rucjChO8ndQfnbV6EnvB8O/PkXjeEBzm4N2y/tQ5fQzFEXLDD4xQ8ZBY280JrwctYwUs1kWv4oIH5baLevt4Of2XX6+PqKVOTaRMf antonio.f.herrera@ESBCN01LGL0F3G2</key>
+    <keyPath></keyPath>
+    <disableAllExec>false</disableAllExec>
+  </commonConfig>
+  <defaults class="jenkins.plugins.publish_over_ssh.options.SshPluginDefaults"/>
+</jenkins.plugins.publish__over__ssh.BapSshPublisherPlugin_-Descriptor>

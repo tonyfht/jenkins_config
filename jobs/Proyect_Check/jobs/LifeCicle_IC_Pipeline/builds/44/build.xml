@@ -1,0 +1,196 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<flow-build plugin="workflow-job@2.17">
+  <actions>
+    <hudson.model.ParametersAction>
+      <safeParameters class="sorted-set"/>
+      <parameters>
+        <hudson.model.StringParameterValue>
+          <name>Rama</name>
+          <description>Se debe seleccionar la rama que se desea ejecutar</description>
+          <value>master</value>
+        </hudson.model.StringParameterValue>
+      </parameters>
+      <parameterDefinitionNames class="hudson.model.ParametersDefinitionProperty$1">
+        <outer-class>
+          <parameterDefinitions>
+            <hudson.model.ChoiceParameterDefinition>
+              <name>Rama</name>
+              <description>Se debe seleccionar la rama que se desea ejecutar</description>
+              <choices class="java.util.Arrays$ArrayList">
+                <a class="string-array">
+                  <string>master</string>
+                  <string>branches</string>
+                  <string>branches2</string>
+                  <string>branchesdemo</string>
+                </a>
+              </choices>
+            </hudson.model.ChoiceParameterDefinition>
+          </parameterDefinitions>
+        </outer-class>
+      </parameterDefinitionNames>
+    </hudson.model.ParametersAction>
+    <hudson.model.CauseAction>
+      <causeBag class="linked-hash-map">
+        <entry>
+          <hudson.model.Cause_-UserIdCause>
+            <userId>antonio.f.herrera</userId>
+          </hudson.model.Cause_-UserIdCause>
+          <int>1</int>
+        </entry>
+      </causeBag>
+    </hudson.model.CauseAction>
+    <hudson.plugins.jobConfigHistory.JobConfigBadgeAction plugin="jobConfigHistory@2.18">
+      <configDates>
+        <string>2018-01-30_11-07-53</string>
+        <string>2018-01-19_10-00-48</string>
+      </configDates>
+    </hudson.plugins.jobConfigHistory.JobConfigBadgeAction>
+    <jenkins.metrics.impl.TimeInQueueAction plugin="metrics@3.1.2.10">
+      <queuingDurationMillis>80</queuingDurationMillis>
+    </jenkins.metrics.impl.TimeInQueueAction>
+    <org.jenkinsci.plugins.workflow.libs.LibrariesAction plugin="workflow-cps-global-lib@2.9">
+      <libraries/>
+    </org.jenkinsci.plugins.workflow.libs.LibrariesAction>
+    <org.jenkinsci.plugins.workflow.cps.EnvActionImpl plugin="workflow-cps@2.43">
+      <env class="tree-map"/>
+    </org.jenkinsci.plugins.workflow.cps.EnvActionImpl>
+    <com.sonyericsson.rebuild.RebuildAction plugin="rebuild@1.27"/>
+  </actions>
+  <queueId>1</queueId>
+  <timestamp>1517321739490</timestamp>
+  <startTime>1517321739498</startTime>
+  <result>FAILURE</result>
+  <description>Check maven pipeline prueba de concepto</description>
+  <displayName>master</displayName>
+  <duration>5428</duration>
+  <keepLog>false</keepLog>
+  <execution class="org.jenkinsci.plugins.workflow.cps.CpsFlowExecution">
+    <result>FAILURE</result>
+    <script>node {
+
+    currentBuild.displayName=&quot;${Rama}&quot;
+    currentBuild.description=&quot;Check maven pipeline prueba de concepto&quot;
+
+        stage(&apos;Checkout&apos;) {
+            /* 
+            Se realiza el checkout del repositorio de GIT. Se proporciona un parámetro
+            de entrada que será una etiqueta o rama para ejecutar. 
+          */
+            checkout([$class: &apos;GitSCM&apos;, branches: [[name: &apos;*/master&apos;]], doGenerateSubmoduleConfigurations: false, extensions: [], submoduleCfg: [], userRemoteConfigs: [[url: &apos;https://gitlab.com/antoniofrancisco.herrera/Check.git&apos;]]])
+            
+            echo &apos;Stage Checkout realizado correctamente.&apos;
+        }
+        stage(&apos;Build&apos;) {
+            /* 
+            Se realiza la contrucción del proyecto y test unitarios. Los parámetros
+            de uso general se han declarado en environment for the run
+            */ 
+            
+             sh &quot;${m2}/mvn install -Dmaven.test.failure.ignore=true -f fuentes/pom.xml -U&quot;
+             
+            echo &apos;Stage Build realizado correctamente.&apos;
+        }
+        stage(&apos;Quality&apos;) {
+            /* 
+            Se realiza la revisión de código en el proyecto con SonarQube.
+            */
+            
+            sh &quot;${m2}/mvn install sonar:sonar -Dmaven.test.failure.ignore=true -f fuentes/pom.xml -U&quot;
+            
+            echo &apos;Stage Quality realizado correctamente.&apos;
+        }
+
+        stage(&apos;Tests&apos;) {
+             /* 
+            En este ejemplo solo incluye la parte de test unitarios integrados en la compilación.
+            Se podrían integrar todos los test que se quieran incorporar (funcionales, rendimiento, regresión...)
+            */
+            sh &quot;${m2}/mvn test -Dmaven.test.failure.ignore=true -f fuentes/pom.xml -U&quot;
+            
+            echo &apos;Stage Test realizado correctamente.&apos;
+        }
+        stage(&apos;InformeCheckstyle&apos;) {
+            /* 
+            Se integra el plugin de CheckStyle en el pipeline con las reglas configuradas en el fichero xml que es el mismo
+            que se integra en SonarQube.
+            */
+            sh &quot;${m2}/mvn checkstyle:checkstyle -f fuentes/pom.xml -U&quot;
+            checkstyle canRunOnFailed: true, defaultEncoding: &apos;&apos;, healthy: &apos;&apos;, pattern: &apos;**/checkstyle-result.xml&apos;, shouldDetectModules: true, unHealthy: &apos;&apos;
+            echo &apos;Stage InformeCheckstyle realizado correctamente.&apos;
+        }
+        stage(&apos;InformePMD&apos;) {
+            /* 
+            Se integra el plugin de PMD en el pipeline con las reglas configuradas en el fichero xml que es el mismo
+            que se integra en SonarQube.
+            */
+            sh &quot;${m2}/mvn pmd:pmd -f fuentes/pom.xml -U&quot;
+            pmd canRunOnFailed: true, defaultEncoding: &apos;&apos;, healthy: &apos;&apos;, pattern: &apos;**/pmd.xml&apos;, shouldDetectModules: true, unHealthy: &apos;&apos;
+            echo &apos;Stage InformePMD realizado correctamente.&apos;
+        }
+        stage(&apos;InformeCobertura&apos;) {
+            /* 
+            Se integra el plugin de Cobertura en el pipeline con las reglas configuradas en el fichero xml que es el mismo
+            que se integra en SonarQube.
+            */
+            sh &quot;${m2}/mvn cobertura:cobertura -Dcobertura.report.format=xml -f fuentes/pom.xml -U&quot;
+            cobertura autoUpdateHealth: false, autoUpdateStability: false, classCoverageTargets: &apos;70, 0, 0&apos;, coberturaReportFile: &apos;**/coverage.xml&apos;, conditionalCoverageTargets: &apos;80, 0, 0&apos;, failUnhealthy: false, failUnstable: false, fileCoverageTargets: &apos;80, 0, 0&apos;, lineCoverageTargets: &apos;80, 0, 0&apos;, maxNumberOfBuilds: 0, methodCoverageTargets: &apos;80, 0, 0&apos;, onlyStable: false, packageCoverageTargets: &apos;80, 0, 0&apos;, zoomCoverageChart: false
+            echo &apos;Stage InformeCobertura realizado correctamente.&apos;
+        }
+        stage(&apos;DeployNexus&apos;) {
+            /*
+            Se realiza la subida de los Artefactos a Nexus. Los parámetros de uso 
+            general se han declarado en environment for the run de usuario y password de Nexus
+            Se tiene que configurar en el pom.xml el distributionManagement y el plugin maven-deploy.
+            */
+            /*
+                sh &quot;${m2}/mvn deploy:deploy-file -Dmaven.test.skip=true -Durl=${UrlNexus} -Dfile=${UrlFichero} -DrepositoryId=${repository} -DgroupId=${groupId} -DartifactId=${artifactId} -Dversion=${version}&quot;
+            */
+            echo &apos;Stage DeployNexus realizado correctamente.&apos;   
+        }
+        stage(&apos;DeployApp&apos;) {
+            
+            echo &apos;Stage DeployApp realizado correctamente.&apos;  
+        }
+        
+        stage(&apos;Gatling&apos;) {
+            
+            sh &quot;${m2}/mvn gatling:test -f fuentes/pom.xml -U&quot;
+            gatlingArchive()
+            
+            echo &apos;Stage Gatling realizado correctamente.&apos;  
+        }
+        
+
+
+}</script>
+    <loadedScripts class="map"/>
+    <durabilityHint>MAX_SURVIVABILITY</durabilityHint>
+    <timings class="map">
+      <entry>
+        <string>flowNode</string>
+        <long>90374550</long>
+      </entry>
+      <entry>
+        <string>classLoad</string>
+        <long>3720665034</long>
+      </entry>
+      <entry>
+        <string>run</string>
+        <long>1299776676</long>
+      </entry>
+      <entry>
+        <string>parse</string>
+        <long>2103803970</long>
+      </entry>
+      <entry>
+        <string>saveProgram</string>
+        <long>284133694</long>
+      </entry>
+    </timings>
+    <sandbox>true</sandbox>
+    <iota>12</iota>
+    <head>1:12</head>
+    <resumeBlocked>false</resumeBlocked>
+  </execution>
+  <checkouts class="hudson.util.PersistedList"/>
+</flow-build>

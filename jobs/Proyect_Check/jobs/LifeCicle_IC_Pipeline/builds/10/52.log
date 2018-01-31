@@ -1,0 +1,25 @@
+[C:\Program Files (x86)\Jenkins\workspace\Check_Maven_Pipeline] Running shell script
++ C://Software//apache-maven-3.5.0//bin/mvn deploy:deploy-file -Dmaven.test.skip=true -Durl=http://192.168.35.129:8081/repository/Ricoh-snapshot/ -Dfile=despliegues/componentes/check_2.1-distribution.zip -DrepositoryId=Ricoh-snapshot -DgroupId=es.ricoh -DartifactId=ricoh -Dversion=1.1-SNAPSHOT
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Maven Stub Project (No POM) 1
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-deploy-plugin:2.7:deploy-file (default-cli) @ standalone-pom ---
+Downloading: http://192.168.35.129:8081/repository/Ricoh-snapshot/es/ricoh/ricoh/1.1-SNAPSHOT/maven-metadata.xml
+[WARNING] Could not transfer metadata es.ricoh:ricoh:1.1-SNAPSHOT/maven-metadata.xml from/to Ricoh-snapshot (http://192.168.35.129:8081/repository/Ricoh-snapshot/): Connect to 192.168.35.129:8081 [/192.168.35.129] failed: Connection timed out: connect
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 22.980 s
+[INFO] Finished at: 2017-12-11T13:06:11+01:00
+[INFO] Final Memory: 12M/245M
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-deploy-plugin:2.7:deploy-file (default-cli) on project standalone-pom: Failed to retrieve remote metadata es.ricoh:ricoh:1.1-SNAPSHOT/maven-metadata.xml: Could not transfer metadata es.ricoh:ricoh:1.1-SNAPSHOT/maven-metadata.xml from/to Ricoh-snapshot (http://192.168.35.129:8081/repository/Ricoh-snapshot/): Connect to 192.168.35.129:8081 [/192.168.35.129] failed: Connection timed out: connect -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoExecutionException

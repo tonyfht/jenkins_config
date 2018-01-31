@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Keyword name="Contratar Hotel - Avanzada" id="491" xmlns="http://www.borland.com/silk/Keyword">
+    <InvokeKeyword name="Abrir Aplicacion">
+        <Argument value="https://www.nh-hoteles.es/"/>
+    </InvokeKeyword>
+    <InvokeKeyword name="Pulsar Enlace">
+        <Argument value="Inicio"/>
+        <Argument value="Busqueda Avanzada"/>
+    </InvokeKeyword>
+    <InvokeKeyword name="Introducir Texto">
+        <Argument value="Busqueda Avanzada"/>
+        <Argument value="Destino"/>
+        <Argument value="Madrid"/>
+    </InvokeKeyword>
+    <InvokeKeyword name="Pulsar Enlace">
+        <Argument value="Busqueda Avanzada"/>
+        <Argument value="Buscar"/>
+    </InvokeKeyword>
+    <InvokeKeyword name="Pulsar Enlace">
+        <Argument value="Resultados Busqueda"/>
+        <Argument value="Primer Hotel"/>
+    </InvokeKeyword>
+    <InvokeKeyword name="Pulsar Boton">
+        <Argument value="Hotel"/>
+        <Argument value="Reservar"/>
+    </InvokeKeyword>
+    <InvokeKeyword name="Pulsar Boton Modal">
+        <Argument value="Hotel"/>
+        <Argument value="Seleccionar Precios"/>
+        <Argument value="Ver Precios"/>
+    </InvokeKeyword>
+    <InvokeKeyword name="Pulsar Boton">
+        <Argument value="Hotel"/>
+        <Argument value="Solo Alojamiento"/>
+    </InvokeKeyword>
+    <InvokeKeyword name="Introducir Texto">
+        <Argument value="Reserva"/>
+        <Argument value="Nombre"/>
+        <Argument value="Javier"/>
+    </InvokeKeyword>
+    <InvokeKeyword name="Introducir Texto">
+        <Argument value="Reserva"/>
+        <Argument value="Apellidos"/>
+        <Argument value="Castro Perez"/>
+    </InvokeKeyword>
+    <InvokeKeyword name="Introducir Texto">
+        <Argument value="Reserva"/>
+        <Argument value="Correo Electronico"/>
+        <Argument value="javier@google.es"/>
+    </InvokeKeyword>
+    <InvokeKeyword name="Introducir Texto">
+        <Argument value="Reserva"/>
+        <Argument value="Confirmar Correo Electronico"/>
+        <Argument value="javier@google.es"/>
+    </InvokeKeyword>
+    <InvokeKeyword name="Introducir Texto">
+        <Argument value="Reserva"/>
+        <Argument value="Telefono"/>
+        <Argument value="0034914422533"/>
+    </InvokeKeyword>
+</Keyword>

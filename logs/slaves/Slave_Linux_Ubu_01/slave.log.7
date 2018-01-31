@@ -1,0 +1,27 @@
+[01/30/18 13:58:34] [SSH] abriendo una conexión SSH sobre 192.168.35.135:22.
+Connection timed out: connect
+SSH Connection failed with IOException: "Connection timed out: connect".
+java.io.IOException: There was a problem while connecting to 192.168.35.135:22
+	at com.trilead.ssh2.Connection.connect(Connection.java:834)
+	at hudson.plugins.sshslaves.SSHLauncher.openConnection(SSHLauncher.java:1313)
+	at hudson.plugins.sshslaves.SSHLauncher$2.call(SSHLauncher.java:821)
+	at hudson.plugins.sshslaves.SSHLauncher$2.call(SSHLauncher.java:810)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: java.net.ConnectException: Connection timed out: connect
+	at java.net.DualStackPlainSocketImpl.connect0(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.doConnect(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.connect(Unknown Source)
+	at java.net.PlainSocketImpl.connect(Unknown Source)
+	at java.net.SocksSocketImpl.connect(Unknown Source)
+	at java.net.Socket.connect(Unknown Source)
+	at com.trilead.ssh2.transport.TransportManager.establishConnection(TransportManager.java:367)
+	at com.trilead.ssh2.transport.TransportManager.initialize(TransportManager.java:480)
+	at com.trilead.ssh2.Connection.connect(Connection.java:774)
+	... 7 more
+[01/30/18 13:58:55] Launch failed - cleaning up connection
+[01/30/18 13:58:55] [SSH] Cerrada la conexión.

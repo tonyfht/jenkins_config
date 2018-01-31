@@ -1,0 +1,126 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<flow-build plugin="workflow-job@2.12.2">
+  <actions>
+    <org.jenkinsci.plugins.workflow.cps.replay.ReplayFlowFactoryAction plugin="workflow-cps@2.39">
+      <replacementLoadedScripts/>
+    </org.jenkinsci.plugins.workflow.cps.replay.ReplayFlowFactoryAction>
+    <hudson.model.CauseAction>
+      <causeBag class="linked-hash-map">
+        <entry>
+          <hudson.model.Cause_-UserIdCause>
+            <userId>antonio.f.herrera</userId>
+          </hudson.model.Cause_-UserIdCause>
+          <int>1</int>
+        </entry>
+        <entry>
+          <org.jenkinsci.plugins.workflow.cps.replay.ReplayCause plugin="workflow-cps@2.39">
+            <originalNumber>29</originalNumber>
+          </org.jenkinsci.plugins.workflow.cps.replay.ReplayCause>
+          <int>1</int>
+        </entry>
+      </causeBag>
+    </hudson.model.CauseAction>
+    <jenkins.metrics.impl.TimeInQueueAction plugin="metrics@3.1.2.10">
+      <queuingDurationMillis>23</queuingDurationMillis>
+    </jenkins.metrics.impl.TimeInQueueAction>
+    <io.jenkins.blueocean.service.embedded.BlueOceanUrlAction plugin="blueocean-rest-impl@1.1.7">
+      <blueOceanUrlObject class="io.jenkins.blueocean.service.embedded.BlueOceanUrlObjectImpl">
+        <mappedUrl>blue/organizations/jenkins/Pipeline/detail/Pipeline/30</mappedUrl>
+      </blueOceanUrlObject>
+    </io.jenkins.blueocean.service.embedded.BlueOceanUrlAction>
+    <org.jenkinsci.plugins.workflow.libs.LibrariesAction plugin="workflow-cps-global-lib@2.8">
+      <libraries/>
+    </org.jenkinsci.plugins.workflow.libs.LibrariesAction>
+    <com.sonyericsson.rebuild.RebuildAction plugin="rebuild@1.25"/>
+  </actions>
+  <queueId>3</queueId>
+  <timestamp>1509012761796</timestamp>
+  <startTime>1509012761801</startTime>
+  <result>SUCCESS</result>
+  <description>Pipeline de prueba de Concepto</description>
+  <displayName>Prueba</displayName>
+  <duration>25396</duration>
+  <keepLog>false</keepLog>
+  <execution class="org.jenkinsci.plugins.workflow.cps.CpsFlowExecution">
+    <result>SUCCESS</result>
+    <script>node {
+
+    currentBuild.displayName=&quot;Prueba&quot;
+    currentBuild.description=&quot;Pipeline de prueba de Concepto&quot;
+
+    def m2=&quot;C://Software//apache-maven-3.5.0//bin&quot;
+
+        stage(&apos;Checkout&apos;) {
+            /* 
+            Se realiza el checkout del repositorio de GIT. Se proporciona un parámetro
+            de entrada que será una etiqueta o rama para ejecutar. 
+          */
+            echo &apos;Pipeline Checkout finalizado correctamente&apos;
+        }
+        stage(&apos;Build&apos;) {
+            /* 
+            Se realiza la contrucción del proyecto y test unitarios. Los parámetros
+            de uso general se han declarado en environment for the run
+            */
+            
+             sh &quot;${m2}/mvn clean install -f C://Users//antonio.f.herrera//Desktop//maven-plugins-master//pom.xml -U&quot;
+            
+            echo &apos;Pipeline Build finalizado correctamente&apos;
+        }
+        stage(&apos;Quality&apos;) {
+            /* 
+            Se realiza la revisión de código en el proyecto. Los parámetros de uso
+            general se han declarado en environment for the run
+            
+            sh &quot;${m2}/mvn sonar:sonar -f C://Users//antonio.f.herrera//Desktop//maven-plugins-master//pom.xml -U -Psonar -Dmaven.test.skip=true -Dsonar.login=admin -Dsonar.password=admin&quot;
+            */
+            echo &apos;Pipeline Quality finalizado correctamente&apos;
+        }
+
+        stage(&apos;Tests&apos;) {
+            echo &apos;Pipeline Tests finalizado correctamente&apos;
+        }
+        
+        stage(&apos;DeployNexus&apos;) {
+            /*
+            Se realiza la subida de los Artefactos a Nexus. Los parámetros de uso 
+            general se han declarado en environment for the run
+            
+            sh &quot;${m2}/mvn deploy -Denv-pro=true -Dmaven.test.skip=true -Dusuario=${user} -Dclave=${password}&quot;
+            */
+            echo &apos;Pipeline Deploy_Nexus finalizado correctamente&apos;   
+        }
+        stage(&apos;DeployApp&apos;) {
+            
+            echo &apos;Pipeline DeployApp finalizado correctamente&apos;  
+        }
+}</script>
+    <loadedScripts class="map"/>
+    <timings class="map">
+      <entry>
+        <string>flowNode</string>
+        <long>503783666</long>
+      </entry>
+      <entry>
+        <string>classLoad</string>
+        <long>523031056</long>
+      </entry>
+      <entry>
+        <string>run</string>
+        <long>1428316525</long>
+      </entry>
+      <entry>
+        <string>parse</string>
+        <long>372637606</long>
+      </entry>
+      <entry>
+        <string>saveProgram</string>
+        <long>363102159</long>
+      </entry>
+    </timings>
+    <sandbox>true</sandbox>
+    <iota>38</iota>
+    <head>1:38</head>
+  </execution>
+  <checkouts class="hudson.util.PersistedList"/>
+</flow-build>

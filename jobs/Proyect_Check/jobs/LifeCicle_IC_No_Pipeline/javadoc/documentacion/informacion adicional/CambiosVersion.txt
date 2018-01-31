@@ -1,0 +1,112 @@
+------------------------------------------------------------------------
+--- CAMBIOS REALIZADOS EN LA VERSION --
+------------------------------------------------------------------------
+
+• Reglas:
+
+	•Cambios Generales: 	 
+	             • Se han modificado todos los nombres de los chequeos para que sean mas orientativos al Informe de Calidad
+			
+				 • Actualizacíon de Manual de Usuario para Instalación de CHECK y la actualización de reglas
+
+				 • Cambio en el informe HTML			 
+
+
+	•Código:   -Añadida la regla <ReglaContenidoXML> para realizar comprobaciones de contenido en ficheros XML con Xpatch.
+
+	
+	
+	• WAS61:
+
+		-Añadida la comprobación de *jsp en los ficheros de estáticos.
+
+		-Añadida la comprobación de *php en los ficheros de estáticos.
+	
+		-Añadida la comprobación de *jsp en los ficheros de recursos.
+
+		-Añadida la comprobación de que el descriptor sun-jaws.xml no es encuentre dentro del ear.
+
+		-Modificada la regla : Comprobacion sobre la inclusion de descriptores de despliegue. Cualquier descriptor *-bnd.(xmi/xml) no se incluye en el .ear"
+
+		-Modificada la regla de comprobación de session-timeout a tipo: <ReglaContenidoXML> utilizando Xpath.
+
+		-Añadida la comprobación de que los siguientes fichero no esten empaquetados en el ear:
+
+			*.json
+			*.properties
+			*.jrxml
+			*.jasper
+			*.xls
+			*.docx
+			*.ppt
+			*.pptx
+
+		-Actualización de librerías
+
+
+
+	• WAS85: 
+
+		-Añadida la comprobación de *jsp en los ficheros de estáticos.
+
+		-Añadida la comprobación de *php en los ficheros de estáticos.
+
+		-Añadida la comprobación de *jsp en los ficheros de recursos.
+
+		-Añadida la comprobación de que el descriptor sun-jaws.xml no es encuentre dentro del ear.
+
+		-Modificada la comprobación de la regla que antes buscaba el fichero ibm-web-bnd.xmi y ahora busca cualquier fichero *.xmi
+
+		-Añadida la regla: Comprobacion sobre la inclusion de descriptores de despliegue. Cualquier descriptor *-bnd.(xmi/xml) no se incluye en el .ear"
+
+		-Modificada la regla de comprobación de session-timeout a tipo: <ReglaContenidoXML> utilizando Xpath.
+
+		-Añadida la comprobación de que los siguientes fichero no esten empaquetados en el ear:
+
+			*.hibernate.properties
+			*.json
+			*.properties
+			*.jrxml
+			*.jasper
+			*.xls
+			*.docx
+			*.ppt
+			*.pptx
+		
+		-Modificada la regla de comprobar que en el fichero ibm-web-ext.xml se encuentre la propiedad fileServingEnabled a false, utilizando tipo: <ReglaContenidoXML> utilizando Xpath.
+		
+		-Añadida la comprobación de la librería cualquier librería axis dentro del ear
+
+		-Actualización de librerías
+
+
+
+	• JBOSS:
+
+		Añadida la comprobación de *jsp en los ficheros de estáticos.
+
+		Añadida la comprobación de *php en los ficheros de estáticos.
+
+		Añadida la comprobación de *jsp en los ficheros de recursos.
+	
+		Añadida la comprobación de que el descriptor sun-jaws.xml no es encuentre dentro del ear.
+
+		Añadida la regla: Comprobacion sobre la inclusion de descriptores de despliegue. Cualquier descriptor *-bnd.(xmi/xml) no se incluye en el .ear"
+
+		Añadida la comprobación de que los siguientes fichero no esten empaquetados en el ear:
+
+			*.hibernate.properties
+			*.json
+			*.properties
+			*.jrxml
+			*.jasper
+			*.xls
+			*.docx
+			*.ppt
+			*.pptx
+		
+		-Actualización de librerías
+
+
+
+
